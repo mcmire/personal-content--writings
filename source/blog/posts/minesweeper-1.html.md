@@ -7,7 +7,7 @@ date: 2020-01-01
 tags: programming
 ---
 
-![Minesweeper, final product](images/minesweeper-1/end-result.gif)
+![Minesweeper, final product](minesweeper-1/end-result.gif)
 {:.centered-image.with-max-height}
 
 It's no secret that JavaScript is everywhere. It's been around for over 20
@@ -48,7 +48,7 @@ animations or complicated logic for us to implement.
 
 ### The game
 
-![Microsoft Minesweeper](/images/minesweeper-1/ms-minesweeper.png)
+![Microsoft Minesweeper](minesweeper-1/ms-minesweeper.png)
 {:.floating-image}
 
 Minesweeper is played on a square board of spaces, and the game starts with a

@@ -3,7 +3,7 @@ title: "Building Minesweeper in JavaScript: Part 4"
 teaser: >
   In this post, we start to add the core game logic by revealing all spaces when
   a mine is clicked.
-date: 2020-01-01
+date: 2020-01-04
 tags: programming
 ---
 

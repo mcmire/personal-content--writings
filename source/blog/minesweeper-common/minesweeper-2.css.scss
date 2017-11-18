@@ -1,4 +1,4 @@
-@import "shared-settings";
+@import "../../../assets/stylesheets/shared-settings";
 
 * {
   box-sizing: border-box;
@@ -31,26 +31,16 @@ body {
 td {
   border: 1px solid black;
   cursor: pointer;
-  width: 11.1111111%;
-  height: 11.1111111%;
-   text-align: center;
-   vertical-align: center;
 }
 
-td:not(.uncovered):hover {
+td:not(.mine):hover {
   background-color: #ddd;
 }
 
-td.future-mine:not(.uncovered):hover,
-td.mine:not(.uncovered):hover {
+td.future-mine:hover {
   background-color: red;
 }
 
-.uncovered:not(.mine) {
-  background-color: gray;
-  color: white;
-}
-
-.uncovered.mine {
+.mine {
   background-color: black;
 }
