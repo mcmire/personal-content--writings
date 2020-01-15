@@ -4,7 +4,7 @@ teaser: >
   In this post, we draw mines and distribute them randomly across the board.
 date: 2020-01-03
 tags: programming
-vi: ft=ghmarkdown
+vi: ft=markdown
 ---
 
 In the [last post] we wrote code so that the visuals for Minesweeper are
@@ -12,7 +12,7 @@ generated via JavaScript when the page loads. This will be helpful later as it
 will allow us to update the board visually as the player interacts with the
 game.
 
-[last post]: /blog/minesweeper-2/
+[last post]: ./minesweeper-2.html.md
 
 Let's review what we have in our project so far:
 
@@ -45,7 +45,7 @@ for (let rowIndex = 0; rowIndex < 9; rowIndex++) {
 
 And so far the game looks like this:
 
-<iframe src="/blog/minesweeper-2-step-6/minesweeper.html"></iframe>
+<iframe src="../demos/minesweeper-2-step-6/minesweeper.html"></iframe>
 
 Now for something a little more interesting.
 
@@ -125,11 +125,11 @@ Here we have lines beginning with `+`, but we also have a line beginning with
 `-`. You should *remove* these kinds of lines from your version of the file.
 {:.aside.aside--tip}
 
-[Here's][m3s2]{:target="_blank"} what we get:
+[Here's][m3s1]{:target="_blank"} what we get:
 
-[m3s2]: /blog/minesweeper-3-step-1/minesweeper.html
+[m3s1]: ../demos/minesweeper-3-step-1/minesweeper.html
 
-<iframe src="/blog/minesweeper-3-step-1/minesweeper.html"></iframe>
+<iframe src="../demos/minesweeper-3-step-1/minesweeper.html"></iframe>
 
 ### Mapping out the next steps
 
@@ -141,19 +141,19 @@ Say that we had a way of marking the spaces on the board in some way so that we
 could identify one space from another. The simplest thing to do would be to
 assign a number to each space:
 
-<%= embed_svg("minesweeper-3/board-numbering-1.svg", height: 271) %>
+<%= embed_svg("../assets/minesweeper-3/board-numbering-1.svg", height: 271) %>
 
 Here we've numbered the spaces starting at 1, but for reasons we'll see in a
 bit, it will actually make more sense to start with 0:
 
-<%= embed_svg("minesweeper-3/board-numbering-2.svg", height: 271) %>
+<%= embed_svg("../assets/minesweeper-3/board-numbering-2.svg", height: 271) %>
 
 What does that give us? Well, once we have a set of numbers, we can place those
 numbers in a virtual "hat" and draw ten of them. Each number we draw from the
 "hat" will correspond to a space and designate a mine that is present at that
 location:
 
-<%= embed_svg("minesweeper-3/choosing-mine-locations.svg", height: 725) %>
+<%= embed_svg("../assets/minesweeper-3/choosing-mine-locations.svg", height: 725) %>
 
 We'll talk about drawing the mines in a bit, but for now, let's see if we can
 capture our picture above in pseudocode. We need to:
@@ -198,7 +198,7 @@ before, you can always test it out there. Go ahead and bring it up now with
 tab). Type `Math.random()` and press Enter. What do you get?
 {:.aside.aside--tip}
 
-[developer-tools]: /blog/minesweeper-3#developer-tools
+[developer-tools]: ./minesweeper-3.html.md.erb#developer-tools
 
 Generating a number between 0 and 1 may not seem helpful now, but it will prove
 to be a useful tool in a moment.
@@ -233,7 +233,7 @@ Now we can see that we need some way to take random numbers out of
 Since `hatOfMineLocations` is an array, each number has an *index*, the position
 of that number inside the array:
 
-<%= embed_svg("minesweeper-3/array-indices.svg", height: 115) %>
+<%= embed_svg("../assets/minesweeper-3/array-indices.svg", height: 115) %>
 
 So in order to pick a random number from `hatOfMineLocations`, we really need to
 choose a random *index*. Note how our indices start from 0 and end at 80, just
@@ -307,7 +307,7 @@ Watch out, though! This won't quite work: once we remove a number from
 `hatOfMineLocations`, the indices assigned to each number will change. Why?
 Because now there's one fewer number in our array:
 
-<%= embed_svg("minesweeper-3/array-indices-with-missing.svg", height: 135) %>
+<%= embed_svg("../assets/minesweeper-3/array-indices-with-missing.svg", height: 135) %>
 
 So in the next iteration of our loop, instead of choosing a random index between
 0 and 81, we'll need to choose an index between 0 and 80. And in the next
@@ -389,13 +389,13 @@ for (let rowIndex = 0; rowIndex < 9; rowIndex++) {
 You can think of `rowIndex` as the Y-coordinate and `columnIndex` as the
 X-coordinate of a given cell:
 
-<%= embed_svg("minesweeper-3/row-and-column-indices.svg", height: 401) %>
+<%= embed_svg("../assets/minesweeper-3/row-and-column-indices.svg", height: 401) %>
 
 Note, however, that this way to locate cells is different from the way we
 previously located mines. Here we use two numbers, whereas before we used one
 number:
 
-<%= embed_svg("minesweeper-3/board-numbering-2.svg", height: 361) %>
+<%= embed_svg("../assets/minesweeper-3/board-numbering-2.svg", height: 361) %>
 
 Is there a relationship between the two systems? There is! Look at cell number
 41 in the second image. Notice how it is labeled `(5,4)` in the first image. How
@@ -439,7 +439,7 @@ Now we'll update `minesweeper.js` accordingly:
  for (let n = 0; n <= 80; n++) {
    hatOfMineLocations.push(n);
  }
- 
+
  const mineLocations = [];
  for (let i = 0; i < 10; i++) {
   const mineLocationIndex = Math.floor(Math.random() * hatOfMineLocations.length);
@@ -447,7 +447,7 @@ Now we'll update `minesweeper.js` accordingly:
   mineLocations.push(mineLocation);
   hatOfMineLocations.splice(mineLocationIndex, 1);
  }
- 
+
  for (let rowIndex = 0; rowIndex < 9; rowIndex++) {
    const row = $("<tr>");
    board.append(row);
@@ -466,9 +466,9 @@ Now we'll update `minesweeper.js` accordingly:
 Now if we [take a look][m3s2]{:target="blank"} we should see the board dotted
 with mines. Feel free to refresh the page!
 
-[m3s2]: /blog/minesweeper-3-step-2/minesweeper.html
+[m3s2]: ../demos/minesweeper-3-step-2/minesweeper.html
 
-<iframe src="/blog/minesweeper-3-step-2/minesweeper.html"></iframe>
+<iframe src="../demos/minesweeper-3-step-2/minesweeper.html"></iframe>
 
 ### What's next
 
@@ -476,13 +476,13 @@ Now that we have a way to distribute mines across the board and display them,
 the next step is to [add interactivity][minesweeper-4] so that clicking on the
 board reveals those mines.
 
-[minesweeper-4]: /blog/minesweeper-4/
+[minesweeper-4]: ./minesweeper-4.html.md
 
 <div class="nav-wrapper">
   <div class="nav nav--left">
-    <a href="/blog/minesweeper-2/">← Go back</a>
+    <a href="./minesweeper-2.html.md">← Go back</a>
   </div>
   <div class="nav nav--right">
-    <a href="/blog/minesweeper-4/">Continue →</a>
+    <a href="./minesweeper-4.html.md">Continue →</a>
   </div>
 </div>

@@ -1,4 +1,4 @@
-@import "../../../assets/stylesheets/shared-settings";
+@import "shared-settings";
 
 * {
   box-sizing: border-box;
@@ -33,6 +33,14 @@ td {
   cursor: pointer;
 }
 
-td:hover {
+td:not(.mine):hover {
   background-color: #ddd;
+}
+
+td.future-mine:hover {
+  background-color: red;
+}
+
+.mine {
+  background-color: black;
 }

@@ -11,11 +11,11 @@ In the [previous post], we started building Minesweeper by creating the board
 for the game using HTML and by giving the board its appearance using CSS.
 [Here's][minesweeper-1]{:target="_blank"} what we have so far:
 
-[minesweeper-1]: /blog/minesweeper-1/minesweeper.html
+[minesweeper-1]: ../demos/minesweeper-1/minesweeper.html
 
-<iframe src="/blog/minesweeper-1/minesweeper.html" border="0"></iframe>
+<iframe src="../demos/minesweeper-1/minesweeper.html" border="0"></iframe>
 
-[previous post]: /blog/minesweeper-1/
+[previous post]: ../minesweeper-1.html.md
 
 ### Got repetition?
 
@@ -318,12 +318,12 @@ the arrow next to the `<body>` element and you should see something like this
 (Chrome and Firefox are shown below):
 {:#developer-tools}
 
-[minesweeper-2-step-1]: /blog/minesweeper-2-step-1/minesweeper.html
+[minesweeper-2-step-1]: ../demos/minesweeper-2-step-1/minesweeper.html
 
-![Dev tools in Chrome](minesweeper-2/step-1a.png)
+![Dev tools in Chrome](../assets/minesweeper-2/step-1a.png)
 {:class="centered-image"}
 
-![Dev tools in Firefox](minesweeper-2/step-1b.png)
+![Dev tools in Firefox](../assets/minesweeper-2/step-1b.png)
 {:class="centered-image"}
 
 Now, take a closer look here. **Do you notice anything strange about the
@@ -471,9 +471,9 @@ here][minesweeper-2-step-2]{:target="_blank"}). Open up the Developer Tools
 Console tab (in Firefox it's an icon, but it's always the second tab). You
 should see something like this:
 
-[minesweeper-2-step-2]: /blog/minesweeper-2-step-2/minesweeper.html
+[minesweeper-2-step-2]: ../demos/minesweeper-2-step-2/minesweeper.html
 
-![body.length is missing](minesweeper-2/step-2.png)
+![body.length is missing](../assets/minesweeper-2/step-2.png)
 {:class="centered-image"}
 
 What we've done is to ask jQuery how many elements are in the group that
@@ -517,7 +517,7 @@ body.length: 0
 document.body: null
 ```
 
-[minesweeper-2-step-3]: /blog/minesweeper-2-step-3/minesweeper.html
+[minesweeper-2-step-3]: ../demos/minesweeper-2-step-3/minesweeper.html
 
 ### Order matters
 
@@ -572,9 +572,9 @@ $(function () {
 Now when we [run this code][minesweeper-2-step-4]{:target="_blank"} and open the
 Developer Tools, we will see that our table is present in the body. Perfect!
 
-[minesweeper-2-step-4]: /blog/minesweeper-2-step-4/minesweeper.html
+[minesweeper-2-step-4]: ../demos/minesweeper-2-step-4/minesweeper.html
 
-![table is now present](minesweeper-2/step-4.png)
+![table is now present](../assets/minesweeper-2/step-4.png)
 {:class="centered-image"}
 
 Now, even though this approach is popular and it will work, we aren't going to
@@ -616,9 +616,9 @@ after the `script` tags. That's something else that can be cleaned up as it
 looks a little out of order -- but it won't affect how the table actually
 appears on screen, so we won't worry about it right now.
 
-[minesweeper-2-step-5]: /blog/minesweeper-2-step-5/minesweeper.html
+[minesweeper-2-step-5]: ../demos/minesweeper-2-step-5/minesweeper.html
 
-![new and improved version](minesweeper-2/step-5.png)
+![new and improved version](../assets/minesweeper-2/step-5.png)
 {:class="centered-image"}
 
 Placing the `script` tags at the end of the body as we've done not only makes
@@ -680,21 +680,21 @@ And [here's][minesweeper-2-step-6]{:target="_blank"} our final result. If you've
 followed along this far, you should have a board that looks the same as the one
 below. Great job!
 
-[minesweeper-2-step-6]: /blog/minesweeper-2-step-6/minesweeper.html
+[minesweeper-2-step-6]: ../demos/minesweeper-2-step-6/minesweeper.html
 
-<iframe src="/blog/minesweeper-2-step-6/minesweeper.html"></iframe>
+<iframe src="../demos/minesweeper-2-step-6/minesweeper.html"></iframe>
 
 ### What's next
 
 Now we need to [display mines on the board][minesweeper-3].
 
-[minesweeper-3]: /blog/minesweeper-3/
+[minesweeper-3]: ./minesweeper-3.html.md.erb
 
 <div class="nav-wrapper">
   <div class="nav nav--left">
-    <a href="/blog/minesweeper-1/">← Go back</a>
+    <a href="./minesweeper-1.html.md">← Go back</a>
   </div>
   <div class="nav nav--right">
-    <a href="/blog/minesweeper-3/">Continue →</a>
+    <a href="./minesweeper-3.html.md.erb">Continue →</a>
   </div>
 </div>

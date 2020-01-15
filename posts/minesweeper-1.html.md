@@ -7,7 +7,7 @@ date: 2020-01-01
 tags: programming
 ---
 
-![Minesweeper, final product](minesweeper-1/end-result.gif)
+![Minesweeper, final product](../assets/minesweeper-1/end-result.gif)
 {:.centered-image.with-max-height}
 
 It's no secret that JavaScript is everywhere. It's been around for over 20
@@ -48,7 +48,7 @@ animations or complicated logic for us to implement.
 
 ### The game
 
-![Microsoft Minesweeper](minesweeper-1/ms-minesweeper.png)
+![Microsoft Minesweeper](../assets/minesweeper-1/ms-minesweeper.png)
 {:.floating-image}
 
 Minesweeper is played on a square board of spaces, and the game starts with a
@@ -275,9 +275,9 @@ td:hover {
 Great! Let's [take a look][minesweeper-1]{:target="_blank"} at what we have so
 far:
 
-[minesweeper-1]: /blog/minesweeper-1/minesweeper.html
+[minesweeper-1]: ../demos/minesweeper-1/minesweeper.html
 
-<iframe src="/blog/minesweeper-1/minesweeper.html"></iframe>
+<iframe src="../demos/minesweeper-1/minesweeper.html"></iframe>
 
 ### What's next
 
@@ -286,10 +286,10 @@ it will be better if the board is generated using JavaScript. In the [next
 post][minesweeper-2] we'll add jQuery into the project, which will make our job
 easier.
 
-[minesweeper-2]: /blog/minesweeper-2/
+[minesweeper-2]: ./minesweeper-2.html.md
 
 <div class="nav-wrapper">
   <div class="nav nav--right">
-    <a href="/blog/minesweeper-2/">Continue →</a>
+    <a href="./minesweeper-2.html.md">Continue →</a>
   </div>
 </div>

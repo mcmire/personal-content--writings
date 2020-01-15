@@ -12,7 +12,7 @@ show those mines when the game loads. Now we can start to get into more of the
 core functionality. Remember that if the player clicks on a space on the board,
 there are three things that can happen:
 
-[minesweeper-3]: /blog/minesweeper-3
+[minesweeper-3]: ./minesweeper-3.html.md.erb
 
 * If any of the spaces surrounding the space is a mine, we count how many there
   are and uncover the space, displaying that number inside the space.
@@ -279,22 +279,22 @@ Great! Let's [see][minesweeper-4-step-1]{:target="_blank"} what that looks like.
 Try clicking around until you hit a mine! (For demonstration purposes, we've
 highlighted them in red on hover.)
 
-<iframe src="/blog/minesweeper-4-step-1/minesweeper.html"></iframe>
+<iframe src="../demos/minesweeper-4-step-1/minesweeper.html"></iframe>
 
-[minesweeper-4-step-1]: /blog/minesweeper-4-step-1/minesweeper.html
+[minesweeper-4-step-1]: ../demos/minesweeper-4-step-1/minesweeper.html
 
 ### What's next
 
 Next we'll tackle the next simplest outcome: [what happens][minesweeper-5] when
 a space that *isn't* a mine, yet is near one, is uncovered.
 
-[minesweeper-5]: /blog/minesweeper-5/
+[minesweeper-5]: ./minesweeper-5.html.md.erb
 
 <div class="nav-wrapper">
   <div class="nav nav--left">
-    <a href="/blog/minesweeper-3/">← Go back</a>
+    <a href="./minesweeper-3.html.md.erb">← Go back</a>
   </div>
   <div class="nav nav--right">
-    <a href="/blog/minesweeper-5/">Continue →</a>
+    <a href="./minesweeper-5.html.md.erb">Continue →</a>
   </div>
 </div>
