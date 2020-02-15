@@ -1,0 +1,5 @@
+[*.md]
+max_line_length = unset
+
+[*.md.erb]
+max_line_length = unset
