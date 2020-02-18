@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec bundle exec html2haml --html-attributes "$1"
