@@ -141,19 +141,19 @@ Say that we had a way of marking the spaces on the board in some way so that we
 could identify one space from another. The simplest thing to do would be to
 assign a number to each space:
 
-<%= embed_svg("../assets/minesweeper-3/board-numbering-1.svg", height: 271) %>
+<%= embed_svg("../assets/minesweeper-3/board-numbering-1.svg", height: 271, class: "centered-image") %>
 
 Here we've numbered the spaces starting at 1, but for reasons we'll see in a
 bit, it will actually make more sense to start with 0:
 
-<%= embed_svg("../assets/minesweeper-3/board-numbering-2.svg", height: 271) %>
+<%= embed_svg("../assets/minesweeper-3/board-numbering-2.svg", height: 271, class: "centered-image") %>
 
 What does that give us? Well, once we have a set of numbers, we can place those
 numbers in a virtual "hat" and draw ten of them. Each number we draw from the
 "hat" will correspond to a space and designate a mine that is present at that
 location:
 
-<%= embed_svg("../assets/minesweeper-3/choosing-mine-locations.svg", height: 725) %>
+<%= embed_svg("../assets/minesweeper-3/choosing-mine-locations.svg", height: 725, class: "centered-image") %>
 
 We'll talk about drawing the mines in a bit, but for now, let's see if we can
 capture our picture above in pseudocode. We need to:
@@ -233,7 +233,7 @@ Now we can see that we need some way to take random numbers out of
 Since `hatOfMineLocations` is an array, each number has an *index*, the position
 of that number inside the array:
 
-<%= embed_svg("../assets/minesweeper-3/array-indices.svg", height: 115) %>
+<%= embed_svg("../assets/minesweeper-3/array-indices.svg", height: 115, class: "centered-image") %>
 
 So in order to pick a random number from `hatOfMineLocations`, we really need to
 choose a random *index*. Note how our indices start from 0 and end at 80, just
@@ -307,7 +307,7 @@ Watch out, though! This won't quite work: once we remove a number from
 `hatOfMineLocations`, the indices assigned to each number will change. Why?
 Because now there's one fewer number in our array:
 
-<%= embed_svg("../assets/minesweeper-3/array-indices-with-missing.svg", height: 135) %>
+<%= embed_svg("../assets/minesweeper-3/array-indices-with-missing.svg", height: 135, class: "centered-image") %>
 
 So in the next iteration of our loop, instead of choosing a random index between
 0 and 81, we'll need to choose an index between 0 and 80. And in the next
@@ -389,13 +389,13 @@ for (let rowIndex = 0; rowIndex < 9; rowIndex++) {
 You can think of `rowIndex` as the Y-coordinate and `columnIndex` as the
 X-coordinate of a given cell:
 
-<%= embed_svg("../assets/minesweeper-3/row-and-column-indices.svg", height: 401) %>
+<%= embed_svg("../assets/minesweeper-3/row-and-column-indices.svg", height: 401, class: "centered-image") %>
 
 Note, however, that this way to locate cells is different from the way we
 previously located mines. Here we use two numbers, whereas before we used one
 number:
 
-<%= embed_svg("../assets/minesweeper-3/board-numbering-2.svg", height: 361) %>
+<%= embed_svg("../assets/minesweeper-3/board-numbering-2.svg", height: 361, class: "centered-image") %>
 
 Is there a relationship between the two systems? There is! Look at cell number
 41 in the second image. Notice how it is labeled `(5,4)` in the first image. How

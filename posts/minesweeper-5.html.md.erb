@@ -255,12 +255,12 @@ that pops out is the idea of spaces that surround other spaces -- or something
 we'll call *neighbors* for short. For instance, all of the grey spaces here are
 *neighbors* of the red space:
 
-<%= embed_svg("../assets/minesweeper-5/neighbors.svg", height: 161) %>
+<%= embed_svg("../assets/minesweeper-5/neighbors.svg", height: 161, class: "centered-image") %>
 
 Most spaces will have 9 neighbors, except for those that live on the edge of the
 board. For instance, a corner space has only 3 neighbors:
 
-<%= embed_svg("../assets/minesweeper-5/neighbors-at-corner.svg", height: 161) %>
+<%= embed_svg("../assets/minesweeper-5/neighbors-at-corner.svg", height: 161, class: "centered-image") %>
 
 Okay, so how do we find the neighbors for any space on the board? Well, remember
 in [part 3][minesweeper-3] how we learned that we have a way to denote the
@@ -268,7 +268,7 @@ location of a space using X- and Y-coordinates?
 
 [minesweeper-3]: ./minesweeper-3.html.md.erb
 
-<%= embed_svg("../assets/minesweeper-3/row-and-column-indices.svg", height: 301) %>
+<%= embed_svg("../assets/minesweeper-3/row-and-column-indices.svg", height: 301, class: "centered-image") %>
 
 This is made possible by the loop we use to draw the spaces:
 
@@ -296,7 +296,7 @@ What if we had an array of arrays of `td` elements, where the outer array
 represented the rows in the board and each inner array represented the column in
 a row?
 
-<%= embed_svg("../assets/minesweeper-5/cells.svg", height: 375) %>
+<%= embed_svg("../assets/minesweeper-5/cells.svg", height: 375, class: "centered-image") %>
 
 With this array, we could drill down to a space by reusing the `rowIndex` and
 `columnIndex` of that space. For instance, if this imaginary array were stored
