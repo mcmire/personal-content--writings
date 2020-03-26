@@ -4,6 +4,8 @@ teaser: >
   In this post, we start to add the core game logic by revealing all spaces when
   a mine is clicked.
 date: 2020-01-04
+previous_post: ./minesweeper-3.html.md.erb
+next_post: ./minesweeper-5.html.md.erb
 tags: programming
 ---
 
@@ -289,12 +291,3 @@ Next we'll tackle the next simplest outcome: [what happens][minesweeper-5] when
 a space that *isn't* a mine, yet is near one, is uncovered.
 
 [minesweeper-5]: ./minesweeper-5.html.md.erb
-
-<div class="nav-wrapper">
-  <div class="nav nav--left">
-    <a href="./minesweeper-3.html.md.erb">← Go back</a>
-  </div>
-  <div class="nav nav--right">
-    <a href="./minesweeper-5.html.md.erb">Continue →</a>
-  </div>
-</div>

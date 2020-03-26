@@ -4,6 +4,7 @@ teaser: >
   In the first post in this series, we introduce the project by making a simple
   board.
 date: 2020-01-01
+next_post: ./minesweeper-2.html.md
 tags: programming
 ---
 
@@ -287,9 +288,3 @@ post][minesweeper-2] we'll add jQuery into the project, which will make our job
 easier.
 
 [minesweeper-2]: ./minesweeper-2.html.md
-
-<div class="nav-wrapper">
-  <div class="nav nav--right">
-    <a href="./minesweeper-2.html.md">Continue →</a>
-  </div>
-</div>

@@ -4,6 +4,8 @@ teaser: >
   In this post, we add jQuery to the project and generate the HTML for the board
   fully in JavaScript.
 date: 2020-01-02
+previous_post: ./minesweeper-1.html.md
+next_post: ./minesweeper-3.html.md.erb
 tags: programming
 ---
 
@@ -689,12 +691,3 @@ below. Great job!
 Now we need to [display mines on the board][minesweeper-3].
 
 [minesweeper-3]: ./minesweeper-3.html.md.erb
-
-<div class="nav-wrapper">
-  <div class="nav nav--left">
-    <a href="./minesweeper-1.html.md">← Go back</a>
-  </div>
-  <div class="nav nav--right">
-    <a href="./minesweeper-3.html.md.erb">Continue →</a>
-  </div>
-</div>
