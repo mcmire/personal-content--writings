@@ -1,6 +1,7 @@
 !/.agignore
 !/.ruby-version
 .DS_Store
+*.sketch
 /.bundle
 /.cache
 /.env.production
