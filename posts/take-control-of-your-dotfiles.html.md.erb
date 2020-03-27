@@ -1,0 +1,464 @@
+---
+title: Take Control of Your Dotfiles
+teaser: >
+  What are dotfiles and why should you care about them?
+  How do you manage them in a way that's free of pain?
+  This guide answers these questions and more.
+date: 2021-02-13
+last_updated: 2020-03-26
+vi: ft=ghmarkdown.eruby
+---
+
+If you wrangle code, servers, containers, databases, or build systems as a part of your day job,
+you probably have three tools that you rely on countless times per day:
+a terminal, a version control system such as Git, and an editor or IDE.
+
+Have you ever wanted to personalize these in some way?
+Perhaps you've wished to:
+
+* add a custom prompt to your shell that allows you to see the current branch in Git
+* add aliases to your shell for commands that you run frequently
+* configure Git to [autosquash when rebasing interactively][autosquash]
+* add a new plugin or extension to your editor to syntax highlight a new language you've wanted to experiment with
+
+[autosquash]: https://thoughtbot.com/blog/autosquashing-git-commits
+
+One nice thing about these tools —
+and tools that are designed to be run from the command line —
+is that they store configuration in the form of *dotfiles*,
+simple text files stored in your home folder.
+
+Since they start with a dot —
+hence the name —
+these files are usually hidden from view.
+But you can reveal them by running this command:
+
+``` term
+$ ls -a1 ~ | grep '^\.'
+```
+
+This spits out a fairly long list,
+but you will probably only care about a handful of files.
+See if you spot any of these:
+
+* **Shell configuration:** `.bash_profile`, `.bashrc`, `.zsh`, `.zshenv`, `.zshrc`, `.profile`, `.tmux`, `.tmux.conf`
+* **Editor configuration:** `.vimrc`, `.vscode`, `.atom`
+* **Git configuration:** `.gitconfig`, `.gitignore`, `.gitmessage`
+* **Language-specific configuration:** `.rbenv`, `.rvm`, `.rspec`, `.nvm`, `.npm`, `.npmrc`, `.pyenv`
+
+### Dotfiles are great!
+
+The fact that dotfiles are text files
+makes them super accessible and flexible.
+Even if you wouldn't normally touch them directly —
+for instance, maybe you are using a UI to make configuration changes to your tool —
+you are always able to draw the curtain back and edit the underlying files yourself.
+That also means that you can do whatever you want with your dotfiles:
+you can back them up, move them around, or even keep them under version control
+(which we'll talk about in just a bit).
+
+### Dotfiles are not so great
+
+However, there are a few issues with dotfiles that make them difficult to manage:
+
+1. **Dotfiles aren't discoverable.**
+   As we've seen, they aren't visible in your terminal by default,
+   and they aren't even visible from your OS, either.
+   You have to hold enough stuff in your head for work,
+   so who can blame you if you forget where your dotfiles are
+   and which ones do what?
+
+2. **Dotfiles aren't isolated, first-class citizens.**
+   At your job, you are probably used to working inside of a particular project.
+   You have a cordoned-off space that you can jump around and map out mentally,
+   without any distractions from the outside.
+   But dotfiles don't work that way:
+   they're jumbled together with your other personal files
+   as well as the dotfiles that you don't care about.
+   So if you even want to get a picture of the dotfiles you are actively maintaining,
+   you have to filter the signal from the noise.
+
+3. **Dotfiles are inherently dangerous to edit.**
+   Changing a dotfile is a bit like changing the tire on your car while you're busy driving it.
+   What if you're editing your shell configuration and you make a mistake?
+   You have to pay more attention
+   that you don't screw something up
+   than you ordinarily would.
+   (Consider that you don't often have this concern when you're writing code.)
+
+4. **Dotfiles aren't portable.**
+   What if the only computer you use is the one provided by your company,
+   and what if you spend months sprucing it up,
+   only to be given a new computer and forcing you to start all over?
+   Or what if you have two computers,
+   one for work and one for play,
+   and you want to synchronize your dotfiles between them?
+   Both of these scenarios are painful.
+
+### A better way
+
+Because of the reasons listed above,
+I think people tend to shy away from even touching their dotfiles,
+much less change them.
+That's a shame,
+because knowing how to efficiently manage your dotfiles
+is a key step in [owning your tools][own-your-tools].
+Fortunately, all of these limitations are surmountable.
+
+[own-your-tools]: https://8thlight.com/blog/doug-bradbury/2008/09/15/own-your-tools.html
+
+Here's the approach I'll be demonstrating in this guide:
+
+1. To make our dotfiles more discoverable and less isolated
+   and to promote them to first-class citizens,
+   we'll collect all of them into a main directory.
+1. To fool our OS into thinking our dotfiles are still in our home folder,
+   we'll create symlinks there
+   which point to the corresponding files in our main directory.
+1. Finally, to remove the danger in editing our dotfiles and to make them more portable,
+   we'll push them up to GitHub, Gitlab, Sourcehut, or some equivalent.
+
+At the end of this guide, you'll have a setup that looks something like this:
+
+<%= embed_svg("../assets/take-control-of-your-dotfiles/approach.svg", height: 250, class: "centered-image") %>
+
+### A word about symlinks
+
+Before we start,
+I want to spend a moment talking about symlinks.
+What are they, and what do they have to do with dotfiles?
+
+A *symlink*, or "symbolic link",
+is essentially a pointer to another file on your computer.
+You can think of it as a sort of hologram:
+you can interact with it all you want,
+but at the end of the day
+it's merely a projection of a real file somewhere else on your hard drive.
+
+![hologram](../assets/take-control-of-your-dotfiles/hologram.png)
+{:.centered-image}
+
+You can create a symlink by using the `ln` command.
+For instance, if you were to say:
+
+``` term
+$ touch /tmp/bar
+$ ln -s /tmp/bar /tmp/foo
+```
+
+then you'd create a symlink called `/tmp/foo` that points to `/tmp/bar`.
+In fact you can prove this through `ls -l`:
+
+``` term
+$ ls -l /tmp
+-rw-r--r--  1 you  wheel    0 Feb 20 23:58 bar
+lrwxr-xr-x  1 you  wheel    8 Feb 20 23:56 foo -> /tmp/bar
+```
+
+After creating the symlink,
+you couldn't actually change what `/tmp/foo` is.
+But if you were to modify `/tmp/foo`,
+what you'd really be changing is `/tmp/bar`:
+
+``` term
+$ echo "hello" >> /tmp/foo
+$ echo "goodbye" >> /tmp/bar
+$ cat /tmp/foo
+hello
+goodbye
+$ cat /tmp/bar
+hello
+goodbye
+```
+
+This property of symlinks comes in handy,
+because it allows you to reframe how dotfiles work.
+On one hand, the software that you are configuring looks for specific files in your home folder.
+There's no getting around that —
+you can't tell that software to look somewhere else.
+On the other hand,
+you want to be able to gather those dotfiles into a separate directory
+so that you can version control that directory apart from the other files in your home folder.
+Symlinks satisfy both of these needs.
+
+### Step 1: Create a directory
+
+With that out of the way,
+let's get started.
+The first thing you'll want to do
+is to create a directory to hold your new dotfiles.
+It can be anywhere on your computer,
+but **you want to make it as easy as possible for you to make changes to your dotfiles as the need arises
+and then move on with your day**,
+so choose a location that makes sense to you.
+In this guide,
+I'm going to assume you've chosen `~/dotfiles`:
+
+``` term
+$ mkdir -p ~/dotfiles
+$ cd ~/dotfiles
+```
+
+### Step 2: Transitioning existing dotfiles (Optional)
+
+If you don't already have dotfiles that you care about in your home folder,
+you can skip this section.
+But what if you do?
+You don't want to blow them away, of course;
+you want to incorporate them in your new dotfiles.
+To do that, you'll need to move over these files into your freshly created directory,
+then create symlinks in your home folder for them.
+
+There are two things about this:
+First, you have to be careful,
+because there will be a window of time
+between after you've moved a dotfile over and before you create a symlink for that file
+during which you'll disrupt whatever software relies on that file.
+And second, if you have a lot of files to move over,
+then it will take a while to set up the symlinks for those files
+(we will discuss a way to automate this in the next section).
+
+Because of these reasons,
+I would recommend choosing a file from your dotfiles to transition over
+such that if that file disappeared, it wouldn't completely ruin your environment
+and prevent you from doing your day job.
+For instance, let's say you use Bash as your shell and you already have a `.bashrc` file.
+Although it may cause an inconvenience,
+Bash won't completely cease to operate if this file is missing,
+so it's generally safe to remove it.
+In that case, your home folder would look like this:
+
+<%= embed_svg("../assets/take-control-of-your-dotfiles/step-1.svg", height: 142, class: "centered-image") %>
+
+First you'd move this into your `dotfiles` directory:
+
+``` bash
+cp ~/.bashrc ~/dotfiles/bashrc
+```
+
+Then you'd create a symlink in your home folder:
+
+``` bash
+ln -s ~/.bashrc ~/dotfiles/bashrc
+```
+
+Now your home folder would look like this:
+
+<%= embed_svg("../assets/take-control-of-your-dotfiles/step-2.svg", height: 142, class: "centered-image") %>
+
+That's all there is to it!
+At this point, your shell should continue to work as before,
+except with the benefit that if you make a change to the file in your `dotfiles` directory,
+that change will automatically carry over to the dotfile in your home folder.
+How can you be sure of this?
+Simply open up `~/dotfiles/bashrc` in your editor
+and add an `echo` statement at the bottom of the file:
+
+```
+echo "Hello"
+```
+
+Now open a new tab in your terminal.
+You should see "Hello" printed!
+
+### Step 3: Symlinking your dotfiles automatically
+
+The section above outlined the basic workflow:
+create a file in your dotfiles directory,
+then create a symlink in your home directory
+that points to this file.
+You could, of course, follow this method by hand,
+but if you one day build up a whole set of dotfiles,
+you wouldn't want to have to repeat those steps over and over.
+Ideally, you want something more scalable
+that works with both small setups and big setups.
+
+So let's try this approach instead:
+Since you now have a directory of dotfiles,
+what if you could run a script in that directory
+to go through all files and create symlinks for them automatically?
+And if you came back and added any new dotfiles later,
+what if you could re-run the script to fill in any missing symlinks?
+
+Fortunately, I've made such a script for this very purpose:
+
+<div data-role="github-embed" data-url="https://raw.githubusercontent.com/mcmire/dotfiles/master/bin/manage" data-language="bash"></div>
+
+To download this script to your dotfiles directory, run:
+
+``` term
+$ cd ~/dotfiles
+$ mkdir bin
+$ curl -fsSL https://raw.githubusercontent.com/mcmire/dotfiles/master/bin/manage -o bin/manage
+$ chmod +x bin/manage
+```
+{:data-no-overflow="true"}
+
+Now, I've included some help text with this script,
+so I would encourage you to view it like so:
+
+``` term
+$ bin/manage --help
+```
+
+But if you're like me and you like to skim,
+here's the Cliffs notes:
+
+* Placing a file in `src/` will cause that file to get symlinked in your home directory.
+* You are free to have subdirectories in `src/`;
+  the script will descend into those subdirectories and create symlinks for the files inside them.
+* You don't have to put a dot at the beginning of files you want turned into symlinks,
+  as the script will do that for you when it creates them.
+  (This is so that the files you have in *your* dotfiles repo remain visible
+  instead of getting hidden by your OS like "normal" dotfiles are.)
+
+Let's walk through a demonstration
+using the example file we used in the previous section,
+`.bashrc`.
+
+<div class="aside aside--tip">
+If you've already moved <code>~/.bashrc</code> to <code>~/code/dotfiles/bashrc</code>,
+then you'll want to move it back:
+
+<pre class="language-term"
+><code class="language-term"
+>$ rm ~/.bashrc
+$ mv ~/dotfiles/bashrc ~/.bashrc
+</code></pre>
+</div>
+
+Here's how you'd use the `manage` script to install your `.bashrc` as a symlink.
+First you'd place it in `src/`:
+
+``` term
+$ cd ~/dotfiles
+$ mkdir src
+$ mv bashrc src/bashrc
+```
+
+Then you'd run the script:
+
+``` term
+$ bin/manage install
+  create     link $DOTFILES/src/bashrc --> ~/.bashrc
+
+All files are installed, you're good!
+(Not the output you expect? Run --force to force-update skipped files.)
+```
+{:data-no-overflow="true"}
+
+Now if you were to inspect `~/.bashrc`,
+you'd find a symlink:
+
+``` term
+$ ls -l ~/.bashrc
+lrwxr-xr-x  1 you  staff  24 Mar 24 00:04 /Users/you/.bashrc -> /Users/you/dotfiles/src/bashrc
+```
+{:data-no-overflow="true"}
+
+And that's it!
+From this point,
+whenever you wanted to update `~/.bashrc`,
+instead of editing them file directly,
+you'd go into your dotfiles directory and make the necessary change there.
+Because of the symlink,
+that change would be reflected instantly in your home directory.
+And if at some point in the future you wanted to add a *new* file,
+you would again go into your dotfiles directory,
+create the file,
+re-run `bin/manage install`,
+and the symlink would be magically created.
+
+Now you're ready to move over any existing dotfiles you may have
+to your new dotfiles directory!
+
+### Bonus: Setting up your dotfiles on another computer
+
+Now that you have all of your dotfiles in one place,
+let's talk about how you would copy those dotfiles to another computer.
+Before you can do that,
+you'll need to place that directory in version control.
+
+I'm going to assume you use Git and GitHub,
+but the process would be similar for another VCS.
+{:.aside.aside--tip}
+
+Run the following:
+
+``` term
+you@computer-1$ cd ~/dotfiles
+you@computer-1$ git init
+you@computer-1$ echo '.DS_Store' > .gitignore
+you@computer-1$ git add -A .
+you@computer-1$ git commit -m "Initial commit"
+```
+{:data-no-overflow="true"}
+
+Then create a repository on GitHub and push up your repository.
+
+What happens if you want to bring your dotfiles to another computer?
+You'd simply switch over and clone your new repo there:
+
+``` term
+you@computer-2$ cd ~
+you@computer-2$ git clone https://github.com/you/dotfiles.git
+```
+{:data-no-overflow="true"}
+
+Then run the `manage` script inside of it to install the symlinks:
+
+``` term
+you@computer-2$ cd dotfiles
+you@computer-2$ bin/manage install
+```
+{:data-no-overflow="true"}
+
+And just like that,
+your dotfiles would be installed in multiple places.
+
+Version controlling your dotfiles
+not only allows you to copy those dotfiles to different computers,
+but also synchronize changes between those instances.
+If you make a change on one computer,
+you only need to run `git pull` (and possibly `bin/manage install`) on the other
+to bring it up to date.
+
+### Final remarks
+
+In this guide,
+I showed you what dotfiles are used for,
+how to collect them in one location,
+and how to to place them under version control.
+Hopefully you can see not only how useful they are,
+but also how convenient they can be to maintain once you have the right setup.
+
+**My goal is that you will treat your dotfiles directory as your new home.**
+That may involve training yourself to open this directory whenever you want to edit a dotfile
+as opposed to opening an individual dotfile directly.
+Personally,
+I end up changing my dotfiles so often
+that I have a terminal tab open to this directory all the time.
+You may choose to do the same.
+
+Have fun! ✪
+
+<!--
+One change that you will likely have to make
+is to train yourself to make changes within your dotfiles directory
+
+For many of you,
+you are used to editing your dotfiles directly,
+and the biggest change for you will be to train yourself to open your dotfiles directory.
+
+
+
+a lot more convenient and easy.
+The important thing to remember is that
+**your `dotfiles` directory should be your new home**.
+
+
+Hopefully you can see how easy and convenient it is to [...]
+Now that it's so easy to make changes to these files,
+I suspect that you'll have this directory open all the time.
+[TODO: rewrite]
+-->

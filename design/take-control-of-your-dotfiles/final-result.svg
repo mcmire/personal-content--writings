@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="531px" height="296px" viewBox="0 0 531 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>final-result</title>
+    <desc>Created with Sketch.</desc>
+    <g id="final-result" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="531" height="296"></rect>
+        <g id="Group-Copy" transform="translate(325.000000, 1.000000)">
+            <line x1="17.5" y1="262.5" x2="17.5" y2="296" id="Line-4" stroke="#000000" stroke-linecap="square" stroke-dasharray="1,4"></line>
+            <path d="M45,238 L18,238 M45,181 L18,181" id="Line-3-Copy-4" stroke="#000000" stroke-linecap="square"></path>
+            <line x1="45" y1="124" x2="18" y2="124" id="Line-3-Copy" stroke="#000000" stroke-linecap="square"></line>
+            <line x1="45" y1="67" x2="18" y2="67" id="Line-3" stroke="#000000" stroke-linecap="square"></line>
+            <line x1="17.5" y1="28.5" x2="17.5" y2="262.5" id="Line-2" stroke="#000000" stroke-linecap="square"></line>
+            <g id="File-entry" transform="translate(45.000000, 219.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.zshrc</tspan>
+                </text>
+                <g id="File-icon" stroke="#000000" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2" fill="#F7EED7" fill-rule="evenodd"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="File-entry" transform="translate(45.000000, 162.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.vimrc</tspan>
+                </text>
+                <g id="File-icon" stroke="#000000" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2" fill="#F7EED7" fill-rule="evenodd"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="File-entry" transform="translate(45.000000, 105.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.bash_profile</tspan>
+                </text>
+                <g id="File-icon" stroke="#000000" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2" fill="#F7EED7" fill-rule="evenodd"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="File-entry" transform="translate(45.000000, 48.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.bashrc</tspan>
+                </text>
+                <g id="File-icon" stroke="#000000" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2" fill="#F7EED7" fill-rule="evenodd"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="Folder-entry">
+                <g id="Folder-icon" fill="#F7EED7" fill-rule="nonzero" stroke="#000000" stroke-width="1">
+                    <path d="M2.02454435,28 L32,28 C33.1045695,28 34,27.1045695 34,26 L34,7.13091119 C34,6.02634169 33.1045695,5.13091119 32,5.13091119 L15.4804212,5.13091119 C14.845846,5.13091119 14.2489247,4.82976432 13.871838,4.31938077 L11.2801329,0.811530421 C10.9030462,0.301146865 10.3061249,-1.22679261e-15 9.67154963,0 L2.31729113,0 C1.22223623,1.08933674e-15 0.330796152,0.880632805 0.317439903,1.97560625 L0.0246931153,25.9756062 C0.0112208187,27.0800936 0.895663258,27.9863789 2.0001506,27.9998512 C2.00828147,27.9999504 2.01641287,28 2.02454435,28 Z" id="Path-Copy"></path>
+                </g>
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="44" y="21">dotfiles</tspan>
+                </text>
+            </g>
+        </g>
+        <path id="Line" d="M318,61.5 L332,68.5 L318,75.5 L318,69.5 L162.521605,69.5 L162.521605,67.5 L318,67.5 L318,61.5 Z" fill="#5E50FF" fill-rule="nonzero"></path>
+        <path id="Line-Copy" d="M318,118 L332,125 L318,132 L318,126 L212.782895,126 L212.782895,124 L318,124 L318,118 Z" fill="#5E50FF" fill-rule="nonzero"></path>
+        <path id="Line-Copy-2" d="M318,174.5 L332,181.5 L318,188.5 L318,182.5 L150.808036,182.5 L150.808036,180.5 L318,180.5 L318,174.5 Z" fill="#5E50FF" fill-rule="nonzero"></path>
+        <path id="Line-Copy-3" d="M318,231.5 L332,238.5 L318,245.5 L318,239.5 L150.808036,239.5 L150.808036,237.5 L318,237.5 L318,231.5 Z" fill="#5E50FF" fill-rule="nonzero"></path>
+        <g id="Group" transform="translate(1.000000, 1.000000)">
+            <line x1="17.5" y1="262.5" x2="17.5" y2="296" id="Line-4" stroke="#000000" stroke-linecap="square" stroke-dasharray="1,4"></line>
+            <path d="M45,238 L18,238 M45,181 L18,181" id="Line-3-Copy-4" stroke="#000000" stroke-linecap="square"></path>
+            <line x1="45" y1="124" x2="18" y2="124" id="Line-3-Copy" stroke="#000000" stroke-linecap="square"></line>
+            <line x1="45" y1="67" x2="18" y2="67" id="Line-3" stroke="#000000" stroke-linecap="square"></line>
+            <line x1="17.5" y1="28.5" x2="17.5" y2="262.5" id="Line-2" stroke="#000000" stroke-linecap="square"></line>
+            <g id="Symlink-entry" transform="translate(45.000000, 219.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.zshrc</tspan>
+                </text>
+                <g id="Symlink-icon" stroke="#000000" stroke-dasharray="2,2" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="Symlink-entry" transform="translate(45.000000, 162.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.vimrc</tspan>
+                </text>
+                <g id="Symlink-icon" stroke="#000000" stroke-dasharray="2,2" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="Symlink-entry" transform="translate(45.000000, 105.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.bash_profile</tspan>
+                </text>
+                <g id="Symlink-icon" stroke="#000000" stroke-dasharray="2,2" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="Symlink-entry" transform="translate(45.000000, 48.000000)">
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="45" y="25">.bashrc</tspan>
+                </text>
+                <g id="Symlink-icon" stroke="#000000" stroke-dasharray="2,2" stroke-width="1">
+                    <path d="M0,2 L0,34.75 C1.3527075e-16,35.8545695 0.8954305,36.75 2,36.75 L32.6875,36.75 C33.7920695,36.75 34.6875,35.8545695 34.6875,34.75 L34.6875,7.62237244 C34.6875,7.09193946 34.4767863,6.58323163 34.1017136,6.20815887 L28.4793411,0.585786438 C28.1042684,0.210713681 27.5955605,-5.2585247e-15 27.0651276,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z" id="Path-2"></path>
+                    <line x1="6.79980469" y1="11.7148438" x2="27.7998047" y2="11.7148438" id="Line-3" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="19.7148438" x2="27.7998047" y2="19.7148438" id="Line-4" stroke-linecap="square"></line>
+                    <line x1="6.79980469" y1="27.7148438" x2="17.7998047" y2="27.7148438" id="Line-5" stroke-linecap="square"></line>
+                </g>
+            </g>
+            <g id="Folder-entry">
+                <g id="Folder-icon" fill="#F7EED7" fill-rule="nonzero" stroke="#000000" stroke-width="1">
+                    <path d="M2.02454435,28 L32,28 C33.1045695,28 34,27.1045695 34,26 L34,7.13091119 C34,6.02634169 33.1045695,5.13091119 32,5.13091119 L15.4804212,5.13091119 C14.845846,5.13091119 14.2489247,4.82976432 13.871838,4.31938077 L11.2801329,0.811530421 C10.9030462,0.301146865 10.3061249,-1.22679261e-15 9.67154963,0 L2.31729113,0 C1.22223623,1.08933674e-15 0.330796152,0.880632805 0.317439903,1.97560625 L0.0246931153,25.9756062 C0.0112208187,27.0800936 0.895663258,27.9863789 2.0001506,27.9998512 C2.00828147,27.9999504 2.01641287,28 2.02454435,28 Z" id="Path-Copy"></path>
+                </g>
+                <text id="(home)" font-family="PublicSans-Medium, Public Sans" font-size="18" font-weight="400" fill="#333333">
+                    <tspan x="44" y="21">(home)</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
