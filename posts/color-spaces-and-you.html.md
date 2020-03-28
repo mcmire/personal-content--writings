@@ -109,7 +109,17 @@ tags: color
     * <https://www.inventionandtech.com/content/color-war-1>
   * Color spaces
     * (s)RGB
-    * P53
+      * How is this different from CIE RGB? <https://en.wikipedia.org/wiki/SRGB>
+      * Define: primary, chromaticities, gamma curve, color gamut
+      * There is a SHIT TON of stuff that was considered to create this
+      * This is actually what computer screens are designed to support, not just RGB
+        (RGB defines the components, sRGB defines the color space)
+      * Also see: <https://en.wikipedia.org/wiki/International_Telecommunication_Union>
+    * Adobe RGB: <https://en.wikipedia.org/wiki/Adobe_RGB_color_space>
+    * DCI-P3: <https://en.wikipedia.org/wiki/DCI-P3>
+      * Also Display P3?
+      * Most monitors that want to support more colors than sRGB support this
+    * ICC profiles
 <!--
 * Representing colors using pigment theory
   * Crayola
@@ -130,6 +140,10 @@ tags: color
     * CIE XYZ published in 1931: <https://en.wikipedia.org/wiki/CIE_1931_color_space>
     * Everything is defined relative to the "standard observer":
       <https://en.wikipedia.org/wiki/CIE_1931_color_space#CIE_standard_observer>
+    * **What is white?** <https://en.wikipedia.org/wiki/White_point>
+    * What are illuminants? <https://en.wikipedia.org/wiki/Standard_illuminant>
+      * Why was 2856 K chosen for Illuminant A? Why is B 4874 K and C 6774 K?
+      * Color temperatures: <>
   * HSLuv
 * Representing colors for the web now
   * Now: rgba, hsla
