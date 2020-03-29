@@ -108,22 +108,35 @@ tags: color
       * Mechanical implementation inspired by Nipkow
       * Picture was transmitted wirelessly through radio waves (radio was a new thing, mainly thanks to Marconi)
       * Color version added in 1927
+      * Although ultimately not adopted, this system was used by the video camera that astronauts used in space:
+        <https://www.nms.ac.uk/explore-our-collections/stories/science-and-technology/colour-television/>
     * 1923: Zworykin's patent: <https://ethw.org/Philo_T._Farnsworth>
     * 1924 (or 1933?): Vladimir Zworykin's iconoscope: <https://ethw.org/Vladimir_Zworykin> (RCA)
     * 1925: Zworykin's color TV: <https://www.thoughtco.com/color-television-history-4070934>
     * 1926: Boris Rosing's cathode-ray tube: <https://ethw.org/Milestones:Development_of_Electronic_Television,_1924-1941>
     * 1926: Bell Labs's cathode-ray tube: <https://ethw.org/Milestones:Development_of_Electronic_Television,_1924-1941>
     * 1926: Kenjiro Takayanagi's cathode-ray tube: <https://ethw.org/Milestones:Development_of_Electronic_Television,_1924-1941>
+    * 1926: Baird gives world's first demos of TV to the public:
+      * <https://www.history.com/this-day-in-history/baird-demonstrates-tv>
+      * <https://www.bbc.com/news/uk-england-oxfordshire-38080275>
+      * <https://www.english-heritage.org.uk/visit/blue-plaques/john-logie-baird-television/>
     * 1927: Kenjiro Takayanagi's Braun tube: <https://ethw.org/Milestones:Development_of_Electronic_Television,_1924-1941>
+    * 1927: Baird gives more demos to the public: <http://www.bbc.co.uk/history/historic_figures/baird_logie.shtml>
     * 1928: Baird's field-sequential color TV: <https://en.wikipedia.org/wiki/Field-sequential_color_system>
+    * 1928: Baird demonstrates color TV for the firs time:
+      * <https://www.historytoday.com/archive/months-past/first-colour-television-transmission>
+      * <https://www.english-heritage.org.uk/visit/blue-plaques/john-logie-baird-television/>
     * 1929: Vladimir Zworykin's cathode-ray tube: <https://ethw.org/Vladimir_Zworykin> (RCA)
     * 1930: Kenjiro Takayanagi's Kinescope: <https://ethw.org/Milestones:Development_of_Electronic_Television,_1924-1941>
     * 1930: Philo Farnsworth's patent: <https://ethw.org/Philo_T._Farnsworth>
     * 1935: Kenjiro Takayanagi's Iconoscope: <https://ethw.org/Milestones:Development_of_Electronic_Television,_1924-1941>
     * 1938: RCA (via Georges Valenci) introduces chroma-luminance model: <https://en.wikipedia.org/wiki/Shadow_mask>
+    * 1938: Baird makes first color broadcast: <<https://en.wikipedia.org/wiki/Shadow_mask>>
     * 1938: Werner Flechsig's patent for the shadow mask: <https://en.wikipedia.org/wiki/RGB_color_model#Television>
     * 1939: RCA's NBC holds first TV broadcast at World's Fair: <https://ethw.org/Television>
+    * 1940: First color broadcast made in history from CBS: <https://ethw.org/Peter_Goldmark>
     * 1940: Peter Goldmark's color system developed for CBS: <https://ethw.org/Peter_Goldmark>
+      * CBS gives demos to the NTSC and the public: <https://www.earlytelevision.org/cbs_color_system.html>
     * 1947: Something about Kinescope?: <https://www.thoughtco.com/color-television-history-4070934>
     * 1947: Alfred Schroeder's shadow mask tube patent: <https://www.thoughtco.com/color-television-history-4070934>
       * This was developed independently of Flechsig's solution: <https://en.wikipedia.org/wiki/Shadow_mask#Shadow_mask>
@@ -292,3 +305,92 @@ tags: color
   * Paper that proves color temperature of the Standard Observer that Young and Guild used:
     <https://books.google.com/books?id=zWE1AQAAIAAJ&pg=PA791&lpg=PA791&dq=wright+guild+paper&source=bl&ots=ZGA3hR8DkD&sig=ACfU3U2WAZ8HmYNRwujywIsm5Rg6RwqQKg&hl=en&sa=X&ved=2ahUKEwiCqqPI5L3oAhXVHc0KHRAaD_QQ6AEwCHoECAoQAQ#v=onepage&q=wright%20guild%20paper&f=false>
   * <https://philservice.typepad.com/Wright-Guild_and_CIE_RGB_and_XYZ.pages.pdf>
+
+### (Introduction)
+
+In the 1939 film adaptation of *The Wizard of Oz*,
+Dorothy is staying with her aunt and uncle on their farm,
+when a bad thunderstorm quickly escalates into a menacing tornado.
+In a scene that has likely given many children nightmares,
+the twister closes in on the house where Dorothy has sheltered herself
+along with her dog, Toto,
+picking up the structure and whirling it through the air.
+Dorothy watches out the window in a daze
+as she sees animals and people from her life pass by.
+When the house lands on the ground again and the air goes still,
+Dorothy cautiously scoops up Toto and opens the door to the outside.
+<!--
+stumbles her way through the house to find the exit.
+But instead of opening the door to a barnyard and chickens and horses,
+-->
+But instead of seeing a barnyard and chickens and horses,
+she is shocked to find something else entirely.
+
+This is a magical moment.
+<!--The next moment in the film is nothing short of magic.-->
+Up to now,
+the film has been presented in a monochromatic, sepia-tinted palette —
+black and white —
+to represent the rough, unassuming life of Kansas.
+But as soon as Dorothy opens the door and steps out,
+we realize that just how far away she is from home:
+<!--
+the land of Oz 
+instead of the blasé, monochromatic palette of Kansas,
+we are treated to
+-->
+the land of Oz — and now Dorothy herself —
+are brought to life in vibrant **Technicolor**.
+
+
+we know instantly that 
+As she steps through into the land of Oz,
+she becomes
+
+
+
+This moment in *The Wizard of Oz*
+
+Dorothy clutches Toto as she watches the twister pick up objects
+
+watches as animals and objects go flying in the air and
+Dorothy is left clutching her dog as
+the twister picks up the house she's in.
+and Dorothy is left clutching her dog in the house.
+When the storm has finally passed and the air is quiet again,
+Dorothy opens the door to the outside world
+to reveal that she's "not in Kansas anymore".
+This scene is memorable because up to this point in the film,
+the picture has been in black and white,
+but when the door opens,
+Oz is displayed in full color.
+
+*The Wizard of Oz* was one of the first movies created in "Technicolor",
+a new technology that had been developed prior to World War I
+but was only now being fully utilized by film studios
+(in the same year it would also be used for *Gone with the Wind*).
+Technicolor was the start of true color 
+but it was not the first.
+
+(Maybe now talk about the first color photograph?
+Or just jump straight to James Clerk Maxwell?
+<http://www.openculture.com/2016/08/the-very-first-color-photograph-1861.html)>
+
+[Start with a story about John Logie Baird,
+showing off his color TV to the BBC for the first time.
+Or the first time that Goldman showed off his TV to CBS.]
+On February X, 1934,
+John Smith gave the first demonstration of a color TV to the executives at XYZ Studios.
+It was a prototype of a system that he'd been working on for the past five years
+based on a design by Edward Jones,
+and it worked.
+The executives were captivated as they saw an image of Patty Smith
+dancing on a stage.
+She was wearing a red dress and blue heels,
+and she was twirling around and around.
+After the demonstration, they said it was something they'd never seen before.
+"She was so lifelike and her hair was wispy".
+Later Popular Science hailed John Smith as a genius:
+"These are surely innovative times."
+
+This wasn't the first time that color entered the picture
