@@ -8,6 +8,7 @@ date: 2021-03-27
 tags: color
 ---
 
+<!--
 ### Outline
 
 * Three problems
@@ -165,12 +166,12 @@ tags: color
       * Also Display P3?
       * Most monitors that want to support more colors than sRGB support this
     * ICC profiles
-<!--
+<\!--
 * Representing colors using pigment theory
   * Crayola
   * CMYK
   * Pantone
--->
+-\->
 * Representing colors using perceptual theory
   * CIE
     * [There's a LOT of stuff here, this may end up being the bulk of the article]
@@ -305,8 +306,9 @@ tags: color
   * Paper that proves color temperature of the Standard Observer that Young and Guild used:
     <https://books.google.com/books?id=zWE1AQAAIAAJ&pg=PA791&lpg=PA791&dq=wright+guild+paper&source=bl&ots=ZGA3hR8DkD&sig=ACfU3U2WAZ8HmYNRwujywIsm5Rg6RwqQKg&hl=en&sa=X&ved=2ahUKEwiCqqPI5L3oAhXVHc0KHRAaD_QQ6AEwCHoECAoQAQ#v=onepage&q=wright%20guild%20paper&f=false>
   * <https://philservice.typepad.com/Wright-Guild_and_CIE_RGB_and_XYZ.pages.pdf>
+-->
 
-### (Introduction)
+<!--### (Introduction)-->
 
 In the 1939 film adaptation of *The Wizard of Oz*,
 Dorothy is staying with her aunt and uncle on their farm,
@@ -315,10 +317,10 @@ In a scene that has likely given many children nightmares,
 the twister closes in on the house where Dorothy has sheltered herself
 along with her dog, Toto,
 picking up the structure and whirling it through the air.
-Dorothy watches out the window in a daze
-as she sees animals and people from her life pass by.
-When the house lands on the ground again and the air goes still,
-Dorothy cautiously scoops up Toto and opens the door to the outside.
+Dorothy watches in horror
+as animals and people from her life pass by her window.
+When the house finally lands on the ground again and the air goes still,
+Dorothy scoops up Toto, makes her way to the exit, and opens the door to the outside.
 <!--
 stumbles her way through the house to find the exit.
 But instead of opening the door to a barnyard and chickens and horses,
@@ -326,23 +328,32 @@ But instead of opening the door to a barnyard and chickens and horses,
 But instead of seeing a barnyard and chickens and horses,
 she is shocked to find something else entirely.
 
-This is a magical moment.
+<!--This is a magical moment.-->
 <!--The next moment in the film is nothing short of magic.-->
 Up to now,
-the film has been presented in a monochromatic, sepia-tinted palette —
-black and white —
-to represent the rough, unassuming life of Kansas.
+the film has been presented in
+<!--a monochromatic, sepia-tinted palette —-->
+black and white
+(not an unfamiliar sight to the average filmgoer in the 1930s).
 But as soon as Dorothy opens the door and steps out,
-we realize that just how far away she is from home:
+we instinctively realize just how far away she is from home:
 <!--
-the land of Oz 
+the land of Oz
 instead of the blasé, monochromatic palette of Kansas,
 we are treated to
 -->
 the land of Oz — and now Dorothy herself —
 are brought to life in vibrant **Technicolor**.
 
+### What is color?
 
+Did you know what the Ancient Greeks didn't have a word for the color blue?
+It's true:
+in Homer's *Iliad* and *Odyssey*,
+the sky and water were described as that of wine.
+
+
+<!--
 we know instantly that 
 As she steps through into the land of Oz,
 she becomes
@@ -394,3 +405,4 @@ Later Popular Science hailed John Smith as a genius:
 "These are surely innovative times."
 
 This wasn't the first time that color entered the picture
+-->
