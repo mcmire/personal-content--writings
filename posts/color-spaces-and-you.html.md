@@ -10,6 +10,10 @@ tags: color
 
 ### Outline
 
+* Three problems
+  * How do you recreate another color accurately via combinations of light?
+  * How do we as humans perceive color? What is color?
+  * How do you represent a color mathematically? Are there theoretical colors?
 * What is color?
   * Visible light, i.e. a visible part of the electromagnetic spectrum (show an image)
   * Different frequencies create different colors
@@ -45,8 +49,36 @@ tags: color
       * <https://en.wikipedia.org/wiki/Hermann_Grassmann>
     * 1855: James Clerk Maxwell's spinning top: <https://en.wikipedia.org/wiki/Color_triangle>
       * First attempt to assign a mathematical formula to mixtures of colors, sort of a precursor to CIE
+    * 1901: People already knew about additive and subtractive synthesis, about RGB and about frequencies:
+      <https://books.google.com/books?id=Oks-AQAAMAAJ&pg=PA7&lpg=PA7&dq=stained+gelatine+filters+color+photography&source=bl&ots=c7F54FuGtu&sig=ACfU3U33Fl2qAoEY7EXTSCYq4164ASIVEQ&hl=en&sa=X&ved=2ahUKEwjf98aa9L3oAhVWHM0KHXhsDSoQ6AEwFHoECA0QAQ#v=onepage&q=stained%20gelatine%20filters%20color%20photography&f=false>
     * 1956: Gunnar Svaetichin: First actual physiological evidence of photoreceptors <https://en.wikipedia.org/wiki/Trichromacy>
     * 1965: More evidence <http://hyperphysics.phy-astr.gsu.edu/hbase/vision/colcon.html#c1>
+  * <https://en.wikipedia.org/wiki/Color_vision>
+  * Color is subjective — it doesn't map 1-to-1 with the electromagnetic spectrum
+    * Not all languages have the same words for colors:
+      <https://www.youtube.com/watch?v=2TtnD4jmCDQ>
+    * The Ancient Greeks didn't have a word for blue:
+      <https://www.wnycstudios.org/podcasts/radiolab/episodes/211119-colors>
+    * There are four women in the world who can see many more colors than the average human:
+      <https://www.bbc.com/future/article/20140905-the-women-with-super-human-vision>
+  * Here's an important idea:
+    There's discrete quanta of light that objects give off.
+    That's how different colored light used to be created without the use of filters or gels.
+    For instance, neon, a chemical element that is a gas at room temperature,
+    gives off bright red when electricity is run through it.
+    This is what spectrometry looks for.
+    (See: <https://en.wikipedia.org/wiki/History_of_spectroscopy>)
+    And then, there's the cones in our eyes that are receptive to a spectrum of frequencies
+    and get stimulated in varying degrees.
+    So there's a mapping between the spectral distribution of an object
+    and the resulting stimulation of cones.
+    That function is irreversible,
+    because there are many spectral distributions
+    that result in the same response.
+    So if you want to reproduce a color
+    all you have to do is stimulate the cones in the same way —
+    doesn't matter what color the actual object is.
+    <https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a>
 * Additive-color theory
   * We've known that visible light contains different colors; Newton documented this in his *Opticks*
   * Goethe's *Theory of Colors* — psychology of colors: <https://archive.org/details/goethestheoryco01goetgoog/page/n7/mode/2up>
@@ -113,7 +145,7 @@ tags: color
       * Define: primary, chromaticities, gamma curve, color gamut
       * There is a SHIT TON of stuff that was considered to create this
       * This is actually what computer screens are designed to support, not just RGB
-        (RGB defines the components, sRGB defines the color space)
+        (RGB defines the components, sRGB defines the color space [but there's also CIE RGB])
       * Also see: <https://en.wikipedia.org/wiki/International_Telecommunication_Union>
     * Adobe RGB: <https://en.wikipedia.org/wiki/Adobe_RGB_color_space>
     * DCI-P3: <https://en.wikipedia.org/wiki/DCI-P3>
@@ -128,22 +160,108 @@ tags: color
 -->
 * Representing colors using perceptual theory
   * CIE
+    * [There's a LOT of stuff here, this may end up being the bulk of the article]
     * International Commission on Illumination formed in 1913
       as successor to CIP (International Commission on Photometry) founded in 1900
       (<https://en.wikipedia.org/wiki/International_Commission_on_Illumination>)
+  * CIE RGB
     * CIE RGB was developed first based on experiments done by William David Wright and John Guild:
       <https://en.wikipedia.org/wiki/CIE_1931_color_space#Definition_of_the_CIE_XYZ_color_space>
+      * Both of them published papers in the *Transactions of the Optical Society*
+      * J. Guild was doing research at the Optics Department at the National Physical Laboratory,
+        W. D. Wright was doing research for the Medical Research Council,
+        and more generally for the Technical Optical Department of the Imperial College.
+        Each knew about each other's work in this way.
+      * These papers aren't free to access but can be read via deepdyve.com (monthly sub).
+        The first paper by Guild seems to be *The Transformation of Trichromatic Mixture Data*,
+        published in 1924
+        (<https://www.deepdyve.com/lp/iop-publishing/the-transformation-of-trichromatic-mixture-data-algebraic-methods-UsQRB2AZYN?articleList=%2Fsearch%3Fauthor%3DJ.%2BGuild%26page%3D2%26sort%3Doldest>)
+        the first paper by Wright seems to be *A Trichromatic Colorimeter with Spectral Primaries*,
+        published in 1928
+        (<https://www.deepdyve.com/lp/iop-publishing/a-trichromatic-colorimeter-with-spectral-primaries-LVbXygslit?articleList=%2Fsearch%3Fauthor%3DW.%2BD.%2BWright>).
+      * Some of this was based on work by F. E. Ives and H. E. Ives,
+        but also indirectly Lovibond, Abney, etc.
+      * Guild and Wright mention reference colors in their experiments,
+        but how did they produce these?
+        Did they electrify gases to produce colors?
+        Probably not,
+        as this technique was not used in 1901 —
+        see British Journal of Photograph, Vol. 48, y p. 7
+        <https://books.google.com/books?id=Oks-AQAAMAAJ&pg=PA7&lpg=PA7&dq=stained+gelatine+filters+color+photography&source=bl&ots=c7F54FuGtu&sig=ACfU3U33Fl2qAoEY7EXTSCYq4164ASIVEQ&hl=en&sa=X&ved=2ahUKEwjf98aa9L3oAhVWHM0KHXhsDSoQ6AEwFHoECA0QAQ#v=onepage&q=stained%20gelatine%20filters%20color%20photography&f=false>.
+        It was probably glass containers with either stained collodium, stained gelatine, or a colored fluid (using chemicals to achieve a pigment).
+      * Using collodion was used in the photographic world.
+        One such figure was Vogel, the "founder of orthochromatic photography", who published a paper about collodion in 1873
+        (See The Photographic Times, Vol. 20, p. 270:
+        <https://www.google.com/books/edition/The_Photographic_Times/irYaAAAAYAAJ?hl=en&gbpv=1&dq=stained+collodium&pg=PA271&printsec=frontcover>)
+      * Collodion for photography was known since 1862,
+        see a paper by Thomas Sutton:
+        <https://www.google.com/books/edition/The_Collodion_Processes_Wet_and_Dry/Rz53ELLAVzQC>
+      * Gelatine (emulsions and then dry plates) replaced collodion as a means of coloring light in 1871
+        by Richard L. Maddox, see <https://en.wikipedia.org/wiki/Dry_plate>
+      * Anyway, the paper in which Guild really gets into CIE stuff is
+        *The C.I.E. Colorimetric Standards and Their Use*,
+        Trans. Opt. Soc., Vol. 33, 1931-1932 —
+        by this point Guild had become a part of the CIE
+      * The standard illuminant they used was based on the N.P.L. Standard White Light.
+        Where did this come from?
+        It seems like Guild and Young used some preliminary data on this illumant in their studies,
+        but the data on the illuminant wasn't actually published until 1931.
+        We also know from this paper that Guild actually used both a gas-filled lamp AND a liquid filter.
+        (see Davis/Gibson, Bureau of Standards Journal of Research, Vol. 7, No. 5, p. 971
+        <https://archive.org/details/relativespectral7579davi/page/n3/mode/2up>)
     * It was also based on specific wavelengths of light:
       700 nm (red), 546.1 nm (green), and 435.8 nm (blue)
       * 546.1 nm and 435.8 nm were based on the spectrometry of mercury,
         700 nm was just an even number chosen based on the existing knowledge of the frequency range of red
+      * How did we know what the spectrum of mercury was?
+      * In 1815 Fraunhofer used diffraction grating to split light and record spectra of different sources, such as the sun and different flames;
+        Herschel, Talbot, Wheatstone, Foucault, and Angstrom all worked on this as well,
+        but Bunsen and Kirchhoff used Fraunhofer's work to connect frequencies to specific chemical compounds and elements.
+        They invented the spectroscope (<https://en.wikipedia.org/wiki/Gustav_Kirchhoff)>
+        and published a paper in 1860 that detailed the spectra of six elements.
+        [What were they? The paper is in German]
+        <https://en.wikipedia.org/wiki/History_of_spectroscopy>
     * CIE XYZ published in 1931: <https://en.wikipedia.org/wiki/CIE_1931_color_space>
     * Everything is defined relative to the "standard observer":
       <https://en.wikipedia.org/wiki/CIE_1931_color_space#CIE_standard_observer>
     * **What is white?** <https://en.wikipedia.org/wiki/White_point>
     * What are illuminants? <https://en.wikipedia.org/wiki/Standard_illuminant>
       * Why was 2856 K chosen for Illuminant A? Why is B 4874 K and C 6774 K?
-      * Color temperatures: <>
+    * It seems that the idea of a color temperature was well known by 1932 — when did they come up with the Kelvin nomenclature?
+      * Color temperatures: <https://en.wikipedia.org/wiki/Color_temperature>
+      * Although Kelvin did some experiments with carbon,
+        he didn't name the color temperature scale after himself
+        <https://www.birket.com/reading-room/technical-library/lord-kelvin-never-saw-the-light-understanding-color-temperature-tom-king-2012/>
+      * Something to do with black-body radiation:
+        Black bodies were being studied in the late 19th century —
+        Kirchoff coined the term: <https://en.wikipedia.org/wiki/Gustav_Kirchhoff>
+        also see Boltzmann, Wien, Langley
+        <http://galileo.phys.virginia.edu/classes/252/black_body_radiation.html>
+      * The temperature of the Sun was determined in the early 1800s by Josef Stefan.
+        It was later experimentally proven in 1888 and 1904:
+        <https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law#Temperature_of_the_Sun>
+      * In 1905 Max Planck developed a new theory of black-body radiation
+        that gave rise to the idea of quanta:
+        <https://en.wikipedia.org/wiki/Ultraviolet_catastrophe>
+        <https://en.wikipedia.org/wiki/Electromagnetic_radiation#Particle_model_and_quantum_theory>
+      * Josef Stefan and Ludwig Boltzmann developed a law that correlated the temperature of a black body and the power it generates:
+        <https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law>
+        This is interesting, but is not as useful as:
+      * **Planck's law**:
+        *This* is the law that relates temperature, frequency of radiation,
+        and the spectral flux (i.e. power over time) of a black body.
+        In other words,
+        although a black body can produce radiation at all kinds of frequencies,
+        that radiation will peak (in terms of energy produced)
+        at certain frequencies for certain temperatures.
+        (You can derive Stefan-Boltzmann's law and Wien's approximation from this.)
+        See: <https://en.wikipedia.org/wiki/Planck%27s_law>
+      * P.S. The model of the atom we know today wasn't fully discovered until 1913 by Bohr:
+        <https://en.wikipedia.org/wiki/Bohr_model>
+    * What is the "Planckian locus"? When did this enter the vernacular?
+  * CIE L*a*b*
+    * Based on work by MacAdam, then Richard Hunter
+      <https://www.xrite.com/blog/history-of-color-measurement>
   * HSLuv
 * Representing colors for the web now
   * Now: rgba, hsla
@@ -160,3 +278,17 @@ tags: color
   * http://dtpstudio.de/atlas/english/help/english/colourharmony_complementary.htm
   * https://en.wikipedia.org/wiki/Munsell_color_system
   * http://pteromys.melonisland.net/munsell/
+  * https://wolfcrow.com/what-is-the-difference-between-cie-lab-cie-rgb-cie-xyy-and-cie-xyz/
+    * This site has a lot of nice articles about colors and color spaces,
+      but as soon as you show the CIE chromaticity diagram,
+      I feel like people's eyes are going to glaze over.
+      Is there a way that we can make an interactive thing
+      and build up the CIE color space from first principles?
+  * https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a
+    * This is a decent article as well,
+      and I like the pictures,
+      but it gets into complicated topics way too fast.
+      Is there a way to start simpler?
+  * Paper that proves color temperature of the Standard Observer that Young and Guild used:
+    <https://books.google.com/books?id=zWE1AQAAIAAJ&pg=PA791&lpg=PA791&dq=wright+guild+paper&source=bl&ots=ZGA3hR8DkD&sig=ACfU3U2WAZ8HmYNRwujywIsm5Rg6RwqQKg&hl=en&sa=X&ved=2ahUKEwiCqqPI5L3oAhXVHc0KHRAaD_QQ6AEwCHoECAoQAQ#v=onepage&q=wright%20guild%20paper&f=false>
+  * <https://philservice.typepad.com/Wright-Guild_and_CIE_RGB_and_XYZ.pages.pdf>
