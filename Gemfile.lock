@@ -1,24 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    erubis (2.7.0)
-    haml (5.1.2)
-      temple (>= 0.8.0)
+    haml (6.0.7)
+      temple (>= 0.8.2)
+      thor
       tilt
-    html2haml (2.2.0)
-      erubis (~> 2.7.0)
-      haml (>= 4.0, < 6)
-      nokogiri (>= 1.6.0)
-      ruby_parser (~> 3.5)
+    hpricot (0.8.6)
+    html2haml (1.0.0.beta.1)
+      haml (>= 3.2.0.beta.1)
+      hpricot
     mini_portile2 (2.8.0)
-    nokogiri (1.13.4)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     racc (1.6.0)
-    ruby_parser (3.14.2)
-      sexp_processor (~> 4.9)
-    sexp_processor (4.14.1)
     temple (0.8.2)
+    thor (1.2.1)
     tilt (2.0.10)
 
 PLATFORMS
