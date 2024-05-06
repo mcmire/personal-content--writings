@@ -1,0 +1,6 @@
+{
+  "name": "personal-content--writings",
+  "version": "20240423.0.0",
+  "packageManager": "yarn@4.1.0",
+  "private": true
+}
