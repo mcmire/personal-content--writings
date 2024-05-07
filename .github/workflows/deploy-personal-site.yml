@@ -29,5 +29,5 @@ jobs:
                 writings_repo_ref: process.env.GITHUB_REF
               }
             })
-          env:
-            VERCEL_ENVIRONMENT: ${{ steps.vercel-environment.outputs.VERCEL_ENVIRONMENT }}
+        env:
+          VERCEL_ENVIRONMENT: ${{ steps.vercel-environment.outputs.VERCEL_ENVIRONMENT }}
