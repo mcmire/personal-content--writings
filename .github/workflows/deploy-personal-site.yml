@@ -26,7 +26,7 @@ jobs:
               ref: 'main',
               inputs: {
                 environment: process.env.VERCEL_ENVIRONMENT,
-                writings_repo_ref: process.env.GITHUB_REF
+                writings_repo_ref: process.env.GITHUB_REF_NAME
               }
             })
         env:
