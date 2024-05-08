@@ -37,6 +37,7 @@ jobs:
             })
         env:
           VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
+      - uses: actions/checkout@v4
       - name: Add comment to pull request (if applicable)
         if: ${{ github.event_name == 'pull_request' }}
         run: |
