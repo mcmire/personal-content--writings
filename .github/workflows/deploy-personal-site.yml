@@ -31,7 +31,7 @@ jobs:
               workflow_id: 'deploy-to-vercel.yml',
               ref: 'main',
               inputs: {
-                environment: process.env.VERCEL_ENVIRONMENT,
+                vercel_environment: process.env.VERCEL_ENVIRONMENT,
                 writings_repo_ref: process.env.GITHUB_REF_NAME
               }
             })
