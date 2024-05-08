@@ -9,8 +9,7 @@ on:
       - edited
       - synchronize
 jobs:
-  determine-vercel-environment:
-    name: Determine Vercel environment
+  deploy-personal-site:
     runs-on: ubuntu-latest
     steps:
       - id: determine-vercel-environment
@@ -21,32 +20,28 @@ jobs:
           else
             echo "VERCEL_ENVIRONMENT=preview" >> "$GITHUB_OUTPUT"
           fi
-    outputs:
-      VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
-  deploy-to-vercel:
-    needs:
-      - determine-vercel-environment
-    name: Deploy elliotwinkler.com in ${{ needs.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }} mode
-    uses: mcmire/elliotwinkler.com/.github/workflows/deploy-to-vercel.yml@main
-    with:
-      vercel_environment: ${{ needs.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
-      writings_repo_ref: ${{ github.ref_name }}
-    secrets:
-      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-  add-post-deployment-comment:
-    name: Add comment to pull request (if applicable)
-    needs:
-      - determine-vercel-environment
-      - deploy-to-vercel
-    if: ${{ github.event_name == 'pull_request' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add comment to pull request
+      - name: Deploy elliotwinkler.com in ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }} mode
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.DEPLOY_PERSONAL_SITE_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'mcmire',
+              repo: 'elliotwinkler.com',
+              workflow_id: 'deploy-to-vercel.yml',
+              ref: 'main',
+              inputs: {
+                environment: process.env.VERCEL_ENVIRONMENT,
+                writings_repo_ref: process.env.GITHUB_REF_NAME
+              }
+            })
+        env:
+          VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
+      - name: Add comment to pull request (if applicable)
+        if: ${{ github.event_name == 'pull_request' }}
         run: |
           gh pr comment "$PR_NUMBER" --body ":rocket: A $VERCEL_ENVIRONMENT deployment has been created for elliotwinkler.com. You can view the status of the deployment here: <https://github.com/mcmire/elliotwinkler.com/actions/workflows/deploy-to-vercel.yml>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.issue.number }}
-          VERCEL_ENVIRONMENT: ${{ needs.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
+          VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
