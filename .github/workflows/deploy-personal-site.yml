@@ -37,13 +37,16 @@ jobs:
             })
         env:
           VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
-      - uses: actions/checkout@v4
       - name: Add comment to pull request (if applicable)
         if: ${{ github.event_name == 'pull_request' }}
-        run: |
-          gh pr checkout "$PR_NUMBER" && \
-            gh pr comment "$PR_NUMBER" --body ":rocket: A $VERCEL_ENVIRONMENT deployment has been created for elliotwinkler.com. You can view the status of the deployment here: <https://github.com/mcmire/elliotwinkler.com/actions/workflows/deploy-to-vercel.yml>"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `:rocket: A ${process.env.VERCEL_ENVIRONMENT} deployment has been created for elliotwinkler.com. You can view the status of the deployment here: <https://github.com/mcmire/elliotwinkler.com/actions/workflows/deploy-to-vercel.yml>`
+            })
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.issue.number }}
           VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
