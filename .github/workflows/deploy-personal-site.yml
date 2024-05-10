@@ -32,7 +32,9 @@ jobs:
               ref: 'main',
               inputs: {
                 vercel_environment: process.env.VERCEL_ENVIRONMENT,
-                writings_repo_ref: process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF_NAME
+                writings_repo_ref: process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF_NAME,
+                referring_repo_name: context.repo(),
+                referring_repo_issue_number: context.issue().number,
               }
             })
         env:
