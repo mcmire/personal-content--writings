@@ -1,0 +1,156 @@
+---
+title: Behind the Site
+publishDate: 2024-07-07
+---
+import lostincodeNet01 from "./behind-the-site/lostincode.net/01-initial-commit.webp";
+import lostincodeNet04 from "./behind-the-site/lostincode.net/04-font-change.webp";
+import lostincodeNet07 from "./behind-the-site/lostincode.net/07-fixing-the-font-face-stuff.webp";
+import lostincodeNet08 from "./behind-the-site/lostincode.net/08-revamp-timez.webp";
+import lostincodeNet09 from "./behind-the-site/lostincode.net/09-use-georgia.webp";
+import lostincodeNet10 from "./behind-the-site/lostincode.net/10-style-hrs.webp";
+import mcmireMe2 from "./behind-the-site/mcmire.me/02-use-puma-to-run-the-server.webp";
+import mcmireMe3 from "./behind-the-site/mcmire.me/03-restyle-layout.webp";
+import mcmireMe4 from "./behind-the-site/mcmire.me/04-use-locally-loaded-fonts.webp";
+import mcmireMe5 from "./behind-the-site/mcmire.me/05-reskin-the-entire-site.webp";
+
+With the launch of this new site, I thought it might be interesting to give some background and history on the other versions of this site that have existed, how they worked, and how the new one works as well.
+
+## lostincode.net (2008-2015)
+
+I got my first programming job in 2007, and it was like drinking from a firehose. I was slowly gaining experience in Ruby on Rails, server administration, version control, testing, and more, and I wanted to start a blog. In some ways it was because there were a bunch of people that I read frequently and I wanted to be a part of the community, but mostly, I wanted to not forget what I'd learned so I wouldn't make the same mistakes.
+
+I was already quite familiar with installing custom software on servers, and after a time I stumbled upon [SimpleLog](https://web.archive.org/web/20080410025412/http://www.simplelog.net:80/), written by Garrett Murray. I liked how simple the posting interface looked, and it was a nice plus that it was written in the same framework I was using at work. I bought [https://lostincode.net](https://web.archive.org/web/20100219124225/http://blog.lostincode.net:80/) through Dreamhost, `scp`ed the app to the server, and started writing.
+
+By 2010, I wanted to gain more control over where my content lived. I tried a few different options, but eventually I chose [Padrino](https://web.archive.org/web/20110203035013/http://www.padrinorb.com/), which combined the tiny footprint of [Sinatra](https://web.archive.org/web/20090301004501/http://www.sinatrarb.com/) with the comfortable conveniences of Rails. Instead of storing posts in a database as I'd done with SimpleLog, I exported all of them to text files, converted them to Markdown, and kept them directly in the repo. Each file had frontmatter (similar to Jekyll) which stored the title, slug, date, and tags. (As a plus, this setup also allowed me to port over content I'd been keeping in a private wiki.)
+
+The implementation was relatively straightforward: when the visitor navigated to a certain path, the app would read a slug from the URL, dynamically look up a file with the same name, convert it to HTML using [Kramdown](https://web.archive.org/web/20100502014605/http://kramdown.rubyforge.org/), wrap it in a [Haml](https://web.archive.org/web/20120515085903/http://haml.info/) layout, and serve it. Deployment was incredibly easy, too: because I used [Heroku](https://web.archive.org/web/20101102131320/http://heroku.com/) to host the site and [GitHub](https://web.archive.org/web/20101103202749/https://github.com//) to host the code, each time I pushed a new change, it was live within a few minutes — no more shelling into servers or manually dragging files into an FTP client! Also, I used version 0.9.9 of [Bundler](https://web.archive.org/web/20100404072855/http://gembundler.com/), which was a new tool being developed to better manage Ruby dependencies. (You can check out the first commit [here](https://github.com/mcmire/lostincode.net/commit/3e6ab19fb73094517aa04b94da45823cb6ae35f1).)
+
+I developed the site further through 2015, adding support for math using [MathJax](https://web.archive.org/web/20240305085045/http://www.mathjax.org/), substituting Padrino with raw Sinatra, implementing views using [Mustache](https://github.com/mustache/mustache) and plain old Ruby instead of ERB, upgrading from CSS to [Sass](https://web.archive.org/web/20100212164710/http://sass-lang.com/) and from JavaScript to [CoffeeScript](https://web.archive.org/web/20100301132006/http://jashkenas.github.com/coffee-script/), and replacing jQuery with [Ender](https://web.archive.org/web/20110417045532/http://ender.no.de/) ([microframeworks](https://web.archive.org/web/20110504235242/http://microjs.com/) were hot back then). These changes also necessitated a transpilation step, and [Jammit](https://web.archive.org/web/20100305120319/http://documentcloud.github.com/jammit) proved to be very capable. Evolving the design, I experimented with using a [vertical rhythm](https://web.archive.org/web/20100318123935/https://24ways.org/2006/compose-to-a-vertical-rhythm/), adding a grid that would appear when a certain key combination was pressed.
+
+As time went on, I became more dissatisfied about the way my site looked and what I was publishing online. I remember receiving a nice email from [Mislav Marohnić](https://mislav.net/) complimenting me on a recent post I'd written as well as the simplicity of the design, but undeterred, I kept fiddling with the site anyway. Having stumbled upon Magnus Holm's [Timeless repository](https://web.archive.org/web/20110519094816/http://timelessrepo.com/timeless), I copied the concept, dividing my site into two categories, static pages and dated posts. When that didn't feel right, though, I hid the majority of my content. I was still writing — I have plenty of drafts saved — but I had a lot of trouble finishing anything, and so much of it remained unpublished.
+
+In all, I wrote 45 posts and 31 pages — with only 12 posts ultimately visible — and redesigned the site 3 times.
+
+<Gallery
+  caption="Screenshots of lostincode.net"
+  images={
+    [
+      { src: lostincodeNet01, caption: "lostincode.net (3/30/2010)" },
+      { src: lostincodeNet04, caption: "lostincode.net (10/29/2010)" },
+      { src: lostincodeNet07, caption: "lostincode.net (12/5/2010)" },
+      { src: lostincodeNet08, caption: "lostincode.net (2/19/2011)" },
+      { src: lostincodeNet09, caption: "lostincode.net (10/28/2011)" },
+      { src: lostincodeNet10, caption: "lostincode.net (5/3/2012)" }
+    ]
+  }
+/>
+
+## mcmire.me (2015-2024)
+
+For some time afterward I mentored at a local code school, and while this was happening I got the idea to write a course which would help developers level up their JavaScript skills. I wanted to write a series of tutorials which guided the reader through implementing the game Minesweeper, starting from scratch first and then using frameworks which were popular at the time in later posts.
+
+I didn't want to use my existing site to host this course, however. I didn't like how complicated it was, and I felt I needed to simplify it first.
+
+I had used [Middleman](https://web.archive.org/web/20150815193616/https://middlemanapp.com/) for a project at work — [my company](https://web.archive.org/web/20150905065629/https://thoughtbot.com/) had also helped to redesign the site — and I felt that it offered some big improvements. Not only did this allow me to trade in my custom-built web framework with something tried and true, but since Middleman came with a blogging module, I no longer had to add routes for viewing posts, track where posts were located on the filesystem and convert them to Markdown dynamically, add logic to exclude draft posts from output only in production, or even manually add an RSS feed. All of this was built in!
+
+Middleman also integrated with Sprockets directly, so I didn't need to use or configure Jammit anymore, either. For CSS, I again borrowed from company projects used [Bourbon](https://web.archive.org/web/20150905083339/http://bourbon.io/) and [Bitters](https://web.archive.org/web/20150905171520/http://bitters.bourbon.io/). This allowed me to strip out some boilerplate code and arrange my CSS in a more modular structure. I also continued to use a vertical rhythm system as in the previous iteration, and installed the same utility I'd written before, again written in CoffeeScript, to assist with lining elements up. For JavaScript, I made use of [Bower](https://web.archive.org/web/20150826053104/https://bower.io/) to install and manage dependencies instead of copying them into the project manually as I'd done previously.
+
+Since I was now using a proper static site generator, I decided not to reuse Heroku for deployment. I wanted my site to load as fast as possible, and somehow I found that S3 had a static website hosting feature. I had already begun to use it for images and that sort of thing, so it felt like a natural fit. Someone had even made a [Middleman plugin](https://github.com/fredjean/middleman-s3_sync) that allowed me to push files to S3, so that way I could still use one easy command to deploy the site.
+
+I embraced the handle I use everywhere, registered `mcmire.me` along with a new repo, and pushed up the site along with the first post in the Minesweeper series. (See [this commit](https://github.com/mcmire/elliotwinkler.com/tree/c1b45d0f840bd163ed2c6ef9c794854eb49bf8ac).)
+
+Over the next 2 years, I worked hard on the JavaScript course. I wanted each post to be fairly bite-size. I figured that even if a reader might not understand everything, they could follow along, and everything would be explained along the way. In short, I wanted it to be the best thing I'd written — on par with professional courses.
+
+In hindsight, I didn't anticipate how much the JavaScript community would change. The release of ES2015 seemed to open the floodgates to new ways of doing things. I had begun writing the course using the most popular library at the time, jQuery, and all of a sudden no one was using it, and I felt like I would be leading people astray if I even mentioned it. It was no longer clear how I should proceed.
+
+I tried fiddling with the site as before, but I felt a little defeated, so I ultimately stopped writing.
+
+<Gallery
+  caption="Screenshots of mcmire.me"
+  images={
+    [
+      { src: mcmireMe2, caption: "mcmire.me (8/23/2015)" },
+      { src: mcmireMe3, caption: "mcmire.me (10/25/2015)" },
+      { src: mcmireMe4, caption: "mcmire.me (11/8/2015)" },
+      { src: mcmireMe5, caption: "mcmire.me (9/6/2016)" },
+    ]
+  }
+/>
+
+## elliotwinkler.com (2024-)
+
+The journey for _this_ site begins in 2020, when I started thinking about making a writing app.
+
+I'd been a consistent user of [Simplenote](https://simplenote.com) for a number of years. I really liked it because it was very minimal and, thus, very quick to load. If I had a thought, I could pull out my phone, write it down, and go back to what I was doing within a few seconds.
+
+However, I would continually run into issues as soon as I began to use it for organizing information. I'd start to make lists of lists from research I was doing, and because Simplenote's editor was basically one big box for text with no affordances for formatting, large documents with a lot of information became a chore to manage.
+
+So, after enough frustration, I embarked on a multiple-year journey to find a more capable app that I could use not only to record everything that was in my head, but also to write pieces and perhaps even to publish them more easily. That story deserves its own post — but in short, after trying out Notion for a few months, building a blog admin UI with [Sanity](https://www.sanity.io), creating my own app using Flutter and then React Native, and playing around with [Logseq](https://logseq.com/), I eventually settled on [Obsidian](https://obsidian.md).
+
+I ported all of my Simplenotes over, installed some useful plugins, worked out a mechanism to synchronize notes between my computer and phone, and I began to build out my own private world. As time went on, though, I felt the pull to get back into writing again.
+
+In the meantime, a few technologies emerged that piqued my interest, and I brought them together to create the site you now see:
+
+### Astro
+
+Back in the `lostincode.net` days, I had become tired of needing to coordinate and maintain separate build processes: one to transpile JS, one to transpile CSS, and one to process Haml and create the final build. I'd simplified that some for `mcmire.me` in switching to Middleman, because I could use Webpack to handle the frontend assets — but I still felt like the system I'd put together was more complicated than it needed to be.
+
+I knew that it still made sense to use a static site generator, and I secretly hoped that it could be fully JavaScript-based, but I hadn't found anything that saddled the line between simple and capable. Luckily, I heard about [Astro](https://astro.build) through Twitter and it struck a chord. It seemed like an elegant combination of other great technologies: it borrowed filesystem-based routing and server components from Next.js, the batteries-included, zero-configuration philosophy from Parcel, the modular all-in-one file format from Vue, and the YAML front matter from Jekyll. Plus, I liked the direction of the project — that by default, it generated pure HTML and no JavaScript whatsoever, therefore keeping the published version of the site extremely fast.
+
+### Tailwind
+
+I've never hated writing CSS, but I can't say I've ever loved it, either. Part of the problem, I think, is that different people have come up with different approaches to writing CSS over its lifetime, and I've never been truly happy with any of them.
+
+When I read [Adam Wathan's essay](https://web.archive.org/web/20240606160255/https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) on how he decided that utility-first was a superior approach to writing CSS and how this line of thinking led to [Tailwind](https://tailwindcss.com/), I connected with it on so many levels, and after trying Tailwind and finding it to be quite enjoyable, I began using it on all of my side projects thereafter.
+
+I was happy to find that Astro also supported Tailwind out of the box, too.
+
+### MDX
+
+One thing I didn't like about my site is the fact that if I wanted to display a custom "block" in a blog post — a specially styled aside, a file tree, etc. — I had to drop down to HTML and CSS when writing. Although this wasn't a sin from a standards perspective, it felt clunky, and the block I wanted to display demanded a certain structure of elements — a nested `ol`, for instance — I was limited to HTML and didn't have any way to simplify that structure.
+
+Plus, if I wanted to make some part of a blog post interactive, then I'd have to use Kramdown-specific Markdown syntax in the post to assign a class to a block, so I could then hook into it from the JavaScript side and directly modify the DOM. While this allowed me to keep my Markdown agnostic of my JavaScript code, that didn't feel right, either.
+
+Perhaps I could have solved some problems by using web components and creative use of HTML attributes. But I felt like there ought to be a more elegant solution. Wouldn't it be great if I could embed "React syntax" — that is, JSX — _inside_ of Markdown?
+
+I guess I wasn't the only one who wanted this, because not long after, I found out about [MDX](https://mdxjs.com/), and it was exactly what I was looking for. Luckily, Astro supported it out of the box as well.
+
+### SolidJS
+
+Speaking of interactive elements within blog posts, I initially intended to power them via React, because I've used for many of my professional and personal projects for many years and so that's what I'm familiar with. However, I ended up running into some problems when using it in conjunction with Astro. Astro has a unique feature among static site generators: it renders everything on the server-side by default, but allows for the use of multiple frontend frameworks. To accommodate this flexibility, it wraps framework-specific components in an ["island"](https://docs.astro.build/en/concepts/islands/). This special treatment has some interesting consequences. For one, it means that if the framework in question has a "context" feature, it won't work as advertised; Astro recommends using an external library, such as their `nanostores` package, as a replacement. In addition, Astro will run islands once at build time to generate an initial reprsentation of HTML, and then it will run them again on the client as many times as the framework desires. In the case of React, specifically, I found that this behavior caused components with `useEffect` to be rendered incorrectly and violate the "Rules of Hooks" that React enforces.
+
+This confused me for a while, and I experimented with the other frameworks that Astro claimed to support, including Vue, to no avail. Then I tried Solid, and I realized that it solved both problems very well. Solid borrows ideas from React, so it looks similar from a syntax perspective, but is implemented completely differently. It doesn't re-run a component function each time that component is rendered. Instead, it asks the author to define more granular sections of code in which it will track dependencies automatically and re-run those sections when the dependencies change. This means that it doesn't need to create a virtual DOM, reducing complexity, and it also doesn't place rules around where hooks need to be used. Lastly, it also defines a store API  can be used to easily share data between components, solving the context problem.
+
+### Vercel
+
+I didn't want to keep using S3 for deployment as I'd done with my previous site. To be honest, I was sick of dealing with the complexity of AWS. I missed the simplicity of Heroku, where you could push changes to a branch, and within 30 seconds or so, your changes would be live.
+
+I'd used [Vercel](https://vercel.com/) for some other side projects, and I was incredibly pleased — it felt like the Heroku of JavaScript projects. It seemed like an obvious choice to switch to.
+
+### GitHub Actions
+
+At my [job](https://metamask.io) we use GitHub Actions for everything: linting, publishing packages, deploying documentation, auditing code, etc. I wanted to make publishing my site as easy as possible. Vercel mimics Heroku in the sense that when you make a new project, if your code is hosted on GitHub, it will offer to install an integration which listens to your primary branch and automatically deploy when a push occurs. It even goes one step further and offers preview deployments, so that you can test out changes on a temporary URL before they go live. Cool!
+
+Due to how I'd set up my site, however, Vercel's GitHub integration wasn't going to work as advertised. Having a separate content repo made deployment slightly complicated, as I needed to clone that repo and link it with my site repo before I could build the site. I could have written a script that did the requisite linking and had Vercel run this on my behalf, but the cloning step required a GitHub token that I wasn't able to pass to Vercel.
+
+Fortunately, Vercel offers a GitHub action, so I reimplemented Vercel's GitHub integration using a workflow (thereby allowing me to set the proper token). As a plus, since I had control now, I could create automatic preview deployments for pull requests, so that I could see new posts before they went live.
+
+### Putting it all together
+
+With the background out of the way, here's how the new site works:
+
+- I use two separate repos: the "shell" of the site is kept in one repo, and the content is kept in another.
+- Each post in the content repo is an MDX file and is integrated into the site repo using Astro's content collection feature.
+- I have to run a script once to symlink the content repo locally, but once I do this then I can see posts I've written locally.
+- I use Tailwind for CSS. Styling the "shell" of the site is done mostly by assigning CSS classes to parts of the HTML, but styling posts works a bit differently, since Markdown isn't HTML, and I don't want my content to have any knowledge of how it's presented. So in that case I use judicious use of Tailwind's `@apply` feature to broadly specify how elements should look like within posts. It's something I want to clean up later, but it works for now.
+- I've extended the default MDX and Markdown by enabling some Remark and Rehype plugins which ensure that code blocks are themed appropriately and headers have permalinks. There are a lot of plugins, and it's very possible I might add some more later. 
+- I also use Solid for components inside of blog posts that need some kind of interactivity.
+- `yarn dev` is all it takes to start the dev server. It automatically recompiles and hot reloads changes as I make them. (This sort of experience has been standard in JavaScript-land for quite some time, but it is a much better than what I had before.)
+- I start writing a post in Obsidian (the master draft lives there). When I'm done writing a post, I copy it over to the content repo.
+- When I want to publish a post, I create a new PR, which kicks off a preview deployment, posting the link automatically to the PR. When I update the branch, it updates the deployment. Then, I simply merge the PR and I am able to see it live.
+
+Knowing myself, I will probably make some more tweaks as time goes on, and I'll be sure to make a note of them here as they come up.
+
+## Final thoughts
+
+If you've read all the way to the end, thanks! This was a fun post to write. I had to essentially be my own technoarcheologist, poring through Git commits, Internet Archive snapshots, Notion pages, and my browser bookmarks to piece together the past. I think I did an okay job, but what surprised me was how few "artifacts" I ultimately found and how many gaps I had to fill. I wish I'd written more about what I was thinking along the way. But that's something I'm trying to fix now, so hopefully if I have to do this again, my future self won't have to work so hard.
