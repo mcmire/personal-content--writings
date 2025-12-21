@@ -1,6 +1,15 @@
 {
   "name": "personal-content--writings",
-  "version": "20240423.0.0",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@lavamoat/allow-scripts": "^3.4.1",
+    "@lavamoat/preinstall-always-fail": "^2.1.1"
+  },
   "packageManager": "yarn@4.1.0",
-  "private": true
+  "lavamoat": {
+    "allowScripts": {
+      "@lavamoat/preinstall-always-fail": false
+    }
+  }
 }
