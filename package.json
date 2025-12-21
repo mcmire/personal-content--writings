@@ -2,9 +2,15 @@
   "name": "personal-content--writings",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "lint": "prettier '**/*.{md,mdx,json}' --check",
+    "lint:fix": "prettier '**/*.{md,mdx,json}' --write"
+  },
   "devDependencies": {
     "@lavamoat/allow-scripts": "^3.4.1",
-    "@lavamoat/preinstall-always-fail": "^2.1.1"
+    "@lavamoat/preinstall-always-fail": "^2.1.1",
+    "prettier": "^3.7.4",
+    "prettier-plugin-packagejson": "^2.5.20"
   },
   "packageManager": "yarn@4.1.0",
   "lavamoat": {

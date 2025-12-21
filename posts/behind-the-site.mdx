@@ -2,6 +2,7 @@
 title: Behind the Site
 publishDate: 2024-07-07T00:00:00Z
 ---
+
 import lostincodeNet01 from "./behind-the-site/lostincode.net/01-initial-commit.webp";
 import lostincodeNet04 from "./behind-the-site/lostincode.net/04-font-change.webp";
 import lostincodeNet07 from "./behind-the-site/lostincode.net/07-fixing-the-font-face-stuff.webp";
@@ -33,16 +34,14 @@ In all, I wrote 45 posts and 31 pages — with only 12 posts ultimately visible 
 
 <Gallery
   caption="Screenshots of lostincode.net"
-  images={
-    [
-      { src: lostincodeNet01, caption: "lostincode.net (3/30/2010)" },
-      { src: lostincodeNet04, caption: "lostincode.net (10/29/2010)" },
-      { src: lostincodeNet07, caption: "lostincode.net (12/5/2010)" },
-      { src: lostincodeNet08, caption: "lostincode.net (2/19/2011)" },
-      { src: lostincodeNet09, caption: "lostincode.net (10/28/2011)" },
-      { src: lostincodeNet10, caption: "lostincode.net (5/3/2012)" }
-    ]
-  }
+  images={[
+    { src: lostincodeNet01, caption: "lostincode.net (3/30/2010)" },
+    { src: lostincodeNet04, caption: "lostincode.net (10/29/2010)" },
+    { src: lostincodeNet07, caption: "lostincode.net (12/5/2010)" },
+    { src: lostincodeNet08, caption: "lostincode.net (2/19/2011)" },
+    { src: lostincodeNet09, caption: "lostincode.net (10/28/2011)" },
+    { src: lostincodeNet10, caption: "lostincode.net (5/3/2012)" },
+  ]}
 />
 
 ## mcmire.me (2015-2024)
@@ -67,14 +66,12 @@ I tried fiddling with the site as before, but I felt a little defeated, so I ult
 
 <Gallery
   caption="Screenshots of mcmire.me"
-  images={
-    [
-      { src: mcmireMe2, caption: "mcmire.me (8/23/2015)" },
-      { src: mcmireMe3, caption: "mcmire.me (10/25/2015)" },
-      { src: mcmireMe4, caption: "mcmire.me (11/8/2015)" },
-      { src: mcmireMe5, caption: "mcmire.me (9/6/2016)" },
-    ]
-  }
+  images={[
+    { src: mcmireMe2, caption: "mcmire.me (8/23/2015)" },
+    { src: mcmireMe3, caption: "mcmire.me (10/25/2015)" },
+    { src: mcmireMe4, caption: "mcmire.me (11/8/2015)" },
+    { src: mcmireMe5, caption: "mcmire.me (9/6/2016)" },
+  ]}
 />
 
 ## elliotwinkler.com (2024-)
@@ -119,7 +116,7 @@ I guess I wasn't the only one who wanted this, because not long after, I found o
 
 Speaking of interactive elements within blog posts, I initially intended to power them via React, because I've used for many of my professional and personal projects for many years and so that's what I'm familiar with. However, I ended up running into some problems when using it in conjunction with Astro. Astro has a unique feature among static site generators: it renders everything on the server-side by default, but allows for the use of multiple frontend frameworks. To accommodate this flexibility, it wraps framework-specific components in an ["island"](https://docs.astro.build/en/concepts/islands/). This special treatment has some interesting consequences. For one, it means that if the framework in question has a "context" feature, it won't work as advertised; Astro recommends using an external library, such as their `nanostores` package, as a replacement. In addition, Astro will run islands once at build time to generate an initial reprsentation of HTML, and then it will run them again on the client as many times as the framework desires. In the case of React, specifically, I found that this behavior caused components with `useEffect` to be rendered incorrectly and violate the "Rules of Hooks" that React enforces.
 
-This confused me for a while, and I experimented with the other frameworks that Astro claimed to support, including Vue, to no avail. Then I tried Solid, and I realized that it solved both problems very well. Solid borrows ideas from React, so it looks similar from a syntax perspective, but is implemented completely differently. It doesn't re-run a component function each time that component is rendered. Instead, it asks the author to define more granular sections of code in which it will track dependencies automatically and re-run those sections when the dependencies change. This means that it doesn't need to create a virtual DOM, reducing complexity, and it also doesn't place rules around where hooks need to be used. Lastly, it also defines a store API  can be used to easily share data between components, solving the context problem.
+This confused me for a while, and I experimented with the other frameworks that Astro claimed to support, including Vue, to no avail. Then I tried Solid, and I realized that it solved both problems very well. Solid borrows ideas from React, so it looks similar from a syntax perspective, but is implemented completely differently. It doesn't re-run a component function each time that component is rendered. Instead, it asks the author to define more granular sections of code in which it will track dependencies automatically and re-run those sections when the dependencies change. This means that it doesn't need to create a virtual DOM, reducing complexity, and it also doesn't place rules around where hooks need to be used. Lastly, it also defines a store API can be used to easily share data between components, solving the context problem.
 
 ### Vercel
 
@@ -143,7 +140,7 @@ With the background out of the way, here's how the new site works:
 - Each post in the content repo is an MDX file and is integrated into the site repo using Astro's content collection feature.
 - I have to run a script once to symlink the content repo locally, but once I do this then I can see posts I've written locally.
 - I use Tailwind for CSS. Styling the "shell" of the site is done mostly by assigning CSS classes to parts of the HTML, but styling posts works a bit differently, since Markdown isn't HTML, and I don't want my content to have any knowledge of how it's presented. So in that case I use judicious use of Tailwind's `@apply` feature to broadly specify how elements should look like within posts. It's something I want to clean up later, but it works for now.
-- I've extended the default MDX and Markdown by enabling some Remark and Rehype plugins which ensure that code blocks are themed appropriately and headers have permalinks. There are a lot of plugins, and it's very possible I might add some more later. 
+- I've extended the default MDX and Markdown by enabling some Remark and Rehype plugins which ensure that code blocks are themed appropriately and headers have permalinks. There are a lot of plugins, and it's very possible I might add some more later.
 - I also use Solid for components inside of blog posts that need some kind of interactivity.
 - `yarn dev` is all it takes to start the dev server. It automatically recompiles and hot reloads changes as I make them. (This sort of experience has been standard in JavaScript-land for quite some time, but it is a much better than what I had before.)
 - I start writing a post in Obsidian (the master draft lives there). When I'm done writing a post, I copy it over to the content repo.
