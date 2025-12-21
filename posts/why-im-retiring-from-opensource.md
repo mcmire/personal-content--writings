@@ -2,11 +2,12 @@
 title: Why I'm Retiring From Opensource
 publishDate: 2024-07-07T12:00:00Z
 ---
+
 Some time ago I received an invitation to appear on a podcast. The team at Ruby Rogues had heard about my work on [`super_diff`](https://github.com/mcmire/super_diff) and [`shoulda-matchers`](https://github.com/thoughtbot/shoulda-matchers) (two of my most starred and most maintained repos), and wanted to know, would I like to come on the show and talk about it?
 
 After much deliberation, I decided to take the interview. On the scheduled day and time, I joined the call… and from the first moment, it was an absolute dud. I could tell that the host hadn't done a lot of research on me, but in fairness, I hadn't prepared very much, either. I had just gotten out of a meeting at work, and I had a lot to get done that day. I certainly was not in the headspace to spend an hour waxing poetic about my work or career. The host exhausted his list of questions rather quickly, I said thank you, and that was it.
 
-The thing is, I could have predicted this outcome. When I got the invitation, I was flattered, but also confused. I'm not much of a Rubyist anymore. I've worked for a [company](https://metamask.io) that uses JavaScript exclusively for a few years now, so day to day, I don't use my own gems anymore. And as much as I don't like to admit it, I'm not much of a maintainer, either. I resigned from `shoulda-matchers` a year ago, and aside from merging some contributors' PRs four months ago, I've hardly touched  `super_diff` in a year.
+The thing is, I could have predicted this outcome. When I got the invitation, I was flattered, but also confused. I'm not much of a Rubyist anymore. I've worked for a [company](https://metamask.io) that uses JavaScript exclusively for a few years now, so day to day, I don't use my own gems anymore. And as much as I don't like to admit it, I'm not much of a maintainer, either. I resigned from `shoulda-matchers` a year ago, and aside from merging some contributors' PRs four months ago, I've hardly touched `super_diff` in a year.
 
 There was a time where I would have felt guilty about this situation. There are people out there using my creations to do their work, I would have said to myself, and I'm completely neglecting them.
 
