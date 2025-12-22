@@ -1,0 +1,36 @@
+{
+  "types": {
+    "markdown": [
+      "",
+      "md",
+      "mdx",
+      "astro"
+    ]
+  },
+  "configIsValid": true,
+  "errors": {},
+  "allowMdOverride": false,
+  "mobileSettings": {
+    "enabled": false,
+    "configIsValid": true,
+    "types": {
+      "markdown": [
+        "",
+        "md",
+        "txt",
+        "js",
+        "css",
+        "ts",
+        "jsx",
+        "tsx",
+        "yaml",
+        "yml",
+        "sass",
+        "scss",
+        "tex",
+        "json",
+        "html"
+      ]
+    }
+  }
+}
