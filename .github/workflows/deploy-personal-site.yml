@@ -1,26 +1,14 @@
-name: Deploy personal site
+name: Deploy elliotwinkler.com
 on:
   push:
     branches:
       - main
-  pull_request:
-    types:
-      - opened
-      - synchronize
 jobs:
   deploy-personal-site:
     runs-on: ubuntu-latest
     steps:
-      - id: determine-vercel-environment
-        name: Determine Vercel environment
-        run: |
-          if [[ "$GITHUB_REF_NAME" == "main" ]]; then
-            echo "VERCEL_ENVIRONMENT=production" >> "$GITHUB_OUTPUT"
-          else
-            echo "VERCEL_ENVIRONMENT=preview" >> "$GITHUB_OUTPUT"
-          fi
-      - name: Deploy elliotwinkler.com in ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }} mode
-        uses: actions/github-script@v7
+      - name: Deploy elliotwinkler.com in preview mode
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.DEPLOY_PERSONAL_SITE_TOKEN }}
           script: |
@@ -30,24 +18,9 @@ jobs:
               workflow_id: 'deploy-to-vercel.yml',
               ref: 'main',
               inputs: {
-                vercel_environment: process.env.VERCEL_ENVIRONMENT,
-                writings_repo_ref: process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF_NAME,
-                referring_repo_name: context.repo.repo,
-                referring_repo_issue_number: context.issue.number?.toString(),
+                'vercel-environment': 'preview',
+                'subrepo-name': context.repo.repo,
+                'subrepo-pull-request-number': context.issue.number?.toString(),
+                'subrepo-ref': process.env.GITHUB_REF_NAME,
               }
             })
-        env:
-          VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
-      - name: Add comment to pull request (if applicable)
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `:rocket: A ${process.env.VERCEL_ENVIRONMENT} deployment has been created for elliotwinkler.com. You can view the status of the deployment here: <https://github.com/mcmire/elliotwinkler.com/actions/workflows/deploy-to-vercel.yml>`
-            })
-        env:
-          VERCEL_ENVIRONMENT: ${{ steps.determine-vercel-environment.outputs.VERCEL_ENVIRONMENT }}
