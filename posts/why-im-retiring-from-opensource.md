@@ -1,22 +1,29 @@
 ---
 title: Why I'm Retiring From Opensource
 publishDate: 2024-07-07T12:00:00Z
+updatedDate: 2025-12-24T06:49:00Z
 ---
+> [!NOTE]
+> Edited December 23, 2025 to remove references to the podcast as well as the hosts, and to mention the current status of `super_diff`.
 
-Some time ago I received an invitation to appear on a podcast. The team at Ruby Rogues had heard about my work on [`super_diff`](https://github.com/mcmire/super_diff) and [`shoulda-matchers`](https://github.com/thoughtbot/shoulda-matchers) (two of my most starred and most maintained repos), and wanted to know, would I like to come on the show and talk about it?
+Some time ago I received an invitation to appear on a prominent Ruby podcast. The team at this podcast had heard about my work on [`super_diff`](https://github.com/mcmire/super_diff) and [`shoulda-matchers`](https://github.com/thoughtbot/shoulda-matchers) (two of my most starred and most maintained repos), and wanted to know, would I like to come on the show and talk about it?
 
-After much deliberation, I decided to take the interview. On the scheduled day and time, I joined the call… and from the first moment, it was an absolute dud. I could tell that the host hadn't done a lot of research on me, but in fairness, I hadn't prepared very much, either. I had just gotten out of a meeting at work, and I had a lot to get done that day. I certainly was not in the headspace to spend an hour waxing poetic about my work or career. The host exhausted his list of questions rather quickly, I said thank you, and that was it.
+After much deliberation, I decided to take the interview. On the scheduled day and time, I joined the call. The host and I briefly exchanged introductions, and then he proceeded to ask some questions. The first question was a bit surprising: Was I still working at thoughtbot? I had to awkwardly explain that no, I hadn't been working there for a while. Then: How long had I been maintaining these libraries? How did I develop them? How did I use them in my day-to-day work? As the interview progressed, I began to find that I didn't have a lot to say, and I think the host sensed this. Before I knew it, he thanked me for my time, and we hung up.
 
-The thing is, I could have predicted this outcome. When I got the invitation, I was flattered, but also confused. I'm not much of a Rubyist anymore. I've worked for a [company](https://metamask.io) that uses JavaScript exclusively for a few years now, so day to day, I don't use my own gems anymore. And as much as I don't like to admit it, I'm not much of a maintainer, either. I resigned from `shoulda-matchers` a year ago, and aside from merging some contributors' PRs four months ago, I've hardly touched `super_diff` in a year.
+Suffice it to say, it was not a success. The thing is, I could have predicted this outcome. When I got the invitation, I was flattered, but also confused. I'm not much of a Rubyist anymore. I've worked for a [company](https://metamask.io) that uses JavaScript exclusively for a few years now, so day to day, I don't use my own gems anymore. And as much as I don't like to admit it, I'm not much of a maintainer, either. I resigned from `shoulda-matchers` a year ago, and aside from merging some contributors' PRs four months ago, I've hardly touched `super_diff` in a year.
 
 There was a time where I would have felt guilty about this situation. There are people out there using my creations to do their work, I would have said to myself, and I'm completely neglecting them.
 
 But over the past several months, and increasingly over the past few weeks, I've let go of this thinking. I've been going through a ton of life changes, and I have a lot less free time than I used to. I've had to re-evaluate what sorts of activities and endeavors spark joy and which ones don't. Maintaining my opensource projects once served a purpose in my life, but now it's just a burden, and I have more fulfilling things I'd like to do instead.
 
-What this means is that **I will no longer be accepting any further contributions on my public GitHub repos for the foreseeable future**. However, I am also going one step further.
+## What this means
+
+**I will no longer be accepting any further contributions on my public GitHub repos for the foreseeable future**. However, I am also going one step further.
 
 I've come across too many repos whose last commit was several years ago and where one of the top issues has the title "Is this project abandoned?" I don't want to keep people wondering. To address this, I could leave a simple announcement on each repo communicating my intentions and walk away. But I fear that people would still try to submit feature requests and file bug reports. I don't like that solution: not only would I allow others to have false hope about whether I will return, but I would also set an emotional trap for myself that I will inevitably walk into when I glance through my repos. Both seem unnecessary.
 
 So, for more popular projects like `super_diff`, in order to fully close the book, **I am not only discontinuing their maintenance, but I am also archiving their repos**. If you would like to make changes, you are free to do so in a fork. I am also open to handing over the keys to another maintainer (but serious inquiries only, please).
 
 I understand that this may be an extreme change for some, but I feel that this plan works best for me at this point in time. If you want to contact me, you can email me [here](mailto:elliot.winkler@gmail.com). Thanks for reading!
+
+**EDIT:** I am happy to report that `super_diff` has been taken over by [`splitwise`](https://www.splitwise.com/). Please check out their [blog post](https://blog.splitwise.com/2024/09/11/super-diff-plus-splitwise/) for more!
