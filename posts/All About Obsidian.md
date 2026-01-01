@@ -1,0 +1,3 @@
+- Why I use Obsidian (or a "second brain" tool at all) and what it can do for you
+- How I sync Obsidian between devices 
+- How I've configured my Obsidian vault to make it easy to write and publish blog posts from now on 
