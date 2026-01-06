@@ -44,9 +44,9 @@ tags:
 	- I try to avoid plugins that do too many fancy things. In the past, I tried out Dataview because I was doing research into religion and wanted to build a sort of database of books that I wanted to read. But I began to spend way too much time on it. Maybe Bases would help — I haven't tried it out — but I really like to keep things simple.
 	- I don't use Canvas. If I want a diagram or something, I might use Mermaid, but at the end of the day I really only want to work with text files.
 - How do I sync Obsidian?
-	- I don't use Obsidian Sync. I do pay for the VIP Catalyst version, but that's really to help the development team.
-	- Instead, I keep my vault in a private GitHub repo. I don't encrypt the repo
-	- I use a script I've written 
+	- I don't use Obsidian Sync. I do pay for the VIP Catalyst version, but that's really to help the development team. Instead, I keep my vault in a private GitHub repo, and I use a collection of scripts I've written to sync changes.
+	- On desktop, I clone the repo in a convenient place. I then add a launch daemon which runs a script that listens for changes to files within the vault and automatically runs the sync script. The wrapper script is smart in that the syncing is debounced; that is, if a file is modified multiple times in quick succession — common when editing the file in Obsidian — then the sync script will only be called once no changes have occurred for a minute. 
+	- On mobile, I download Termux, Termux:Tasker, and Automate. I run `termux-shared-storage` to allow access to the SD card. I use `gh` to clone the repo in `shared/storage` (it handles authentication for private repos more smoothly), then create a symlink in the home directory. I also use `gh` to clone my `dotfiles` repo. I create two Automate workflows, one which runs ``
 
 ---
 
