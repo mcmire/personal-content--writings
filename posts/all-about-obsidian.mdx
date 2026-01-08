@@ -44,9 +44,24 @@ tags:
 	- I try to avoid plugins that do too many fancy things. In the past, I tried out Dataview because I was doing research into religion and wanted to build a sort of database of books that I wanted to read. But I began to spend way too much time on it. Maybe Bases would help — I haven't tried it out — but I really like to keep things simple.
 	- I don't use Canvas. If I want a diagram or something, I might use Mermaid, but at the end of the day I really only want to work with text files.
 - How do I sync Obsidian?
-	- I don't use Obsidian Sync. I do pay for the VIP Catalyst version, but that's really to help the development team. Instead, I keep my vault in a private GitHub repo, and I use a collection of scripts I've written to sync changes.
-	- On desktop, I clone the repo in a convenient place. I then add a launch daemon which runs a script that listens for changes to files within the vault and automatically runs the sync script. The wrapper script is smart in that the syncing is debounced; that is, if a file is modified multiple times in quick succession — common when editing the file in Obsidian — then the sync script will only be called once no changes have occurred for a minute. 
-	- On mobile, I download Termux, Termux:Tasker, and Automate. I run `termux-shared-storage` to allow access to the SD card. I use `gh` to clone the repo in `shared/storage` (it handles authentication for private repos more smoothly), then create a symlink in the home directory. I also use `gh` to clone my `dotfiles` repo. I create two Automate workflows, one which runs the sync script automatically whenever any of the vault files are changed (again, debouncing similar to desktop), and another that runs the sync script manually.
+	- I don't use Obsidian Sync. I do pay for the VIP Catalyst version, but that's really to help the development team.
+	- Instead, I keep my vault in a private GitHub repo, and I use a script which is located in the vault repo to sync changes.
+		- This script uses some basic locking logic to ensure that only one instance of the script is running at any given time. I also have some helper files in my `dotfiles` repo.
+	- On desktop, it works like this:
+		- I have both `dotfiles` and the Obsidian vault repo cloned in convenient locations. Running `bin/manage install` within `dotfiles` sets up everything automatically.
+		- I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. Actually, what the LaunchAgents runs is a wrapper script which debounces updates so that while a file is being edited, no syncing will occur, but as soon as there are no edits for a minute, then the sync script will be started.
+	- Mobile is a bit more complicated, but it works like this:
+		- To set everything up:
+			- I download F-Droid and Termux from the Play Store, and I download Termux:Tasker and Automate from F-Droid.
+			- I open Termux and run `termux-shared-storage` to allow access to the SD card.
+			- I use `gh` to clone the Obsidian vault repo in `shared/storage` (`gh` handles authentication for private repos more smoothly).
+			- I create a symlink to the vault repo in the home directory.
+			- I use `gh` to clone my `dotfiles` repo.
+			- I create two Automate workflows:
+				- One workflow runs the sync script automatically whenever any of the vault files are changed.
+					- This works similarly to the LaunchAgent on desktop in that the sync script will not be run as long as edits to the vault are actively taking place, but will run as soon as there is no activity for a minute. Also, when I switch away from Obsidian, the sync script will also run.
+					- This Automate workflow isn't perfect: the sync script won't run if I suspend my phone (I've trained myself to switch away from Obsidian before pressing the power button), and if the workflow fails, I won't get any notifications (I check the Automate logs every so often). It'd be nice to figure both of these out.
+				- Another workflow runs the sync script manually
 
 ---
 
