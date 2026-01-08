@@ -52,16 +52,17 @@ tags:
 		- I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. Actually, what the LaunchAgents runs is a wrapper script which debounces updates so that while a file is being edited, no syncing will occur, but as soon as there are no edits for a minute, then the sync script will be started.
 	- Mobile is a bit more complicated, but it works like this:
 		- To set everything up:
-			- I download F-Droid and Termux from the Play Store, and I download Termux:Tasker and Automate from F-Droid.
+			- I download [F-Droid](https://f-droid.org/) and [Termux](https://termux.dev/) from the Play Store, and I download [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker) and [Automate](https://llamalab.com/automate/) from F-Droid.
 			- I open Termux and run `termux-shared-storage` to allow access to the SD card.
 			- I use `gh` to clone the Obsidian vault repo in `shared/storage` (`gh` handles authentication for private repos more smoothly).
-			- I create a symlink to the vault repo in the home directory.
-			- I use `gh` to clone my `dotfiles` repo.
+			- I create a symlink to the vault repo in the home directory for quicker access.
+			- I use `gh` to clone my `dotfiles` repo, also in the home directory.
 			- I create two Automate workflows:
 				- One workflow runs the sync script automatically whenever any of the vault files are changed.
 					- This works similarly to the LaunchAgent on desktop in that the sync script will not be run as long as edits to the vault are actively taking place, but will run as soon as there is no activity for a minute. Also, when I switch away from Obsidian, the sync script will also run.
-					- This Automate workflow isn't perfect: the sync script won't run if I suspend my phone (I've trained myself to switch away from Obsidian before pressing the power button), and if the workflow fails, I won't get any notifications (I check the Automate logs every so often). It'd be nice to figure both of these out.
-				- Another workflow runs the sync script manually y
+					- The workflow uses a plugin block, using Termux:Tasker, to run the sync command.
+					- This Automate workflow isn't perfect. For instance, the sync script won't run if I make some changes and then immediately press the power button to suspend my phone. I've trained myself to switch away from Obsidian before pressing the power button, but it'd be nice to figure out a way around this.
+				- Another workflow runs the sync script manually.
 
 ---
 
