@@ -71,7 +71,31 @@ I try out new plugins from time to time, but here are the ones that have stuck:
 
 I don't use Obsidian Sync. It definitely sounds useful, but I like to keep my Obsidian vault in Git so I have ultimate control of not only the current versions of the files in my vault, but also any historical versions as well. 
 
-I also don't use the Obsidian Git plugin, either. 
+Nor do I use the Obsidian Git plugin. As the README states, [it is very unstable on mobile](https://github.com/Vinzent03/obsidian-git?tab=readme-ov-file#-mobile-support-%EF%B8%8F--experimental). Since I often use Obsidian on my phone during the day, that doesn't work for me.
+
+Instead, I use a custom solution. It works like this:
+
+
+ I use a script which is located in the vault repo to sync changes.
+		- This script uses some basic locking logic to ensure that only one instance of the script is running at any given time. I also have some helper files in my `dotfiles` repo.
+	- On desktop, it works like this:
+		- I have both `dotfiles` and the Obsidian vault repo cloned in convenient locations. Running `bin/manage install` within `dotfiles` sets up everything automatically.
+		- I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. Actually, what the LaunchAgents runs is a wrapper script which debounces updates so that while a file is being edited, no syncing will occur, but as soon as there are no edits for a minute, then the sync script will be started.
+	- Mobile is a bit more complicated, but it works like this:
+		- To set everything up:
+			- I download [F-Droid](https://f-droid.org/) and [Termux](https://termux.dev/) from the Play Store, and I download [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker) and [Automate](https://llamalab.com/automate/) from F-Droid.
+			- I open Termux and run `termux-setup-storage` to allow access to the SD card.
+			- I use `gh` to clone the Obsidian vault repo in `shared/storage` (`gh` handles authentication for private repos more smoothly).
+			- I create a symlink to the vault repo in the home directory for quicker access.
+			- I use `gh` to clone my `dotfiles` repo, also in the home directory.
+			- I create two Automate workflows:
+				- One workflow runs the sync script automatically whenever any of the vault files are changed.
+					- This works similarly to the LaunchAgent on desktop in that the sync script will not be run as long as edits to the vault are actively taking place, but will run as soon as there is no activity for a minute. Also, when I switch away from Obsidian, the sync script will also run.
+					- The workflow uses a plugin block, using Termux:Tasker, to run the sync command.
+					- This Automate workflow isn't perfect. For instance, the sync script won't run if I make some changes and then immediately press the power button to suspend my phone. I've trained myself to switch away from Obsidian before pressing the power button, but it'd be nice to figure out a way around this.
+				- Another workflow runs the sync script manually.
+
+It's a bit more complicated than I want it to be
 
 
 ## Updating this site via Obsidian
