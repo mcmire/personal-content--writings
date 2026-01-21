@@ -73,10 +73,11 @@ I don't use Obsidian Sync. It definitely sounds useful, but I like to keep my Ob
 
 Nor do I use the Obsidian Git plugin. As the README states, [it is very unstable on mobile](https://github.com/Vinzent03/obsidian-git?tab=readme-ov-file#-mobile-support-%EF%B8%8F--experimental). Since I often use Obsidian on my phone during the day, that doesn't work for me.
 
-Instead, I use a custom solution. It works like this:
+Instead, I use a custom solution. For the purposes of understanding this in the future, here is how it works.
 
-- I use a script which is located in the vault repo to sync changes. This script uses some basic locking logic to ensure that only one instance of the script is running at any given time. I also have some helper files in my `dotfiles` repo.
-- On desktop, it works like this:
+I use a script which is located in the vault repo to sync changes. This script uses some basic locking logic to ensure that only one instance of the script is running at any given time. I also have some helper files in my [`dotfiles` repo](https://github.com/mcmire/dotfiles).
+
+- On desktop, this happens:
 	- I have both `dotfiles` and the Obsidian vault repo cloned in convenient locations. Running `bin/manage install` within `dotfiles` sets up everything automatically.
 	- I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. Actually, what the LaunchAgents runs is a wrapper script which debounces updates so that while a file is being edited, no syncing will occur, but as soon as there are no edits for a minute, then the sync script will be started.
 - Mobile is a bit more complicated, but it works like this:
