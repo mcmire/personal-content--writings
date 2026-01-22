@@ -117,25 +117,19 @@ On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the
 
 I have one workflow that works like this:
 
-- When there are changes to files within my vault, or when I switch away from Obsidian, the sync script is executed.
-- Executions of the sync script are debounced by 1 minute. This 
-Also, when I switch away from Obsidian, the sync script will also run.
-	- The workflow uses a plugin block, using Termux:Tasker, to run the sync command.
-	- This Automate workflow isn't perfect. For instance, the sync script won't run if I make some changes and then immediately press the power button to suspend my phone. I've trained myself to switch away from Obsidian before pressing the power button, but it'd be nice to figure out a way around this.
-- Another workflow runs the sync script manually.
+- When when I switch away from Obsidian, or when I lock my phone, the sync script is executed.
+- Executions of the sync script are debounced by 1 minute. If the timer is running and I switch back to Obsidian or unlock my phone, the timer is canceled.
+- The workflow uses a plugin block, using [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker), to run the sync command. (It may be that I can use the "Shell script" action, but I haven't tested it out.)
 
-To set up mobile, I followed these steps:
+To set this up, I followed these steps:
 
-- First, to set everything up:
-	- I downloaded [F-Droid](https://f-droid.org/) and [Termux](https://termux.dev/) from the Play Store, and I downloaded [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker) and [Automate](https://llamalab.com/automate/) from F-Droid.
-	- I opened Termux and ran `termux-setup-storage` to allow access to the SD card.
-	- I used `gh` to clone my Obsidian vault repo in `shared/storage`. I've found that `gh` because it handles authentication for private repos very smoothly.
-	- I created a symlink to the vault repo in the home directory for quicker access.
-	- I used `gh` to clone my `dotfiles` repo, also in the home directory.
+- I downloaded [F-Droid](https://f-droid.org/) and [Termux](https://termux.dev/) from the Play Store, and I downloaded [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker) and [Automate](https://llamalab.com/automate/) from F-Droid.
+- I opened Termux and ran `termux-setup-storage` to allow access to the SD card.
+- I used `gh` to clone my Obsidian vault repo in `shared/storage`. I've found that `gh` because it handles authentication for private repos very smoothly.
+- I created a symlink to the vault repo in the home directory for quicker access.
+- I used `gh` to clone my `dotfiles` repo, also in the home directory.
 
-> [!TIP] Extra
-
-It's a bit more complicated than I want it to be
+It's a bit more complicated than I want it to be, and I have to fiddle with it from time to time, but for the most part it works.
 
 
 ## Updating this site via Obsidian
