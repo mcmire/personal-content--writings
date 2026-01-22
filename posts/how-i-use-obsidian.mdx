@@ -104,23 +104,21 @@ Now, having a sync script is great, but I don't want to run it all the time. To 
 
 ### Desktop
 
-On my Mac, I have two LaunchAgents set up.
+On my Mac, I have two LaunchAgents set up:
 
-- One runs a daemon which automatically executes the sync script when any file within the Obsidian vault is changed.
-- The other runs the same script every 
+- One runs a daemon which executes the sync script when any file within the Obsidian vault is changed. In reality, this uses a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
+- The other runs the same script every day (in case I'm writing something and accidentally close my laptop before the script has a chance to run).
 
-In reality, the LaunchAgent runs a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
-
-In case the LaunchAgent above stops running for any reason, I also use a second LaunchAgent 
-
-The LaunchAgent is set up in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo. To install it, I simply clone this repo and run `bin/manage install`.
+Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo. To install them, I simply clone this repo and run `bin/manage install`.
 
 ### Mobile
 
-On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same setup I have on desktop. I have one workflow that works like this:
+On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same setup I have on desktop.
 
-- When there are changes to files within my vault, or when I switch away from Obsidian
-- The workflow runs the same sync script within my Obsidian vault, but executions are also debounced by 1 minute.
+I have one workflow that works like this:
+
+- When there are changes to files within my vault, or when I switch away from Obsidian, the sync script is executed.
+- Executions of the sync script are debounced by 1 minute. This 
 Also, when I switch away from Obsidian, the sync script will also run.
 	- The workflow uses a plugin block, using Termux:Tasker, to run the sync command.
 	- This Automate workflow isn't perfect. For instance, the sync script won't run if I make some changes and then immediately press the power button to suspend my phone. I've trained myself to switch away from Obsidian before pressing the power button, but it'd be nice to figure out a way around this.
