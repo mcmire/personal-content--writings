@@ -100,31 +100,31 @@ The work of syncing changes between the local and remote versions of my repo is 
 - Pulls new commits in, rebasing any pending commits on top of them
 - Pushes the `main` branch
 
-Now, having a sync script is great, but I don't want to run it all the time. To emulate what Obsidian Sync does — and to make things work the same way across desktop and mobile — I have to employ a bit of ✨ magic ✨.
+Now, having a sync script is great, but I don't want to run it all the time. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
 
 ### Desktop
 
-On my laptop, I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. In reality, the LaunchAgent runs a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
+On my Mac, I have two LaunchAgents set up.
+
+- One runs a daemon which automatically executes the sync script when any file within the Obsidian vault is changed.
+- The other runs the same script every 
+
+In reality, the LaunchAgent runs a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
+
+In case the LaunchAgent above stops running for any reason, I also use a second LaunchAgent 
 
 The LaunchAgent is set up in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo. To install it, I simply clone this repo and run `bin/manage install`.
 
 ### Mobile
 
-Mobile is a bit more complicated, but it works like this.
+On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same setup I have on desktop. I have one workflow that works like this:
 
-First, I use Android. As far as I know, there isn't a built-in equivalent of LaunchAgents for Android. Fortunately, someone made an app called Automate that 
-
-
-
-
-I use 
-
-I create two Automate workflows.
-- One workflow runs the sync script automatically whenever any of the vault files are changed.
-	- This works similarly to the LaunchAgent on desktop in that the sync script will not be run as long as edits to the vault are actively taking place, but will run as soon as there is no activity for a minute. Also, when I switch away from Obsidian, the sync script will also run.
-		- The workflow uses a plugin block, using Termux:Tasker, to run the sync command.
-		- This Automate workflow isn't perfect. For instance, the sync script won't run if I make some changes and then immediately press the power button to suspend my phone. I've trained myself to switch away from Obsidian before pressing the power button, but it'd be nice to figure out a way around this.
-	- Another workflow runs the sync script manually.
+- When there are changes to files within my vault, or when I switch away from Obsidian
+- The workflow runs the same sync script within my Obsidian vault, but executions are also debounced by 1 minute.
+Also, when I switch away from Obsidian, the sync script will also run.
+	- The workflow uses a plugin block, using Termux:Tasker, to run the sync command.
+	- This Automate workflow isn't perfect. For instance, the sync script won't run if I make some changes and then immediately press the power button to suspend my phone. I've trained myself to switch away from Obsidian before pressing the power button, but it'd be nice to figure out a way around this.
+- Another workflow runs the sync script manually.
 
 To set up mobile, I followed these steps:
 
