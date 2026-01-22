@@ -104,7 +104,7 @@ Now, having a sync script is great, but I don't want to run it all the time. To 
 
 ### Desktop
 
-On my laptop, I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. In reality, what the LaunchAgent runs is a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
+On my laptop, I use a macOS LaunchAgent to run a daemon which automatically runs the sync script when any file within the Obsidian vault is changed. In reality, the LaunchAgent runs a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
 
 The LaunchAgent is set up in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo. To install it, I simply clone this repo and run `bin/manage install`.
 
