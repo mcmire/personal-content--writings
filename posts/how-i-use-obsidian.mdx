@@ -147,7 +147,7 @@ It's a bit more complicated than I want it to be, and I have to fiddle with it f
 
 One recent change I made was to integrate my site into my Obsidian vault.
 
-As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-together), the site you see right now — the layout and styling — lives in a separate repo from the content you're reading. I do this because if I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo, and the Git history between the two will stay isolated as well.
+As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-together), the site you see right now — the layout and styles — lives in a separate repo from the content you're reading. I do this because if I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo, and the Git history between the two will stay isolated.
 
 Even with this setup, I found it more difficult to publish new blog posts than I liked. First, I had to be at my laptop to write a post. Then, I had to follow these steps:
 
@@ -223,7 +223,11 @@ Having integrated submodules, I now needed to make the sync script work with the
 [~/obsidian-vault] Sync completed successfully!
 ```
 
-The sync script assumes that `main` is checked out for all repos so that it can pull the latest changes to that branch. This  For the vault repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
+### Initializing the vault repo
+
+The sync script assumes that `main` is checked out for all repos so that it can pull the latest changes to that branch. This means that when I have to clone (or re-clone) my vault repo, 
+
+For the vault repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
 
 ### Updating the deployment process
 
