@@ -33,6 +33,8 @@ While I wasn't willing to switch to either of these tools — there were certain
 
 ## How I use Obsidian now
 
+### Directories and tags
+
 These days I try to keep things simple. I still find directories useful, but %%I've tried to wean myself off of them slowly, and%% I've limited myself to three:
 
 - `Diary/` — Date-based. Most of these entries are conversations between different voices in my head. I'll let them say what they want to say and move on. I don't typically go into a lot of detail (good luck to whoever reads this in the future!).
@@ -44,6 +46,8 @@ These days I try to keep things simple. I still find directories useful, but %%I
 - `Notes/` — Non-date-based. Most of my old notes are here, and I have yet to migrate them to a better format. Even so, I still tend to use this category to hold information that I think deserves a bit more structure, I want to keep together in one place, or I feel like would be buried if I left it in a journal entry. Each note tends to center around a concept or theme. For instance, when I do research for big-ticket items (e.g., baby strollers, cars, etc.) or make plans for trips, I'll add a note here. There are also simple lists of things such as potential baby names, etc.
 
  Beyond this structure, I've recently begun using tags to link notes by broader themes. This is a practice I already follow when posting bookmarks to [Pinboard](https://pinboard.in/), and I already have a list of tags in my head that I frequently use, so tagging notes is a pretty easy transition. For instance, if I'm thinking about AI, I'll use the tag `#artificial-intelligence`; if I'm thinking about career goals or dreams, I'll use `#future-work`. I also have tags for `#philosophy` and `#physics` and `#music-analysis`.  %%The one gripe I have about tags is that if you use a hashtag in a page, Obsidian applies it to the whole note. But journal entries may involve multiple topics in a single day. so I'll use a tag above each section. When I search for that tag, Obsidian doesn't know to jump down to the section I've tagged.%%
+
+### Core plugins
 
 I use a pretty small set of core plugins:
 
@@ -59,6 +63,8 @@ I use a pretty small set of core plugins:
 - I don't use **Sync**; I use my own solution (again, see below).
 - I don't use **Web Viewer**. I usually have my browser open on either my laptop or phone, and I want to keep all of my open tabs together in the same app.
 - I don't use **Word Count**. I don't really care how long my notes are, and for blog posts like these, I write and rewrite thousands of words and hide the vast majority of them, so a word count doesn't really help anyway.
+
+### Community plugins 
 
 I try out new plugins from time to time, but here are the ones that have stuck:
 
@@ -78,7 +84,7 @@ Instead, I use a custom solution, which I will detail below.
 
 ### Preparing the vault repo
 
-There are a couple of ways I've configured the repo.
+There are a couple of ways I've configured my Obsidian vault repo.
 
 I've instructed Git to ignore the Obsidian workspace JSON files (since they tend to collect conflicts easily) as well as trashed files:
 
@@ -92,7 +98,7 @@ I've also installed [Git LFS](https://git-lfs.com/). This way, if I want to add 
 
 ### Sync script
 
-The work of syncing changes between the local and remote versions of my repo is done by a custom shell [script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). (I keep in the vault repo under `./_scripts/sync.sh` so I can run it manually if I need to.). This script:
+The work of syncing changes between the local and remote versions of my repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). (I keep in the vault repo under `./_scripts/sync.sh` so I can run it manually if I need to.). This script:
 
 1. Uses a lockfile to ensure that only one instance of the script is running at a time
 2. Ensures that the current branch is `main` up front
@@ -105,16 +111,16 @@ The work of syncing changes between the local and remote versions of my repo is 
 
 Now, having a sync script is great, but I don't want to run it all the time. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
 
-### Desktop
+#### Desktop
 
 On my Mac, I have two LaunchAgents set up:
 
-- One runs a daemon which executes the sync script when any file within the Obsidian vault is changed. (In reality, this uses a wrapper script which performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.)
+- One runs a daemon which executes a wrapper around the sync script when any file within the Obsidian vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 1 minute.
 - The other runs the same script every day (in case I'm writing something and accidentally close my laptop before the script has a chance to run).
 
 Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo. To install them, I simply clone this repo and run `bin/manage install`.
 
-### Mobile
+#### Mobile
 
 On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same process I have on desktop.
 
@@ -122,7 +128,7 @@ I have one workflow that works like this:
 
 - When I switch away from Obsidian, or when I lock my phone, the sync script is executed.
 - The sync script is also executed every 30 minutes automatically (in case either of the two checks above don't work properly).
-- Executions of the sync script are debounced by 1 minute. If the timer is running and I switch back to Obsidian or unlock my phone, the timer is canceled.
+- Like on desktop, executions of the sync script are debounced by 1 minute. If the timer is running and I switch back to Obsidian or unlock my phone, the timer is canceled.
 - The workflow uses a plugin block, using [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker), to run the sync command. (It may be that I can use the "Shell script" action, but I haven't tested it out.)
 
 The other workflow is used to simply run the sync script on demand.
@@ -145,17 +151,17 @@ As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-togethe
 
 Even with this setup, I found it more difficult to publish new blog posts than I'd like. I had to follow these steps:
 
-- Switch to my terminal
-- Navigate to my content repo, open it up in Neovim
-- Start writing
-- Realize that I want to see a preview
-- Open my content repo in VSCode, open up a Markdown preview
-- Remember to switch back to terminal and commit when I stop
-- Realize that I want to see what my post really looks like
-- Push up a branch
-- Make a pull request
-- Wait for a bit
-- See the post online
+1. Switch to my terminal
+2. Navigate to my content repo, open it up in Neovim
+3. Start writing
+4. Realize that I want to see a preview
+5. Open my content repo in VSCode, open up a Markdown preview
+6. Remember to switch back to terminal and commit when I stop
+7. Realize that I want to see what my post really looks like
+8. Push up a branch
+9. Make a pull request
+10. Wait for a bit
+11. See the post online
 
 %%Mind you, this only worked on my laptop.%%
 
@@ -196,7 +202,7 @@ And `.gitmodules` in `_modules/elliotwinkler.com` looks like this:
 
 Since blog posts on my site are written in MDX files, I also have the Custom File Extensions plugin installed so that Obsidian can recognize them.
 
-One consequence of this architecture is that the sync script now needs to be aware of submodules. One thing I noticed during testing is that if new changes are brought into a submodule via `git pull`, it will cause changes to appear in the parent repo. To solve this problem, the sync script descends into submodules first, ensures that they are up to date, then proceeds up the tree. Here's what a typical run of the script looks like:
+One consequence of this architecture is that the sync script now needs to be aware of submodules. While updating the script, I noticed that if new changes are brought into a submodule via `git pull`, it will cause changes to appear in the parent repo. To solve this problem, I have the script descend into submodules first, ensure that they are up to date, then proceed up the tree. Here's what a typical run of the script looks like:
 
 ```
 [~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Committing all files...
@@ -222,16 +228,16 @@ Another quirk of submodules — or least the way that I'm using them — is tha
 
 ### Updating deployment
 
-Besides submodules, I also updated how the site got deployed automatically. Previously, the way it worked was:
+Besides submodules, I also updated how the site got deployed automatically.
+
+I have always made it possible to deploy a preview build while writing a draft. This allows me to see what a post looks like on the site before it goes live. But previously, the way that I would manage these two environments worked like this:
 
 - If I wanted to deploy my site to production, I could push a commit to `main`, either on the site repo or content repo.
-- If I wanted to see a preview of a post before publishing it live, I could make a pull request on either my site repo or my content repo.
+- If I wanted to deploy a preview build, I would have to make a pull request on either my site repo or my content repo.
 
-Switching to submodules, though, meant that there were going to be a lot of pushes straight to `main` for both site and content repos. And that meant I had to find a different way of deploying to production.
+Switching to submodules, though, meant that there were going to be a lot of pushes straight to `main` for both site and content repos. I didn't want to deploy the production site every time that happened, so now the way it works is:
 
-So now the way it works is:
-
-- Pushing to `main` on either site or content repo kicks off a new preview build deploy. That means if I update a draft blog post in Obsidian, I can see what it will really look like within about 30 seconds.
+- Pushing to `main` on either the site repo or the content repo deploys a preview build. That means if I update a draft blog post in Obsidian, I can see what it will really look like within about 30 seconds.
 - If I want to deploy to production, I have to go on my laptop and trigger it manually from the Vercel dashboard.
 
 I don't publish blog posts that often, so I think that's an acceptable tradeoff.
