@@ -161,6 +161,8 @@ Even with this setup, I found it more difficult to publish new blog posts than I
 
 In contrast, Obsidian is so painless to use that I can open it anywhere, anytime, and it just works. It finally dawned on me: why can't I integrate my site and content repos into my Obsidian vault repo so that I can write blog posts the same exact way I would make a new journal entry or a note?
 
+### Installing submodules
+
 To solve this, I use nested submodules to bring all three repos under one umbrella:
 
 ```
@@ -218,11 +220,27 @@ One consequence of this architecture is that the sync script now needs to be awa
 
 Another quirk of submodules — or least the way that I'm using them — is that the sync script assumes that `main` is checked out for all repos. For the root repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
 
-Besides submodules, I also updated how the site got deployed automatically. Previously, if I wanted to deploy my site to production, I could push to `main`. But if I wanted to see a preview of a post before publishing it live, I had to make a pull request on my content repo.
+### Updating deployment
 
-- If I made a pull request on the content repo's `main` branch, it would trigger a deploy to the staging version of my site, and if I pushed a commit to the _site_ repo's `main` branch, it would trigger a deploy to _production_. …….
+Besides submodules, I also updated how the site got deployed automatically. Previously, the way it worked was:
+
+- If I wanted to deploy my site to production, I could push a commit to `main`, either on the site repo or content repo.
+- If I wanted to see a preview of a post before publishing it live, I could make a pull request on either my site repo or my content repo.
+
+Switching to submodules, though, meant that there were going to be a lot of pushes straight to `main` for both site and content repos. And that meant I had to find a different way of deploying to production.
+
+So now the way it works is:
+
+- Pushing to `main` on either site or content repo kicks off a new preview build deploy. That means if I update a draft blog post in Obsidian, I can see what it will really look like within about 30 seconds.
+- If I want to deploy to production, I have to go on my laptop and trigger it manually from the Vercel dashboard.
+
+I don't publish blog posts that often, so I think that's an acceptable tradeoff.
+
+### Adding support for Obsidian
 
 Another change I made was to add support for Obsidian's callout format. Obsidian uses a flavor of Markdown called — wait for it — Obsidian Flavored Markdown.
+
+… TODO …
 
 ## That's it (for now)
 
