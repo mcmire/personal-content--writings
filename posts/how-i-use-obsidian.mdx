@@ -149,27 +149,26 @@ One recent change I made was to integrate my site into my Obsidian vault.
 
 As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-together), the site you see right now — the layout and styling — lives in a separate repo from the content you're reading. I do this because if I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo, and the Git history between the two will stay isolated as well.
 
-Even with this setup, I found it more difficult to publish new blog posts than I'd like. I had to follow these steps:
+Even with this setup, I found it more difficult to publish new blog posts than I liked. First, I had to be at my laptop to write a post. Then, I had to follow these steps:
 
 1. Switch to my terminal
 2. Navigate to my content repo, open it up in Neovim
 3. Start writing
 4. Realize that I want to see a preview
 5. Open my content repo in VSCode, open up a Markdown preview
-6. Remember to switch back to terminal and commit when I stop
-7. Realize that I want to see what my post really looks like
+6. Remember to switch back to terminal and commit when I was at a stopping point
+7. Finish the post, realize that I want to see what my post really looks like
 8. Push up a branch
 9. Make a pull request
-10. Wait for a bit
-11. See the post online
-
-%%Mind you, this only worked on my laptop.%%
+10. See the post online
 
 In contrast, Obsidian is so painless to use that I can open it anywhere, anytime, and it just works. It finally dawned on me: why can't I integrate my site and content repos into my Obsidian vault repo so that I can write blog posts the same exact way I would make a new journal entry or a note?
 
-### Installing submodules
+### Adding submodules
 
-To solve this, I use nested submodules to bring all three repos under one umbrella:
+I needed some way of bringing all three repos under one umbrella. I debated using subtrees (or something similar, such as [git-subrepo](https://github.com/ingydotnet/git-subrepo)) to accomplish this, but both approaches require keeping some amount of history in the parent repo, and I didn't want that.
+
+In the end I went with submodules. The hierarchy of my vault repo now looks like this:
 
 ```
 obsidian-vault/
@@ -200,9 +199,7 @@ And `.gitmodules` in `_modules/elliotwinkler.com` looks like this:
         url = https://github.com/mcmire/personal-content--writings
 ```
 
-Since blog posts on my site are written in MDX files, I also have the Custom File Extensions plugin installed so that Obsidian can recognize them.
-
-One consequence of this architecture is that the sync script now needs to be aware of submodules. While updating the script, I noticed that if new changes are brought into a submodule via `git pull`, it will cause changes to appear in the parent repo. To solve this problem, I have the script descend into submodules first, ensure that they are up to date, then proceed up the tree. Here's what a typical run of the script looks like:
+Having integrated submodules, I now needed to make the sync script work with them. While updating the script, I noticed that if new changes are brought into a submodule via `git pull`, it will cause the parent repo to think that there are changes that need to be committed. To solve this problem, I have the script descend into submodules first, create any necessary commits (along with the usual pull and push steps), then proceed up the tree. Here's what a typical run of the script looks like:
 
 ```
 [~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Committing all files...
@@ -224,9 +221,9 @@ One consequence of this architecture is that the sync script now needs to be awa
 [~/obsidian-vault] Sync completed successfully!
 ```
 
-Another quirk of submodules — or least the way that I'm using them — is that the sync script assumes that `main` is checked out for all repos. For the root repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
+The sync script assumes that `main` is checked out for all repos so that it can pull the latest changes to that branch. This  For the vault repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
 
-### Updating deployment
+### Updating the deployment process
 
 Besides submodules, I also updated how the site got deployed automatically.
 
@@ -242,7 +239,9 @@ Switching to submodules, though, meant that there were going to be a lot of push
 
 I don't publish blog posts that often, so I think that's an acceptable tradeoff.
 
-### Adding support for Obsidian
+### Reconfiguring Obsidian
+
+Since blog posts on my site are written in MDX files, I also have the Custom File Extensions plugin installed so that Obsidian can recognize them.
 
 Another change I made was to add support for Obsidian's callout format. Obsidian uses a flavor of Markdown called — wait for it — Obsidian Flavored Markdown.
 
