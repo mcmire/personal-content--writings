@@ -218,9 +218,15 @@ One consequence of this architecture is that the sync script now needs to be awa
 
 Another quirk of submodules — or least the way that I'm using them — is that the sync script assumes that `main` is checked out for all repos. For the root repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
 
+Besides submodules, I also updated how the site got deployed automatically. Previously, if I wanted to deploy my site to production, I could push to `main`. But if I wanted to see a preview of a post before publishing it live, I had to make a pull request on my content repo.
+
+- If I made a pull request on the content repo's `main` branch, it would trigger a deploy to the staging version of my site, and if I pushed a commit to the _site_ repo's `main` branch, it would trigger a deploy to _production_. …….
+
+Another change I made was to add support for Obsidian's callout format. Obsidian uses a flavor of Markdown called — wait for it — Obsidian Flavored Markdown.
+
 ## That's it (for now)
 
-That's how I use Obsidian. Not everything is perfect, but it works pretty okay, and I'm pleased  like all things, I'm sure I'll make it better over time, little by little. Perhaps many moons from now I'll 
+That's how I use Obsidian. Not everything is exactly the way I want it, but it works well enough that I can make it better over time, little by little. Perhaps many moons from now I'll post an update.
 
 ---
 
