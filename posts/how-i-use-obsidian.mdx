@@ -168,7 +168,7 @@ In contrast, Obsidian is so painless to use that I can open it anywhere, anytime
 
 I needed some way of bringing all three repos under one umbrella. I debated using subtrees (or something similar, such as [git-subrepo](https://github.com/ingydotnet/git-subrepo)) to accomplish this, but both approaches require keeping some amount of history in the parent repo, and I didn't want that.
 
-In the end I went with submodules. The hierarchy of my vault repo now looks like this:
+In the end I decided to use submodules. The hierarchy of my vault repo now looks like this:
 
 ```
 obsidian-vault/
@@ -198,6 +198,8 @@ And `.gitmodules` in `_modules/elliotwinkler.com` looks like this:
         path = modules/personal-content--writings
         url = https://github.com/mcmire/personal-content--writings
 ```
+
+### Updating the sync script 
 
 Having integrated submodules, I now needed to make the sync script work with them. While updating the script, I noticed that if new changes are brought into a submodule via `git pull`, it will cause the parent repo to think that there are changes that need to be committed. To solve this problem, I have the script descend into submodules first, create any necessary commits (along with the usual pull and push steps), then proceed up the tree. Here's what a typical run of the script looks like:
 
