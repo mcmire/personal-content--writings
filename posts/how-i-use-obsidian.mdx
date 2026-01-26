@@ -193,7 +193,9 @@ And `.gitmodules` in `_modules/elliotwinkler.com` looks like this:
 
 ### Updating the sync script 
 
-Having integrated submodules, I now needed to make the sync script work with them. While updating the script, I noticed that if new changes are brought into a submodule via `git pull`, it will cause the parent repo to think that there are changes that need to be committed. To solve this problem, I have the script descend into submodules first, create any necessary commits (along with the usual pull and push steps), then proceed up the tree. Here's what a typical run of the script looks like:
+Having integrated submodules, I now needed to make the sync script work with them. While updating the script, I noticed that if new changes are brought into a submodule via `git pull`, it will cause the parent repo to think that there are changes that need to be committed. To solve this problem, I have the script descend into submodules first, create any necessary commits (along with the usual pull and push steps), then proceed up the tree.
+
+Here's what a typical run of the script looks like:
 
 ```
 [~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Committing all files...
@@ -241,14 +243,10 @@ Since blog posts on my site are written in MDX files, however, I needed to make 
 
 ### Updating the site repo
 
-Obsidian supports a superset of CommonMark, aptly called Obsidian Flavored Markdown. Two notable extensions within this superset that I needed to account for are:
+Obsidian implements a superset of CommonMark, aptly called [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown). In order for posts to appear the same way they do on Obsidian, I updated my site to support the following two features:
 
 - [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`.
-- [Callouts](https://help.obsidian.md/callouts). These are very similar to [GitHub's alerts feature](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts), except that callout types are allowed to be lowercase, and there are a lot more types supported.
-
-Another change I made was to add support for Obsidian's callout format. Obsidian uses a flavor of Markdown called — wait for it — 
-
-… TODO …
+- [Callouts](https://help.obsidian.md/callouts). These are very similar to [GitHub's alerts feature](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts), except that callout types are allowed to be lowercase, and there are a lot more types supported. [^4] Thankfully, someone created [`rehype-callouts`](https://github.com/lin-stephanie/rehype-callouts), and this works very well.
 
 ### Addendum: Initializing the vault repo
 
@@ -264,6 +262,7 @@ That's how I use Obsidian. Not everything is exactly the way I want it, but it w
 [^1]: [Roam Whitepaper](https://roamresearch.com/#/app/help/page/dZ72V0Ig6)
 [^2]: ["A brief rant on note-taking apps and the structure of thought"](https://x.com/Conaw/status/1099181050045952006), from one of the co-creators of Roam. 
 [^3]: [Thoughts on Daily Notes from a user](https://youtu.be/X6OOos4met0?si=UvluNcmDagFNs2Yg&t=411)
+[^4]: There's a whole discussion about [adding callouts to CommonMark](https://talk.commonmark.org/t/github-is-beta-testing-their-own-admonition-syntax-we-should-weigh-in/4173/27), but no decision has been made yet.
 
 ---
 
