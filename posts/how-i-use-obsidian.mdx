@@ -112,28 +112,9 @@ Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mc
 
 On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same process I have on desktop. (As far as I know, this only works on Android; on iOS you could probably use [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/9.0/ios).)
 
-I have one workflow that looks like this:
+I have one workflow that looks like this:x
 
-```mermaid
-graph TB
-	FlowBeginning["Flow beginning"] -- GO --> Fork1["Fork"]
-	Fork1 -- OK --> Fork2["Fork syncfiber parent"]
-	Fork2 -- OK --> Fork3["Fork parent"]
-	Fork3 -- OK --> AppInForeground["App in foreground? (When md.obsidian.MainActivity changed)"]
-	Fork3 -- NEW --> WhenDeviceUnlocked["When device unlocked"]
-	
-	AppInForeground -- YES --> FiberStop1["Fiber stop timerfiber1"]
-	FiberStop1 -- OK --> AppInForeground
-	AppInForeground -- NO --> FiberStop2["Fiber stop timerfiber1"]
-	FiberStop2 -- OK --> Fork4["Fork timerfiber1 parent"]
-	Fork4 -- OK --> AppInForeground
-	
-	WhenDeviceUnlocked -- YES --> FiberStop3["Fiber stop timerfiber2"]
-	FiberStop3 -- OK --> WhenDeviceUnlocked
-	WhenDeviceUnlocked -- NO --> FiberStop4["Fiber stop timerfiber2"]
-	FiberStop4 -- OK --> Fork5["Fork timerfiber2 parent"]
-	Fork5 -- OK --> WhenDeviceUnlocked
-```
+![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
 
 In short:
 
