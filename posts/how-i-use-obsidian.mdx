@@ -112,7 +112,7 @@ Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mc
 
 On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same process I have on desktop. (As far as I know, this only works on Android; on iOS you could probably use [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/9.0/ios).)
 
-I have one workflow that looks like this:x
+I have one workflow that looks like this:
 
 ![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
 
@@ -215,12 +215,6 @@ Having integrated submodules, I now needed to make the sync script work with the
 [~/obsidian-vault] Sync completed successfully!
 ```
 
-### Initializing the vault repo
-
-The sync script assumes that `main` is checked out for all repos so that it can pull the latest changes to that branch. This means that when I have to clone (or re-clone) my vault repo, 
-
-For the vault repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
-
 ### Updating the deployment process
 
 Besides submodules, I also updated how the site got deployed automatically.
@@ -229,6 +223,8 @@ I have always made it possible to deploy a preview build while writing a draft. 
 
 - If I wanted to deploy my site to production, I could push a commit to `main`, either on the site repo or content repo.
 - If I wanted to deploy a preview build, I would have to make a pull request on either my site repo or my content repo.
+
+(Hence the complicated list of steps at the start of this whole section.)
 
 Switching to submodules, though, meant that there were going to be a lot of pushes straight to `main` for both site and content repos. I didn't want to deploy the production site every time that happened, so now the way it works is:
 
@@ -239,11 +235,27 @@ I don't publish blog posts that often, so I think that's an acceptable tradeoff.
 
 ### Reconfiguring Obsidian
 
-Since blog posts on my site are written in MDX files, I also have the Custom File Extensions plugin installed so that Obsidian can recognize them.
+By default, Obsidian only lets you see and work with `.md` files; if there are any other files present in your vault, it ignores them.
 
-Another change I made was to add support for Obsidian's callout format. Obsidian uses a flavor of Markdown called — wait for it — Obsidian Flavored Markdown.
+Since blog posts on my site are written in MDX files, however, I needed to make them visible. There doesn't seem to be an official way to do this, but I found the Custom File Extensions plugin, and although it is a bit overengineered for my liking, it fit the bill.
+
+### Updating the site repo
+
+Obsidian supports a superset of CommonMark, aptly called Obsidian Flavored Markdown. Two notable extensions within this superset that I needed to account for are:
+
+- Comments. These are designated using `%%...%%` instead of `<!--...-->`.
+- Callouts. These are very similar to GitHub's alerts feature
+
+Another change I made was to add support for Obsidian's callout format. Obsidian uses a flavor of Markdown called — wait for it — 
 
 … TODO …
+
+### Addendum: Initializing the vault repo
+
+The sync script assumes that `main` is checked out for all repos so that it can pull the latest changes to that branch. This means that when I have to clone (or re-clone) my vault repo, 
+
+For the vault repo this is no problem, but submodules require a bit of babysitting. When I clone the vault repo — say, when setting up my phone — I can't run `git submodule update --init`, I have to go into each submodule and manually check out `main`. Once that's done, then everything is fine, but it's a bit of a pain at first.
+
 
 ## That's it (for now)
 
