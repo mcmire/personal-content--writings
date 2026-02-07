@@ -102,11 +102,14 @@ setup-submodules() {
 setup() {
   create-submodules "$PWD"
 
-  echo "### Setting up git-lfs ###"
-  git lfs install
+  echo "### Ensuring that git-lfs hooks are removed ###"
+  # We can't assume that any of the hooks are executable.
+  # This is especially true if this repo has been cloned on an SD card on mobile.
+  rm -rf .git/hooks/*
+  echo "Okay."
 
   echo
-  echo "Done!"
+  echo "Setup done!"
 
   setup-submodules
 }
