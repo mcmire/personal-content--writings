@@ -1,0 +1,49 @@
+body {
+  /* (1.8^(-6*i/8))+1 */
+  --h1-size: 2em;
+  --h2-size: 1.643em;
+  --h3-size: 1.414em;
+  --h3-weight: 500;
+  --h4-size: 1.266em;
+  --h4-weight: 400;
+  --h5-size: 1.171em;
+  --h5-color: hsl(0 0% 40%);
+  --h5-weight: 400;
+}
+
+/* Title of page */
+.inline-title {
+  margin-bottom: 1em;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+  padding-top: 0;
+  /*margin-top: 1em !important;*/
+}
+
+.HyperMD-header-2 {
+  border-bottom: 1px solid currentcolor;
+  padding-bottom: 0.1em !important;
+}
+
+/*.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-2 {*/
+/*margin-bottom: 0.5em !important;*/
+/*}*/
+
+.outliner-plugin-better-lists .cm-s-obsidian .HyperMD-list-line {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0.4em !important;
+}
+
+img[alt*="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hide comments except for current line */
+/*
+.cm-line:not(.cm-active) .cm-comment {
+  display: none;
+}
+*/

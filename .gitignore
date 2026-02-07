@@ -14,5 +14,6 @@ node_modules
 #!.yarn/cache
 .pnp.*
 
-.obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/workspace.json
+.trash

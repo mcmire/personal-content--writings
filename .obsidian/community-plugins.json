@@ -1,5 +1,14 @@
 [
-  "OA-file-hider",
-  "fix-require-modules",
-  "obsidian-custom-file-extensions-plugin"
+  "obsidian-smart-typography",
+  "obsidian-shellcommands",
+  "note-refactor-obsidian",
+  "obsidian-metatemplates",
+  "obsidian-vimrc-support",
+  "improved-vimcursor",
+  "obsidian-outliner",
+  "quickadd",
+  "cmdr",
+  "obsidian-custom-file-extensions-plugin",
+  "vault-ai",
+  "show-whitespace-cm6"
 ]

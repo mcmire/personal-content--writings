@@ -1,1 +1,36 @@
-{}
+{
+  "mobileToolbarCommands": [
+    "editor:undo",
+    "editor:redo",
+    "editor:copy",
+    "editor:cut",
+    "editor:paste",
+    "editor:insert-link",
+    "editor:swap-line-up",
+    "obsidian-outliner:move-list-item-up",
+    "editor:swap-line-down",
+    "obsidian-outliner:move-list-item-down",
+    "editor:unindent-list",
+    "editor:indent-list",
+    "editor:toggle-bold",
+    "editor:toggle-italics",
+    "editor:toggle-strikethrough",
+    "editor:toggle-bullet-list",
+    "editor:toggle-code",
+    "editor:toggle-blockquote",
+    "editor:toggle-numbered-list",
+    "editor:move-caret-left",
+    "editor:move-caret-right",
+    "editor:configure-toolbar"
+  ],
+  "vimMode": true,
+  "smartIndentList": true,
+  "tabSize": 2,
+  "useTab": true,
+  "promptDelete": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notes",
+  "userIgnoreFilters": [
+    "_modules/elliotwinkler.com/node_modules/"
+  ]
+}

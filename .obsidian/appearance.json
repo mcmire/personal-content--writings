@@ -1,1 +1,8 @@
-{}
+{
+  "accentColor": "",
+  "theme": "system",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "snippet"
+  ]
+}

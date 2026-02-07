@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "authors": "multitext",
+    "specialities": "multitext",
+    "year_published": "number",
+    "retrieved": "date",
+    "last_updated": "date",
+    "published": "text"
+  }
+}

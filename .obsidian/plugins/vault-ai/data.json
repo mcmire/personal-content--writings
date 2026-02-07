@@ -1,0 +1,14 @@
+{
+  "apiKey": "VXgzMm1KTXNEaURkd21QbzU0amVKeERNM1ZnQkx0NWpDeVNheklB",
+  "floatingPosition": {
+    "x": 20,
+    "y": 20
+  },
+  "isDocked": false,
+  "chatSessions": [],
+  "customPrompts": [],
+  "ragEnabled": true,
+  "ragFolderPath": "/",
+  "ragStoreName": "fileSearchStores/vaultaifilesearchstore-t3e0lm33d9y8",
+  "ragSyncedFiles": {}
+}
