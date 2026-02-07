@@ -31,6 +31,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "Notes",
   "userIgnoreFilters": [
-    "_modules/elliotwinkler.com/node_modules/"
+    "node_modules/"
   ]
 }
