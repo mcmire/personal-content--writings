@@ -66,6 +66,7 @@ create-submodule() {
     echo "NOT creating symlink $source => $destination ($destination does not exist)"
   else
     echo "Creating symlink $source => $destination"
+    mkdir -p "$(dirname "$source")"
     ln -s "$destination" "$source"
   fi
 }
