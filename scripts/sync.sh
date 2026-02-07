@@ -237,7 +237,8 @@ enforce-primary-branch() {
 
 pull-primary-branch() {
   info-with-tag "$PWD" "Fetching updates..."
-  run-command git pull origin "$primary_branch_name" --rebase --prune
+  run-command git pull origin "$primary_branch_name" --rebase --prune || return $?
+  run-command git lfs pull origin "$primary_branch_name" || return $?
 }
 
 commit-files-to-sync() {
@@ -285,7 +286,8 @@ commit-files-to-sync() {
 
 push-primary-branch() {
   info-with-tag "$PWD" "Pushing \`$primary_branch_name\`..."
-  run-command git push origin "$primary_branch_name"
+  run-command git push origin "$primary_branch_name" || return $?
+  run-command git lfs push origin "$primary_branch_name" || return $?
 }
 
 sync-directory() {
