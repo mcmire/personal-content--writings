@@ -1,0 +1,364 @@
+#!/bin/bash
+
+## Constants
+
+LOCKED_EXIT_CODE=-700
+
+## Parameters
+
+repo_directory="$PWD"
+primary_branch_name=main
+dry_run=false
+pid_file_directory=
+
+## Helpers
+
+success() {
+  echo "$@"
+}
+
+info() {
+  echo "$@"
+}
+
+warn() {
+  echo "WARNING:" "$@" >&2
+}
+
+error() {
+  echo "ERROR:" "$@" >&2
+}
+
+success-with-tag() {
+  success "[$1]" "${@:2}"
+}
+
+warn-with-tag() {
+  warn "[$1]" "${@:2}"
+}
+
+error-with-tag() {
+  error "[$1]" "${@:2}"
+}
+
+info-with-tag() {
+  info "[$1]" "${@:2}"
+}
+
+is-git-repository() {
+  git rev-parse --is-inside-work-tree >/dev/null 2>&1
+}
+
+get-current-branch() {
+  git rev-parse --abbrev-ref HEAD
+}
+
+has-staged-changes() {
+  if git diff-index --quiet --cached HEAD >/dev/null 2>&1; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+get-files-to-sync() {
+  while IFS= read -r file; do
+    if [[ -n $file ]]; then
+      # shellcheck disable=SC2086
+      # No need to quote - it's already quoted
+      eval echo $file
+    fi
+  done < <(git status --porcelain --no-renames | cut -c 4-)
+}
+
+remove-branch() {
+  local branch_name="$1"
+  git branch -D "$branch_name" && (git push origin --delete "$branch_name" || true)
+}
+
+run-command() {
+  local command_executable="$1"
+  local command_args=("${@:2}")
+  local exit_status
+  local tempfile
+  tempfile="$(mktemp)"
+
+  local command="$command_executable"
+  for command_arg in "${command_args[@]}"; do
+    command+=" "
+    command+=$(printf "%q" "$command_arg")
+  done
+
+  if [[ $dry_run == "true" ]]; then
+    echo "Would have run: $command"
+  else
+    eval "$command" >"$tempfile" 2>&1
+    exit_status=$?
+
+    if [[ $exit_status -ne 0 ]]; then
+      error "Command '${command[*]}' failed with exit status $exit_status."
+      echo "Command output:"
+      cat "$tempfile"
+    fi
+
+    return $exit_status
+  fi
+}
+
+## Actions
+
+print-usage() {
+  echo "\
+USAGE: $0 OPTIONS
+
+OPTIONS:
+
+-b, --primary-branch BRANCH
+  Name of the primary branch to sync with.
+  (Default: main)
+
+-p, --pid-file-directory DIRECTORY
+  Path to the directory used to record a lockfile for this script.
+  (Default: /tmp)
+
+-n, --dry-run
+  Don't perform any Git operations; just print what would have happened.
+
+-h, --help
+  Print this message and exit.
+"
+}
+
+parse-args() {
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --primary-branch | -b)
+        primary_branch_name="$2"
+        shift 2
+        ;;
+      --dry-run | -n)
+        dry_run="true"
+        shift
+        ;;
+      --pid-file-directory | -p)
+        pid_file_directory="$2"
+        shift 2
+        ;;
+      --help | -h)
+        print-usage
+        exit
+        ;;
+      *)
+        error "Unknown option or argument: $1"
+        error
+        print-usage >&2
+        return 1
+        ;;
+    esac
+  done
+
+  if [[ -z $pid_file_directory ]]; then
+    if ls /tmp &>/dev/null; then
+      pid_file_directory="/tmp"
+    else
+      pid_file_directory="$HOME/tmp"
+    fi
+  fi
+
+  return 0
+}
+
+validate-args() {
+  if [[ -z $primary_branch_name ]]; then
+    error "Missing required option: --primary-branch-name"
+    error
+    print-usage >&2
+    return 1
+  fi
+
+  return 0
+}
+
+get-pid-file-path() {
+  local command_hash
+  command_hash=$(echo -n "$repo_directory" "$primary_branch_name" | md5sum | head -c 32)
+  echo "$pid_file_directory/sync-obsidian-vault.$command_hash.pid"
+}
+
+lock() {
+  local pid_file_path
+  pid_file_path="$(get-pid-file-path)"
+
+  if [[ -z "$pid_file_path" ]]; then
+    error "Could not lock: Could not generate PID file path"
+    return 1
+  fi
+
+  if [[ -f "$pid_file_path" ]]; then
+    if ps -p "$(cat "$pid_file_path")" >/dev/null; then
+      error "This Obsidian vault is already in the process of being synced."
+      return $LOCKED_EXIT_CODE
+    else
+      rm "$pid_file_path"
+    fi
+  else
+    mkdir -p "$(dirname "$pid_file_path")"
+    echo $$ > "$pid_file_path"
+  fi
+
+  return 0
+}
+
+unlock() {
+  local pid_file_path
+  pid_file_path="$(get-pid-file-path)"
+
+  if [[ -f "$pid_file_path" ]]; then
+    rm "$pid_file_path"
+  fi
+}
+
+enforce-git-repository() {
+  if ! is-git-repository; then
+    error "\`$PWD\` is not a Git repository."
+    return 1
+  fi
+}
+
+enforce-primary-branch() {
+  local current_branch
+  current_branch="$(get-current-branch)"
+
+  if [[ "$current_branch" != "$primary_branch_name" ]]; then
+    error-with-tag "$PWD" "The current branch must be \`$primary_branch_name\` to continue."
+    return 1
+  fi
+}
+
+pull-primary-branch() {
+  info-with-tag "$PWD" "Fetching updates..."
+  run-command git pull origin "$primary_branch_name" --rebase --prune
+}
+
+commit-files-to-sync() {
+  local files_to_sync="$1"
+  local source
+  local destination
+  local submodule_paths=()
+  local is_submodule=
+  local num_files_added=0
+
+  info-with-tag "$PWD" "Committing all files..."
+
+  if [[ -f .submodules ]]; then
+    # shellcheck disable=SC2016
+    while read -r source destination; do
+      submodule_paths+=("$source")
+    done < .submodules
+  fi
+
+  is_submodule=0
+  while IFS= read -r file; do
+    if [[ -n "$file" ]]; then
+      for submodule_path in "${submodule_paths[@]}"; do
+        if [[ $submodule_path == "$file" ]]; then
+          is_submodule=1
+          break
+        fi
+      done
+
+      if [[ $file == *.md || $file == *.mdx || $file == *.jpg || $file == *.png || $file == *.webp || $file == .obsidian/* || $is_submodule -eq 1 ]]; then
+        info-with-tag "$PWD" "- Adding file: $file"
+        run-command git add "$file"
+      else
+        info-with-tag "$PWD" "- Not adding file as it's filtered out: $file"
+      fi
+    fi
+  done < <(echo "$files_to_sync")
+
+  num_files_added="$(git diff --cached --name-only | wc -l)"
+
+  if [[ $num_files_added -gt 0 ]]; then
+    run-command git commit -m "Automatic sync"
+  fi
+}
+
+push-primary-branch() {
+  info-with-tag "$PWD" "Pushing \`$primary_branch_name\`..."
+  run-command git push origin "$primary_branch_name"
+}
+
+sync-directory() {
+  local directory="$1"
+  local previous_directory="$2"
+
+  local source
+  local destination
+  local file
+  local files_to_sync
+  local has_files_to_sync=0
+
+  cd "$directory" || return $?
+
+  enforce-git-repository || return $?
+  enforce-primary-branch || return $?
+
+  if [[ -f .submodules ]]; then
+    # shellcheck disable=SC2016
+    while read -r source destination; do
+      sync-directory "${directory}/${source}" "$PWD" || return $?
+      echo
+    done < .submodules
+  fi
+
+  files_to_sync="$(get-files-to-sync)"
+  while IFS= read -r file; do
+    if [[ -n "$file" ]]; then
+      has_files_to_sync=1
+      break
+    fi
+  done < <(echo "$files_to_sync")
+  
+  if [[ $has_files_to_sync -eq 1 ]]; then
+    commit-files-to-sync "$files_to_sync" || return $?
+    pull-primary-branch || return $?
+    push-primary-branch || return $?
+
+    if [[ $dry_run == "false" ]]; then
+      success-with-tag "$directory" "Sync completed successfully!"
+    fi
+  else
+    pull-primary-branch || return $?
+    push-primary-branch || return $?
+
+    if [[ $dry_run == "true" ]]; then
+      success-with-tag "$directory" "No changes would have been synced."
+    else
+      success-with-tag "$directory" "No changes to sync, all good!"
+    fi
+  fi
+
+  if [[ "$directory" != "$repo_directory" ]]; then
+    cd "$previous_directory" >/dev/null || return $?
+  fi
+
+  return 0
+}
+
+main() {
+  local exitcode
+  local current_branch
+
+  parse-args "$@" || return $?
+  validate-args || return $?
+
+  lock || return $?
+  trap unlock INT TERM
+  sync-directory "$repo_directory" "$PWD" || return $?
+  exitcode=$?
+  unlock
+
+  return $exitcode
+}
+
+main "$@"
