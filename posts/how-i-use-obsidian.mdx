@@ -7,17 +7,17 @@ tags:
 
 In this post, I'll document how I use Obsidian, how I've tweaked it to fit my needs, and how that's evolved over time.
 
-## How I used to use Obsidian
+## How I first used Obsidian
 
 These days, I try to keep things simple. But it wasn't always that way.
 
 When I first switched to Obsidian, I migrated a bunch of notes from [Simplenote](https://simplenote.com/). I began imposing structure: I created subdirectories for different kinds of notes, and I turned a part of my vault into a database using Dataview. Over time, %%each time I opened the app, I felt unsettled. I had made things worse:%% I felt like I was spending too much energy thinking about how to organize my vault. I was feeding the %%obsessive%% perfectionist side of my brain, and %%each time I opened the app,I%% %%it felt more and more dissatisfied%% along with it a growing dissatisfaction.
 
-Meanwhile, one of my coworkers was using [Roam](https://roamresearch.com/). %%Here, top-down organization is viewed as limiting … This tool is different because … One of the core premises is that directories are a poor paradigm for organizing thoughts and ideas because they don't map to how your brain acquires knowledge in real life … Roam dispenses with top-down organization and … In Roam, thoughts and ideas are like nodes in a graph instead of a file in a filetree … Roam is a unique tool because it dispenses with files entirely … Roam offered a fresh perspective: instead of a hierarchy of files and folders, it views files and folders as an antiquated paradigm for organizing and managing information; instead, it%% Roam takes a unique position: thoughts, ideas, and other pieces of information %%captured over time%% are messy and don't fit cleanly into a hierarchy of folders. Instead, they're best represented by a graph which grows and changes shape organically as new information is added. [^1] [^2] %%it treats your ideas and thoughts as nodes on a knowledge graph%% %%they're, which grows organically as you connect nodes together.%% Adding another node to the graph should be effortless: each time you load the app, you start with an automatically generated note for the current day. This removes cognitive overhead and allows you to form consistent habits, thereby giving you a sense of "home". [^3]
+Meanwhile, one of my coworkers was using [Roam](https://roamresearch.com/). %%Here, top-down organization is viewed as limiting … This tool is different because … One of the core premises is that directories are a poor paradigm for organizing thoughts and ideas because they don't map to how your brain acquires knowledge in real life … Roam dispenses with top-down organization and … In Roam, thoughts and ideas are like nodes in a graph instead of a file in a filetree … Roam is a unique tool because it dispenses with files entirely … Roam offered a fresh perspective: instead of a hierarchy of files and folders, it views files and folders as an antiquated paradigm for organizing and managing information; instead, it%% Roam takes a unique position. Thoughts, ideas, and other pieces of information %%captured over time%% are messy and don't fit cleanly into a hierarchy of folders. Instead, they're best represented by a graph which grows and changes shape organically as new information is added. [^1] [^2] %%it treats your ideas and thoughts as nodes on a knowledge graph%% %%they're, which grows organically as you connect nodes together.%% Adding another node to the graph should be effortless: each time you load the app, you start with an automatically generated note for the current day. This removes cognitive overhead and allows you to form consistent habits, thereby giving you a sense of "home". [^3]
 
 %%These days I try to keep things simple. I still find directories useful, but%% %%I've tried to wean myself off of them slowly, and%% %%I've limited myself to three:%%
 
-%%While I've stuck with Obsidian, I've used limitations to my advantage … the limitations imposed by Roam inspired me …  I started to bring these ideas into Obsidian … Inspired by these limitations, I disabled most of my plugins and narrowed down the list of …%% While I've continued to use Obsidian for practical and philosophical reasons — it's local-first, cross-platform, extensible, and it just feels pleasant to use — I've learned that limitations can be an advantage.
+%%While I've stuck with Obsidian, I've used limitations to my advantage … the limitations imposed by Roam inspired me …  I started to bring these ideas into Obsidian … Inspired by these limitations, I disabled most of my plugins and narrowed down the list of …%% When I read about this, I was intrigued. While I've continued to use Obsidian for practical and philosophical reasons — it's local-first, cross-platform, extensible, and it just feels pleasant to use — I've learned that limitations can be an advantage.
 
 ## How I use Obsidian now
 
@@ -33,34 +33,41 @@ I still find directories useful, but there are three broad categories of notes t
 
 - `Notes/` — Non-date-based. Most of my old notes are here, and I have yet to migrate them to a better format. Even so, I still tend to use this category to hold information that I think deserves a bit more structure, I want to keep together in one place, or I feel like would be buried if I left it in a journal entry. Each note tends to center around a concept or theme. For instance, when I do research for big-ticket items (e.g., baby strollers, cars, etc.) or make plans for trips, I'll add a note here. There are also simple lists of things such as potential baby names, etc.
 
- Beyond this structure, I've recently begun using tags to link notes by broader themes. This is a practice I already follow when posting bookmarks to [Pinboard](https://pinboard.in/), and I already have a list of tags in my head that I frequently use, so tagging notes is a pretty easy transition. For instance, if I'm thinking about AI, I'll use the tag `#artificial-intelligence`; if I'm thinking about career goals or dreams, I'll use `#future-work`. I also have tags for `#philosophy` and `#physics` and `#music-analysis`.
+ Beyond this structure, I've recently begun using tags to link notes by broader themes. This is a practice I already follow when posting bookmarks to [Pinboard](https://pinboard.in/), and I already have a list of tags %%in my head%% that I frequently use, so tagging notes is %%a%% pretty easy. %%transition.%% For instance, if I'm thinking about AI, I'll use the tag `#artificial-intelligence`; if I'm thinking about career goals or dreams, I'll use `#future-work`. I also have tags for `#philosophy` and `#physics` and `#music-analysis`.
 
 ### Core plugins
 
 I use a pretty small set of core plugins:
 
-- I use **Quick Switcher**, but I also use **Files**. Most of the time I know what I'm looking for and can jump to  it, but sometimes I just want to look at a file tree (and it's a better interface to perform actions like renames).
-- I use **Command Palette**. I like the recent trend of adding this feature to different apps. It reminds me of Spotlight on my Mac.
-- I use **Page Preview**. It's useful not to have to jump into a note to see what's inside it.
-- I use **Search**. I'm not sure what I'd do without this :) 
-- I don't use **Backlinks**, **Outgoing Links**, or **Graph View** (yet). I imagine these would be more useful if I were following Zettelkasten, but I don't. Maybe some day.
-- I don't use **Canvas**. Maybe if I were doing intense research I might need it, but I tend to only use features that I can both on mobile and desktop (see Syncing below), so I haven't given this a go yet. It's cool that the JSON representation is opensource, though.
-- I don't use **Bases**. I think the Obsidian team has done a great job developing this feature. It certainly looks appealing. But coming from my experience with Dataview, I'm wary of making my vault too complex again.
-- I don't use **Daily Notes**. Obsidian only supports creating daily notes in one location, but as mentioned above, I want to have two date-based directories. (I don't use Templates for a similar reason.) I use QuickAdd instead (see below).
-- I don't use **Outline** or **Properties View**. I don't usually have documents that are so long that I have trouble scrolling through them. And I don't need to see properties across all of my notes.
-- I don't use **Sync**; I use my own solution (again, see below).
-- I don't use **Web Viewer**. I usually have my browser open on either my laptop or phone, and I want to keep all of my open tabs together in the same app.
-- I don't use **Word Count**. I don't really care how long my notes are, and for blog posts like these, I write and rewrite thousands of words and hide the vast majority of them, so a word count doesn't really help anyway.
+- **Quick Switcher** + **Files**. Most of the time I know what I'm looking for and can jump to it, but sometimes I just want to look at a file tree (and it's a better interface to perform actions like renames).
+- **Command Palette**. I like this paradigm that's been integrated into apps over the years. It reminds me of Spotlight on my Mac.
+- **Page Preview**. It's useful not to have to jump into a note to see what's inside it.
+- **Search**. I'm not sure what I'd do without this :) 
+
+In contrast, here's what I've disabled:
+
+- **Backlinks**, **Outgoing Links**, or **Graph View**. I imagine these would be more useful if I were following Zettelkasten, but I don't. Maybe some day.
+- **Canvas**. Maybe if I were doing intense research I might need it, but I tend to only use features that I can both on mobile and desktop (see Syncing below), so I haven't given this a go yet. It's cool that the JSON representation is opensource, though.
+- **Bases**. I think the Obsidian team has done a great job developing this feature. It certainly looks appealing. But coming from my experience with Dataview, I'm wary of making my vault too complex again.
+- **Daily Notes**. Obsidian only supports creating daily notes in one location, but as mentioned above, I want to have two date-based directories. (I don't use Templates for a similar reason.) I use QuickAdd instead (see below).
+- **Outline** or **Properties View**. I don't usually have documents that are so long that I have trouble scrolling through them. And I don't need to see properties across all of my notes.
+- **Sync**. I use my own solution (again, see below).
+- **Web Viewer**. I usually have my browser open on either my laptop or phone, and I want to keep all of my open tabs together in the same app.
+- **Word Count**. I don't really care how long my notes are, and for blog posts like these, I write and rewrite thousands of words and hide the vast majority of them, so a word count doesn't really help anyway.
 
 ### Community plugins 
 
 I try out new plugins from time to time, but here are the ones that have stuck:
 
-- **Commander** + **QuickAdd** — I use the combination of these plugins to add a button to the ribbon that allows me to generate either a diary entry or a log entry using one of two templates I've set up.
-- **Custom File Extensions** — This plugin allows me to edit MDX files (more on that later).
-- **Outliner** — Provides some great quality-of-life features for working with lists. On my laptop, I can press `Cmd-Shift-Up` and `Cmd-Shift-Down` to move a list item up or down, respectively. On my phone, I have hotkeys to do the same thing.
-- **Smart Typography** — This helps me write on my phone because I can type `--` to get an em-dash and `<-` or `->` to get ← and → respectively.
-- **Vimrc Support** — I use Obsidian with Vim keybindings enabled. This plugin extends that by allowing me to see when I'm in insert mode vs. normal mode. It also allows me to add custom settings via a `.vimrc` file (for instance, I map `j` to `gj` and `k` to `gk` to be able to navigate through wrapped lines, and I use `set clipboard=unnamed` to use the system clipboard).
+- **Commander** + **QuickAdd**. I use the combination of these plugins to add a button to the ribbon that allows me to generate either a diary entry or a log entry using one of two templates I've set up.
+- **Custom File Extensions**. This plugin allows me to edit MDX files (more on that later).
+- **Outliner**. Provides some great quality-of-life features for working with lists. On my laptop, I can press `Cmd-Shift-Up` and `Cmd-Shift-Down` to move a list item up or down, respectively. On my phone, I have hotkeys to do the same thing.
+- **Smart Typography**. This helps me write on my phone because I can type `--` to get an em-dash and `<-` or `->` to get ← and → respectively.
+- **Vimrc Support**. I use Obsidian with Vim keybindings enabled. This plugin extends that by allowing me to see when I'm in insert mode vs. normal mode. It also allows me to add custom settings via a `.vimrc` file (for instance, I map `j` to `gj` and `k` to `gk` to be able to navigate through wrapped lines, and I use `set clipboard=unnamed` to use the system clipboard).
+
+## Vaults
+
+As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-together), the content for the site you see right now — the layout and styles — lives in a separate repo from the site itself. I do this because if I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo, and the Git history between the two will stay isolated.
 
 ## Syncing Obsidian between devices 
 
@@ -84,7 +91,7 @@ A few notes about this script:
 
 - It uses a lockfile to ensure that only one instance of the script is running at a time.
 - Even if the script runs, if there are no changes, then no commit will get created and nothing will get pushed.
-- The steps above are also run for submodules first (see [below](#updating-this-site-via-obsidian) for why this is important).
+- The script also supports syncing nested repos (see [below](#updating-this-site-via-obsidian) for why this is important).
 - I've configured Git to ignore `.obsidian/workspace.json` and `.obsidian/workspace-mobile.json`, so if these are changed then nothing will happen. This files holds ephemeral data like recently opened files that I don't need to capture in Git.
 
 Now, having a sync script is great, but I don't want to run it manually. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
