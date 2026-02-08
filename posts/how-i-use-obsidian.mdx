@@ -106,7 +106,7 @@ In short:
 
 - When I switch away from Obsidian, or when I lock my phone, the sync script is executed.
 - The sync script is also executed every 30 minutes automatically (in case either of the two checks above don't work properly).
-- Like on desktop, executions of the sync script are debounced by 1 minute. If the timer is running and I switch back to Obsidian or unlock my phone, the timer is canceled.
+- Like on desktop, executions of the sync script are debounced by 2 minutes. If the timer is running and I switch back to Obsidian or unlock my phone, the timer is canceled.
 - The workflow uses a plugin block, using [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker), to run the sync command. (It may be that I can use the "Shell script" action, but I haven't tested it out.)
 
 The other workflow is used to simply run the sync script on demand.

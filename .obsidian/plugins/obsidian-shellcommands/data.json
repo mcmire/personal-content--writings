@@ -120,7 +120,12 @@
           "enabled": true
         }
       },
-      "debounce": null,
+      "debounce": {
+        "executeEarly": false,
+        "executeLate": true,
+        "cooldownDuration": 120,
+        "prolongCooldown": false
+      },
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {}
