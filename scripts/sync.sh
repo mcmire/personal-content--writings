@@ -275,7 +275,8 @@ enforce-primary-branch() {
 
 pull-primary-branch() {
   info-with-tag "$PWD" "Fetching updates..."
-  run-command git pull origin "$primary_branch_name" --rebase --prune || return $?
+  # Don't run hooks, otherwise we may run `git lfs` twice
+  run-command git pull origin --rebase --prune --no-verify "$primary_branch_name" || return $?
   run-command git lfs pull origin "$primary_branch_name" || return $?
 }
 
@@ -327,7 +328,8 @@ commit-files-to-sync() {
 
 push-primary-branch() {
   info-with-tag "$PWD" "Pushing \`$primary_branch_name\`..."
-  run-command git push origin "$primary_branch_name" || return $?
+  # Don't run hooks, otherwise we may run `git lfs` twice
+  run-command git push origin --no-verify "$primary_branch_name" || return $?
   run-command git lfs push origin "$primary_branch_name" || return $?
 }
 
