@@ -8,7 +8,9 @@ LOCKED_EXIT_CODE=-700
 
 repo_directory="$PWD"
 primary_branch_name=main
+commit_message="Automatic commit"
 dry_run=false
+simulate_commit=false
 pid_file_directory=
 
 ## Helpers
@@ -77,17 +79,32 @@ remove-branch() {
 }
 
 run-command() {
-  local command_executable="$1"
-  local command_args=("${@:2}")
+  local command
+  local command_executable
   local exit_status
   local tempfile
-  tempfile="$(mktemp)"
 
-  local command="$command_executable"
-  for command_arg in "${command_args[@]}"; do
-    command+=" "
-    command+=$(printf "%q" "$command_arg")
+  for arg in "$@"; do
+    if [[ -n "$command" ]]; then
+      command+=" "
+    fi
+    if [[ $arg == "|" ]]; then
+      # This is a pipe; don't escape it
+      command+="$arg"
+      # Forget the current executable so that if we encounter another one
+      # we won't escape it
+      command_executable=
+    elif [[ -z "$command_executable" ]]; then
+      # This is the name of an executable; don't escape it
+      command+="$arg"
+      command_executable="$arg"
+    else
+      # This is an argument to the current executable; escape it
+      command+=$(printf "%q" "$arg")
+    fi
   done
+
+  tempfile="$(mktemp)"
 
   if [[ $dry_run == "true" ]]; then
     echo "Would have run: $command"
@@ -98,7 +115,9 @@ run-command() {
     if [[ $exit_status -ne 0 ]]; then
       error "Command '${command[*]}' failed with exit status $exit_status."
       echo "Command output:"
+      echo "--- START -----------"
       cat "$tempfile"
+      echo "--- END -------------"
     fi
 
     return $exit_status
@@ -115,14 +134,24 @@ OPTIONS:
 
 -b, --primary-branch BRANCH
   Name of the primary branch to sync with.
-  (Default: main)
+  (Default: \"main\")
 
 -p, --pid-file-directory DIRECTORY
   Path to the directory used to record a lockfile for this script.
-  (Default: /tmp)
+  (Default: \"/tmp\")
+
+-m, --commit-message MESSAGE
+  The message to use when making a commit. May contain newlines.
+  (Default: \"Automatic commit\")
 
 -n, --dry-run
   Don't perform any Git operations; just print what would have happened.
+  (Default: false)
+
+--simulate-commit
+  Pretend that some files have changes to cause a new commit to be created.
+  Implies --dry-run.
+  (Default: false)
 
 -h, --help
   Print this message and exit.
@@ -136,13 +165,22 @@ parse-args() {
         primary_branch_name="$2"
         shift 2
         ;;
-      --dry-run | -n)
-        dry_run="true"
-        shift
-        ;;
       --pid-file-directory | -p)
         pid_file_directory="$2"
         shift 2
+        ;;
+      --commit-message | -m)
+        commit_message="$2"
+        shift 2
+        ;;
+      --dry-run | -n)
+        dry_run=true
+        shift
+        ;;
+      --simulate-commit)
+        simulate_commit=true
+        dry_run=true
+        shift
         ;;
       --help | -h)
         print-usage
@@ -248,6 +286,7 @@ commit-files-to-sync() {
   local submodule_paths=()
   local is_submodule=
   local num_files_added=0
+  local tempfile
 
   info-with-tag "$PWD" "Committing all files..."
 
@@ -279,8 +318,10 @@ commit-files-to-sync() {
 
   num_files_added="$(git diff --cached --name-only | wc -l)"
 
-  if [[ $num_files_added -gt 0 ]]; then
-    run-command git commit -m "Automatic sync"
+  if [[ $num_files_added -gt 0 || $simulate_commit == "true" ]]; then
+    tempfile="$(mktemp)"
+    echo "$commit_message" > "$tempfile"
+    run-command git commit -F "$tempfile"
   fi
 }
 
@@ -306,7 +347,7 @@ sync-directory() {
   enforce-primary-branch || return $?
 
   if [[ -f .submodules ]]; then
-    # shellcheck disable=SC2016
+    # shellcheck disable=SC2016 disable=SC2034
     while read -r source destination; do
       sync-directory "${directory}/${source}" "$PWD" || return $?
       echo
@@ -320,6 +361,10 @@ sync-directory() {
       break
     fi
   done < <(echo "$files_to_sync")
+
+  if [[ $simulate_commit == "true" ]]; then
+    has_files_to_sync=1
+  fi
   
   if [[ $has_files_to_sync -eq 1 ]]; then
     commit-files-to-sync "$files_to_sync" || return $?
