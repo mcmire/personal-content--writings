@@ -65,7 +65,7 @@ I try out new plugins from time to time, but here are the ones that have stuck:
 - **Smart Typography**. This helps me write on my phone because I can type `--` to get an em-dash and `<-` or `->` to get ← and → respectively.
 - **Vimrc Support**. I use Obsidian with Vim keybindings enabled. This plugin extends that by allowing me to see when I'm in insert mode vs. normal mode. It also allows me to add custom settings via a `.vimrc` file (for instance, I map `j` to `gj` and `k` to `gk` to be able to navigate through wrapped lines, and I use `set clipboard=unnamed` to use the system clipboard).
 
-### Vaults and platforms
+### Vaults and devices
 
 As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-together), the content for the site you see right now — the layout and styles — lives in a separate repo from the site itself. I do this for two reasons:
 
@@ -84,7 +84,7 @@ Instead, I use a custom solution, which I will detail below.
 
 ### Sync script
 
-The work of syncing changes between the local and remote versions of my repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). (I keep in the vault repo under `./scripts/sync.sh` so I can run it manually if I need to.). This script runs the following steps:
+I host my vaults in private repos on GitHub. The work of syncing changes between the local and remote versions of my repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). (I keep in the vault repo under `./scripts/sync.sh` so I can run it manually if I need to.). This script runs the following steps:
 
 1. Adds files ending in `.md` and `.mdx` and files in `.obsidian` that have been changed
 2. Creates a new commit with the message "Automatic sync"
