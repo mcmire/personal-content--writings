@@ -72,41 +72,43 @@ As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-togethe
 1. If I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo.
 2. I can keep the Git history between the two isolated.
 
+I load my content repo as a separate vault in Obsidian, so that it's as easy as possible for me to write blog posts. 
+
 In addition, I use Obsidian on not only my laptop, but also my phone. %%I've found that each device has its own advantages. Having a full screen and keyboard is nice if I'm doing deep research on a topic and I need to be able to move content around or format text. But I've also found that when I only have 6 inches and 2 thumbs to work with, I'm forced to overthink less and focus more.%% %%I've developed a different workflow for each device.%% I've found that each device has its own advantages. When I'm out and about, the constraints of time and a small form factor keeps me from overthinking; it pushes me to jot down what I'm thinking before I forget it. Then, when I'm at home, I can sit down and put on my editor hat, picking apart the pieces and putting them back together into a cohesive whole.
 
 ## Syncing Obsidian between devices 
 
 I don't use Obsidian Sync. It definitely sounds useful, and I'm sure it's easy to set up. But I like to keep my Obsidian vault in Git so I have ultimate control of not only the current versions of the files in my vault, but also any historical versions as well. %%But I'd like to have control over every part of my data, and this includes historical versions of files.%%
 
-Nor do I use the Obsidian Git plugin. As the README states, [it is very unstable on mobile](https://github.com/Vinzent03/obsidian-git?tab=readme-ov-file#-mobile-support-%EF%B8%8F--experimental). I often use Obsidian on my phone during the day, so that doesn't work for me.
+Nor do I use the Obsidian Git plugin. As the README states, [it is very unstable on mobile](https://github.com/Vinzent03/obsidian-git?tab=readme-ov-file#-mobile-support-%EF%B8%8F--experimental), so that doesn't work for me.
 
 Instead, I use a custom solution, which I will detail below.
 
 ### Sync script
 
-I host my vaults in private repos on GitHub. The work of syncing changes between the local and remote versions of my repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). (I keep in the vault repo under `./scripts/sync.sh` so I can run it manually if I need to.). This script runs the following steps:
+The work of syncing changes between the local and remote (GitHub) versions of my repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). This script runs the following steps:
 
 1. Adds files ending in `.md` and `.mdx` and files in `.obsidian` that have been changed
 2. Creates a new commit with the message "Automatic sync"
 3. Pulls new commits in, rebasing any pending commits on top of them
 4. Pushes the `main` branch
-5. Handles submodules (see below for why this is important).
 
 A few notes about this script:
 
 - It uses a lockfile to ensure that only one instance of the script is running at a time.
 - Even if the script runs, if there are no changes, then no commit will get created and nothing will get pushed.
-- The script also supports syncing nested repos (see [below](#updating-this-site-via-obsidian) for why this is important).
 - I've configured Git to ignore `.obsidian/workspace.json` and `.obsidian/workspace-mobile.json`, so if these are changed then nothing will happen. This files holds ephemeral data like recently opened files that I don't need to capture in Git.
 
 Now, having a sync script is great, but I don't want to run it manually. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
 
 #### Desktop
 
-On my Mac, I have two LaunchAgents set up:
+On my Mac, I have two kinds of LaunchAgents set up for both the primary vault and my content repo:
 
-- One runs a daemon which executes a wrapper around the sync script when any file within the Obsidian vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
+- One runs a daemon which executes a wrapper around the sync script when any file within a vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
 - The other runs the same script every day. This handles the case where I'm writing something but I close my laptop before the script has a chance to run.
+
+
 
 Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo, and they get installed when I run `bin/manage install`.
 
