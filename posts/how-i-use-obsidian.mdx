@@ -86,7 +86,7 @@ Instead, I use a custom solution, which I will detail below.
 
 ### Sync script
 
-The work of syncing changes between the local and remote (GitHub) versions of my repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). This script runs the following steps:
+The work of syncing changes between the local and remote (GitHub) versions of my vault repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). This script runs the following steps:
 
 1. Adds files ending in `.md` and `.mdx` and files in `.obsidian` that have been changed
 2. Creates a new commit with the message "Automatic sync"
@@ -97,18 +97,16 @@ A few notes about this script:
 
 - It uses a lockfile to ensure that only one instance of the script is running at a time.
 - Even if the script runs, if there are no changes, then no commit will get created and nothing will get pushed.
-- I've configured Git to ignore `.obsidian/workspace.json` and `.obsidian/workspace-mobile.json`, so if these are changed then nothing will happen. This files holds ephemeral data like recently opened files that I don't need to capture in Git.
+- I've configured Git to ignore `.obsidian/workspace.json` and `.obsidian/workspace-mobile.json`within the vault repo, so if these are changed then nothing will happen. This files holds ephemeral data like recently opened files that I don't need to capture in Git.
 
 Now, having a sync script is great, but I don't want to run it manually. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
 
 #### Desktop
 
-On my Mac, I have two kinds of LaunchAgents set up for both the primary vault and my content repo:
+On my Mac, I have two kinds of LaunchAgents set up for my vault:
 
-- One runs a daemon which executes a wrapper around the sync script when any file within a vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
-- The other runs the same script every day. This handles the case where I'm writing something but I close my laptop before the script has a chance to run.
-
-
+- One runs a daemon which executes a wrapper around the sync script when any file within the vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
+- The other runs the same script every day. This handles the case where I'm writing something but I close my laptop before the script has a chance to run. ==(TODO: How does this make things better? Do LaunchAgents run while the computer is asleep?)==
 
 Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo, and they get installed when I run `bin/manage install`.
 
@@ -116,18 +114,16 @@ Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mc
 
 On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same process I have on desktop. (As far as I know, this only works on Android; on iOS you could probably use [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/9.0/ios).)
 
-I have one workflow that looks like this:
+I have one main workflow that combines the two macOS LaunchAgents:
+
+- It monitors the vault repo and automatically runs the sync script when any file is changed. This step is debounced (again, as I'm typing, no syncing will occur, but only after I've waited for 2 minutes). 
+- It also runs the sync script automatically every hour (just as a failsafe in case the watcher doesn't pick up changes for some reason)..
+
+The workflow runs commands via Termux thanks to a plugin block configured with [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). Automate does come with a "Shell script" block, but I found that it didn't interpret the shell command realistically.
 
 ![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
 
-In short:
-
-- When I switch away from Obsidian, or when I lock my phone, the sync script is executed.
-- The sync script is also executed every 30 minutes automatically (in case either of the two checks above don't work properly).
-- Like on desktop, executions of the sync script are debounced by 2 minutes. If the timer is running and I switch back to Obsidian or unlock my phone, the timer is canceled.
-- The workflow uses a plugin block, using [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker), to run the sync command. (It may be that I can use the "Shell script" action, but I haven't tested it out.)
-
-The other workflow is used to simply run the sync script on demand.
+A second workflow is used to simply run the sync script on demand without monitoring files.
 
 To set this up, I followed these steps:
 
