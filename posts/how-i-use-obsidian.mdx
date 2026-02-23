@@ -72,7 +72,7 @@ As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-togethe
 1. If I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo.
 2. I can keep the Git history between the two isolated.
 
-I load my content repo as a separate vault in Obsidian, so that it's as easy as possible for me to write blog posts. 
+I load my content repo as a separate vault in Obsidian, so that it's as easy as possible for me to write blog posts. (More on that later.)
 
 In addition, I use Obsidian on not only my laptop, but also my phone. %%I've found that each device has its own advantages. Having a full screen and keyboard is nice if I'm doing deep research on a topic and I need to be able to move content around or format text. But I've also found that when I only have 6 inches and 2 thumbs to work with, I'm forced to overthink less and focus more.%% %%I've developed a different workflow for each device.%% I've found that each device has its own advantages. When I'm out and about, the constraints of time and a small form factor keeps me from overthinking; it pushes me to jot down what I'm thinking before I forget it. Then, when I'm at home, I can sit down and put on my editor hat, picking apart the pieces and putting them back together into a cohesive whole.
 
@@ -88,7 +88,7 @@ Instead, I use a custom solution, which I will detail below.
 
 The work of syncing changes between the local and remote (GitHub) versions of my vault repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). This script runs the following steps:
 
-1. Adds files ending in `.md` and `.mdx` and files in `.obsidian` that have been changed
+1. Adds files ending in `.md` and `.mdx` and files in `.obsidian` that have been changed (except for workspace files — see below)
 2. Creates a new commit with the message "Automatic sync"
 3. Pulls new commits in, rebasing any pending commits on top of them
 4. Pushes the `main` branch
@@ -97,7 +97,6 @@ A few notes about this script:
 
 - It uses a lockfile to ensure that only one instance of the script is running at a time.
 - Even if the script runs, if there are no changes, then no commit will get created and nothing will get pushed.
-- I've configured Git to ignore `.obsidian/workspace.json` and `.obsidian/workspace-mobile.json`within the vault repo, so if these are changed then nothing will happen. This files holds ephemeral data like recently opened files that I don't need to capture in Git.
 
 Now, having a sync script is great, but I don't want to run it manually. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
 
@@ -150,11 +149,11 @@ Second, I've installed [Git LFS](https://git-lfs.com/). This way, if I want to a
 
 ## Updating this site via Obsidian
 
-One recent change I made was to integrate my site into my Obsidian vault.
+Recently, I made some changes that allow me to write and publish blog posts straight from Obsidian.
 
-As I explained in a [previous post](./behind-the-site.mdx#putting-it-all-together), the site you see right now — the layout and styles — lives in a separate repo from the content you're reading. I do this because if I ever want to change the way my site looks or even rebuild it using a different tech stack, I don't have to touch the content repo, and the Git history between the two will stay isolated.
+In a previous post, I detailed how I use GitHub workflows to automatically publish in-progress posts using Vercel's preview build feature. However, one thing that always bugged me is how much effort it took to write a post in the first place. 
 
-Even with this setup, I found it more difficult to publish new blog posts than I liked. First, I had to be at my laptop to write a post. Then, I had to follow these steps:
+First, I had to be at my laptop. Then, I had to follow these steps:
 
 1. Switch to my terminal
 2. Navigate to my content repo, open it up in Neovim
@@ -167,20 +166,22 @@ Even with this setup, I found it more difficult to publish new blog posts than I
 9. Make a pull request
 10. See the post online
 
-In contrast, Obsidian is so painless to use that I can open it anywhere, anytime, and it just works. It finally dawned on me: why can't I integrate my site and content repos into my Obsidian vault repo so that I can write blog posts the same exact way I would make a new journal entry or a note?
+In contrast, Obsidian is so painless to use that I can open it anywhere, anytime, and it _just works_. 
 
-### Adding submodules
+It finally dawned on me: Why limit myself to using Obsidian only for my personal knowledge base? Why not use it for publishing content too?
 
-I needed some way of bringing all three repos under one umbrella. I debated using subtrees (or something similar, such as [git-subrepo](https://github.com/ingydotnet/git-subrepo)) to accomplish this, but both approaches require keeping some amount of history in the parent repo, and I didn't want that.
+### Adding submodules (and then removing them)
 
-In the end I decided to use submodules. The hierarchy of my vault repo now looks like this:
+At first, I tried using nested Git submodules to embed the repo for my site and my site content into my Obsidian vault. I thought this made sense because then I could see everything in one vault. (I rejected using subtrees or something similar such as [git-subrepo](https://github.com/ingydotnet/git-subrepo) because they required keeping some amount of history in the parent repo, and I wanted to keep the history separate).
+
+My Obsidian vault repo would have this new structure:
 
 ```
 obsidian-vault/
   _modules/
-	  elliotwinkler.com/
+	  elliotwinkler.com/ [submodule]
 		  modules/
-			  personal-content--writings/
+			  personal-content--writings/ [sub-submodule]
 			...
 	Diary/
 	Log/
@@ -188,47 +189,17 @@ obsidian-vault/
 	...
 ```
 
-That is, `.gitmodules` in the vault repo looks like this:
+However, I ended up pivoting away from using submodules for three reasons:
 
-```
-[submodule "_modules/elliotwinkler.com"]
-        path = _modules/elliotwinkler.com
-        url = https://github.com/mcmire/elliotwinkler.com
-```
+1. It was complicated to implement. I needed to update the sync script to recursively descend into submodules, and it took me a few tries to get this right.
+2. It required babysitting. Because of the nature of submodules, when syncing, merge conflicts were a lot more likely to happen, and whenever these occurred, I would be forced to fix them. (Recall that submodules are merely pointers to commits in other repos. If I updated the same blog post on my phone and my laptop but the two devices were out of sync, they would create two different commits in the superproject. Git doesn't know what to do with two different pointers, so the merge must be completed manually.)
+3. It made my life more difficult on desktop. A few times, I was writing a post and needed to make changes to my site at the same time. Usually I would have run a development server from the site repo so I could see those changes live, but because I was using submodules, I had to remember to run the server from my Obsidian vault repo instead. And then, because any change in any submodule triggered the sync script, I had to either be willing to accept non-descriptive commit messages like "Automatic sync" or temporarily disable the sync script while I made changes to the site.
 
-And `.gitmodules` in `_modules/elliotwinkler.com` looks like this:
+Needless to say, submodules did not fulfill the vision I had in mind.
 
-```
-[submodule "modules/personal-content--writings"]
-        path = modules/personal-content--writings
-        url = https://github.com/mcmire/personal-content--writings
-```
+### Using symlinks
 
-### Updating the sync script 
-
-The sync script also supports submodules. This is a bit tricky because if new changes are brought into a submodule via `git pull`, it will cause the parent repo to think that there are changes that need to be committed. To solve this problem, I have the script descend into submodules first, create any necessary commits (along with the usual pull and push steps), then proceed up the tree.
-
-Here's what a typical run of the script looks like:
-
-```
-[~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Committing all files...
-[~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] - Adding file: posts/how-i-use-obsidian.mdx
-[~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Fetching updates...
-[~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Pushing `main`...
-[~/obsidian-vault/_modules/elliotwinkler.com/modules/personal-content--writings] Sync completed successfully!
-
-[~/obsidian-vault/_modules/elliotwinkler.com] Committing all files...
-[~/obsidian-vault/_modules/elliotwinkler.com] - Adding file: modules/personal-content--writings
-[~/obsidian-vault/_modules/elliotwinkler.com] Fetching updates...
-[~/obsidian-vault/_modules/elliotwinkler.com] Pushing `main`...
-[~/obsidian-vault/_modules/elliotwinkler.com] Sync completed successfully!
-
-[~/obsidian-vault] Committing all files...
-[~/obsidian-vault] - Adding file: _modules/elliotwinkler.com
-[~/obsidian-vault] Fetching updates...
-[~/obsidian-vault] Pushing `main`...
-[~/obsidian-vault] Sync completed successfully!
-```
+….
 
 ### Updating the deployment process
 
