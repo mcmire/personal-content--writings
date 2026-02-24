@@ -147,9 +147,7 @@ Second, I've installed [Git LFS](https://git-lfs.com/). This way, if I want to a
 
 ## Updating this site via Obsidian
 
-Recently, I made some changes that allow me to write and publish blog posts straight from Obsidian.
-
-In a previous post, I detailed how I use GitHub workflows to automatically publish in-progress posts using Vercel's preview build feature. However, one thing that always bugged me is how much effort it took to write a post in the first place. First, I had to be at my laptop. Then, I had to follow these steps:
+In a [previous post](./behind-the-site.md), I detailed how I use GitHub workflows to automatically publish in-progress posts using Vercel's preview build feature. However, one thing that always bugged me is how much effort it took to write a post in the first place. First, I had to be at my laptop. Then, I had to follow these steps:
 
 1. Switch to my terminal
 2. Navigate to my content repo, open it up in Neovim
@@ -164,7 +162,7 @@ In a previous post, I detailed how I use GitHub workflows to automatically publi
 
 In contrast, Obsidian is so painless to use that I can open it anywhere, anytime, and it _just works_. 
 
-It finally dawned on me: Why limit myself to using Obsidian for content that only I see? Why not use it for publishing content on the web too?
+It finally dawned on me: Why make things complicated? Why not set things up so that I can publish blog posts straight from Obsidian?
 
 ### Adding submodules (and then removing them)
 
@@ -195,15 +193,10 @@ Needless to say, submodules did not fulfill the vision I had in mind.
 
 In the end, I decided that the simplest approach was to configure and use my content repo as a separate vault inside of Obsidian.
 
-### Adapting automated syncing
+### Adapting the sync process
 
-Adding a second regular vault to Obsidian meant that I had to parameterize the sync script, the LaunchAgents on desktop, and the Automate workflow on mobile, which had all previously only assumed one vault. I also had to run a whole other pair of LaunchAgents for the second vault.
-
-I've already teased this somewhat above, but with this new context, I can provide more details:
-
-- The sync script takes a `--vault-directory` option.
-- The scripts that the LaunchAgents run on desktop also take a `--vault-directory` option.
-- The Automate workflow monitors not only my primary vault repo, but also my content repo.
+Adding a second regular vault to Obsidian meant that I had to modify the sync script and the LaunchAgents on desktop along with their companion scripts so that they now take a `--vault-directory` option (as they previously assumed one vault). In addition, on desktop, I had to run a whole other pair of LaunchAgents for the second vault, and on mobile, I had to modify the Automate workflow so that it monitors not only my primary vault repo, but also my content repo.
+ 
 
 ![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
 
