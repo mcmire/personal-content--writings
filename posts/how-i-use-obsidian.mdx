@@ -89,14 +89,14 @@ Instead, I use a custom solution, which I will detail below.
 The work of syncing changes between the local and remote (GitHub) versions of my vault repo is done by a custom [shell script](https://gist.github.com/mcmire/33f5b5e1a7c96049424c17fb3060a4e0). This script runs the following steps:
 
 1. Adds files ending in `.md` and `.mdx` and files in `.obsidian` that have been changed (except for workspace files — see below)
-2. Creates a new commit with the message "Automatic sync"
+2. Creates a new commit with the message "Automatic sync" (or, if `--prompt-for-commit-message` is given, asks for a commit message to be entered)
 3. Pulls new commits in, rebasing any pending commits on top of them
 4. Pushes the `main` branch
 
 A few notes about this script:
 
 - It uses a lockfile to ensure that only one instance of the script is running at a time.
-- Even if the script runs, if there are no changes, then no commit will get created and nothing will get pushed.
+- If there are no changes to the vault repo, then no commit will get created and nothing will get pushed.
 
 Now, having a sync script is great, but I don't want to run it manually. To emulate what Obsidian Sync does — and to make things work the same way across my laptop and phone — I have to employ a bit of ✨ magic ✨.
 
@@ -105,7 +105,7 @@ Now, having a sync script is great, but I don't want to run it manually. To emul
 On my Mac, I have two kinds of LaunchAgents set up for my vault:
 
 - One runs a daemon which executes a wrapper around the sync script when any file within the vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
-- The other runs the same script every day. This handles the case where I'm writing something but I close my laptop before the script has a chance to run. ==(TODO: How does this make things better? Do LaunchAgents run while the computer is asleep?)==
+- The other runs the same script every hour (in case file changes don't trigger the script for some reason).
 
 Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo, and they get installed when I run `bin/manage install`.
 
@@ -116,25 +116,23 @@ On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the
 I have one main workflow that combines the two macOS LaunchAgents:
 
 - It monitors the vault repo and automatically runs the sync script when any file is changed. This step is debounced (again, as I'm typing, no syncing will occur, but only after I've waited for 2 minutes). 
-- It also runs the sync script automatically every hour (just as a failsafe in case the watcher doesn't pick up changes for some reason)..
+- It also runs the sync script automatically every hour (for the same reason as on desktop, i.e., as a failsafe).
 
-The workflow runs commands via Termux thanks to a plugin block configured with [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). Automate does come with a "Shell script" block, but I found that it didn't interpret the shell command realistically.
-
-![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
+The workflow runs commands via Termux thanks to a plugin block configured with [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). (Automate does come with a "Shell script" block, but I don't think it parses commands like a real shell does, as I ran into some issues.)
 
 A second workflow is used to simply run the sync script on demand without monitoring files.
 
-To set this up, I followed these steps:
+Setting this up on Android required the following steps:
 
 - I downloaded [F-Droid](https://f-droid.org/) and [Termux](https://termux.dev/) from the Play Store, and I downloaded Termux:Tasker and Automate from F-Droid.
 - I opened Termux and ran `termux-setup-storage` to allow access to the SD card.
-- I used `gh` to clone my Obsidian vault repo in `shared/storage`. I've found that `gh` works best over plain `git` because it handles authentication for private repos very smoothly.
-- I created a symlink to the vault repo in the home directory for quicker access.
+- I used `gh` to clone both my vault repo and my content repo in `shared/storage`. (They need to be here so that Obsidian can see them.) I've found that `gh` works best over plain `git` because it handles authentication for private repos very smoothly.
+- I created a symlink to both repos in the home directory for quicker access.
 - I used `gh` to clone my `dotfiles` repo, also in the home directory. To install them, I first ran `pkg install ruby`, and then ran `bin/manage install`.
 
 ### Preparing the vault repo
 
-There are a couple of ways I've configured my Obsidian vault repo to work best with syncing.
+There are a couple of ways I've configured both repos to work best with syncing.
 
 First, I've instructed Git to ignore the Obsidian workspace JSON files (since they tend to collect conflicts easily) as well as trashed files:
 
@@ -166,13 +164,13 @@ In a previous post, I detailed how I use GitHub workflows to automatically publi
 
 In contrast, Obsidian is so painless to use that I can open it anywhere, anytime, and it _just works_. 
 
-It finally dawned on me: Why limit myself to using Obsidian only for my personal knowledge base? Why not use it for publishing content too?
+It finally dawned on me: Why limit myself to using Obsidian for content that only I see? Why not use it for publishing content on the web too?
 
 ### Adding submodules (and then removing them)
 
-At first, I tried using nested Git submodules to embed the repo for my site and my site content into my Obsidian vault. I thought this made sense because then I could see everything in one vault. (I rejected using subtrees or something similar such as [git-subrepo](https://github.com/ingydotnet/git-subrepo) because they required keeping some amount of history in the parent repo, and I wanted to keep the history separate).
+At first, I tried using nested Git submodules to embed the repo for my site and my site content into my Obsidian vault. I thought this made sense because then I could see everything in one vault. (I rejected using subtrees or something similar such as [git-subrepo](https://github.com/ingydotnet/git-subrepo) because they required keeping some amount of history in the parent repo, and I wanted to keep the history separate.)
 
-My Obsidian vault repo would have this new structure:
+In other words, my Obsidian vault repo would have this new structure:
 
 ```
 obsidian-vault/
@@ -187,17 +185,27 @@ obsidian-vault/
 	...
 ```
 
-However, I ended up pivoting away from using submodules for three reasons:
+However, I ended up pivoting away from using this strategy for three reasons:
 
 1. It was complicated to implement. I needed to update the sync script to recursively descend into submodules, and it took me a few tries to get this right.
-2. It required babysitting. Because of the nature of submodules, when syncing, merge conflicts were a lot more likely to happen, and whenever these occurred, I would be forced to fix them. (Recall that submodules are merely pointers to commits in other repos. If I updated the same blog post on my phone and my laptop but the two devices were out of sync, they would create two different commits in the superproject. Git doesn't know what to do with two different pointers, so the merge must be completed manually.)
+2. It required babysitting. Because of the nature of submodules, when running the sync script, merge conflicts were a lot more likely to happen, and whenever these occurred, I would be forced to fix them. (Recall that submodules are merely pointers to commits in other repos. If I updated the same blog post on my phone and my laptop but the two devices were out of sync, they would create two different commits in the superproject. Git doesn't know what to do with two different pointers, so the merge must be completed manually.)
 3. It made my life more difficult on desktop. A few times, I was writing a post and needed to make changes to my site at the same time. Usually I would have run a development server from the site repo so I could see those changes live, but because I was using submodules, I had to remember to run the server from my Obsidian vault repo instead. And then, because any change in any submodule triggered the sync script, I had to either be willing to accept non-descriptive commit messages like "Automatic sync" or temporarily disable the sync script while I made changes to the site.
 
 Needless to say, submodules did not fulfill the vision I had in mind.
 
-### Using symlinks
+In the end, I decided that the simplest approach was to configure and use my content repo as a separate vault inside of Obsidian.
 
-….
+### Adapting automated syncing
+
+Adding a second regular vault to Obsidian meant that I had to parameterize the sync script, the LaunchAgents on desktop, and the Automate workflow on mobile, which had all previously only assumed one vault. I also had to run a whole other pair of LaunchAgents for the second vault.
+
+I've already teased this somewhat above, but with this new context, I can provide more details:
+
+- The sync script takes a `--vault-directory` option.
+- The scripts that the LaunchAgents run on desktop also take a `--vault-directory` option.
+- The Automate workflow monitors not only my primary vault repo, but also my content repo.
+
+![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
 
 ### Updating the deployment process
 
@@ -209,6 +217,8 @@ I have always made it possible to deploy a preview build while writing a draft. 
 - If I wanted to deploy a preview build, I would have to make a pull request on either my site repo or my content repo.
 
 (Hence the complicated list of steps at the start of this whole section.)
+
+==TODO==
 
 Switching to submodules, though, meant that there were going to be a lot of pushes straight to `main` for both site and content repos. I didn't want to deploy the production site every time that happened, so now the way it works is:
 
@@ -229,10 +239,6 @@ Obsidian implements a superset of CommonMark, aptly called [Obsidian Flavored Ma
 
 - [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`.
 - [Callouts](https://help.obsidian.md/callouts). These are very similar to [GitHub's alerts feature](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts), except that callout types are allowed to be lowercase, and there are a lot more types supported. [^4] Thankfully, someone created [`rehype-callouts`](https://github.com/lin-stephanie/rehype-callouts), and this works very well.
-
-### Initializing the vault repo
-
-The sync script assumes that `main` is checked out for all repos, as each time it runs, it needs to pull the latest changes to that branch. This  means that when I have to download (or re-download) my vault repo, a simple `git clone` won't do, nor will `git submodule update --init`; I have to go into each submodule and manually check out `main`. It's a bit of a pain, and I'm sure I'll make it better, but fortunately it's not something I have to do often.
 
 %%## That's it (for now)
 
