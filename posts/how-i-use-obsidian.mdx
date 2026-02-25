@@ -9,9 +9,9 @@ In this post, I'll document how I use Obsidian, how I've tweaked it to fit my ne
 
 ## How I first used Obsidian
 
-These days, I try to keep things simple. But it wasn't always that way.
+%%These days, I try to keep things simple. But it wasn't always that way.%%
 
-When I first switched to Obsidian, I migrated a bunch of notes from [Simplenote](https://simplenote.com/). I began imposing structure: I created subdirectories for different kinds of notes, and I turned a part of my vault into a database using Dataview. Over time, %%each time I opened the app, I felt unsettled. I had made things worse:%% I felt like I was spending too much energy thinking about how to organize my vault. I was feeding the %%obsessive%% perfectionist side of my brain, and %%each time I opened the app,I%% %%it felt more and more dissatisfied%% along with it a growing dissatisfaction.
+When I began using Obsidian, I migrated a bunch of notes from [Simplenote](https://simplenote.com/). I began imposing structure: I created subdirectories for different kinds of notes, and I turned a part of my vault into a database using Dataview. Over time, %%each time I opened the app, I felt unsettled. I had made things worse:%% I felt like I was spending too much energy thinking about how to organize my vault. I was feeding the %%obsessive%% perfectionist side of my brain, and %%each time I opened the app,I%% %%it felt more and more dissatisfied%% along with it a growing dissatisfaction.
 
 Meanwhile, one of my coworkers was using [Roam](https://roamresearch.com/). %%Here, top-down organization is viewed as limiting … This tool is different because … One of the core premises is that directories are a poor paradigm for organizing thoughts and ideas because they don't map to how your brain acquires knowledge in real life … Roam dispenses with top-down organization and … In Roam, thoughts and ideas are like nodes in a graph instead of a file in a filetree … Roam is a unique tool because it dispenses with files entirely … Roam offered a fresh perspective: instead of a hierarchy of files and folders, it views files and folders as an antiquated paradigm for organizing and managing information; instead, it%% Roam is based on the premise that thoughts, ideas, and other pieces of information %%captured over time%% are messy and don't fit cleanly into a hierarchy of folders. Instead, they're best represented by a graph which grows and changes shape organically as new information is added. [^1] [^2] %%it treats your ideas and thoughts as nodes on a knowledge graph%% %%they're, which grows organically as you connect nodes together.%% Adding another node to the graph should be effortless: each time you load the app, you start with an automatically generated note for the current day. This removes cognitive overhead and allows you to form consistent habits, thereby giving you a sense of "home". [^3]
 
@@ -23,13 +23,13 @@ Meanwhile, one of my coworkers was using [Roam](https://roamresearch.com/). %%He
 
 ### Directories and tags
 
-I still find directories useful, but there are three broad categories of notes that I use on a daily basis:
+I use directories to organize my vault, but these days, I try to keep things simple. There are three broad categories of notes that I regularly use:
 
 - `Diary/` — Date-based. Most of these entries are conversations between different voices in my head. I'll let them say what they want to say and move on. I don't typically go into a lot of detail (good luck to whoever reads this in the future!).
 
 - `Log/` — Date-based. Ostensibly a "development log", but really it's the opposite of `Diary/`. These entries tend to be more rounded out, and I tend to revisit them multiple times per day. If I read an interesting article about politics, life, or work, and it inspires me, I'll write out my thoughts. If I'm reading a book, I'll keep notes. %%If I have an idea for a new side project, I'll map it out.%%
   
-  And if I'm actively working on a project, I'll "live blog" the experience, noting the problems I'm facing and the solutions as I attempt to solve them. I have found this workflow in particular to be incredibly valuable. For instance, if I put a project on hold and come back to it a year later, I can go back in my notes, see I was headed when I left off, and I can very easily pick up the thread again.
+  And if I'm actively working on a project, I'll "live blog" the experience, noting the problems I'm facing and the solutions as I attempt to solve them. I have found this workflow in particular to be incredibly valuable. For instance, if I put a project on hold and come back to it a year later, I can go back in my notes, see I was headed when I left off, and easily pick up the thread again.
 
 - `Notes/` — Non-date-based. Most of my old notes are here, and I have yet to migrate them to a better format. Even so, I still tend to use this category to hold information that I think deserves a bit more structure, I want to keep together in one place, or I feel like would be buried if I left it in a journal entry. Each note tends to center around a concept or theme. For instance, when I do research for big-ticket items (e.g., baby strollers, cars, etc.) or make plans for trips, I'll add a note here. There are also simple lists of things such as potential baby names, etc.
 
@@ -42,7 +42,7 @@ I use a pretty small set of core plugins:
 - **Quick Switcher** + **Files**. Most of the time I know what I'm looking for and can jump to it, but sometimes I just want to look at a file tree (and it's a better interface to perform actions like renames).
 - **Command Palette**. I like this paradigm that's been integrated into apps over the years. It reminds me of Spotlight on my Mac.
 - **Page Preview**. It's useful not to have to jump into a note to see what's inside it.
-- **Search**. I'm not sure what I'd do without this :) 
+- **Search**. For the times where I don't remember the filename, but I do remember a word or two.
 
 In contrast, here's what I've disabled:
 
@@ -104,21 +104,21 @@ Now, having a sync script is great, but I don't want to run it manually. To emul
 
 On my Mac, I have two kinds of LaunchAgents set up for my vault:
 
-- One runs a daemon which executes a wrapper around the sync script when any file within the vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
-- The other runs the same script every hour (in case file changes don't trigger the script for some reason).
+- One LaunchAgent runs a daemon which executes a wrapper around the sync script when any file within the vault is changed. This wrapper performs debouncing, so that no syncing will occur while I'm actively editing a file, but only after I pause for 2 minutes.
+- The other LaunchAgent runs the same script every hour (in case file changes don't trigger the script for some reason).
 
 Both of these LaunchAgents are included in my [`dotfiles`](https://github.com/mcmire/dotfiles) repo, and they get installed when I run `bin/manage install`.
 
 #### Mobile
 
-On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same process I have on desktop. (As far as I know, this only works on Android; on iOS you could probably use [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/9.0/ios).)
+On mobile, I use the [Automate](https://llamalab.com/automate/) app to mimic the same process I have on desktop. (As far as I know, my setup only works on Android; on iOS you could probably use [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/9.0/ios).)
 
 I have one main workflow that combines the two macOS LaunchAgents:
 
 - It monitors the vault repo and automatically runs the sync script when any file is changed. This step is debounced (again, as I'm typing, no syncing will occur, but only after I've waited for 2 minutes). 
 - It also runs the sync script automatically every hour (for the same reason as on desktop, i.e., as a failsafe).
 
-The workflow runs commands via Termux thanks to a plugin block configured with [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). (Automate does come with a "Shell script" block, but I don't think it parses commands like a real shell does, as I ran into some issues.)
+The workflow runs commands via Termux thanks to a plugin block configured with [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). (Automate does come with a "Shell script" block, but it doesn't work well, as it doesn't seem to parse commands like a real shell does.)
 
 A second workflow is used to simply run the sync script on demand without monitoring files.
 
@@ -188,7 +188,7 @@ obsidian-vault/
 However, I ended up pivoting away from using this strategy for three reasons:
 
 1. It was complicated to implement. I needed to update the sync script to recursively descend into submodules, and it took me a few tries to get this right.
-2. It required babysitting. Because of the nature of submodules, when running the sync script, merge conflicts were a lot more likely to happen, and whenever these occurred, I would be forced to fix them. (Recall that submodules are merely pointers to commits in other repos. If I updated the same blog post on my phone and my laptop but the two devices were out of sync, they would create two different commits in the superproject. Git doesn't know what to do with two different pointers, so the merge must be completed manually.)
+2. It required babysitting. Because of the nature of submodules, when running the sync script, merge conflicts were a lot more likely to happen, and whenever these occurred, I would be forced to fix them. (Recall that submodules are merely pointers to commits in other repos. If I updated the same blog post on my phone and my laptop, but the two devices were out of sync, they would create two different commits in the superproject. Git doesn't know what to do with two different pointers, so the merge must be completed manually.)
 3. It made my life more difficult on desktop. A few times, I was writing a post and needed to make changes to my site at the same time. Usually I would have run a development server from the site repo so I could see those changes live, but because I was using submodules, I had to remember to run the server from my Obsidian vault repo instead. And then, because any change in any submodule triggered the sync script, I had to either be willing to accept non-descriptive commit messages like "Automatic sync" or temporarily disable the sync script while I made changes to the site.
 
 Needless to say, submodules did not fulfill the vision I had in mind.
