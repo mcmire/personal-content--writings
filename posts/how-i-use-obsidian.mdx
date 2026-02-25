@@ -197,7 +197,9 @@ In the end, I decided that the simplest approach was to configure and use my con
 
 ### Adapting the sync process
 
-Adding a second regular vault to Obsidian meant that I had to modify the sync script and the LaunchAgents on desktop along with their companion scripts so that they now take a `--vault-directory` option (as they previously assumed one vault). In addition, on desktop, I had to run a whole other pair of LaunchAgents for the second vault, and on mobile, I had to modify the Automate workflow so that it monitors not only my primary vault repo, but also my content repo.
+Adding a second regular vault to Obsidian meant that I now needed to sync it along with my primary vault.
+
+On desktop, I modified the sync script and the LaunchAgents along with their companion scripts so that they took a `--vault-directory` option. In addition, on desktop, I ran a whole other pair of LaunchAgents for the second vault, and on mobile, I had to modify the Automate workflow so that it monitored not only my primary vault repo, but also my content repo.
 
 This is what my Automate workflow looks like now:
 
@@ -211,6 +213,8 @@ This is what my Automate workflow looks like now:
 - If I wanted to deploy a preview build, I would have to make a pull request on either my site repo or my content repo.%%
 
 %%However,%%
+
+test set tests exccs
 
 Adding the content repo to Obsidian and syncing it just like a "regular" vault meant that there would be a lot of commits pushed straight to `main`. This created a bit of a problem because I'd previously configured my content repo to follow more of a conventional Git workflow: pushes to `main` deploy production, pushes to a pull request deploy a preview of an in-draft post.
 
