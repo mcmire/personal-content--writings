@@ -214,20 +214,15 @@ This is what my Automate workflow looks like now:
 
 %%However,%%
 
-Adding the content repo to Obsidian and syncing it just like a "regular" vault meant that there would be a lot of commits pushed straight to `main`. This created a bit of a problem because I'd previously configured my content repo to follow more of a conventional Git workflow: pushes to `main` deploy production, pushes to a pull request deploy a preview of an in-draft post.
+Adding the content repo to Obsidian and syncing it just like a "regular" vault meant that there would be a lot of commits pushed straight to `main`. This created a bit of a problem because I'd previously configured my content repo to follow more of a conventional Git workflow: pushes to `main` deployed production, whereas pushes to a pull request deployed a preview of an in-draft post. But now that wasn't going to work anymore.
 
-I didn't want to deploy to production every time that happened. So now the way it works is:
-
-- Pushing to `main` on my content repo deploys a preview build.
-- If I want to deploy to production, I have to go on my laptop and trigger it manually from the Vercel dashboard.
-
-I don't publish blog posts that often, so I think that's an acceptable tradeoff.
+So instead, pushing to `main` now deploys a preview build only. If I want to deploy to production, I have to go on my laptop, find my site repo on GitHub, and trigger a workflow manually. There is probably a way I can speed this up, but I don't publish blog posts that often, so I think this is an acceptable tradeoff.
 
 ### Reconfiguring Obsidian
 
 By default, Obsidian only lets you see and work with `.md` files; if there are any other files present in your vault, it ignores them.
 
-Since blog posts on my site are MDX files, however, I need to make them visible. There doesn't seem to be an official way to do this, but I've found the Custom File Extensions plugin, and although it is a bit overengineered for my liking, it seems to fit the bill.
+Since blog posts on my site are MDX files, however, I need to make them visible. There doesn't seem to be an official way to do this, but I found the Custom File Extensions plugin. It's a bit overengineered for my liking, but it does the job.
 
 ### Updating the site repo
 
@@ -236,9 +231,9 @@ Obsidian implements a superset of CommonMark, aptly called [Obsidian Flavored Ma
 - [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`.
 - [Callouts](https://help.obsidian.md/callouts). These are very similar to [GitHub's alerts feature](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts), except that callout types are allowed to be lowercase, and there are a lot more types supported. [^4] Thankfully, someone created [`rehype-callouts`](https://github.com/lin-stephanie/rehype-callouts), and this works very well.
 
-## That's it (for now)
+## The end
 
-That's how I use Obsidian. Not everything is exactly the way I want it, but it works well enough that I can make it better over time, little by little.
+That's how I use Obsidian. My setup isn't perfect — I'm sure I'll keep tweaking it — but it's mine, and I'm happy with it so far.
 
 [^1]: [Roam Whitepaper](https://roamresearch.com/#/app/help/page/dZ72V0Ig6)
 [^2]: ["A brief rant on note-taking apps and the structure of thought"](https://x.com/Conaw/status/1099181050045952006), from one of the co-creators of Roam. 
