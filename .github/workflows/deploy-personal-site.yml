@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
 jobs:
   deploy-personal-site:
     runs-on: ubuntu-latest
@@ -23,5 +27,6 @@ jobs:
                 'vercel-environment': 'preview',
                 'subrepo-name': context.repo.repo,
                 'subrepo-ref': process.env.GITHUB_REF_NAME,
+                'clone-subrepo-token': process.env.GITHUB_TOKEN
               }
             })
