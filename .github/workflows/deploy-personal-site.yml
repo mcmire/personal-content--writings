@@ -11,6 +11,8 @@ jobs:
         uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.DEPLOY_PERSONAL_SITE_TOKEN }}
+          # We have to dispatch the workflow, not call it, because the Vercel
+          # secrets are in the site repo, not this repo
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'mcmire',
@@ -20,7 +22,6 @@ jobs:
               inputs: {
                 'vercel-environment': 'preview',
                 'subrepo-name': context.repo.repo,
-                'subrepo-pull-request-number': context.issue.number?.toString(),
                 'subrepo-ref': process.env.GITHUB_REF_NAME,
               }
             })
