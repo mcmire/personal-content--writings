@@ -27,6 +27,7 @@ jobs:
                 'vercel-environment': 'preview',
                 'subrepo-name': context.repo.repo,
                 'subrepo-ref': process.env.GITHUB_REF_NAME,
+                'update-deployment-status-token': process.env.GITHUB_TOKEN,
                 'clone-subrepo-token': process.env.GITHUB_TOKEN
               }
             })
