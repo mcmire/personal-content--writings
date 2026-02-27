@@ -26,7 +26,7 @@ jobs:
               inputs: {
                 'vercel-environment': 'preview',
                 'subrepo-name': context.repo.repo,
-                'subrepo-ref': process.env.GITHUB_REF_NAME,
+                'subrepo-ref': process.env.SUBREPO_REF,
                 'subrepo-pull-request-number': process.env.PULL_REQUEST_NUMBER,
                 'clone-subrepo-token': process.env.DEPLOY_PERSONAL_SITE_TOKEN,
                 'update-deployment-status-token': process.env.DEPLOY_PERSONAL_SITE_TOKEN,
@@ -35,3 +35,4 @@ jobs:
         env:
           DEPLOY_PERSONAL_SITE_TOKEN: ${{ secrets.DEPLOY_PERSONAL_SITE_TOKEN }}
           PULL_REQUEST_NUMBER: ${{ github.event_name == 'pull_request' && github.event.pull_request.number || 0 }}
+          SUBREPO_REF: ${{ github.head_ref || github.ref_name }}
