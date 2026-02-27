@@ -28,10 +28,10 @@ jobs:
                 'subrepo-name': context.repo.repo,
                 'subrepo-ref': process.env.GITHUB_REF_NAME,
                 'subrepo-pull-request-number': process.env.PULL_REQUEST_NUMBER,
-                'update-deployment-status-token': process.env.ORIGINAL_GITHUB_TOKEN,
-                'clone-subrepo-token': process.env.ORIGINAL_GITHUB_TOKEN
+                'update-deployment-status-token': process.env.DEPLOY_PERSONAL_SITE_TOKEN,
+                'clone-subrepo-token': process.env.DEPLOY_PERSONAL_SITE_TOKEN
               }
             })
         env:
-          ORIGINAL_GITHUB_TOKEN: ${{ github.token }}
+          DEPLOY_PERSONAL_SITE_TOKEN: ${{ secrets.DEPLOY_PERSONAL_SITE_TOKEN }}
           PULL_REQUEST_NUMBER: ${{ github.event_name == 'pull_request' && github.event.pull_request.number || 0 }}
