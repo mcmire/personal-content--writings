@@ -22,7 +22,7 @@ jobs:
               owner: 'mcmire',
               repo: 'elliotwinkler.com',
               workflow_id: 'deploy-to-vercel.yml',
-              ref: 'main',
+              ref: 'fix-deployment',
               inputs: {
                 'vercel-environment': 'preview',
                 'subrepo-name': context.repo.repo,
