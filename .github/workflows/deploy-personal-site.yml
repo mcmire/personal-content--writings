@@ -29,7 +29,6 @@ jobs:
                 'subrepo-ref': process.env.GITHUB_REF_NAME,
                 'subrepo-pull-request-number': process.env.PULL_REQUEST_NUMBER,
                 'update-deployment-status-token': process.env.DEPLOY_PERSONAL_SITE_TOKEN,
-                'clone-subrepo-token': process.env.DEPLOY_PERSONAL_SITE_TOKEN
               }
             })
         env:
