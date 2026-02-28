@@ -1,8 +1,10 @@
 ---
 title: How I Use Obsidian
+published: true
+publishDate: 2026-02-27T00:00:00Z
+showToc: true
 tags:
   - obsidian
-showToc: true
 ---
 
 import automateWorkflow from "./how-i-use-obsidian/automate-workflow.webp";
@@ -151,7 +153,7 @@ Second, I've installed [Git LFS](https://git-lfs.com/). This way, if I want to a
 
 ## Updating this site via Obsidian
 
-In a [previous post](./behind-the-site.md), I detailed how I use GitHub workflows to automatically publish in-progress posts using Vercel's preview build feature. However, one thing that always bugged me is how much effort it took to write a post in the first place.
+In a [previous post](./behind-the-site.mdx), I detailed how I use GitHub workflows to automatically publish in-progress posts using Vercel's preview build feature. However, one thing that always bugged me is how much effort it took to write a post in the first place.
 
 First, I had to be at my laptop. Then, I had to follow these steps:
 
@@ -233,11 +235,11 @@ Since blog posts on my site are MDX files, however, I need to make them visible.
 Obsidian implements a superset of CommonMark, aptly called [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown). In order for posts to appear the same way they do on Obsidian, I've updated my site to support the following two features:
 
 - [Callouts](https://help.obsidian.md/callouts). These are very similar to [GitHub's alerts feature](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts), except that callout types are allowed to be lowercase, and there are a lot more types supported. [^4] Thankfully, someone created [`rehype-callouts`](https://github.com/lin-stephanie/rehype-callouts), and this works very well.
-- [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`. I created a custom Remark plugin to handle this.
+- [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`. I created a [custom Remark plugin](https://github.com/mcmire/elliotwinkler.com/blob/b14af451654171fa53449f8367b7835d76ef76fa/config/remark-comments.ts) to handle this.
 
 ## The end
 
-That's how I use Obsidian. My setup isn't perfect — I'm sure I'll keep tweaking it — but it's mine, and I'm happy with it so far.
+That's how I use Obsidian. There's more to improve upon, of course, but I'm happy with it so far.
 
 [^1]: [Roam Whitepaper](https://roamresearch.com/#/app/help/page/dZ72V0Ig6)
 [^2]: ["A brief rant on note-taking apps and the structure of thought"](https://x.com/Conaw/status/1099181050045952006), from one of the co-creators of Roam. 
