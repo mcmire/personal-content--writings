@@ -2,7 +2,11 @@
 title: How I Use Obsidian
 tags:
   - obsidian
+showToc: true
 ---
+
+import automateWorkflow from "./how-i-use-obsidian/automate-workflow.webp";
+
 [Obsidian](https://obsidian.md) is the tool I use to keep digital notes — to jot down thoughts and ideas about life and work, plan and track side projects, write long-form content like this, and more.
 
 In this post, I'll document how I use Obsidian, how I've tweaked it to fit my needs, and how that's evolved over time.
@@ -118,7 +122,7 @@ I have one main workflow that combines the two macOS LaunchAgents:
 - It monitors the vault repo and automatically runs the sync script when any file is changed. This step is debounced (again, as I'm typing, no syncing will occur, but only after I've waited for 2 minutes). 
 - It also runs the sync script automatically every hour (for the same reason as on desktop, i.e., as a failsafe).
 
-The workflow runs commands via Termux thanks to a plugin block configured with [Termux:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). (Automate does come with a "Shell script" block, but it doesn't work well, as it doesn't seem to parse commands like a real shell does.)
+The workflow runs commands via Termux thanks to a plugin block configured with [Termux\:Tasker](https://wiki.termux.com/wiki/Termux:Tasker). (Automate does come with a "Shell script" block, but it doesn't work well, as it doesn't seem to parse commands like a real shell does.)
 
 A second workflow is used to simply run the sync script on demand without monitoring files.
 
@@ -203,7 +207,7 @@ On desktop, I modified the sync script and the LaunchAgents along with their com
 
 This is what my Automate workflow looks like now:
 
-![Automate workflow](./how-i-use-obsidian/automate-workflow.webp)
+<Image src={automateWorkflow} alt="My Automate workflow" linkToRawVersion={true} hasTransparentBackground />
 
 ### Updating the deployment process
 
@@ -228,8 +232,8 @@ Since blog posts on my site are MDX files, however, I need to make them visible.
 
 Obsidian implements a superset of CommonMark, aptly called [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown). In order for posts to appear the same way they do on Obsidian, I've updated my site to support the following two features:
 
-- [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`.
 - [Callouts](https://help.obsidian.md/callouts). These are very similar to [GitHub's alerts feature](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts), except that callout types are allowed to be lowercase, and there are a lot more types supported. [^4] Thankfully, someone created [`rehype-callouts`](https://github.com/lin-stephanie/rehype-callouts), and this works very well.
+- [Comments](https://help.obsidian.md/syntax#Comments). These are designated using `%%...%%` instead of `<!--...-->`. I created a custom Remark plugin to handle this.
 
 ## The end
 
