@@ -8,6 +8,6 @@
     "year_published": "number",
     "retrieved": "date",
     "last_updated": "date",
-    "published": "text"
+    "published": "checkbox"
   }
 }
