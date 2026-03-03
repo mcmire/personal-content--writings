@@ -3,7 +3,8 @@
     "markdown": [
       "",
       "md",
-      "mdx"
+      "mdx",
+      "mjs"
     ]
   },
   "configIsValid": true,

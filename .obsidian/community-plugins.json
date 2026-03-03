@@ -9,5 +9,6 @@
   "quickadd",
   "cmdr",
   "obsidian-custom-file-extensions-plugin",
-  "show-whitespace-cm6"
+  "show-whitespace-cm6",
+  "fix-require-modules"
 ]
