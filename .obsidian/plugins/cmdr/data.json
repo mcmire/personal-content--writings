@@ -16,6 +16,18 @@
       "icon": "lucide-rocket",
       "name": "Deploy preview build",
       "mode": "any"
+    },
+    {
+      "id": "fix-require-modules:invokeScriptFile-deploy-production.mjs",
+      "icon": "lucide-rocket",
+      "name": "Deploy to production",
+      "mode": "any"
+    },
+    {
+      "id": "fix-require-modules:invokeScriptFile-open-deployment-workflows.mjs",
+      "icon": "lucide-globe",
+      "name": "Open deployment workflows",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
