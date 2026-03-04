@@ -10,6 +10,12 @@
       "icon": "lucide-notepad-text",
       "name": "QuickAdd",
       "mode": "any"
+    },
+    {
+      "id": "fix-require-modules:invokeScriptFile-deploy-preview.mjs",
+      "icon": "lucide-rocket",
+      "name": "Deploy preview build",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
