@@ -3,12 +3,22 @@ title: Introducing Spool
 published: false
 tags: []
 ---
+> [!NOTE] Outline
+> 
+> - Personal story
+> - More problems with lack of knowledge; present real-world evidence; summarize problem statement
+> - Introducing Spool
+> - Features
+> - FAQ
+> - Conclusion
 
-## Outline
+Imagine that you're in charge of maintaining a part of a system within your product responsible for managing requests to an API. You've been asked to make some changes to reduce the number of network errors. Specifically, requests that result in certain failure conditions — particular HTTP response codes, failures to initiate a connection, etc. — should get automatically retried. And if there are too many failures in a row, requests should get re-routed to a failover API until the primary API is back up. You spend several weeks refactoring the existing architecture to accommodate these changes, adding tests to make sure it works well. You ship the changes, everyone is happy, and you move on.
 
-- Personal story
-- More problems with lack of knowledge; present real-world evidence; summarize problem statement
-- Introducing Spool
-- Features
-- FAQ
-- Conclusion
+A year passes. The topic of network error recovery comes up in an important meeting involving your team and some stakeholders. One of them asks you how the logic works: which requests get retried and which ones don't? At what stage do failovers get registered?
+
+By now, though, you can't remember the details exactly. Every time you've looked at this code, you get confused. It's not that it's poorly written, but as a result of the refactor, knowledge is now spread out across multiple files, and there's no clear source of truth. In the meeting, you attempt some sort of answer, but it's obvious you're not confident, and you later realize it's half-wrong.
+
+Something bothers you about this interaction. As the subject matter expert and the author of the code, you were expected to know, but you couldn't. Surely there's a better way?
+
+## The importance of context
+
