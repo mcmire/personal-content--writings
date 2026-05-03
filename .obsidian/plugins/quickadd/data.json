@@ -1,52 +1,20 @@
 {
   "choices": [
     {
-      "id": "b5f6dcdd-207e-4c6a-93b9-dcabb34e12a9",
-      "name": "Daily Log",
+      "id": "cbfba9c6-9a82-4ac4-a48d-77d5a96cfcd4",
+      "name": "New post",
       "type": "Template",
       "command": false,
-      "templatePath": "Templates/Log {{DATE}}.md",
+      "templatePath": "_templates/New post.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Log/{{DATE:YYYY}}/{{DATE:MM}}/Log {{DATE}}.md"
+        "format": "{{VALUE:Title|case:kebab}}"
       },
       "folder": {
         "enabled": true,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "focus": true,
-        "mode": "default"
-      }
-    },
-    {
-      "id": "7c89ac6d-ddb7-499a-b1dd-72322af3200b",
-      "name": "Daily Diary",
-      "type": "Template",
-      "command": false,
-      "templatePath": "Templates/Diary {{DATE}}.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Diary/{{DATE:YYYY}}/{{DATE:MM}}/Diary {{DATE}}.md"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [],
+        "folders": [
+          "posts"
+        ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
@@ -65,7 +33,7 @@
   ],
   "inputPrompt": "single-line",
   "devMode": false,
-  "templateFolderPath": "Templates",
+  "templateFolderPath": "_templates",
   "announceUpdates": true,
   "version": "2.1.0",
   "disableOnlineFeatures": true,
