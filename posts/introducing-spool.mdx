@@ -12,18 +12,20 @@ tags: []
 > - FAQ
 > - Conclusion
 
-Imagine that you're in charge of maintaining a part of a system within your product responsible for managing requests to an API. You've been asked to make some changes to reduce the number of network errors. Specifically, requests that result in certain failure conditions — particular HTTP response codes, failures to initiate a connection, etc. — should get automatically retried. And if there are too many failures in a row, requests should get re-routed to a failover API until the primary API is back up. You spend several weeks refactoring the existing architecture to accommodate these changes, adding tests to make sure it works well. You ship the changes, everyone is happy, and you move on.
+Imagine that you're in charge of maintaining a part of your product that's responsible for managing requests to an API. You've been asked to make some changes to reduce the number of network errors. The requirements are that requests which result in certain failure conditions — particular HTTP response codes, failures to initiate a connection, etc. — should get automatically retried. And if there are too many failures in a row, requests should get re-routed to a failover API until the primary API is back up.
+
+You spend several weeks refactoring the existing architecture to accommodate these changes, adding tests to make sure it works well. You ship the changes, everyone is happy, and you move on.
 
 A year passes. The topic of network error recovery comes up in an important meeting involving your team and some stakeholders. One of them asks you how the logic works: which requests get retried and which ones don't? At what stage do failovers get registered?
 
-By now, though, you can't remember the details exactly. Every time you've looked at this code, you get confused. It's not that it's poorly written, but as a result of the refactor, knowledge is now spread out across multiple files, and there's no clear source of truth. Even as you were writing it, you never quite had a firm grasp on the logic, but now, you're not sure.
+By now, though, you can't remember the details exactly. Every time you've looked at this code, you get confused. It's not that it's poorly written, but as a result of the refactor, knowledge is now spread out across multiple files, and there's no clear source of truth. Even as you were writing it, you never quite had a firm grasp on the logic, but now, you're really not sure.
 
 %%Everyone is looking for an answer, and you have to give them something.%% You fumble a guess, but the minute you say it, you know it's half-wrong, and now everyone will get the wrong impression.
 
-This is annoying. As the subject matter expert and as the author of the code, you should have known. But in that moment, you were stumbling around in the dark. Worse, you felt helpless.
+This is annoying. As the subject matter expert and as the author of the code, you should have known. But in that moment, you could do nothing but stumble around in the dark.
 
-## Lack of knowledge is costly
+## The cost of not knowing 
 
-%%If you work as a software engineer, you may not%% %%have solved the exact problem presented in%% %%relate exactly to the story above.%% Perhaps you've never solved the exact problem above. But you probably %%recognize the struggle to wrap your head around a codebase%% know what's like to _not know_.
+%%If you work as a software engineer, you may not%% %%have solved the exact problem presented in%% %%relate exactly to the story above.%% Perhaps you've never solved the exact problem above. But you probably %%recognize the struggle to wrap your head around a codebase%% know what's like to _not know_ — to lack understanding. 
 
 But understanding how a system works and why it was
