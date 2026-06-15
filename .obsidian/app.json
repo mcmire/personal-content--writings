@@ -24,7 +24,8 @@
     "editor:toggle-bold",
     "editor:toggle-italics",
     "editor:toggle-strikethrough",
-    "editor:configure-toolbar"
+    "editor:configure-toolbar",
+    "editor:insert-footnote"
   ],
   "vimMode": true,
   "smartIndentList": true,

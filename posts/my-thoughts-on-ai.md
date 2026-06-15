@@ -85,9 +85,11 @@ tags: []
 
 #### Matthew Prince (CEO, Cloudflare)
 
-##### On how AI is changing the internet
+##### On the beginning of the "AI age" 
 
 > According to \[Matthew] Prince, the old era of the web, defined over the last 30 years by the primacy of the search engine, is coming to an end. [^time-100-ai]
+
+[^1]
 
 ##### On how AI should work for humans
 
@@ -99,9 +101,9 @@ tags: []
 
 > "My core belief is that any technology, but AI in particular, should empower people, and that this empowerment should be distributed to all, instead of concentrated for a few." [^time-100-ai]
 
-##### On the benefits of AI to society 
+##### On unlocking a better future with AI
 
-> "\[W]hen I look at AI, it's such a versatile technology that I believe it's going to be able to solve a lot of different problems."
+> "\[W]hen I look at AI, it's such a versatile technology that I believe it's going to be able to solve a lot of different problems." …
 >
 > "\[With] a super-assistant that's acting on your behalf, that has your back, allows you to reach your goals, and can do that across all parts of your life, I think we're just starting to see a really, really incredible future of freeing people up from doing a lot of things they don't want to do, \[to] allowing them to get access to knowledge they wouldn't get access to otherwise, \[to] having more economic opportunity, \[to] recovering their time. And all of that is based on these technology breakthroughs that we're witnessing."
 > 
@@ -113,17 +115,17 @@ tags: []
 > 
 > [^openai-empowerment]
 
-#### Jason Chen
+#### Edwin Chen (CEO, Surge AI)
 
-##### On the race to create "better" AI
+##### On the impact of AI on society 
 
-> If AGI is realized, Chen expects it to be significantly more powerful than today’s algorithmic platforms, while infiltrating every part of society. “There is almost an infinite potential for unintended consequences,” he says.
-> 
-> Chen is sanguine about his own company’s potential contribution to such unintended consequences. **“This is going to happen no matter what,” he says. “If it's not us, it's going to be somebody else.** So we want to make sure we are the people best-positioned to ensure they are properly aligned.”
-> 
-> [^time-100-ai]
+> If AGI is realized, Chen expects it to be significantly more powerful than today’s algorithmic platforms, while infiltrating every part of society. [^time-100-ai]
 
-#### David Sacks
+##### On the inevitability of AI
+
+> Chen is sanguine about his own company’s potential contribution to \[the] unintended consequences \[of AI]. “This is going to happen no matter what,” he says. “If it's not us, it's going to be somebody else. So we want to make sure we are the people best-positioned to ensure they are properly aligned.” [^time-100-ai]
+
+#### David Sacks (AI/Crypto Czar, White House)
 
 ##### On the importance of the US dominating AI
 
@@ -131,11 +133,15 @@ tags: []
 > 
 > [^time-100-ai]
 
-#### Mark Zuckerberg 
+#### Mark Zuckerberg (CEO, Meta)
 
-##### On the benefits of AI to society 
+##### On the beginning of the "AI age" 
 
-> It seems clear that in the coming years, AI will improve all our existing systems and enable the creation and discovery of new things that aren't imaginable today. … In some ways this will be a new era for humanity, but in others it's just a continuation of historical trends. …
+> In some ways this will be a new era for humanity, but in others it's just a continuation of historical trends. [^meta-superintelligence]
+
+##### On unlocking a better future with AI
+
+> It seems clear that in the coming years, AI will improve all our existing systems and enable the creation and discovery of new things that aren't imaginable today. … 
 > 
 > \[S]uperintelligence has the potential to begin a new era of personal empowerment where people will have greater agency to improve the world in the directions they choose. …
 > 
@@ -143,27 +149,31 @@ tags: []
 > 
 > [^meta-superintelligence]
 
-#### Andy Jassy
+#### Andy Jassy (CEO, Amazon)
 
-##### On the benefits of AI to society / On AI as a companion
+##### On the significance of AI in history 
 
-> Technologies like Generative AI are rare; they come about once-in-a-lifetime…
-> 
-> \[W]e have strong conviction that AI agents will change how we all work and live. … Agents will allow us to start almost everything from a more advanced starting point. … Agents will be teammates that we can call on at various stages of our work, and that will get wiser and more helpful with more experience…
+> Technologies like Generative AI are rare; they come about once-in-a-lifetime… [^andy-jassy-note]
+
+##### On the impact of AI on society 
+
+> \[W]e have strong conviction that AI agents will change how we all work and live. … Agents will allow us to start almost everything from a more advanced starting point. … [^andy-jassy-note]
+
+##### On unlocking a better future with AI / On agents 
+
+>  Agents will be teammates that we can call on at various stages of our work, and that will get wiser and more helpful with more experience… [^andy-jassy-note]
 
 ##### On how AI will affect jobs 
 
-> As we roll out more Generative AI and agents … \[w]e will need fewer people doing some of the jobs that are being done today, and more people doing other types of jobs…
+> As we roll out more Generative AI and agents … \[w]e will need fewer people doing some of the jobs that are being done today, and more people doing other types of jobs… [^andy-jassy-note]
 
-##### On the urgency to keep up (or risk falling out)
+##### On the urgency of embracing AI (or be left behind)
 
->  \[The] most transformative technology since the Internet is here. Those who embrace this change, become conversant in AI, help us build and improve our AI capabilities internally and deliver for customers, will be well-positioned to have high impact and help us reinvent the company.
-> 
-> [^andy-jassy-note]
+>  \[The] most transformative technology since the Internet is here. Those who embrace this change, become conversant in AI, help us build and improve our AI capabilities internally and deliver for customers, will be well-positioned to have high impact and help us reinvent the company.[^andy-jassy-note]
 
-#### Masayoshi Son
+#### Masayoshi Son (CEO, SoftBank Group)
 
-##### On the benefits of AI
+##### On unlocking a better future with AI
 
 > I have realized our ultimate mission: the evolution of humanity. … My view is that ASI will be ten thousand times more intelligent than humans … One day, ASI-powered smart robots will perform all kinds of physical tasks on our behalf, including manufacturing, transportation, construction, and housework. 
 > 
@@ -175,27 +185,37 @@ tags: []
 
 #### Salesforce
 
+##### On agents
+
 > According to Futurum research, AI adoption could contribute an additional $4 trillion to the global economy by 2028, with agent-based systems accounting for a significant share of this growth due to their ability to execute complex tasks autonomously. Enterprises that prioritize AI investment today are poised to capture these gains, with faster ROI, reduced operational costs, and improved customer satisfaction as immediate benefits.
 > — Salesforce Futurum report on Agentforce [^salesforce-futurum]
 
-#### Peter Kyle
+#### Peter Kyle (Secretary of State for Science, Innovation, and Technology, UK)
+
+##### On the urgency of embracing AI (or be left behind)
 
 > AI capabilities are developing at an extraordinary pace. If this continues, artificial intelligence (AI) could be the government’s single biggest lever to deliver its [five missions](https://www.gov.uk/missions), especially the goal of kickstarting broad-based economic growth. It is hard to imagine how we will meet the ambition for highest sustained growth in the G7 - and the countless quality-of-life benefits that flow from that - without embracing the opportunities of AI. …
 > 
 > No one can say with certainty what AI will look like a decade from now. My judgement is that experts, on balance, expect rapid progress to continue. The risks from underinvesting and underpreparing, though, seem much greater than the risks from the opposite. Even if AI progress slows, we will see large benefits from deploying today’s frontier capabilities and investing in our infrastructure and talent base.
-> 
-> — from "AI Opportunities Action Plan", by Peter Kyle, Secretary of State for Science, Innovation, and Technology, UK
+>
+> [^ai-action-plan]
 
 #### Sam Altman 
 
-> We are now confident we know how to build AGI as we have traditionally understood it.
-> — Sam Altman (January 6, 2025) [^altman-reflections]
+##### On the imminence of building powerful AI
 
-> AI will be the most powerful tool for expanding human capability and potential that anyone has ever seen. Demand for this tool will be essentially uncapped, and people will do incredible things with it. The world deserves huge amounts of AI and we must figure out how to make it happen.
-> — Sam Altman (April 11, 2026) [^altman-untitled]
+> We are now confident we know how to build AGI as we have traditionally understood it. [^altman-reflections]
 
-> We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence …
-> 
+> We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence … [^altman-untitled]
+
+> Intelligence too cheap to meter is well within grasp. … [^altman-gentle-singularity]
+
+##### On the impact of AI on society / On unlocking a better future with AI
+
+> AI will be the most powerful tool for expanding human capability and potential that anyone has ever seen. Demand for this tool will be essentially uncapped, and people will do incredible things with it. The world deserves huge amounts of AI and we must figure out how to make it happen. [^altman-untitled]
+
+##### On unlocking a better future with AI
+
 > AI will contribute to the world in many ways, but the gains to quality of life from AI driving faster scientific progress and increased productivity will be enormous …
 > 
 > In the 2030s, intelligence and energy—ideas, and the ability to make ideas happen—are going to become wildly abundant. These two have been the fundamental limiters on human progress for a long time; with abundant intelligence and energy (and good governance), we can theoretically have anything else. …
@@ -204,35 +224,43 @@ tags: []
 > 
 > The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year. …
 > 
-> Looking forward, this sounds hard to wrap our heads around. … (Think back to 2020, and what it would have sounded like to have something close to AGI by 2025, versus what the last 5 years have actually been like.) …
+> Looking forward, this sounds hard to wrap our heads around. … (Think back to 2020, and what it would have sounded like to have something close to AGI by 2025, versus what the last 5 years have actually been like.) … [^altman-gentle-singularity]
+
+> Over time, in fits and starts, the steady march of human innovation has brought previously unimaginable levels of prosperity and improvements to almost every aspect of people’s lives.
 > 
-> We (the whole industry, not just OpenAI) are building a brain for the world. It will be extremely personalized and easy for everyone to use; we will be limited by good ideas. For a long time, technical people in the startup industry have made fun of “the idea guys”; people who had an idea and were looking for a team to build it. It now looks to me like they are about to have their day in the sun. …
+> In some sense, AGI is just another tool in this ever-taller scaffolding of human progress we are building together. In another sense, it is the beginning of something for which it’s hard not to say “this time it’s different”; the economic growth in front of us looks astonishing, and we can now imagine a world where we cure all diseases, have much more time to enjoy with our families, and can fully realize our creative potential.
 > 
-> Intelligence too cheap to meter is well within grasp. …
-> 
-> — Sam Altman (June 11, 2025) [^altman-gentle-singularity]
+> In a decade, perhaps everyone on earth will be capable of accomplishing more than the most impactful person can today. … [^altman-three-observations]
+
+##### On how AI should work for humans 
+
+> We (the whole industry, not just OpenAI) are building a brain for the world. It will be extremely personalized and easy for everyone to use … [^altman-gentle-singularity]
+
+> Anyone in 2035 should be able to marshall the intellectual capacity equivalent to everyone in 2025; everyone should have access to unlimited genius to direct however they can imagine. There is a great deal of talent right now without the resources to fully express itself, and if we change that, the resulting creative output of the world will lead to tremendous benefits for us all. [^altman-three-observations]
+
+##### On the ease with which AI will make creating things 
+
+> \[W]e will be limited by good ideas. For a long time, technical people in the startup industry have made fun of “the idea guys”; people who had an idea and were looking for a team to build it. It now looks to me like they are about to have their day in the sun. …
+
+##### On the definition of AGI
 
 > Our mission is to ensure that AGI (Artificial General Intelligence) benefits all of humanity. …
 > 
 > AGI is a weakly defined term, but generally speaking we mean it to be a system that can tackle increasingly complex problems, at human level, in many fields. …
 > 
-> Over time, in fits and starts, the steady march of human innovation has brought previously unimaginable levels of prosperity and improvements to almost every aspect of people’s lives.
-> 
-> In some sense, AGI is just another tool in this ever-taller scaffolding of human progress we are building together. In another sense, it is the beginning of something for which it’s hard not to say “this time it’s different”; the economic growth in front of us looks astonishing, and we can now imagine a world where we cure all diseases, have much more time to enjoy with our families, and can fully realize our creative potential.
-> 
-> In a decade, perhaps everyone on earth will be capable of accomplishing more than the most impactful person can today. …
-> 
-> We are now starting to roll out AI agents, which will eventually feel like virtual co-workers. … \[I]magine 1,000 of them. Or 1 million of them. Now imagine such agents in every field of knowledge work. …
-> 
+> [^altman-three-observations]
+
+##### On agents 
+
+> We are now starting to roll out AI agents, which will eventually feel like virtual co-workers. … \[I]magine 1,000 of them. Or 1 million of them. Now imagine such agents in every field of knowledge work. … [^altman-three-observations]
+
+##### On the impact of AI on society
+
 > We expect the impact of AGI to be uneven. Although some industries will change very little, scientific progress will likely be much faster than it is today; this impact of AGI may surpass everything else.
 > 
 > The price of many goods will eventually fall dramatically (right now, the cost of intelligence and the cost of energy constrain a lot of things), and the price of luxury goods and a few inherently limited resources like land may rise even more dramatically. …
 > 
-> AI will seep into all areas of the economy and society; we will expect everything to be smart. …
-> 
-> Anyone in 2035 should be able to marshall the intellectual capacity equivalent to everyone in 2025; everyone should have access to unlimited genius to direct however they can imagine. There is a great deal of talent right now without the resources to fully express itself, and if we change that, the resulting creative output of the world will lead to tremendous benefits for us all.
-> 
-> — Sam Altman (February 25, 2025) [^altman-three-observations]
+> AI will seep into all areas of the economy and society; we will expect everything to be smart. … [^altman-three-observations]
 
 #### Dario Amodei
 
@@ -590,7 +618,9 @@ tags: []
 - What is an engineer, anyway?
 - Engineering is good, actually 
 - Writing code by hand is also good 
-- Programming languages are free — anyone can make software themselves — there's no AI owned by a single company that you have to interact with — what happens when there are effectively 4 big AI companies that replace the software industry? Or, hell — replace every other part of society? 
+- Programming languages are free — anyone can make software themselves — there's no AI owned by a single company that you have to interact with — what happens when there are effectively 4 big AI companies that replace the software industry? Or, hell — replace every other part of society?
+
+## Footnotes
 
 [^time-100-ai]: https://time.com/collections/time100-ai-2025/
 [^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
@@ -598,11 +628,12 @@ tags: []
 [^andy-jassy-note]: https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai
 [^softbank-asi]: https://group.softbank/en/philosophy/message
 [^salesforce-futurum]: https://www.salesforce.com/content/dam/web/en_ca/www/documents/futurum-maximizing-roi-with-agentic-ai.pdf
+[^ai-action-plan]: https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan
 [^80000-hours-ai]: https://80000hours.org/ai/guide/when-will-agi-arrive/
-[^altman-reflections]: https://blog.samaltman.com/reflections
-[^altman-untitled]: https://blog.samaltman.com/2279512
-[^altman-gentle-singularity]: https://blog.samaltman.com/the-gentle-singularity
-[^altman-three-observations]: https://blog.samaltman.com/three-observations
+[^altman-reflections]: https://blog.samaltman.com/reflections (January 6, 2026)
+[^altman-untitled]: https://blog.samaltman.com/2279512 (April 15, 2026)
+[^altman-gentle-singularity]: https://blog.samaltman.com/the-gentle-singularity (June 11, 2025)
+[^altman-three-observations]: https://blog.samaltman.com/three-observations (February 5, 2025)
 [^amodei-loving-grace]: https://darioamodei.com/essay/machines-of-loving-grace
 [^amodei-adolescence]: https://darioamodei.com/essay/the-adolescence-of-technology
 [^axios-amodei]: https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic
