@@ -127,7 +127,7 @@ tags: []
 
 #### David Sacks (AI/Crypto Czar, White House)
 
-##### On the importance of the US dominating AI
+##### On the importance of crippling China
 
 > “It is just very important that America continue to be the dominant power in AI."
 > 
@@ -159,7 +159,7 @@ tags: []
 
 > \[W]e have strong conviction that AI agents will change how we all work and live. … Agents will allow us to start almost everything from a more advanced starting point. … [^andy-jassy-note]
 
-##### On unlocking a better future with AI / On agents 
+##### On the mechanics of AI
 
 >  Agents will be teammates that we can call on at various stages of our work, and that will get wiser and more helpful with more experience… [^andy-jassy-note]
 
@@ -185,7 +185,7 @@ tags: []
 
 #### Salesforce
 
-##### On agents
+##### On the mechanics of AI
 
 > According to Futurum research, AI adoption could contribute an additional $4 trillion to the global economy by 2028, with agent-based systems accounting for a significant share of this growth due to their ability to execute complex tasks autonomously. Enterprises that prioritize AI investment today are poised to capture these gains, with faster ROI, reduced operational costs, and improved customer satisfaction as immediate benefits.
 > — Salesforce Futurum report on Agentforce [^salesforce-futurum]
@@ -250,7 +250,7 @@ tags: []
 > 
 > [^altman-three-observations]
 
-##### On agents 
+##### On the mechanics of AI
 
 > We are now starting to roll out AI agents, which will eventually feel like virtual co-workers. … \[I]magine 1,000 of them. Or 1 million of them. Now imagine such agents in every field of knowledge work. … [^altman-three-observations]
 
@@ -264,107 +264,85 @@ tags: []
 
 #### Dario Amodei
 
+##### On unlocking a better future with AI
+
 > I think it is critical to have a genuinely inspiring vision of the future, and not just a plan to fight fires. Many of the implications of powerful AI are adversarial or dangerous, but at the end of it all, there has to be something we’re fighting _for_ …
 > 
 > The list of positive applications of powerful AI is extremely long … but \[there are certain] areas that seem to me to have the greatest potential to directly improve the quality of human life. …
-> 
-> \[T]he right way to think of AI is not as a method of data analysis, but as a virtual biologist who performs all the tasks biologists do, including designing and running experiments in the real world (by controlling lab robots or simply telling humans which experiments to run – as a Principal Investigator would to their graduate students), inventing new biological methods or measurement techniques, and so on. It is by speeding up the _whole research process_ that AI can truly accelerate biology. …
-> 
+>
 > \[M]y basic prediction is that AI-enabled biology and medicine will allow us to compress the progress that human biologists would have achieved over the next 50-100 years into 5-10 years. …
 >
 > \[T]he idea of an “AI coach” who always helps you to be the best version of yourself, who studies your interactions and helps you learn to be more effective, seems very promising. …
 > 
 > It’s my guess that \[AI] would … be on track to lead to the cure or prevention of most mental illness … 
 >
-> If AI further increases economic growth and quality of life in the developed world, while doing little to help the developing world, we should view that as a terrible moral failure and a blemish on the genuine humanitarian victories in the previous two sections. Ideally, powerful AI should help the developing world catch up to the developed world, even as it revolutionizes the latter.
-> 
 > Advances in crop technology like better fertilizers and pesticides, more automation, and more efficient land use drastically increased crop yields across the 20th century, saving millions of people from hunger … Finding even more ways to do this—as well as to make agricultural supply chains even more efficient—could give us an AI-driven second Green Revolution …
 > 
 > We can expect that AI will lead to improvements in technologies that slow or prevent climate change, from atmospheric carbon-removal and clean energy technology to lab-grown meat that reduces our reliance on carbon-intensive factory farming …
 >
-> One concern … is people opting out of AI-enabled benefits (similar to the anti-vaccine movement, or Luddite movements more generally). There could end up being bad feedback cycles … leading to an ever-increasing gap and even creating a dystopian underclass … This would, once again, place a moral blemish on AI’s positive advances. …
-> 
-> \[I]t seems very important that democracies have the upper hand on the world stage when powerful AI is created. …
-> 
 > I expect improvements in mental health, well-being, and education to increase democracy, as all three are negatively correlated with support for authoritarian leaders. …
 > 
 > \[C]ould AI improve our legal and judicial system by making decisions and processes more impartial? … I am not suggesting that we literally replace judges with AI systems, but the combination of impartiality with the ability to understand and process messy, real world situations feels like it should have some serious positive applications to law and justice. …
-> 
-> In a similar vein, AI could be used to both aggregate opinions and drive consensus among citizens, resolving conflict, finding common ground, and seeking compromise. …
-> 
-> If all of this really does happen over 5 to 10 years—the defeat of most diseases, the growth in biological and cognitive freedom, the lifting of billions of people out of poverty to share in the new technologies, a renaissance of liberal democracy and human rights—I suspect everyone watching it will be surprised by the effect it has on them. …
-> 
-> \[T]here is something blindingly obvious—something overdetermined—about \[this vision], as if many different attempts to envision a good world inevitably lead roughly here.
-> 
-> — Dario Amodei in "Machines of Loving Grace" (October 2024) [^amodei-loving-grace]
+>
+> In a similar vein, AI could be used to both aggregate opinions and drive consensus among citizens, resolving conflict, finding common ground, and seeking compromise. … [^amodei-loving-grace]
 
-> I believe we are entering a rite of passage, both turbulent and inevitable, which will test who we are as a species. Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it. …
-> 
-> _Machines of Loving Grace_ … felt like giving form and structure to surpassingly beautiful music that had been echoing in my head for years. …
-> 
-> The formula for building powerful AI systems is incredibly simple, so much so that it can almost be said to emerge spontaneously from the right combination of data and raw computation. Its creation was probably inevitable the instant humanity invented the transistor, or arguably even earlier when we first learned to control fire. If one company does not build it, others will do so nearly as fast. …
-> 
-> — Dario Amodei in "The Adolescence of Technology" (January 2026) [^amodei-adolescence]
+> _Machines of Loving Grace_ … felt like giving form and structure to surpassingly beautiful music that had been echoing in my head for years. … [^amodei-adolescence]
+
+##### On the mechanics of AI 
+
+> \[T]he right way to think of AI is not as a method of data analysis, but as a virtual biologist who performs all the tasks biologists do, including designing and running experiments in the real world (by controlling lab robots or simply telling humans which experiments to run – as a Principal Investigator would to their graduate students), inventing new biological methods or measurement techniques, and so on. It is by speeding up the _whole research process_ that AI can truly accelerate biology. … [^amodei-loving-grace]
+
+##### On the moral responsibility to convert society to use AI 
+
+> If AI further increases economic growth and quality of life in the developed world, while doing little to help the developing world, we should view that as a terrible moral failure and a blemish on the genuine humanitarian victories in the previous two sections. Ideally, powerful AI should help the developing world catch up to the developed world, even as it revolutionizes the latter. … [^amodei-loving-grace]
+
+> One concern … is people opting out of AI-enabled benefits (similar to the anti-vaccine movement, or Luddite movements more generally). There could end up being bad feedback cycles … leading to an ever-increasing gap and even creating a dystopian underclass … This would, once again, place a moral blemish on AI’s positive advances. … [^amodei-loving-grace]
+
+##### On the importance of crippling China
+
+> \[I]t seems very important that democracies have the upper hand on the world stage when powerful AI is created. … [^amodei-loving-grace]
+
+##### On the impact of AI on society 
+
+> If all of this really does happen over 5 to 10 years—the defeat of most diseases, the growth in biological and cognitive freedom, the lifting of billions of people out of poverty to share in the new technologies, a renaissance of liberal democracy and human rights—I suspect everyone watching it will be surprised by the effect it has on them. … [^amodei-loving-grace]
+
+##### On the "stupid simplicity" of AI / On the inevitability of AI 
+
+> \[T]here is something blindingly obvious—something overdetermined—about \[this vision], as if many different attempts to envision a good world inevitably lead roughly here. [^amodei-loving-grace]
+
+> The formula for building powerful AI systems is incredibly simple, so much so that it can almost be said to emerge spontaneously from the right combination of data and raw computation. Its creation was probably inevitable the instant humanity invented the transistor, or arguably even earlier when we first learned to control fire. If one company does not build it, others will do so nearly as fast. … [^amodei-adolescence]
+
+##### On the beginning of the "AI age" / On AI as Pandora's box
+
+> I believe we are entering a rite of passage, both turbulent and inevitable, which will test who we are as a species. Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it. … [^amodei-adolescence]
+
+##### On the impact of AI on jobs 
 
 > Dario Amodei — CEO of Anthropic, one of the world's most powerful creators of artificial intelligence — has a blunt, scary warning for the U.S. government and all of us:
 > 
 > - AI could wipe out half of all entry-level white-collar jobs — and spike unemployment to 10-20% in the next one to five years, Amodei told us in an interview from his San Francisco office.
 > - Amodei said AI companies and government need to stop "sugar-coating" what's coming: the possible mass elimination of jobs across technology, finance, law, consulting and other white-collar professions, especially entry-level gigs.
 > 
-> — Axios article, June 2025 [^axios-amodei]
+> [^axios-amodei]
 
 #### Elon Musk
 
-> PETER DIAMANDIS: So can you go through the rationale of UHI? How does universal high income work?
-> 
-> ELON MUSK: Okay, so there’s going to be more digital intelligence than all human intelligence combined and more humanoid robots than all humans. And assuming we’re in a benign scenario—Star Trek, Roddenberry, not Cameron situation. …
-> 
-> PETER DIAMANDIS: All the blue collar labor is being done by robots. All data centers are being done by robots.
-> 
-> ELON MUSK: Well, the white collar labor will be the first to go. Because until you can move atoms, the thing that can be replaced first is anything that involves just digital work. Even if it involves tapping keys on a keyboard and moving a mouse, the computer can do that. The AI can do that. …
-> 
-> PETER DIAMANDIS: This is the inspirational part of the podcast, by the way. …
-> 
-> ELON MUSK: White collar jobs. That includes anything like education too. …
-> 
-> Being a computer used to be a job. … It didn’t used to be a machine. … \[T]here were just buildings full of people just at desks doing calculations. … \[N]ow one laptop with a spreadsheet can outperform a skyscraper of several hundred human computers of people doing calculations. What this means is that companies that are entirely AI will demolish companies that are not. It won’t be a contest.
-> 
-> \[Now] would you want even one cell in your spreadsheet to be manually calculated? That would be the most annoying cell. And you’re like, “God damn it.” And it gets it wrong a bunch of the time. …
-> 
+##### On unlocking a better future with AI
+
+> ELON MUSK: … \[T]here’s going to be more digital intelligence than all human intelligence combined and more humanoid robots than all humans. … [^musk-moonshots-220]
+
 > PETER DIAMANDIS: But you have a solution to this which is UHI?
 > 
-> ELON MUSK: Yes. Everyone can have whatever they want.
+> ELON MUSK: Yes. Everyone can have whatever they want. …
 > 
-> PETER DIAMANDIS: So how does that work? How does UHI work?
-> 
-> ELON MUSK: It’s a good question. We have to figure out some—
-> 
-> PETER DIAMANDIS: I mean it’s not a—I mean, so my concern isn’t the long run, it’s the next three to seven years.
-> 
-> ELON MUSK: Yes. The transition will be bumpy. …We’ll have radical change, social unrest and immense prosperity simultaneously.
-> 
-> \[F]rankly, if this doesn’t happen, we’d go bankrupt as a country. So the national debt is enormous. … \[T]he deficit is growing. But so if we don’t have AI and robots, we’re all going to go bankrupt and we’re headed for economic doom.
-> 
-> DAVE BLUNDIN: We’re going to have competitive pressure from China. So this is definitely going to happen. …
-> 
-> PETER DIAMANDIS: So how does it work? Reason through it with me.
-> 
-> ELON MUSK: Listen, by the way, I’m open to ideas here. … So it’s not like I got this all figured out. … 
-> 
-> PETER DIAMANDIS: So I’m wondering if instead of universal high income, if it’s universal high stuff … and services. …
-> 
-> DAVE BLUNDIN: … \[T]o me it’s really clear that we don’t have any system right now to make this go well. But AI is a critical part of making it go well. …
-> 
-> ELON MUSK: I call AI and robotics the supersonic tsunami. …
-> 
+> PETER DIAMANDIS: So I’m wondering if instead of universal high income, if it’s universal high stuff … and services. … [^musk-moonshots-220]
+
 > PETER DIAMANDIS: This is important for folks to grok because I don’t want to leave people depressed. I want people to understand what’s coming. So we’re basically demonetizing everything. I mean labor becomes the cost of capex and electricity. AI is basically intelligence available at a de minimis price. So you’re able to produce almost anything. Things get down to basic cost of materials, electricity. So people can have whatever stuff they want, whatever services they need. It’s not—when we say universal high income, it sounds like it’s a tax and redistribute, but that’s not the case.
 > 
 > ELON MUSK: I think my best guess for how this will manifest is that … as the efficiency of production or the provision of services increases, prices will drop. I mean, prices in dollar terms are the ratio between the output of goods and services and the money supply. … So if your output of goods and services increases faster than the money supply, you will have deflation or vice versa. …
 > 
-> And I think we’ll be in this—and this is a prediction I think some others have made, but I will add to it—which is that I think governments will actually be pushing to increase money supply faster. They won’t be able to waste the money fast enough, which is saying something.
-> 
-> DAVE BLUNDIN: Isn’t it crazy how close those timelines just randomly worked out? I mean, at the rate we’re expanding the national debt … it’s like right on the edge of becoming Argentina.
-> 
+> And I think we’ll be in this—and this is a prediction I think some others have made, but I will add to it—which is that I think governments will actually be pushing to increase money supply faster. They won’t be able to waste the money fast enough, which is saying something. [^musk-moonshots-220]
+
 > ELON MUSK: But yeah. So productivity is going to improve dramatically. And it is improving dramatically. I think we’ll see—I think we may see high double digit output of goods and services.
 > 
 > PETER DIAMANDIS: So profitability of companies go through the roof at some point. … So the question becomes, is that tax by the government, is that then taxed by the government and redistributed as some level of income as a UHI or UBI?
@@ -379,42 +357,8 @@ tags: []
 > 
 > ELON MUSK: Or it just like you won’t need to save for retirement. If any of the things that we’ve said are true, saving for retirement will be irrelevant.
 > 
-> PETER DIAMANDIS: Services will be there to support you. You’ll have the home, you’ll have the health care, you’ll have the entertainment.
-> 
-> DAVE BLUNDIN: The way this unfolds is fundamentally impossible to predict because of self improvement of the AI and the accelerating timeline.
-> 
-> ELON MUSK: Yeah, it’s called singularity for a reason. …
-> 
-> ELON MUSK: I think we’ll hit AGI next year in 2026.
-> 
-> PETER DIAMANDIS: Yeah, I heard you say that.
-> 
-> ELON MUSK: Yeah, I’ve said that for a while actually.
-> 
-> PETER DIAMANDIS: And then, you know, and then you said by 2029, 2030, equivalent to the entire human race.
-> 
-> ELON MUSK: 2030, we exceed like I’m confident by 2030 AI will exceed the intelligence of all humans combined. …
-> 
-> PETER DIAMANDIS: And so why isn’t everybody talking about this right now? \[There's no] discussion in any realm of government. Everybody is like defending their position about where we are … but it’s like we’re heading towards a supersonic tsunami. And I mean every, you know, every major CEO and economist and government leader should be like, what do we do? Because once it hits—
-> 
-> DAVE BLUNDIN: Well, it’s coming at the exact same time no matter what. There’s no concept of let’s deliberately slow down. Right?
-> 
-> PETER DIAMANDIS: No, it’s impossible.
-> 
-> DAVE BLUNDIN: It’s impossible at this stage.
-> 
-> ELON MUSK: I mean I, I previously advised that we slow it down, but … that's pointless. Like … you can’t. …
-> 
-> PETER DIAMANDIS: China’s not going to be going to. …
-> 
-> ELON MUSK: I finally came to the conclusion I can either be a spectator or a participant, but I can’t stop it. So at least if I’m a participant, I can try to steer it in a good direction.
-> 
-> And like my number one belief for safety of AI is to be maximally truth seeking so that \[you] don’t make AI believe things that are false. Like if you … \[tell] the AI that axiom A and axiom B are both true … but they’re not … but it must behave that way, you will make it go insane. …
-> 
-> I mean, I think that was the central lesson that … Clark was trying to convey in 2001 Space Odyssey … \[Y]ou know, people always know … the meme … that HAL wouldn’t open the pod bay doors. … But why \[couldn't Hal] open the pod bay doors? … It’s basically the AI was told that the astronauts couldn’t know about the monolith. That’s why it killed them. So … it basically came to the conclusion that the only way to solve for this is to bring the astronauts to the monolith dead. Then it has solved both things. It has brought the astronauts to the monolith, and they also don’t know about the monolith …
-> 
-> So what I’m saying is don’t force AI to lie. …
-> 
+> PETER DIAMANDIS: Services will be there to support you. You’ll have the home, you’ll have the health care, you’ll have the entertainment. [^musk-moonshots-220]
+
 > PETER DIAMANDIS: To put a bow around this part, I hope you’ll put some more thought into UHI, because I think it’s really, it’s really important for us to have without a vision. People need a vision of where we’re going. People need something to hold.
 > 
 > ELON MUSK: Hopefully the government can just issue people free money.
@@ -423,64 +367,16 @@ tags: []
 > 
 > PETER DIAMANDIS: They, based upon the profitability of all the companies coming inside, just issue people free money. No, they’re doing that sort of kind of now.
 > 
-> ELON MUSK: Yeah, but just basically issue checks to everybody. And then how big for which person or…
-> 
-> DAVE BLUNDIN: There’s so much complexity there. But the thought process behind this rate of change can only be done with AI assistance. And there’s no government entity that’s going to keep up with that change. So you have four big AIs.
-> 
-> ELON MUSK: Not the AIs. It’s like government is very slow moving, as we all know. So I think the government really can’t react to the AI. It’s AIs moving 10 times faster than government, maybe more.
-> 
-> The one thing that the government can do is just issue people money and…
-> 
-> PETER DIAMANDIS: Try and keep the peace.
-> 
-> DAVE BLUNDIN: Yeah. …
-> 
-> ELON MUSK: Nobody’s going to starve is what I’m saying. …
-> 
-> PETER DIAMANDIS: When do you think Optimus would be a better surgeon than the best surgeons? How long for that?
-> 
-> ELON MUSK: Three years … at scale. … There will be more, probably more Optimus robots that are great surgeons than there are all surgeons on earth. …
-> 
-> \[H]ere’s the thing to understand about humanoid robots in terms of the rate of improvement, which is that you have three exponentials multiplied by each other. You have an exponential increase in the AI software capability, exponential increase in the AI chip capability, and an exponential increase in the electromechanical dexterity. … Then you have the recursive effect of Optimus building Optimus. … You have a recursive multiplicable triple exponential. …
-> 
+> ELON MUSK: Yeah, but just basically issue checks to everybody. And then how big for which person or… [^musk-moonshots-220]
+
+> ELON MUSK: Nobody’s going to starve is what I’m saying. … [^musk-moonshots-220]
+
+> ELON MUSK: There will be … probably more Optimus robots that are great surgeons than there are all surgeons on earth. … [^musk-moonshots-220]
+
 > PETER DIAMANDIS: I think your point was medicine is going to be effectively free. The best medicine in the world, everyone…
 > 
-> ELON MUSK: Will have access to medical care that is better than what the president receives right now.
-> 
-> PETER DIAMANDIS: So don’t go into medical school.
-> 
-> ELON MUSK: Yes. Pointless.
-> 
-> DAVE BLUNDIN: Yeah. …
-> 
-> ELON MUSK: I would say that applies to any form of education. \[You will only] do it for social reasons. …
-> 
-> PETER DIAMANDIS: I mean people are still going to want to be connected with people. …
-> 
-> ELON MUSK: \[T]here will be a point where it’s an expensive hobby.
-> 
-> PETER DIAMANDIS: Younger generation says “I do not want that human touching me.” \[But] there's going to be those people later in life who still want a human in the loop. …
-> 
-> ELON MUSK: I mean let’s just take— like we’ve seen some advanced cases of automation, like LASIK for example. … I wouldn’t want the best ophthalmologist, steadiest hand out there with a fucking hand laser on my eyeball, you know? … \[D]o you want \[that] or do you want the robot to do it and actually work? …
-> 
-> ELON MUSK: So anyway, so I guess the good future is anyone can have whatever stuff they want and incredible medical care that’s better than any medical care that exists. So I think if you sort of lift your gaze, you know, to not a super distant point—five years from now, four years from now—maybe we’ll have better medical care than anyone has today available for everyone within five years. No scarcity of goods or services.
-> 
-> PETER DIAMANDIS: Best education available for everybody.
-> 
-> ELON MUSK: You can learn anything you want about anything for free. …
-> 
-> PETER DIAMANDIS: So I’ve known you for 26 years now. It feels to me like—I don’t want to be—it feels like you’ve gotten much smarter or much more capable over this last decade. … What’s changed? …
-> 
-> ELON MUSK: Well, I’ve had to solve a lot of problems in a lot of different arenas, which you get this cross fertilization of knowledge of problem solving. … If you apply automotive manufacturing technology to satellites and rockets, it’s like being Superman. Then if you take advanced material science from rockets and you apply that to the automotive industry, you get Superman again. …
-> 
-> DAVE BLUNDIN: It’s funny how like the knowledge ports that, that was true with Tesla and SpaceX being completely separate.
-> 
-> ELON MUSK: Yeah.
-> 
-> DAVE BLUNDIN: But now they actually interact because AI ties everything together. … Like, I don’t know if you visualize these parts fitting together originally.
-> 
-> ELON MUSK: No, no. … At this point, things, I guess everything ultimately converges in the singularity. …
-> 
+> ELON MUSK: Will have access to medical care that is better than what the president receives right now. [^musk-moonshots-220]
+
 > PETER DIAMANDIS: We’re heading towards a near term potential where AI can help us solve math, physics, chemistry, material science.
 > 
 > ELON MUSK: Math’s going to be extremely trivial for AI. …
@@ -505,14 +401,162 @@ tags: []
 > 
 > ELON MUSK: It’s excitement guaranteed.
 > 
-> PETER DIAMANDIS: Excitement guaranteed. Yes. …
+> PETER DIAMANDIS: Excitement guaranteed. Yes. … [^musk-moonshots-220]
+
+##### On the impact of AI on society
+
+> PETER DIAMANDIS: I mean it’s not a—I mean, so my concern isn’t the long run, it’s the next three to seven years.
 > 
+> ELON MUSK: Yes. The transition will be bumpy. …We’ll have radical change, social unrest and immense prosperity simultaneously. [^musk-moonshots-220]
+
+> ELON MUSK: I call AI and robotics the supersonic tsunami. … [^musk-moonshots-220]
+
+##### On the impact of AI on education
+
+> ELON MUSK: There will be … probably more Optimus robots that are great surgeons than there are all surgeons on earth. …
+> 
+> PETER DIAMANDIS: So don’t go into medical school.
+> 
+> ELON MUSK: Yes. Pointless.
+> 
+> DAVE BLUNDIN: Yeah. …
+> 
+> ELON MUSK: I would say that applies to any form of education. \[You will only] do it for social reasons. …
+> 
+> PETER DIAMANDIS: I mean people are still going to want to be connected with people. …
+> 
+> ELON MUSK: \[T]here will be a point where it’s an expensive hobby. [^musk-moonshots-220]
+
+##### On the impact of AI on jobs 
+
+> PETER DIAMANDIS: All the blue collar labor is being done by robots. All data centers are being done by robots.
+> 
+> ELON MUSK: Well, the white collar labor will be the first to go. Because until you can move atoms, the thing that can be replaced first is anything that involves just digital work. Even if it involves tapping keys on a keyboard and moving a mouse, the computer can do that. The AI can do that. …
+> 
+> PETER DIAMANDIS: This is the inspirational part of the podcast, by the way. …
+> 
+> ELON MUSK: White collar jobs. That includes anything like education too. …
+> 
+> Being a computer used to be a job. … It didn’t used to be a machine. … \[T]here were just buildings full of people just at desks doing calculations. … \[N]ow one laptop with a spreadsheet can outperform a skyscraper of several hundred human computers of people doing calculations. What this means is that companies that are entirely AI will demolish companies that are not. It won’t be a contest.
+> 
+> \[Now] would you want even one cell in your spreadsheet to be manually calculated? That would be the most annoying cell. And you’re like, “God damn it.” And it gets it wrong a bunch of the time. … [^musk-moonshots-220]
+
+##### On the inevitability of AI 
+
+> \[F]rankly, if this doesn’t happen, we’d go bankrupt as a country. So the national debt is enormous. … \[T]he deficit is growing. But so if we don’t have AI and robots, we’re all going to go bankrupt and we’re headed for economic doom.
+> 
+> DAVE BLUNDIN: We’re going to have competitive pressure from China. So this is definitely going to happen. …
+
+> PETER DIAMANDIS: And so why isn’t everybody talking about this right now? \[There's no] discussion in any realm of government. Everybody is like defending their position about where we are … but it’s like we’re heading towards a supersonic tsunami. And I mean every, you know, every major CEO and economist and government leader should be like, what do we do? Because once it hits—
+> 
+> DAVE BLUNDIN: Well, it’s coming at the exact same time no matter what. There’s no concept of let’s deliberately slow down. Right?
+> 
+> PETER DIAMANDIS: No, it’s impossible.
+> 
+> DAVE BLUNDIN: It’s impossible at this stage.
+> 
+> ELON MUSK: I mean I, I previously advised that we slow it down, but … that's pointless. Like … you can’t. …
+> 
+> PETER DIAMANDIS: China’s not going to be going to. … [^musk-moonshots-220]
+
+##### On AI as the only real choice to improving humanity 
+
+> DAVE BLUNDIN: … \[T]o me it’s really clear that we don’t have any system right now to make this go well. But AI is a critical part of making it go well. … [^musk-moonshots-220]
+
+##### On the desire to develop AI despite lack of thought around consequences 
+
+> ELON MUSK: … There’s going to be more digital intelligence than all human intelligence combined and more humanoid robots than all humans. And assuming we’re in a benign scenario—Star Trek, Roddenberry, not Cameron situation. … [^musk-moonshots-220]
+
+> PETER DIAMANDIS: So how does that work? How does UHI work?
+> 
+> ELON MUSK: It’s a good question. … I’m open to ideas here. … So it’s not like I got this all figured out. … [^musk-moonshots-220]
+
+##### On the "convenient timing" of AI
+
+> DAVE BLUNDIN: Isn’t it crazy how close those timelines just randomly worked out? I mean, at the rate we’re expanding the national debt … it’s like right on the edge of becoming Argentina.
+
+##### On the singularity 
+
+> DAVE BLUNDIN: The way this unfolds is fundamentally impossible to predict because of self improvement of the AI and the accelerating timeline.
+> 
+> ELON MUSK: Yeah, it’s called singularity for a reason. … [^musk-moonshots-220]
+
+##### On AI timelines 
+
+> ELON MUSK: I think we’ll hit AGI next year in 2026.
+> 
+> PETER DIAMANDIS: Yeah, I heard you say that.
+> 
+> ELON MUSK: Yeah, I’ve said that for a while actually.
+> 
+> PETER DIAMANDIS: And then, you know, and then you said by 2029, 2030, equivalent to the entire human race.
+> 
+> ELON MUSK: 2030, we exceed like I’m confident by 2030 AI will exceed the intelligence of all humans combined. … [^musk-moonshots-220]
+
+> PETER DIAMANDIS: When do you think Optimus would be a better surgeon than the best surgeons? How long for that?
+> 
+> ELON MUSK: Three years … at scale. … 
+> 
+> \[H]ere’s the thing to understand about humanoid robots in terms of the rate of improvement, which is that you have three exponentials multiplied by each other. You have an exponential increase in the AI software capability, exponential increase in the AI chip capability, and an exponential increase in the electromechanical dexterity. … Then you have the recursive effect of Optimus building Optimus. … You have a recursive multiplicable triple exponential. … [^musk-moonshots-220]
+
+##### On the "soul" of AI
+
+> ELON MUSK: I finally came to the conclusion I can either be a spectator or a participant, but I can’t stop it. So at least if I’m a participant, I can try to steer it in a good direction.
+> 
+> And like my number one belief for safety of AI is to be maximally truth seeking so that \[you] don’t make AI believe things that are false. Like if you … \[tell] the AI that axiom A and axiom B are both true … but they’re not … but it must behave that way, you will make it go insane. …
+> 
+> I mean, I think that was the central lesson that … Clark was trying to convey in 2001 Space Odyssey … \[Y]ou know, people always know … the meme … that HAL wouldn’t open the pod bay doors. … But why \[couldn't Hal] open the pod bay doors? … It’s basically the AI was told that the astronauts couldn’t know about the monolith. That’s why it killed them. So … it basically came to the conclusion that the only way to solve for this is to bring the astronauts to the monolith dead. Then it has solved both things. It has brought the astronauts to the monolith, and they also don’t know about the monolith …
+> 
+> So what I’m saying is don’t force AI to lie. … [^musk-moonshots-220]
+
+##### On the incapability of government to keep up
+
+> DAVE BLUNDIN: There’s so much complexity there. But the thought process behind this rate of change can only be done with AI assistance. And there’s no government entity that’s going to keep up with that change. So you have four big AIs.
+> 
+> ELON MUSK: Not the AIs. It’s like government is very slow moving, as we all know. So I think the government really can’t react to the AI. It’s AIs moving 10 times faster than government, maybe more.
+> 
+> The one thing that the government can do is just issue people money and…
+> 
+> PETER DIAMANDIS: Try and keep the peace.
+> 
+> DAVE BLUNDIN: Yeah. …
+
+##### On society adjusting to new technologies 
+
+> PETER DIAMANDIS: Younger generation says “I do not want that human touching me.” \[But] there's going to be those people later in life who still want a human in the loop. …
+> 
+> ELON MUSK: I mean let’s just take— like we’ve seen some advanced cases of automation, like LASIK for example. … I wouldn’t want the best ophthalmologist, steadiest hand out there with a fucking hand laser on my eyeball, you know? … \[D]o you want \[that] or do you want the robot to do it and actually work? … [^musk-moonshots-220]
+
+> ELON MUSK: So anyway, so I guess the good future is anyone can have whatever stuff they want and incredible medical care that’s better than any medical care that exists. So I think if you sort of lift your gaze, you know, to not a super distant point—five years from now, four years from now—maybe we’ll have better medical care than anyone has today available for everyone within five years. No scarcity of goods or services.
+> 
+> PETER DIAMANDIS: Best education available for everybody.
+> 
+> ELON MUSK: You can learn anything you want about anything for free. …
+
+##### On the convergence of information
+
+> PETER DIAMANDIS: So I’ve known you for 26 years now. It feels to me like—I don’t want to be—it feels like you’ve gotten much smarter or much more capable over this last decade. … What’s changed? …
+> 
+> ELON MUSK: Well, I’ve had to solve a lot of problems in a lot of different arenas, which you get this cross fertilization of knowledge of problem solving. … If you apply automotive manufacturing technology to satellites and rockets, it’s like being Superman. Then if you take advanced material science from rockets and you apply that to the automotive industry, you get Superman again. …
+> 
+> DAVE BLUNDIN: It’s funny how like the knowledge ports that, that was true with Tesla and SpaceX being completely separate.
+> 
+> ELON MUSK: Yeah.
+> 
+> DAVE BLUNDIN: But now they actually interact because AI ties everything together. … Like, I don’t know if you visualize these parts fitting together originally.
+> 
+> ELON MUSK: No, no. … At this point, things, I guess everything ultimately converges in the singularity. …
+
+On the gross personification of AI 
+
 > PETER DIAMANDIS: Any final words of optimism for us to monetize? …
 > 
 > ELON MUSK: Hope. We should ask Grok. … I’ll make it a little romantic. Grok, do you have some words of optimism about the singularity?
 > 
 > \[Super cringe output such as "Imagine no more scarcity, just endless possibilities" and "Change always feels a bit scary, doesn’t it?" and ending with a some gross personification.] …
-> 
+
+##### On the superiority of the tech industry in the US
+
 > PETER DIAMANDIS: I went in to give a talk on exponential technology. … I said, how many of you believe that the world today is better off than it was 50 years ago? A third of the class, a third of the faculty raised their hands.
 > 
 > And then I said, how many of you believe that the world in the next 20 or 30 years will be better than the world today? And, like, 10% raised their hands. And I was like, okay, this is not—
@@ -526,7 +570,9 @@ tags: []
 > PETER DIAMANDIS: This is not the faculty I want teaching my kids.
 > 
 > ELON MUSK: Yeah, and they got a lot of other issues there, too. …
-> 
+
+##### On pursuing superintelligence even if it is useless to humans
+
 > PETER DIAMANDIS: How long before AI is asking questions and solving problems that we don’t even understand?
 > 
 > DAVE BLUNDIN: Yeah, a year or less. But that’s okay.
@@ -534,7 +580,9 @@ tags: []
 > ELON MUSK: Yeah. … AI is capable of formulating questions that you could not possibly understand the question, let alone the answer. It can formulate questions that are, like, pages long. …
 > 
 > It’s kind of like chess. If the best chess—if Stockfish plays Stockfish—it’s like God’s fighting on Mount Olympus. I mean, you don’t know why it made that move. It’s going to crush all humans. It’s so hopeless. Just don’t even. So you will lose and not even know why you lost.
-> 
+
+##### On the "stupid simplicity" of AI
+
 > DAVE BLUNDIN: Do you ever flip through the transformer algorithm and look at either the code or the architecture diagram and how simple—
 > 
 > ELON MUSK: It’s not right.
