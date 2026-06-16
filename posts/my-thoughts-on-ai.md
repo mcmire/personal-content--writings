@@ -41,6 +41,38 @@ tags: []
 - Programming languages are free — anyone can make software themselves — there's no AI owned by a single company that you have to interact with — what happens when there are effectively 4 big AI companies that replace the software industry? Or, hell — replace every other part of society?
 - 
 
+## Questions to answer
+
+- Who are the leading proponents of AI? Why do they think it's beneficial? What predictions are they making? What arguments do they make justifying the existence of AI and why they should work on it?
+	- https://blog.samaltman.com/reflections
+	- https://blog.samaltman.com/2279512
+	- https://blog.samaltman.com/the-gentle-singularity
+- Who are the leading companies (and their CEOs) creating AI?
+- Who are the leading critics of AI? Why do they think it's detrimental?
+	- Ed Zitron
+- When do people think that AGI will happen?
+	- 2030 (50% probability): https://80000hours.org/ai/guide/when-will-agi-arrive/
+	- 2032 (50% probability): https://www.dwarkesh.com/p/timelines-june-2025
+	- Early 2027: https://ai-2027.com/
+- When ASI?
+	- Late 2027: https://ai-2027.com/
+	- "Soon": https://darioamodei.com/essay/machines-of-loving-grace
+- Who are the people who think that AI is valuable but highly dangerous? 
+- What do people think are the problems with society and why do they think that AI is the best solution? 
+- What effects do people predict AI will have on society?
+	- Elon Musk says that at some point, white collar labor — especially anything involving digital work — will be the first to be replaced by AI [^musk-moonshots-220] (look for "Universal High Income")
+		- This whole interview feels like a weird Hunger Games thing. The two hosts seem like the TV host in the Hunger Games. They're getting high on this nightmarish future where jobs will be replaced and society will be overturned and AI will be in charge. This is such a circle jerk of an interview. 
+- Haven't we done this before? What did people imagine AI would be in the past? 
+	- https://neuraplus-ai.github.io/blog/agi-2027.html
+- If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
+- What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
+- Is technological progress always good? Should it be slowed down or stopped altogether?
+- Is programming solely a craft, or can it be art too? Should code solely be a commodity?
+- What effect does AI have on the idea of FOSS? Is FOSA worth saving? (What would Richard Stallman think?)
+- What is good engineering? What is bad engineering?
+- Did engineering change when C was invented? 
+- Is engineering in its current form worth saving?
+
 ## Research 
 
 ### Players, investors, & commentators
@@ -636,38 +668,6 @@ On the gross personification of AI
 > ELON MUSK: It’s got to be encoded, it’s encoded in DNA, which is not that long. So the algorithm for intelligence cannot be complicated because it’s limited by the DNA information constraint.
 > 
 > DAVE BLUNDIN: Yeah. …
-
-## Questions to answer
-
-- Who are the leading proponents of AI? Why do they think it's beneficial? What predictions are they making? What arguments do they make justifying the existence of AI and why they should work on it?
-	- https://blog.samaltman.com/reflections
-	- https://blog.samaltman.com/2279512
-	- https://blog.samaltman.com/the-gentle-singularity
-- Who are the leading companies (and their CEOs) creating AI?
-- Who are the leading critics of AI? Why do they think it's detrimental?
-	- Ed Zitron
-- When do people think that AGI will happen?
-	- 2030 (50% probability): https://80000hours.org/ai/guide/when-will-agi-arrive/
-	- 2032 (50% probability): https://www.dwarkesh.com/p/timelines-june-2025
-	- Early 2027: https://ai-2027.com/
-- When ASI?
-	- Late 2027: https://ai-2027.com/
-	- "Soon": https://darioamodei.com/essay/machines-of-loving-grace
-- Who are the people who think that AI is valuable but highly dangerous? 
-- What do people think are the problems with society and why do they think that AI is the best solution? 
-- What effects do people predict AI will have on society?
-	- Elon Musk says that at some point, white collar labor — especially anything involving digital work — will be the first to be replaced by AI [^musk-moonshots-220] (look for "Universal High Income")
-		- This whole interview feels like a weird Hunger Games thing. The two hosts seem like the TV host in the Hunger Games. They're getting high on this nightmarish future where jobs will be replaced and society will be overturned and AI will be in charge. This is such a circle jerk of an interview. 
-- Haven't we done this before? What did people imagine AI would be in the past? 
-	- https://neuraplus-ai.github.io/blog/agi-2027.html
-- If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
-- What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
-- Is technological progress always good? Should it be slowed down or stopped altogether?
-- Is programming solely a craft, or can it be art too? Should code solely be a commodity?
-- What effect does AI have on the idea of FOSS? Is FOSA worth saving? (What would Richard Stallman think?)
-- What is good engineering? What is bad engineering?
-- Did engineering change when C was invented? 
-- Is engineering in its current form worth saving? 
 
 
 ## Footnotes
