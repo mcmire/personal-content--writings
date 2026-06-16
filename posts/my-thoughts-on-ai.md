@@ -5,6 +5,18 @@ tags: []
 ---
 ## Outline
 
+- Introduction / Summary of claims
+	- Can we trust these guys? Is this real or a bunch of fluff / get-rich-quick scheme?
+	- "Extraordinary claims require extraordinary evidence"
+	- Is this worth paying attention to? 
+	- Is this worth learning and using and building upon?
+	- Are there any problems today that can be dismissed? Is it reasonable to assume things will get better?
+- The claims and responses (one paragraph per)
+- My opinions (?)
+- Conclusion 
+
+
+
 - Why build AI? The glorious vision of the future (from the 1930s, to Ray Kurzweil, to the e/acc movement and beyond)
 - The dark side of AI
 	- AI slop in many forms (across many industries)
