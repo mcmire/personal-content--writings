@@ -12,6 +12,7 @@ tags: []
 	- Is this worth learning and using and building upon?
 	- Are there any problems today that can be dismissed? Is it reasonable to assume things will get better?
 - The claims and responses (one paragraph per)
+	- Maybe worth splitting this up into different categories? You have claims about the future but also claims about profitability and market fit which Ed Zitron debunks. But maybe that's not worth spending time on? Or maybe they all come from the same place?
 - My opinions (?)
 - Conclusion 
 
