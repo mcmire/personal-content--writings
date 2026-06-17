@@ -80,8 +80,12 @@ tags: []
 - If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
 - What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
 	- Technophobia may not have existed as much as we thought: https://archive.is/9asWB
-	- The Luddites: https://www.worldhistory.org/Luddite/ 
+	- The Luddites opposed the introduction of textile machines (automated looms etc.): https://www.worldhistory.org/Luddite/ 
 	- Electricity: https://www.shellsandpebbles.com/2024/02/05/wired-fears-electricity-and-technophobia-in-the-nineteenth-century/
+	- Radio:
+	- Television:
+	- Video games: 
+	- Technology co-evolves with society and culture: https://www.collectorsweekly.com/articles/why-technophobes-have-been-getting-it-wrong-since-gutenberg/
 - Is technological progress always good? Should it be slowed down or stopped altogether?
 - Is programming solely a craft, or can it be art too? Should code solely be a commodity?
 - What effect does AI have on the idea of FOSS? Is FOSA worth saving? (What would Richard Stallman think?)
