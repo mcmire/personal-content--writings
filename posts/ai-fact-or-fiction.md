@@ -8,7 +8,8 @@ tags: []
 - The arguments for AI: Dario Amodei's essay
 - The arguments against AI: Ed Zitron
 - Other observations: Karen Hao, Arvind Narayanan, Epoch AI
-- My thoughts about how AI is affecting coding
+- My thoughts about AI
+	- We have not optimized our own systems enough; we have not made ourselves as capable as we need to be; we are missing out on our true human potential 
 - Conclusion 
 
 - Introduction / Summary of claims
