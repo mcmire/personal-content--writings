@@ -5,12 +5,18 @@ tags: []
 ---
 ## Outline
 
+- The arguments for AI: Dario Amodei's essay
+- The arguments against AI: Ed Zitron 
+- My thoughts about how AI is affecting coding
+- Conclusion 
+
 - Introduction / Summary of claims
 	- Can we trust these guys? Is this real or a bunch of fluff / get-rich-quick scheme?
 	- "Extraordinary claims require extraordinary evidence"
 	- Is this worth paying attention to? 
 	- Is this worth learning and using and building upon?
 	- Are there any problems today that can be dismissed? Is it reasonable to assume things will get better?
+	- Why should automating all jobs be a goal? What are we doing all of this for? 
 - The claims and responses (one paragraph per)
 	- Maybe worth splitting this up into different categories? You have claims about the future but also claims about profitability and market fit which Ed Zitron debunks. But maybe that's not worth spending time on? Or maybe they all come from the same place?
 - My opinions (?)
