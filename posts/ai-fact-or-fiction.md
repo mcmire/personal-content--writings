@@ -6,7 +6,8 @@ tags: []
 ## Outline
 
 - The arguments for AI: Dario Amodei's essay
-- The arguments against AI: Ed Zitron 
+- The arguments against AI: Ed Zitron
+- Other observations: Karen Hao, Arvind Narayanan, Epoch AI
 - My thoughts about how AI is affecting coding
 - Conclusion 
 
