@@ -3,7 +3,7 @@ title: The Future of Coding
 published: false
 tags: []
 ---
-There is an attitude about AI among my fellow software engineers that I have growing concerns about. 
+Among my fellow software engineers, there is an attitude about AI that I have had growing concerns about. 
 
 ## Problems
 
