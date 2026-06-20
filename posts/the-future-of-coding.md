@@ -3,7 +3,22 @@ title: The Future of Coding
 published: false
 tags: []
 ---
-L ately, I have grown concerned about the attitude toward AI among my peers in the software industry and among tech circles in general. It is not that I am against AI; rather, I am against the way AI is being treated and incorporated at the company and team level. 
+Lately, I have grown concerned about the enthusiasm toward AI shared by my peers in the software industry and within tech circles at large. It is not that I am against the idea of artificial intelligence; rather, I fundamentally disagree with how AI is being presented by thought leaders and assimilated into corporate structures, software development workflows, and projects of all shapes and sizes. Specifically, I feel that in an attempt to "keep up with the Joneses", engineers and engineering managers have willingly eaten poison pills and %%fallen on swords%% stepped onto landmines and allowed themselves to be lured by sirens of accelerationists which have led them to %%stripped software development of any sense of humanity%% trade simplicity for complexity, understanding for confusion, and humaneness for homogeneity. 
+
+ment processes have slowly morphed into 
+
+an individualism sense of humanity has been slowly eroding
+
+In this essay I'm going to explain the issues I've observed and offer a more sensible viewpoint
+
+In this essay I'm going to talk about the lies that I've heard about AI, 
+
+This essay is divided into three parts. In the first part, I'll review the status quo: what industry leaders have claimed about what AI does today and what it will do tomorrow. The second part presents some alternate viewpoints from others which I think are valuable to understand. In the third and final part I discuss my opinions and wrap things up. 
+
+## Lies — damn lies
+
+First, it is important to set the stage: Major companies you know and love who make, invest in, and promote AI are not exactly being truthful. 
+
 
 ## Problems
 
