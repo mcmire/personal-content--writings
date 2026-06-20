@@ -5,6 +5,13 @@ tags: []
 ---
 ## Outline
 
+- Introduction / table of contents
+- Different worldviews
+	- The "glorious future" / techno-optimist view
+	- The cautiously optimistic view (Dario )
+	- The realistic view 
+
+
 - The arguments for AI: Dario Amodei's essay
 - The arguments against AI: Ed Zitron
 - Other observations: Karen Hao, Arvind Narayanan, Epoch AI
