@@ -3,7 +3,7 @@ title: The Future of Coding
 published: false
 tags: []
 ---
-Among my fellow software engineers, there is an attitude about AI that I have had growing concerns about. 
+L ately, I have grown concerned about the attitude toward AI among my peers in the software industry and among tech circles in general. It is not that I am against AI; rather, I am against the way AI is being treated and incorporated at the company and team level. 
 
 ## Problems
 
