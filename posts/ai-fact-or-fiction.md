@@ -5,11 +5,17 @@ tags: []
 ---
 ## Outline
 
+- Introduction; questions we want to answer; challenges to assumptions
+- Various answers from various individuals 
+- My experiences within the coding industry and opinions about the future of AI
+
+
 - Introduction / table of contents
 - Different worldviews
-	- The "glorious future" / techno-optimist view
-	- The cautiously optimistic view (Dario )
-	- The realistic view 
+	- The "glorious future" / techno-optimist view (Marc Andreesen, Sam Altman)
+	- The cautiously optimistic view (Dario Amodei)
+	- The nuanced view (Arvind Narayanan, Vitalik Buterin)
+- Problems (?)
 
 
 - The arguments for AI: Dario Amodei's essay
@@ -18,6 +24,7 @@ tags: []
 - My thoughts about AI
 	- We have not optimized our own systems enough; we have not made ourselves as capable as we need to be; we are missing out on our true human potential 
 - Conclusion 
+
 
 - Introduction / Summary of claims
 	- Can we trust these guys? Is this real or a bunch of fluff / get-rich-quick scheme?
