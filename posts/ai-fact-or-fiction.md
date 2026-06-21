@@ -67,9 +67,12 @@ tags: []
 	- LLMs don't have intelligent and they can't really do anything. What you have is a chatbot that _needs_ to use tools to access your files and check its assumptions. Well, if the agent can do it, you can do it too.
 - Past technological revolutions and deskilling 
 - Parallels in music (Adam Neely video)
+	- Agents can't "jam", they can't create jazz. Just because you can "talk to" an agent doesn't mean it can give you a fruitful conversation. 
 - Making software is not like making a product at a factory
 	- You don't make a template and then create 2 million instances of a thing. Software is an organism. 
 - No users want software powered by "agents"
+- Nobody really wants a "general" intelligence
+	- Alton Brown frequently rants about multitaskers. Software has the single responsibility principle for a reason. It's also anti-UNIX
 - What is an engineer, anyway?
 - Engineering is good, actually 
 - Writing code by hand is also good 
