@@ -664,13 +664,17 @@ On whether education is still important
 > 
 > “This is a disaster,” he said. “If everyone is open, the field as a whole progresses faster.” [^nyt-lecun-llms-dead-end]
 
-Lighthill
+## Dr James Lighthill
 
 ### On the disappointments of AI compared to the pronouncements 
 
 > When able and respected scientists write in letters to the present author that AI, the major goal of computing science, represents another step in the general process of evolution; that possibilities in the nineteen-eighties include an all-purpose intelligence on a human-scale knowledge base; that awe-inspiring possibilities suggest themselves based on machine intelligence exceeding human intelligence by the year 2000; when such predictions are made in 1972 one may be wise to compare the predictions of the past against performance as well as considering prospects for the realisation of today's predictions in the future.
 > 
 > It certainly seems that early enthusiasm for programming and building a robot that would mimic human ability in a combination of eye-hand co-ordination and common-sense problem solving has ended up gravely disappointed. The large amount of computer time needed to distinguish between everyday objects of markedly different shapes against a far from noisy background has been most discouraging; the engineering complications required to achieve eye-hand co-ordination (not of human standard but similar to what an octopus can learn) have been repellingly formidable. Reports from the world's different centres for this work are all disenchanting.
+> 
+> Some able research workers, who from their beginning in the field regarded Building Robots as a precarious or even crazy enterprise but nevertheless were attracted to participate in such a long-shot or even shot in the dark activity, have felt themselves driven now to recognise that the difficulty of achieving good hand-eye co-ordination in quite simple problem situations has proved unexpectedly great, and seems to hold out negligible hope of approaching human levels of achievement. In these circumstances, many good computational theorists are emphasizing that productive research on robot reasoning (or, essentially, common sense problem solving) does not necessarily need the physical presence of an eye-hand machine. This line of argument then branches in two directions…
+> 
+> [^lighthill-ai-survey]
 
 ## Other
 
@@ -820,3 +824,4 @@ On effective accelerationism ("growth at all costs")
 [^techno-optimist-manifesto]: https://a16z.com/the-techno-optimist-manifesto/
 [^nytimes-eacc]: https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html
 [^vitalik-dacc]: https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc
+[^lighthill-ai-survey]: https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm
