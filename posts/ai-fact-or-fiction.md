@@ -65,6 +65,7 @@ tags: []
 	- This wasn't a problem before, because you were more involved in the process — either it's in your head or you remembered to write it down in a commit or something — but now you're giving control to these tools so you don't have to worry — except they don't do anything for you but "think"
 - All of the major players are leaning heavily on LLMs, but they are actually very dumb
 	- LLMs don't have intelligent and they can't really do anything. What you have is a chatbot that _needs_ to use tools to access your files and check its assumptions. Well, if the agent can do it, you can do it too.
+	- LLMs are just _one_ way to build intelligence, but is it really the best way? After all, neural networks were abandoned for 20 years before being rediscovered. Who's to say there is not a superior approach that has not yet been explored? Why are companies so bent on using transformers? 
 - Past technological revolutions and deskilling 
 - Parallels in music (Adam Neely video)
 	- Agents can't "jam", they can't create jazz. Just because you can "talk to" an agent doesn't mean it can give you a fruitful conversation. 
