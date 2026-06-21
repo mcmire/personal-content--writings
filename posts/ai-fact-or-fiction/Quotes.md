@@ -726,6 +726,8 @@ On whether education is still important
 > 
 > But a few months later, tech luminaries like Marc Andreessen, the co-founder of the venture capital firm Andreessen Horowitz, started showing up in e/acc’s Twitter Spaces, and proclaiming that he, too, believed in effective accelerationism. … Sam Altman, the chief executive of OpenAI, replied to a Based Beff Jezos tweet and joked “you cannot outaccelerate me.” [^nytimes-eacc]
 
+> As always, with any revolution, there is a lunatic fringe-people who believe in magic, or those who are carried away with their enthusiasm for a new cause and who make wild claims which tend to discredit the entire undertaking. The field of artificial intelligence has, perhaps, had more than its share of these people. Norbert Wiener, who certainly does not belong in this category, has, nevertheless, fostered some of the loose thinking by maintaining, as a basic tenet of cybernetics, that a rather complete analogy exists between control functions in men and in machines and by insisting that machines can possess originality and that they are a threat to mankind. In a contrary vein, Mortimer Taube of Columbia University discounts the entire field of activity and, in effect, charges the workers in the field with "writing science fiction to titillate the public and to make an easy dollar or a synthetic reputation." [^samuel-ai-frontier]
+
 ## Vitalik Buterin
 
 ### On the important of intention in building technology
@@ -833,3 +835,4 @@ On effective accelerationism ("growth at all costs")
 [^nytimes-eacc]: https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html
 [^vitalik-dacc]: https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc
 [^lighthill-ai-survey]: https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm
+[^samuel-ai-frontier]: https://sci-hub.sidesgame.com/10.1177/000271626234000103
