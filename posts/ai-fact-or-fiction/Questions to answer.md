@@ -27,6 +27,7 @@
 	- More more history of AI (likely AI-written; few sources): https://github.com/hgus107/A-Long-Walk-of-AI
 	- The Lighthill report was a scathing review of AI research which argued that various programs had not lived up to their promises to build general-purpose robots: https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/overview.htm and also https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm
 	- Interesting debate between Lighthill, McCarthy, and others which revealed the skepticism about AI at the time and the complexity in developing human-level intelligence: https://github.com/Dicklesworthstone/the_lighthill_debate_on_ai
+	- _Machines Who Think_, p. 218; _The Brain Makers: Genius, Ego, And Greed in the Quest For Machines That Think_, pp. 91–112; _AI: The Tumultuous Search for Artificial Intelligence_, pp. 108–109
 - If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
 - What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
 	- Technophobia may not have existed as much as we thought: https://archive.is/9asWB
