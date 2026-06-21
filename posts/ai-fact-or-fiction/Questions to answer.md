@@ -23,6 +23,7 @@
 	- https://neuraplus-ai.github.io/blog/agi-2027.html
 	- https://archive.org/details/thinkingmachines0000prat/ — interesting, need to read this further 
 	- History of AI: https://www.britannica.com/science/history-of-artificial-intelligence
+	- Dartmouth conference of 1956 was assembled "based \[on] the conjecture that every aspect of learning or any other feature of intelligence can … be so precisely described that a machine can be made to simulate it": http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf
 - If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
 - What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
 	- Technophobia may not have existed as much as we thought: https://archive.is/9asWB
@@ -82,3 +83,6 @@
 	- https://ourworldindata.org/technology-long-run
 - Additional: What do ordinary people think about AI and how does that differ from what experts think?
 	- https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/
+- Additional: more about the history of AI
+	- More about the Dartmouth conference in 1956: https://archive.is/yNZJb
+	- Program for Dartmouth conference, where various leaders of AI proposed problems worth solving and ideas on how they would solve them: http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf
