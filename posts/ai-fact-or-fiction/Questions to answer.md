@@ -1,0 +1,83 @@
+- Who are the leading proponents of AI? Why do they think it's beneficial? What predictions are they making? What arguments do they make justifying the existence of AI and why they should work on it?
+	- https://blog.samaltman.com/reflections
+	- https://blog.samaltman.com/2279512
+	- https://blog.samaltman.com/the-gentle-singularity
+- Who are the leading companies (and their CEOs) creating AI?
+- Who are the leading critics of AI? Why do they think it's detrimental?
+	- Ed Zitron
+- When do people think that AGI will happen?
+	- 2030 (50% probability): https://80000hours.org/ai/guide/when-will-agi-arrive/
+	- 2032 (50% probability): https://www.dwarkesh.com/p/timelines-june-2025
+	- Early 2027: https://ai-2027.com/
+	- 2023: https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/
+- When ASI?
+	- Late 2027: https://ai-2027.com/
+	- "Soon": https://darioamodei.com/essay/machines-of-loving-grace
+	- Within the lifetimes of the next generation: https://ourworldindata.org/ai-timelines
+- Who are the people who think that AI is valuable but highly dangerous? 
+- What do people think are the problems with society and why do they think that AI is the best solution? 
+- What effects do people predict AI will have on society?
+	- Elon Musk says that at some point, white collar labor — especially anything involving digital work — will be the first to be replaced by AI [^musk-moonshots-220] (look for "Universal High Income")
+		- This whole interview feels like a weird Hunger Games thing. The two hosts seem like the TV host in the Hunger Games. They're getting high on this nightmarish future where jobs will be replaced and society will be overturned and AI will be in charge. This is such a circle jerk of an interview. 
+- Haven't we done this before? What did people imagine AI would be in the past? 
+	- https://neuraplus-ai.github.io/blog/agi-2027.html
+	- https://archive.org/details/thinkingmachines0000prat/ — interesting, need to read this further 
+	- History of AI: https://www.britannica.com/science/history-of-artificial-intelligence
+- If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
+- What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
+	- Technophobia may not have existed as much as we thought: https://archive.is/9asWB
+	- The Luddites opposed the introduction of textile machines (automated looms etc.): https://www.worldhistory.org/Luddite/ 
+	- Printing press: 
+	- Electricity: https://www.shellsandpebbles.com/2024/02/05/wired-fears-electricity-and-technophobia-in-the-nineteenth-century/
+	- Radio: https://macleans.ca/society/technology/boo-a-brief-history-of-technology-scares/
+	- Television:
+	- Email:
+	- Video games: 
+	- Social media: 
+	- Technology co-evolves with society and culture: https://www.collectorsweekly.com/articles/why-technophobes-have-been-getting-it-wrong-since-gutenberg/
+- How quickly have advances in AI occurred?
+	- https://ourworldindata.org/brief-history-of-ai (2022)
+	- https://timspark.com/blog/the-journey-of-ai-evolution/ (2025)
+	- History of AI: https://www.britannica.com/science/history-of-artificial-intelligence
+	- https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance (2026)
+	- https://archive.is/MZYqx (2026)
+- Why might AI hyperscalers and investors be spending billions on AI now when it's so expensive? Why could we assume the prices will drop? Why would we assume productivity would rise? What proof do we have that AI will be so transformative? 
+	- See Wright's law: https://ourworldindata.org/learning-curve
+	- Chips will become more efficient: https://epoch.ai/publications/can-ai-scaling-continue-through-2030
+	- The main argument is this: if labor can be automated, it can be scaled up with the economy; and scaling the economy increases innovation, which accelerates the economy: https://epoch.ai/publications/explosive-growth-from-ai-a-review-of-the-arguments
+- Even if powerful AI will revolutionize the world, is the breakneck pace of AI likely to keep up or slow down?
+	- Not for a few more years: https://time.com/6300942/ai-progress-charts/ (2023)
+	- Theoretically the industry can produce a model that's the same difference between GPT-2 and GPT-4 in terms of energy and compute: https://epoch.ai/publications/can-ai-scaling-continue-through-2030
+- Say AI is useful in theory. How has it helped people so far? How do we know that it will be useful? Should it really be embedded in everything? And is a _general_ AI really what the world needs? 
+- What are the leading AI labs in China? Are they good? How much are they used? What about other countries? 
+- Are LLMs really the endgame? Is scaling compute the right solution for achieving AGI?
+	- See here for an alternate opinion: https://www.theneuron.ai/explainer-articles/the-great-ai-debate-are-llms-a-brilliant-leap-or-a-sophisticated-dead-end/
+	- "The bitter lesson": https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf (HTML: http://www.incompleteideas.net/IncIdeas/BitterLesson.html) — the AI industry has taken this and ran with it. Maybe that's not what Sutton intended? I'm confused. "AI as normal technology" refers to this article. 
+	- Yann LeCun doesn't think LLMs work long-term: https://www.nytimes.com/2026/01/26/technology/an-ai-pioneer-warns-the-tech-herd-is-marching-into-a-dead-end.html
+	- Also see here for a good overview: https://herestosurvivingai.substack.com/p/are-llms-a-dead-end-or-can-they-get
+- How do we trust that the incredible amount of money being spent on AI around the world and the effort to integrate it is all worth it? How do we know it's not a scam like crypto might be? 
+- Is technological progress always good? Should it be slowed down or stopped altogether?
+	- The e/acc movement says that all technological progress is good — in fact, it is _vital_ for the existence of a society: https://a16z.com/the-techno-optimist-manifesto/
+	- Vitalik agrees that any view which claims that technology and technological progress should be avoided is outdated: https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html
+- Why are democratic values important to preserve when developing AI?
+	- https://knightcolumbia.org/content/building-ai-for-the-democratic-matrix-a-technical-research-agenda-for-normative-competence-and-normative-institutions-1
+		- Also see https://knightcolumbia.org/research/artificial-intelligence-and-democratic-freedoms
+	- Because China does not want democratic values or nations to succeed: https://www.journalofdemocracy.org/articles/chinas-threat-to-global-democracy/
+	- But then here is an alternate view: https://www.lowyinstitute.org/the-interpreter/china-threatens-west-s-primacy-not-its-democratic-systems
+- Putting aside the direction the economy is going, why would _we_ want to automate all work? Why would we expect this to lead to a better life for people? What are we doing this all for?
+	- Why bother writing code? Why bother making computers? 
+	- According to e/acc, pursuing technology using the highest amount of capital and/or innovation will lead to the highest possible benefits, and automating all work is just the natural conclusion: https://www.businessinsider.com/silicon-valley-tech-leaders-accelerationism-eacc-twitter-profiles-2023-7?ref=wheresyoured.at
+	- Or: "We believe in accelerationism – the conscious and deliberate propulsion of technological development – to ensure the fulfillment of the Law of Accelerating Returns. To ensure the techno-capital upward spiral continues forever." https://a16z.com/the-techno-optimist-manifesto/
+	- See https://knightcolumbia.org/content/ai-as-normal-technology for an argument for why we might not want to automate everything away, and in fact why human work is still important 
+- What ideas do people have for "doing AI right"?
+	- Various
+	- https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/11/assessing-potential-future-artificial-intelligence-risks-benefits-and-policy-imperatives_8a491447/3f4e3dfb-en.pdf
+- Is programming solely a craft, or can it be art too? Should code solely be a commodity?
+- What effect does AI have on the idea of FOSS? Is FOSA worth saving? (What would Richard Stallman think?)
+- What is good engineering? What is bad engineering?
+- Did engineering change when C was invented? 
+- Is engineering in its current form worth saving?
+- Additional: How fast is technology progressing?
+	- https://ourworldindata.org/technology-long-run
+- Additional: What do ordinary people think about AI and how does that differ from what experts think?
+	- https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/
