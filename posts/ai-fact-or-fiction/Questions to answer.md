@@ -25,6 +25,7 @@
 	- History of AI: https://www.britannica.com/science/history-of-artificial-intelligence
 	- Dartmouth conference of 1956 was assembled "based \[on] the conjecture that every aspect of learning or any other feature of intelligence can … be so precisely described that a machine can be made to simulate it": http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf
 	- More more history of AI (likely AI-written; few sources): https://github.com/hgus107/A-Long-Walk-of-AI
+	- Interesting debate between Lighthill, McCarthy, and others which revealed the skepticism about AI at the time and the complexity: https://github.com/Dicklesworthstone/the_lighthill_debate_on_ai
 - If one reason for building AI is that it's inevitable someone will build it anyway, was that always the case and when did we reach that point? 
 - What about other society-changing technological innovations in the past, like the internet and electricity and machines and graphing calculators? What were the public reactions toward these? 
 	- Technophobia may not have existed as much as we thought: https://archive.is/9asWB
