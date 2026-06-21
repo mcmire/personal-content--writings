@@ -39,6 +39,7 @@
 	- https://ourworldindata.org/brief-history-of-ai (2022)
 	- https://timspark.com/blog/the-journey-of-ai-evolution/ (2025)
 	- History of AI: https://www.britannica.com/science/history-of-artificial-intelligence
+	- More history of AI: https://www.ibm.com/think/topics/history-of-artificial-intelligence
 	- https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance (2026)
 	- https://archive.is/MZYqx (2026)
 - Why might AI hyperscalers and investors be spending billions on AI now when it's so expensive? Why could we assume the prices will drop? Why would we assume productivity would rise? What proof do we have that AI will be so transformative? 
