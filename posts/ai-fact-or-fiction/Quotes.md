@@ -726,7 +726,19 @@ On whether education is still important
 > 
 > But a few months later, tech luminaries like Marc Andreessen, the co-founder of the venture capital firm Andreessen Horowitz, started showing up in e/acc’s Twitter Spaces, and proclaiming that he, too, believed in effective accelerationism. … Sam Altman, the chief executive of OpenAI, replied to a Based Beff Jezos tweet and joked “you cannot outaccelerate me.” [^nytimes-eacc]
 
+### On AI enthusiasts and their "wild claims"
+
 > As always, with any revolution, there is a lunatic fringe-people who believe in magic, or those who are carried away with their enthusiasm for a new cause and who make wild claims which tend to discredit the entire undertaking. The field of artificial intelligence has, perhaps, had more than its share of these people. Norbert Wiener, who certainly does not belong in this category, has, nevertheless, fostered some of the loose thinking by maintaining, as a basic tenet of cybernetics, that a rather complete analogy exists between control functions in men and in machines and by insisting that machines can possess originality and that they are a threat to mankind. In a contrary vein, Mortimer Taube of Columbia University discounts the entire field of activity and, in effect, charges the workers in the field with "writing science fiction to titillate the public and to make an easy dollar or a synthetic reputation." [^samuel-ai-frontier]
+
+### On the paradox of developing superintelligence 
+
+> Perhaps we have said enough on the negative side. Progress is being made in machine learning, and we will someday understand why it is that a man can outperform a machine, and, as a result of this understanding, we will be able to devise better machines or even to program existing ones so that they can outperform man in most forms of mental activity. In fact, one suspects that our present machines would be able to do this now were we but smart enough to write the right kind of programs. The limitations are not in the machine but in man.
+> 
+> Here, then, is a paradox. In order to make machines which appear to be smarter than man, man himself must be smarter than the machine. A higher order of intelligence, or at least of understanding, seems to be required to instruct a machine in the art of being intelligent than is required to duplicate the intelligence which the machine is to simulate.
+> 
+> When we have at last achieved that degree of understanding required to write a program which will ape people in most of their mental activities, we will then feel the need to write a more generalized program for a machine which will cause it to write its own programs or to write programs for another machine. This, in turn, will require still greater understanding on the part of man. There is no end to this process, but, apparently, man as the originator will always be on top.
+> 
+> Our point, then, is that we have nothing to fear from the machine, at least in so far as there is any danger of the machine becoming more intelligent than man. The machine’s intelligence is prescribed by man, and a higher intelligence is demanded for the prescription than for the execution. [^samuel-ai-frontier]
 
 ## Vitalik Buterin
 
