@@ -56,9 +56,11 @@ Although there are some differing specifics, all of these people are generally s
 
 ### The mission and vision
 
-According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via space colonies [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through technological advancements. 
+According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via space colonies [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through technological advancements. Since AI is the next 
 
-When technological advancements are taken to their logical conclusion, the result is that technology becomes cheaper and cheaper to produce. 
+As a piece of technology advances, products that use that technology get cheaper and cheaper to produce. AI enthusiasts believe that 
+
+At the same time, when a technology gets replaced, 
 
 ## Outline
 

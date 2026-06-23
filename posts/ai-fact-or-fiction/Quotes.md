@@ -716,56 +716,6 @@ On whether education is still important
 > 
 > Our point, then, is that we have nothing to fear from the machine, at least in so far as there is any danger of the machine becoming more intelligent than man. The machine’s intelligence is prescribed by man, and a higher intelligence is demanded for the prescription than for the execution. [^samuel-ai-frontier]
 
-## Other
-
-### On shared opinions between AI experts and non-experts
-
-> AI experts and the public are both wary of AI’s role in politics and journalism. Just 11% of experts surveyed and 9% of the public believe AI will positively impact elections in the U.S. over the next 20 years. In fact, 61% of these experts believe AI will harm elections in the future, with 50% of the public saying the same.
-> 
-> News is also an area where small shares of experts (18%) and the public (10%) believe it will be a good thing for the country. About half or more of experts (56%) and the public (51%) predict it will negatively affect the news people get.
-> 
-> [^pew-research]
-
-### On the unlocking of the future with AI 
-
-> Think of today's LLMs like … when Netflix Inc. started shipping DVDs. … 
-> 
-> Most people that are betting against AI are doing so because they see the tech and use it wrong. They judge the entire revolution based on their experience typing basic questions into ChatGPT. This will be fixed in short order, usability and usage will improve by orders of magnitude, and the growth that comes from it will be nothing short of magical.
-> 
-> The important question we all need to ask isn’t whether AI will transform business and society. This is an easy and emphatic yes. Full Stop. The right question for most is whether you are still thinking about DVDs while the streaming infrastructure is being built all around you. LLMs aren’t the end game, but rather just the beginning of the greatest technological revolution of our time. [^overhyping-llms]
-
-### On the questionable origins of e/acc
-
-> The \[e/acc] movement also borrows from the works of the British philosopher Nick Land, who wrote years ago that the accelerating forces of capitalism and A.I. would ultimately collide in a “techno-capital singularity,” a point at which technology would outstrip our ability to contain it. (More recently, Mr. Land has fallen out of favor after [endorsing far-right ideas](https://www.vox.com/the-highlight/2019/11/11/20882005/accelerationism-white-supremacy-christchurch) about race and authoritarianism.) [^nytimes-eacc]
-
-> “A lot of my personal friends work on powerful technologies, and they kind of get depressed because the whole system tells them that they are bad,” Guillaume Verdon, a 31-year old French-Canadian physicist who once worked in an experimental lab at Google, said in a Twitter Space earlier this year, which was transcribed by someone who attended. “For us, I was thinking, let’s make an ideology where the engineers and builders are heroes.” [^nytimes-eacc]
-
-> Initially, I wrote the movement off as a fringe novelty — a bunch of Twitter-addicted techies with persecution complexes turning warmed-over Ayn Rand into edgy memes.
-> 
-> But a few months later, tech luminaries like Marc Andreessen, the co-founder of the venture capital firm Andreessen Horowitz, started showing up in e/acc’s Twitter Spaces, and proclaiming that he, too, believed in effective accelerationism. … Sam Altman, the chief executive of OpenAI, replied to a Based Beff Jezos tweet and joked “you cannot outaccelerate me.” [^nytimes-eacc]
-
-### On adjusting AI timelines
-
-> “A lot of other people have been pushing their timelines further out in the past year, as they realise how jagged AI performance is,” said Malcolm Murray, an AI risk management expert and one of the authors of the International AI Safety Report.
-> 
-> “For a scenario like AI 2027 to happen, \[AI] would need a lot of more practical skills that are useful in real-world complexities. I think people are starting to realise the enormous inertia in the real world that will delay complete societal change.” …
-> 
-> “Things seem to be going somewhat slower than the AI 2027 scenario. Our timelines were longer than 2027 when we published and now they are a bit longer still,” wrote Kokotajlo in a post on X. …
-> 
-> Andrea Castagna, a Brussels-based AI policy researcher, said there were a number of complexities that dramatic AGI timelines do not address. “The fact that you have a superintelligent computer focused on military activity doesn’t mean you can integrate it into the strategic documents we have compiled for the last 20 years.
-> 
-> “The more we develop AI, the more we see that the world is not science fiction. The world is a lot more complicated than that.” [^guardian-ai-timeline-delays]
-
-### On Elon Musk
-
-> Musk’s relationship with AI timelines follows a predictable pattern: make a bold prediction, miss it, then quietly push the goalpost forward.
-> 
-> In 2023, Musk claimed that Tesla cars had “a mind” and that the company had figured out “some aspects of AGI.” In 2024, he predicted AGI would arrive by 2025. When 2025 came and went without AGI, he pushed the timeline to 2026. Earlier this year, he declared that “we have entered the Singularity” and that “2026 is the year of the Singularity.”
-> 
-> Now, he’s claiming Tesla specifically will be among the first companies to develop AGI — in “humanoid/atom-shaping form” through its Optimus robot program.
-> 
-> This is the same playbook Musk has used with Tesla’s self-driving promises. …  [^electrek-musk-bad-predictions]
-
 ## Vitalik Buterin
 
 ### On the important of intention in building technology
@@ -843,6 +793,56 @@ On effective accelerationism ("growth at all costs")
 ### On the importance of the US dominating tech
 
 > We believe America and her allies should be strong and not weak. We believe national strength of liberal democracies flows from economic strength (financial power), cultural strength (soft power), and military strength (hard power). Economic, cultural, and military strength flow from technological strength. A technologically strong America is a force for good in a dangerous world. Technologically strong liberal democracies safeguard liberty and peace. Technologically weak liberal democracies lose to their autocratic rivals, making everyone worse off. [^techno-optimist-manifesto]
+
+## Other
+
+### On shared opinions between AI experts and non-experts
+
+> AI experts and the public are both wary of AI’s role in politics and journalism. Just 11% of experts surveyed and 9% of the public believe AI will positively impact elections in the U.S. over the next 20 years. In fact, 61% of these experts believe AI will harm elections in the future, with 50% of the public saying the same.
+> 
+> News is also an area where small shares of experts (18%) and the public (10%) believe it will be a good thing for the country. About half or more of experts (56%) and the public (51%) predict it will negatively affect the news people get.
+> 
+> [^pew-research]
+
+### On the unlocking of the future with AI 
+
+> Think of today's LLMs like … when Netflix Inc. started shipping DVDs. … 
+> 
+> Most people that are betting against AI are doing so because they see the tech and use it wrong. They judge the entire revolution based on their experience typing basic questions into ChatGPT. This will be fixed in short order, usability and usage will improve by orders of magnitude, and the growth that comes from it will be nothing short of magical.
+> 
+> The important question we all need to ask isn’t whether AI will transform business and society. This is an easy and emphatic yes. Full Stop. The right question for most is whether you are still thinking about DVDs while the streaming infrastructure is being built all around you. LLMs aren’t the end game, but rather just the beginning of the greatest technological revolution of our time. [^overhyping-llms]
+
+### On the questionable origins of e/acc
+
+> The \[e/acc] movement also borrows from the works of the British philosopher Nick Land, who wrote years ago that the accelerating forces of capitalism and A.I. would ultimately collide in a “techno-capital singularity,” a point at which technology would outstrip our ability to contain it. (More recently, Mr. Land has fallen out of favor after [endorsing far-right ideas](https://www.vox.com/the-highlight/2019/11/11/20882005/accelerationism-white-supremacy-christchurch) about race and authoritarianism.) [^nytimes-eacc]
+
+> “A lot of my personal friends work on powerful technologies, and they kind of get depressed because the whole system tells them that they are bad,” Guillaume Verdon, a 31-year old French-Canadian physicist who once worked in an experimental lab at Google, said in a Twitter Space earlier this year, which was transcribed by someone who attended. “For us, I was thinking, let’s make an ideology where the engineers and builders are heroes.” [^nytimes-eacc]
+
+> Initially, I wrote the movement off as a fringe novelty — a bunch of Twitter-addicted techies with persecution complexes turning warmed-over Ayn Rand into edgy memes.
+> 
+> But a few months later, tech luminaries like Marc Andreessen, the co-founder of the venture capital firm Andreessen Horowitz, started showing up in e/acc’s Twitter Spaces, and proclaiming that he, too, believed in effective accelerationism. … Sam Altman, the chief executive of OpenAI, replied to a Based Beff Jezos tweet and joked “you cannot outaccelerate me.” [^nytimes-eacc]
+
+### On adjusting AI timelines
+
+> “A lot of other people have been pushing their timelines further out in the past year, as they realise how jagged AI performance is,” said Malcolm Murray, an AI risk management expert and one of the authors of the International AI Safety Report.
+> 
+> “For a scenario like AI 2027 to happen, \[AI] would need a lot of more practical skills that are useful in real-world complexities. I think people are starting to realise the enormous inertia in the real world that will delay complete societal change.” …
+> 
+> “Things seem to be going somewhat slower than the AI 2027 scenario. Our timelines were longer than 2027 when we published and now they are a bit longer still,” wrote Kokotajlo in a post on X. …
+> 
+> Andrea Castagna, a Brussels-based AI policy researcher, said there were a number of complexities that dramatic AGI timelines do not address. “The fact that you have a superintelligent computer focused on military activity doesn’t mean you can integrate it into the strategic documents we have compiled for the last 20 years.
+> 
+> “The more we develop AI, the more we see that the world is not science fiction. The world is a lot more complicated than that.” [^guardian-ai-timeline-delays]
+
+### On Elon Musk
+
+> Musk’s relationship with AI timelines follows a predictable pattern: make a bold prediction, miss it, then quietly push the goalpost forward.
+> 
+> In 2023, Musk claimed that Tesla cars had “a mind” and that the company had figured out “some aspects of AGI.” In 2024, he predicted AGI would arrive by 2025. When 2025 came and went without AGI, he pushed the timeline to 2026. Earlier this year, he declared that “we have entered the Singularity” and that “2026 is the year of the Singularity.”
+> 
+> Now, he’s claiming Tesla specifically will be among the first companies to develop AGI — in “humanoid/atom-shaping form” through its Optimus robot program.
+> 
+> This is the same playbook Musk has used with Tesla’s self-driving promises. …  [^electrek-musk-bad-predictions]
 
 ## Footnotes
 
