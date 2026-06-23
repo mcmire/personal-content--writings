@@ -13,15 +13,26 @@ The thing is, there are promises being made and sold to customers and there is t
 
 ### The influencers 
 
-As of this writing, there are four [^1] major companies (hyperscalers) focused on producing a general artificial intelligence, and considering the influence they wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
+As of this writing, there are four [^1] major companies (hyperscalers) focused on producing general artificial intelligence (AGI), and considering the influence they wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
 
-The five foundation model developers are:
+The five US foundation model developers are:
 
 - OpenAI, led by Sam Altman
 - Anthropic, led by Dario Amodei
 - Google, led by Pinchar Sundai (and, specifically, DeepMind, led by Demis Hassabis)
 - Meta, led by Mark Zuckerberg 
 - xAI, led by Elon Musk
+
+The five Chinese foundational model developers are:
+
+- DeepSeek, led by Liang Wenfeng
+- Qwen
+- ByteDance (Doubao)
+- Baidu
+- MiniMax
+- Moonshot
+- Zhipu
+- Tencent
 
 The investors are:
 
@@ -56,7 +67,20 @@ Although there are some differing specifics, all of these people are generally s
 
 ### The mission and vision
 
-According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via space colonies [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through technological advancements. Since AI is the next 
+According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via the colonization of the moon, Mars, and beyond [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through constant technological %%advancements%% leaps.
+
+AI is the next logical leap %%in the history of technology%%, enthusiasts believe, because it will serve as a incredible force multiplier in every single sector of society. All of the discoveries and innovations in science and technology that would have happened over the next 100 years would now happen in the next 10. Humans 
+
+compress 100 years of scientific discoveries into 10 years,
+
+greatly accelerating scientific discoveries, production of goods,  and more. For instance, it could lead to advancements in medicine which would effectively double the human lifespan, 
+
+
+%%There are have been various eras in the history of technology.%% Enthusiasts believe that humanity is on the cusp of %%exiting the computer age and%% entering a new age, one that will dominated by AI. Furthermore, over the next 10 years, AI will unlock 
+
+Artificial intelligence is the next phase or era in the evolution of technology, and enthusiasts believe we have now entered a new age. It will unlock 
+
+Since AI is the next phase in the evolution of technology, it is imperative that 
 
 As a piece of technology advances, products that use that technology get cheaper and cheaper to produce. AI enthusiasts believe that 
 
