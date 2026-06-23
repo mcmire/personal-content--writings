@@ -3,6 +3,63 @@ title: "AI: Fact or Fiction?"
 published: false
 tags: []
 ---
+## Introduction 
+
+Over the past five years, the topic of artificial intelligence has re-entered the zeitgeist within tech circles and beyond, %% this time offering fresh services to serve a new generation%%. It has emerged as the dominant driver of the tech industry and venture capital business, and it has slowly pervaded every other part of society. It certainly seems like it's everywhere. 
+
+The thing is, there are promises being made and sold to customers and there is the reality. And there is the history (this isn't our first rodeo). I wanted to understand what's different this time around and what's regurgitated and I wanted to explore what I felt about AI, where I think we are, and why we should even be pursuing AI. This post is admittedly more for my benefit than yours but I hope you will get something out of it. 
+
+## The glorious future
+
+### The influencers 
+
+As of this writing, there are four [^1] major companies (hyperscalers) focused on producing a general artificial intelligence, and considering the influence they wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
+
+The five foundation model developers are:
+
+- OpenAI, led by Sam Altman
+- Anthropic, led by Dario Amodei
+- Google, led by Pinchar Sundai (and, specifically, DeepMind, led by Demis Hassabis)
+- Meta, led by Mark Zuckerberg 
+- xAI, led by Elon Musk
+
+The investors are:
+
+- Microsoft, led by Satya Nadella
+- Amazon, led by Andy Jassy
+- Oracle, led by Larry Ellison
+- Andreesen Horowitz, co-owned by Marc Andreesen
+
+The hardware suppliers are:
+
+- Nvidia, led by Jensen Huang
+- TMSC, led by ???
+
+Beyond this are a constellation of companies that build upon AI (Salesforce, CoreWeave, etc.) but for the purposes of brevity I'm going to skip them here.
+
+As some companies serve multiple purposes within the ecosystem (for instance, Microsoft funnels a ton of money toward OpenAI, and xAI is planning to build the Colossus datacenter), here is a table:
+
+| Name               | CEO             | Foundation model developer? | Investor? | Data center builder? | Platform/toolkit builder? | Hardware supplier? |
+| ------------------ | --------------- | --------------------------- | --------- | -------------------- | ------------------------- | ------------------ |
+| OpenAI             | Sam Altman      | ✅                           | ✅         |                      | ✅                         |                    |
+| Anthropic          | Dario Amodei    | ✅                           |           |                      | ✅                         |                    |
+| Google DeepMind    | Demis Hassabis  | ✅                           |           |                      | ✅                         |                    |
+| Meta               | Mark Zuckerberg | ✅                           |           |                      |                           |                    |
+| xAI                | Elon Musk       | ✅                           |           | ✅                    |                           |                    |
+| Microsoft          | Satya Nadella   |                             | ✅         |                      |                           |                    |
+| Amazon             | Andy Jassy      |                             | ✅         |                      | ✅                         |                    |
+| Oracle             | Larry Ellison   |                             | ✅         |                      |                           |                    |
+| Nvidia             | Jensen Huang    |                             | ✅         |                      |                           | ✅                  |
+| TMSC               |                 |                             |           |                      |                           | ✅                  |
+| Andreesen Horowitz | Marc Andreesen  |                             | ✅         |                      |                           |                    |
+Although there are some differing specifics, all of these people are generally selling some version of the "glorious future".
+
+### The mission and vision
+
+According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via space colonies [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through technological advancements. 
+
+When technological advancements are taken to their logical conclusion, the result is that technology becomes cheaper and cheaper to produce. 
+
 ## Outline
 
 - Introduction; questions we want to answer; challenges to assumptions
@@ -80,3 +137,8 @@ tags: []
 - Programming languages are free — anyone can make software themselves — there's no AI owned by a single company that you have to interact with — what happens when there are effectively 4 big AI companies that replace the software industry? Or, hell — replace every other part of society?
 - 
 
+[^1]: Technically there are probably six or seven, including a few in China, but I'm just going to focus on those in the US.
+
+[^2]: See Altman 1, Andreesen 1, etc.
+
+[^3]: See Musk 1 and Andreesen 1.

@@ -9,6 +9,7 @@
 	- 2030 (50% probability): https://80000hours.org/ai/guide/when-will-agi-arrive/
 	- 2032 (50% probability): https://www.dwarkesh.com/p/timelines-june-2025
 	- Early 2027: https://ai-2027.com/
+		- Oops I mean the early 2030s: https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity
 	- 2023: https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/
 - When ASI?
 	- Late 2027: https://ai-2027.com/
@@ -90,3 +91,5 @@
 - Additional: more about the history of AI
 	- More about the Dartmouth conference in 1956: https://archive.is/yNZJb
 	- Program for Dartmouth conference, where various leaders of AI proposed problems worth solving and ideas on how they would solve them: http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf
+- Additional: Will jobs really go down if more stuff is automated?
+	- No: https://aimagazine.com/news/altman-amodei-drop-ai-job-predictions

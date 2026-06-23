@@ -1,0 +1,27 @@
+{
+  "handleColorMode": "theme",
+  "handleColor": "#8a8a8a",
+  "handleVisibility": "hover",
+  "handleIcon": "grip-dots",
+  "handleSize": 20,
+  "indicatorColorMode": "theme",
+  "indicatorColor": "#7a7a7a",
+  "enableCrossFileDrag": true,
+  "enableMultiLineSelection": true,
+  "multiLineSelectionLongPressMs": 900,
+  "mobileDragLongPressMs": 200,
+  "mouseRangeSelectLongPressMs": 500,
+  "autoScrollEdgeZonePx": 60,
+  "autoScrollMaxSpeedPx": 12,
+  "disableMobileDragModeAfterDrop": true,
+  "enableMobileTextLongPressDrag": true,
+  "mobileDragModeToggleLocations": [
+    "view-action"
+  ],
+  "enableBlockSelectionHighlight": true,
+  "enableListDropHighlight": true,
+  "selectionVisualStyle": "subtle",
+  "handleHorizontalOffsetPx": -8,
+  "handleGutterPosition": "left",
+  "schemaVersion": 3
+}

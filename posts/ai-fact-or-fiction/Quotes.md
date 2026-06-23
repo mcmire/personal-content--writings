@@ -684,15 +684,7 @@ On whether education is still important
 > 
 > [^lighthill-ai-survey]
 
-## Other
-
-### On shared opinions between AI experts and non-experts
-
-> AI experts and the public are both wary of AI’s role in politics and journalism. Just 11% of experts surveyed and 9% of the public believe AI will positively impact elections in the U.S. over the next 20 years. In fact, 61% of these experts believe AI will harm elections in the future, with 50% of the public saying the same.
-> 
-> News is also an area where small shares of experts (18%) and the public (10%) believe it will be a good thing for the country. About half or more of experts (56%) and the public (51%) predict it will negatively affect the news people get.
-> 
-> [^pew-research]
+## Arvind Narayanan 
 
 ### On how humans and AI will coordinate 
 
@@ -707,6 +699,32 @@ On whether education is still important
 ### On the difficulty of understanding failures to integrate AI humanely
 
 > One significant difference between social media and transportation is that, when harms occur, attributing them to product failures is relatively straightforward in the case of transportation, and there is immediate reputational damage to the company. But attribution is extremely hard in the case of social media, and even the research remains inconclusive and contested. [^ai-as-normal-tech]
+
+## Arthur L. Samuel 
+
+### On AI enthusiasts and their "wild claims"
+
+> As always, with any revolution, there is a lunatic fringe-people who believe in magic, or those who are carried away with their enthusiasm for a new cause and who make wild claims which tend to discredit the entire undertaking. The field of artificial intelligence has, perhaps, had more than its share of these people. Norbert Wiener, who certainly does not belong in this category, has, nevertheless, fostered some of the loose thinking by maintaining, as a basic tenet of cybernetics, that a rather complete analogy exists between control functions in men and in machines and by insisting that machines can possess originality and that they are a threat to mankind. In a contrary vein, Mortimer Taube of Columbia University discounts the entire field of activity and, in effect, charges the workers in the field with "writing science fiction to titillate the public and to make an easy dollar or a synthetic reputation." [^samuel-ai-frontier]
+
+### On the paradox of developing superintelligence 
+
+> Perhaps we have said enough on the negative side. Progress is being made in machine learning, and we will someday understand why it is that a man can outperform a machine, and, as a result of this understanding, we will be able to devise better machines or even to program existing ones so that they can outperform man in most forms of mental activity. In fact, one suspects that our present machines would be able to do this now were we but smart enough to write the right kind of programs. The limitations are not in the machine but in man.
+> 
+> Here, then, is a paradox. In order to make machines which appear to be smarter than man, man himself must be smarter than the machine. A higher order of intelligence, or at least of understanding, seems to be required to instruct a machine in the art of being intelligent than is required to duplicate the intelligence which the machine is to simulate.
+> 
+> When we have at last achieved that degree of understanding required to write a program which will ape people in most of their mental activities, we will then feel the need to write a more generalized program for a machine which will cause it to write its own programs or to write programs for another machine. This, in turn, will require still greater understanding on the part of man. There is no end to this process, but, apparently, man as the originator will always be on top.
+> 
+> Our point, then, is that we have nothing to fear from the machine, at least in so far as there is any danger of the machine becoming more intelligent than man. The machine’s intelligence is prescribed by man, and a higher intelligence is demanded for the prescription than for the execution. [^samuel-ai-frontier]
+
+## Other
+
+### On shared opinions between AI experts and non-experts
+
+> AI experts and the public are both wary of AI’s role in politics and journalism. Just 11% of experts surveyed and 9% of the public believe AI will positively impact elections in the U.S. over the next 20 years. In fact, 61% of these experts believe AI will harm elections in the future, with 50% of the public saying the same.
+> 
+> News is also an area where small shares of experts (18%) and the public (10%) believe it will be a good thing for the country. About half or more of experts (56%) and the public (51%) predict it will negatively affect the news people get.
+> 
+> [^pew-research]
 
 ### On the unlocking of the future with AI 
 
@@ -726,19 +744,27 @@ On whether education is still important
 > 
 > But a few months later, tech luminaries like Marc Andreessen, the co-founder of the venture capital firm Andreessen Horowitz, started showing up in e/acc’s Twitter Spaces, and proclaiming that he, too, believed in effective accelerationism. … Sam Altman, the chief executive of OpenAI, replied to a Based Beff Jezos tweet and joked “you cannot outaccelerate me.” [^nytimes-eacc]
 
-### On AI enthusiasts and their "wild claims"
+### On adjusting AI timelines
 
-> As always, with any revolution, there is a lunatic fringe-people who believe in magic, or those who are carried away with their enthusiasm for a new cause and who make wild claims which tend to discredit the entire undertaking. The field of artificial intelligence has, perhaps, had more than its share of these people. Norbert Wiener, who certainly does not belong in this category, has, nevertheless, fostered some of the loose thinking by maintaining, as a basic tenet of cybernetics, that a rather complete analogy exists between control functions in men and in machines and by insisting that machines can possess originality and that they are a threat to mankind. In a contrary vein, Mortimer Taube of Columbia University discounts the entire field of activity and, in effect, charges the workers in the field with "writing science fiction to titillate the public and to make an easy dollar or a synthetic reputation." [^samuel-ai-frontier]
+> “A lot of other people have been pushing their timelines further out in the past year, as they realise how jagged AI performance is,” said Malcolm Murray, an AI risk management expert and one of the authors of the International AI Safety Report.
+> 
+> “For a scenario like AI 2027 to happen, \[AI] would need a lot of more practical skills that are useful in real-world complexities. I think people are starting to realise the enormous inertia in the real world that will delay complete societal change.” …
+> 
+> “Things seem to be going somewhat slower than the AI 2027 scenario. Our timelines were longer than 2027 when we published and now they are a bit longer still,” wrote Kokotajlo in a post on X. …
+> 
+> Andrea Castagna, a Brussels-based AI policy researcher, said there were a number of complexities that dramatic AGI timelines do not address. “The fact that you have a superintelligent computer focused on military activity doesn’t mean you can integrate it into the strategic documents we have compiled for the last 20 years.
+> 
+> “The more we develop AI, the more we see that the world is not science fiction. The world is a lot more complicated than that.” [^guardian-ai-timeline-delays]
 
-### On the paradox of developing superintelligence 
+### On Elon Musk
 
-> Perhaps we have said enough on the negative side. Progress is being made in machine learning, and we will someday understand why it is that a man can outperform a machine, and, as a result of this understanding, we will be able to devise better machines or even to program existing ones so that they can outperform man in most forms of mental activity. In fact, one suspects that our present machines would be able to do this now were we but smart enough to write the right kind of programs. The limitations are not in the machine but in man.
+> Musk’s relationship with AI timelines follows a predictable pattern: make a bold prediction, miss it, then quietly push the goalpost forward.
 > 
-> Here, then, is a paradox. In order to make machines which appear to be smarter than man, man himself must be smarter than the machine. A higher order of intelligence, or at least of understanding, seems to be required to instruct a machine in the art of being intelligent than is required to duplicate the intelligence which the machine is to simulate.
+> In 2023, Musk claimed that Tesla cars had “a mind” and that the company had figured out “some aspects of AGI.” In 2024, he predicted AGI would arrive by 2025. When 2025 came and went without AGI, he pushed the timeline to 2026. Earlier this year, he declared that “we have entered the Singularity” and that “2026 is the year of the Singularity.”
 > 
-> When we have at last achieved that degree of understanding required to write a program which will ape people in most of their mental activities, we will then feel the need to write a more generalized program for a machine which will cause it to write its own programs or to write programs for another machine. This, in turn, will require still greater understanding on the part of man. There is no end to this process, but, apparently, man as the originator will always be on top.
+> Now, he’s claiming Tesla specifically will be among the first companies to develop AGI — in “humanoid/atom-shaping form” through its Optimus robot program.
 > 
-> Our point, then, is that we have nothing to fear from the machine, at least in so far as there is any danger of the machine becoming more intelligent than man. The machine’s intelligence is prescribed by man, and a higher intelligence is demanded for the prescription than for the execution. [^samuel-ai-frontier]
+> This is the same playbook Musk has used with Tesla’s self-driving promises. …  [^electrek-musk-bad-predictions]
 
 ## Vitalik Buterin
 
@@ -848,3 +874,5 @@ On effective accelerationism ("growth at all costs")
 [^vitalik-dacc]: https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc
 [^lighthill-ai-survey]: https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm
 [^samuel-ai-frontier]: https://sci-hub.sidesgame.com/10.1177/000271626234000103
+[^guardian-ai-timeline-delays]: https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity
+[^electrek-musk-bad-predictions]: https://electrek.co/2026/03/04/elon-musk-tesla-agi-claims-desperate-attempt-ai-bubble/
