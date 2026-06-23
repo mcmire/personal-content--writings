@@ -71,7 +71,7 @@ Although there are some differing specifics, all of these people are generally s
 
 Considering the influence these AI players wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
 
-According to this worldview, humanity is on the cusp of a new age where, thanks to superintelligent AI, scientific and technological advancements will accelerate at an unprecedented exponential rate. [^new-age] It is very likely, for instance, that the kinds of discoveries and inventions that took place over the last 100 years will happen in 10. [^acceleration]
+According to this worldview, humanity is on the cusp of a new age where, thanks to superintelligent AI, scientific and technological advancements will accelerate at an %%unprecedented%% exponential rate. [^new-age] It is very likely, for instance, that the kinds of discoveries and inventions that took place over the last 100 years will happen in 10. [^acceleration]
 
 
 According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via the colonization of the moon, Mars, and beyond [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through constant technological %%advancements%% leaps.
@@ -186,7 +186,8 @@ At the same time, when a technology gets replaced,
 
 ## Sources
 
-1. Altman, Sam (2026a, April 11). [Untitled](https://blog.samaltman.com/2279512). blog.samaltman.com. Retrieved 2026-06-23.
+1. Altman, Sam (2026, April 11). [Untitled](https://blog.samaltman.com/2279512). _blog.samaltman.com_. Retrieved 2026-06-23.
+2. Simo, Fidji (2025, July 1). [AI as the greatest source of empowerment for all](https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/). _OpenAI_. Retrieved 2026-06-23.
 
 [^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
 [^meta-superintelligence]: https://www.meta.com/superintelligence/
