@@ -1,4 +1,5 @@
 - https://time.com/collections/time100-ai-2025/ 
+- https://www.ainchina.com/blog/chinese-ai-landscape/
 
 ## Players
 
@@ -9,9 +10,16 @@
 - xAI (Elon Musk)
 - Meta AI (Mark Zuckerberg, Alexandr Wang, Nat Friedman)
 - DeepMind
-- DeepSeek (Liang Wenfeng)
 - Microsoft (Satya Nadella \[CEO], Mustafa Suleyman \[CEO, AI])
 - Yann LeCun
+- DeepSeek (Liang Wenfeng)
+- Qwen
+- Moonshot
+- MiniMax
+- 01.AI
+- Zhipu
+- Baichuan
+- Beijing Academy of AI (BAAI)
 
 ### Shakers 
 
@@ -21,8 +29,9 @@
 
 - Nvidia (Jensen Huang)
 - TMSC (C.C. Wei)
-- Huawei (Ren Zhengfei)
 - Arm (Rene Haas)
+- Huawei (Ren Zhengfei)
+- Biren
 
 #### Data center builders 
 

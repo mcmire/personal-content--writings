@@ -23,7 +23,7 @@ The five US foundation model developers are:
 - Meta, led by Mark Zuckerberg 
 - xAI, led by Elon Musk
 
-The five Chinese foundational model developers are:
+The seven Chinese foundational model developers are:
 
 - DeepSeek, led by Liang Wenfeng
 - Qwen
@@ -33,6 +33,8 @@ The five Chinese foundational model developers are:
 - Moonshot
 - Zhipu
 - Tencent
+- 01.AI
+- Baichuan
 
 The investors are:
 
@@ -70,6 +72,8 @@ Although there are some differing specifics, all of these people are generally s
 According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via the colonization of the moon, Mars, and beyond [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through constant technological %%advancements%% leaps.
 
 AI is the next logical leap %%in the history of technology%%, enthusiasts believe, because it will serve as a incredible force multiplier in every single sector of society. All of the discoveries and innovations in science and technology that would have happened over the next 100 years would now happen in the next 10. Humans 
+
+Humans will have greater opportunities to improve the world and themselves.
 
 compress 100 years of scientific discoveries into 10 years,
 
@@ -168,3 +172,8 @@ At the same time, when a technology gets replaced,
 [^2]: See Altman 1, Andreesen 1, etc.
 
 [^3]: See Musk 1 and Andreesen 1.
+
+[^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
+[^meta-superintelligence]: https://www.meta.com/superintelligence/
+[^andy-jassy-note]: https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai
+[^softbank-asi]: https://group.softbank/en/philosophy/message
