@@ -320,9 +320,11 @@
 
 > PETER DIAMANDIS: I mean it’s not a—I mean, so my concern isn’t the long run, it’s the next three to seven years.
 > 
-> ELON MUSK: Yes. The transition will be bumpy. …We’ll have radical change, social unrest and immense prosperity simultaneously. [^musk-moonshots-220]
-
-> ELON MUSK: I call AI and robotics the supersonic tsunami. … [^musk-moonshots-220]
+> ELON MUSK: Yes. The transition will be bumpy. …We’ll have radical change, social unrest and immense prosperity simultaneously. …
+> 
+> PETER DIAMANDIS: There’s no on-off switch. It is coming and accelerating.
+> 
+> ELON MUSK: I call AI and robotics the supersonic tsunami. Which maybe is a little alarming. It’s good because it’s a wake-up call. [^musk-moonshots-220]
 
 ### On the impact of AI on education
 
@@ -634,11 +636,11 @@ On the gross personification of AI
 > 
 > And that’s partly the speed, but also the pace of the progress is running ahead of the understanding of it. That’s just how it is, it’s part of the race dynamic. But we need to kind of somehow rebalance that. And I think some form of really almost smart regulation is required that is dynamic and can adapt with the times very quickly and probably informed by the leading labs because they’re seeing what’s actually at the coal face. [^hassabis-stanford]
 
-On the order in which AI should be built
+### On the order in which AI should be built
 
 > DEMIS HASSABIS: What I would recommend, in terms of what areas should AI not touch, is that we build our first systems as tools, intelligent tools. That’s enough of a challenge already in my opinion, because that’s already AGI. And then using those tools, I think we should study neuroscience and other things like that and philosophy and actually come up with a more rigorous definition of things like consciousness. I think that is possible. And then test things against that, and then maybe society decide if we want to cross the second Rubicon of trying to make entities that at least seem conscious to us. [^hassabis-stanford]
 
-On whether education is still important 
+### On whether education is still important 
 
 > DEMIS HASSABIS: I would be really excited if I was back at college now. My recommendation would be those of you doing science and STEM subjects and mathematics and computer science, still do those things. I think you’ll be able to take better advantage of these tools if you understand how they are put together and what they’re capable of. I think that’s going to be true for the next period, the next 10 years at least. [^hassabis-stanford]
 
@@ -855,23 +857,23 @@ On effective accelerationism ("growth at all costs")
 7. Andreessen, Marc (2023, October 16). [The techno-optimist manifesto](https://a16z.com/the-techno-optimist-manifesto/). _Andreessen Horowitz_. Retrieved 2026-06-23.
 8. Buterin, Vitalik (2023, November 27). [My techno-optimism](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc). _vitalik.eth.limo_. Retrieved 2026-06-23.
 9. Clifford, Matt (2025, January 13). [AI opportunities action plan](https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan). _GOV.UK_, Department for Science, Innovation and Technology. Retrieved 2026-06-23.
-10. Futurum Research (n.d.). [Maximizing ROI with agentic AI: Why Agentforce is the fast path to enterprise value](https://www.salesforce.com/content/dam/web/en_ca/www/documents/futurum-maximizing-roi-with-agentic-ai.pdf). _Salesforce_. Retrieved 2026-06-23.
-11. Hern, Alex (2026, January 6). [Leading AI expert delays timeline for its possible destruction of humanity](https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity). _The Guardian_. Retrieved 2026-06-23.
-12. Jassy, Andy (2025, June 17). [Message from CEO Andy Jassy: Some thoughts on generative AI](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai). _About Amazon_. Retrieved 2026-06-23.
-13. Lambert, Fred (2026, March 4). [Musk claims Tesla will 'make AGI' after years of wrong AI predictions](https://electrek.co/2026/03/04/elon-musk-tesla-agi-claims-desperate-attempt-ai-bubble/). _Electrek_. Retrieved 2026-06-23.
-14. Levin, Jonathan (Host) (2026, June 3). [A conversation with Demis Hassabis, co-founder and CEO of Google DeepMind](http://web.archive.org/web/20260603061056/https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/). _Stanford Graduate School of Business_. Transcript of [interview](https://youtube.com/watch?v=DsewHeVbL-0). Archived from the [original](https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/) 2026-06-23.
-15. Lighthill, James (1973). [Artificial intelligence: A general survey](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm). *Artificial Intelligence: A Paper Symposium*. UK: Science Research Council. Retrieved 2026-06-23.
-16. McClain, Colleen; Kennedy, Brian; Gottfried, Jeffrey; Anderson, Monica; Pasquini, Giancarlo (2025, April 3). [Public and expert predictions for AI's next 20 years](https://www.pewresearch.org/internet/2025/04/03/public-and-expert-predictions-for-ais-next-20-years/). _Pew Research Center_. Retrieved 2026-06-23.
-17. Metz, Cade (2026, January 26). [An AI pioneer warns the tech herd is marching into a dead end](https://www.nytimes.com/2026/01/26/technology/an-ai-pioneer-warns-the-tech-herd-is-marching-into-a-dead-end.html). _The New York Times_. Retrieved 2026-06-23.
-18. Narayanan, Arvind; Kapoor, Sayash (2025, April 15). [AI as normal technology](https://knightcolumbia.org/content/ai-as-normal-technology). _Knight First Amendment Institute at Columbia University_. Retrieved 2026-06-23.
-19. Newman, Daniel (2025, December 9). [Are we overhyping LLMs while underestimating AI?](https://archive.is/OV3l4) _Forbes._ Archived from the [original](https://www.forbes.com/sites/danielnewman/2025/12/09/are-we-overhyping-llms-while-underestimating-ai/) 2026-06-23.
-20. Pelley, Scott (2025, August 3). [Artificial intelligence could end disease, lead to "radical abundance," Google DeepMind CEO Demis Hassabis says](https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/). _CBS News / 60 Minutes_. Retrieved 2026-06-23.
-21. Perrigo, Billy (2025). [Demis Hassabis interview: TIME100 2025](https://time.com/7277608/demis-hassabis-interview-time100-2025/). _TIME_. Retrieved 2026-06-23.
-22. Roose, Kevin (2023, December 10). [This AI subculture's motto: Go, go, go](https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html). _The New York Times_. Retrieved 2026-06-23.
-23. Samuel, Arthur L. (1962). [Artificial intelligence: A frontier of automation](https://sci-hub.sidesgame.com/10.1177/000271626234000103). _The Annals of the American Academy of Political and Social Science_, 340(1), 10–20. Retrieved 2026-06-23.
-24. Simo, Fidji (2025, July 21). [AI as the greatest source of empowerment for all](https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/). _OpenAI_. Retrieved 2026-06-23.
-25. Son, Masayoshi (n.d.). [Message from Chairman & CEO: Realizing artificial super intelligence (ASI) for the evolution of humanity](https://group.softbank/en/philosophy/message). _SoftBank Group_. Retrieved 2026-06-23.
-26. S, Pangambam (2026a, January 6). [Moonshots #220: w/ Elon Musk on AGI, abundance and the future of humanity (transcript)](https://web.archive.org/web/20260202094515/https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/). _The Singju Post._ Archived from the [original](https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/) 2026-06-23.
+10. Diamandis, Peter; Blundin, Dave (Hosts) (2026, January 6). [Episode 220: Elon Musk on AGI Timeline, US vs China, Job Markets, Clean Energy & Humanoid Robots](https://web.archive.org/web/20260202094515/https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/). Transcript of [podcast episode](https://www.diamandis.com/podcast/elon-musk-agi-timeline-copy-code). Archived from [original](https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/) 2026-06-23.
+11. Futurum Research (n.d.). [Maximizing ROI with agentic AI: Why Agentforce is the fast path to enterprise value](https://www.salesforce.com/content/dam/web/en_ca/www/documents/futurum-maximizing-roi-with-agentic-ai.pdf). _Salesforce_. Retrieved 2026-06-23.
+12. Hern, Alex (2026, January 6). [Leading AI expert delays timeline for its possible destruction of humanity](https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity). _The Guardian_. Retrieved 2026-06-23.
+13. Jassy, Andy (2025, June 17). [Message from CEO Andy Jassy: Some thoughts on generative AI](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai). _About Amazon_. Retrieved 2026-06-23.
+14. Lambert, Fred (2026, March 4). [Musk claims Tesla will 'make AGI' after years of wrong AI predictions](https://electrek.co/2026/03/04/elon-musk-tesla-agi-claims-desperate-attempt-ai-bubble/). _Electrek_. Retrieved 2026-06-23.
+15. Levin, Jonathan (Host) (2026, June 3). [A conversation with Demis Hassabis, co-founder and CEO of Google DeepMind](http://web.archive.org/web/20260603061056/https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/). _Stanford Graduate School of Business_. Transcript of [interview](https://youtube.com/watch?v=DsewHeVbL-0). Archived from the [original](https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/) 2026-06-23.
+16. Lighthill, James (1973). [Artificial intelligence: A general survey](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm). *Artificial Intelligence: A Paper Symposium*. UK: Science Research Council. Retrieved 2026-06-23.
+17. McClain, Colleen; Kennedy, Brian; Gottfried, Jeffrey; Anderson, Monica; Pasquini, Giancarlo (2025, April 3). [Public and expert predictions for AI's next 20 years](https://www.pewresearch.org/internet/2025/04/03/public-and-expert-predictions-for-ais-next-20-years/). _Pew Research Center_. Retrieved 2026-06-23.
+18. Metz, Cade (2026, January 26). [An AI pioneer warns the tech herd is marching into a dead end](https://www.nytimes.com/2026/01/26/technology/an-ai-pioneer-warns-the-tech-herd-is-marching-into-a-dead-end.html). _The New York Times_. Retrieved 2026-06-23.
+19. Narayanan, Arvind; Kapoor, Sayash (2025, April 15). [AI as normal technology](https://knightcolumbia.org/content/ai-as-normal-technology). _Knight First Amendment Institute at Columbia University_. Retrieved 2026-06-23.
+20. Newman, Daniel (2025, December 9). [Are we overhyping LLMs while underestimating AI?](https://archive.is/OV3l4) _Forbes._ Archived from the [original](https://www.forbes.com/sites/danielnewman/2025/12/09/are-we-overhyping-llms-while-underestimating-ai/) 2026-06-23.
+21. Pelley, Scott (2025, August 3). [Artificial intelligence could end disease, lead to "radical abundance," Google DeepMind CEO Demis Hassabis says](https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/). _CBS News / 60 Minutes_. Retrieved 2026-06-23.
+22. Perrigo, Billy (2025). [Demis Hassabis interview: TIME100 2025](https://time.com/7277608/demis-hassabis-interview-time100-2025/). _TIME_. Retrieved 2026-06-23.
+23. Roose, Kevin (2023, December 10). [This AI subculture's motto: Go, go, go](https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html). _The New York Times_. Retrieved 2026-06-23.
+24. Samuel, Arthur L. (1962). [Artificial intelligence: A frontier of automation](https://sci-hub.sidesgame.com/10.1177/000271626234000103). _The Annals of the American Academy of Political and Social Science_, 340(1), 10–20. Retrieved 2026-06-23.
+25. Simo, Fidji (2025, July 21). [AI as the greatest source of empowerment for all](https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/). _OpenAI_. Retrieved 2026-06-23.
+26. Son, Masayoshi (n.d.). [Message from Chairman & CEO: Realizing artificial super intelligence (ASI) for the evolution of humanity](https://group.softbank/en/philosophy/message). _SoftBank Group_. Retrieved 2026-06-23.
 27. *TIME* (2025). [The 100 most influential people in AI 2025](https://time.com/collections/time100-ai-2025/). _TIME_. Retrieved 2026-06-23.
 28. Todd, Benjamin (2025, March). [Will we have AGI by 2030?](https://80000hours.org/ai/guide/when-will-agi-arrive/) _80,000 Hours_. Retrieved 2026-06-23.
 29. VandeHei, Jim; Allen, Mike (2025, May 28). [AI's ability to displace jobs is advancing quickly, Anthropic CEO says](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic). _Axios_. Retrieved 2026-06-23.

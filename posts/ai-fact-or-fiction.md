@@ -74,7 +74,7 @@ Considering the influence these AI players wield, I think it's worth it to under
 %%Technology has been steadily improving faster and faster, and%% According to this worldview, humanity is about to reach an inflection point in the history of technology where superintelligences will be abundant
 
 
-According to this worldview, humanity is on the cusp of a new age where, as soon as superintelligent AI becomes a reality, scientific and technological advancements will accelerate at an unprecedented hyperexponential rate. [^imminence] It is very likely, for instance, that the kinds of discoveries and inventions that took place over the last 100 years will happen in 10. [^acceleration]
+According to this worldview, humanity is on the cusp of a new age[^new-age] where, as soon as superintelligent AI becomes a reality, scientific and technological advancements will accelerate at an unprecedented hyperexponential rate. It is very likely, for instance, that the kinds of discoveries and inventions that took place over the last 100 years will happen in 10. [^hyperexponential]
 
 
 According to this worldview, the purpose of technology is to advance the human species. As a  baseline, that means giving a wider range of people access to a longer, wealthier, and happier life [^2], but some enthusiasts such as Elon Musk and Marc Andreesen also want to increase the survivability of the human race via the colonization of the moon, Mars, and beyond [^3]. In fact, "effective accelerationists" believe that the only practical way for society to grow is through constant technological %%advancements%% leaps.
@@ -215,9 +215,17 @@ At the same time, when a technology gets replaced,
 
 [^3]: See Musk 1 and Andreesen 1.
 
-[^new-age]: " In some sense, AGI is just another tool in this ever-taller scaffolding of human progress we are building together. In another sense, it is the beginning of something for which it’s hard not to say 'this time it’s different'…" (Altman 2025a). "\[The] most transformative technology since the Internet is here." (Jassy 2025) "\[W]hen we look back at this time, I think — maybe I’m thinking 10 years from now — I think we will realize that we were standing in the foothills of the singularity now…" (Hassabis 2026) "In some ways this will be a new era for humanity, but in others it's just a continuation of historical trends." (Zuckerberg 2025) 
+[^new-age]: Quotes:
+	- "\[The] most transformative technology since the Internet is here." (Jassy 2025)
+	- "DEMIS HASSABIS: \[W]hen we look back at this time … I think we will realize that we were standing in the foothills of the singularity now … I think that \[AI] will be such an enormous transformative technology, it’s going to effectively be a new human era." (Levin 2026)
+	- "In some sense, AGI is just another tool in this ever-taller scaffolding of human progress we are building together. In another sense, it is the beginning of something for which it’s hard not to say 'this time it’s different'…" (Altman 2025a).
+	- "In some ways this will be a new era for humanity, but in others it's just a continuation of historical trends." (Zuckerberg 2025) 
+	- "LLMs aren’t the end game, but rather just the beginning of the greatest technological revolution of our time." (Newman 2025)
 
-[^acceleration]: "The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year." (Altman 2025) "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence." (Altman 2026a) "I call AI and robotics the supersonic tsunami…" (Musk )
+[^hyperexponential]: Quotes:
+	- "AI will contribute to the world in many ways, but the gains to quality of life from AI driving faster scientific progress and increased productivity will be enormous. … The rate of technological progress will keep accelerating … The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year." (Altman 2025)
+	- "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence." (Altman 2026a)
+	- "ELON MUSK: I call AI and robotics the supersonic tsunami…" (Diamantis 2026)
 
 [^time-100-ai]: https://time.com/collections/time100-ai-2025/
 [^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
