@@ -225,7 +225,7 @@ At the same time, when a technology gets replaced,
 [^hyperexponential]: Quotes:
 	- "AI will contribute to the world in many ways, but the gains to quality of life from AI driving faster scientific progress and increased productivity will be enormous. … The rate of technological progress will keep accelerating … The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year." (Altman 2025)
 	- "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence." (Altman 2026a)
-	- "ELON MUSK: I call AI and robotics the supersonic tsunami…" (Diamantis 2026)
+	- "PETER DIAMANDIS: There’s no on-off switch. It is coming and accelerating. ELON MUSK: I call AI and robotics the supersonic tsunami… AIs will come up with discoveries that are far greater rate than humans… the singularity." (Diamantis 2026)
 
 [^time-100-ai]: https://time.com/collections/time100-ai-2025/
 [^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
