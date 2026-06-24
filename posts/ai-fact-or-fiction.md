@@ -179,7 +179,7 @@ At the same time, when a technology gets replaced,
 1. Altman, Sam (2025a, February 5). [Three observations](https://blog.samaltman.com/three-observations). _blog.samaltman.com_. Retrieved 2026-06-23.
 2. Altman, Sam (2025b, June 11). [The gentle singularity](https://blog.samaltman.com/the-gentle-singularity). _blog.samaltman.com_. Retrieved 2026-06-23.
 3. Altman, Sam (2026a, January 6). [Reflections](https://blog.samaltman.com/reflections). _blog.samaltman.com_. Retrieved 2026-06-23.
-4. Altman, Sam (2026b, April 15). [-](https://blog.samaltman.com/2279512). _blog.samaltman.com_. Retrieved 2026-06-23.
+4. Altman, Sam (2026b, April 15). [-](https://blog.samaltman.com/2279512) (dash). _blog.samaltman.com_. Retrieved 2026-06-23.
 5. Amodei, Dario (2024, October). [Machines of loving grace](https://darioamodei.com/essay/machines-of-loving-grace). _darioamodei.com_. Retrieved 2026-06-23.
 6. Amodei, Dario (2026, January). [The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology). _darioamodei.com_. Retrieved 2026-06-23.
 7. Andreessen, Marc (2023, October 16). [The techno-optimist manifesto](https://a16z.com/the-techno-optimist-manifesto/). _Andreessen Horowitz_. Retrieved 2026-06-23.
