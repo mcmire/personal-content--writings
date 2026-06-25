@@ -462,7 +462,7 @@
 > 
 > ELON MUSK: No, no. … At this point, things, I guess everything ultimately converges in the singularity. …
 
-On the gross personification of AI 
+### On the gross personification of AI 
 
 > PETER DIAMANDIS: Any final words of optimism for us to monetize? …
 > 
@@ -513,8 +513,6 @@ On the gross personification of AI
 > ELON MUSK: It’s got to be encoded, it’s encoded in DNA, which is not that long. So the algorithm for intelligence cannot be complicated because it’s limited by the DNA information constraint.
 > 
 > DAVE BLUNDIN: Yeah. …
-
-
 
 ## Demis Hassabis
 

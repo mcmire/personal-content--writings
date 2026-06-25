@@ -71,7 +71,7 @@ Although there are some differing specifics, all of these people are generally s
 
 Considering the influence these AI players wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
 
-%%Technology has been steadily improving faster and faster, and%% According to this worldview, humanity is about to reach an inflection point in the history of technology where superintelligences will be abundant
+%%, and%% According to this worldview, technology has been steadily improving on an exponential curve, and humanity is about to reach an inflection point very soon where superintelligence will be developed. 
 
 
 According to this worldview, humanity is on the cusp of a new age[^new-age] where, as soon as superintelligent AI becomes a reality, scientific and technological advancements will accelerate at an unprecedented hyperexponential rate. It is very likely, for instance, that the kinds of discoveries and inventions that took place over the last 100 years will happen in 10. [^hyperexponential]
@@ -223,9 +223,10 @@ At the same time, when a technology gets replaced,
 	- "LLMs aren’t the end game, but rather just the beginning of the greatest technological revolution of our time." (Newman 2025)
 
 [^hyperexponential]: Quotes:
-	- "AI will contribute to the world in many ways, but the gains to quality of life from AI driving faster scientific progress and increased productivity will be enormous. … The rate of technological progress will keep accelerating … The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year." (Altman 2025)
 	- "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence." (Altman 2026a)
-	- "PETER DIAMANDIS: There’s no on-off switch. It is coming and accelerating. ELON MUSK: I call AI and robotics the supersonic tsunami… AIs will come up with discoveries that are far greater rate than humans… the singularity." (Diamantis 2026)
+	- "PETER DIAMANDIS: There’s no on-off switch. It is coming and accelerating. ELON MUSK: I call AI and robotics the supersonic tsunami. … AIs will come up with discoveries that are far greater rate than humans. … It's called \[the] singularity for a reason." (Diamantis 2026)
+	- "The rate of technological progress will keep accelerating … The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year." (Altman 2025)
+	- DEMIS HASSABIS: \[This technology] is something \[so] profound, I sometimes … quantify it as 10 times the impact the Industrial Revolution was, 10 times faster. And so it’s taking place over a decade instead of a century." (Levin 2025)
 
 [^time-100-ai]: https://time.com/collections/time100-ai-2025/
 [^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
