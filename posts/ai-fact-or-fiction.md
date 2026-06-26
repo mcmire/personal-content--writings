@@ -71,6 +71,9 @@ Although there are some differing specifics, all of these people are generally s
 
 Considering the influence these AI players wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
 
+According to this worldview, humanity is on the cusp of a new 
+
+
 According to this worldview, %%a better world for all is on the horizon. Hu%% humanity is %%about to%% %%leap into%% %%enter into%% on the cusp of a new technological age [^new-age] that %%will be so monumental, it%% will eclipse the Industrial Revolution [^impact]. Within half a generation [^timeline], superintelligent AI will arrive. This AI will be more  s will be omnipresent and manage major parts of society on our behalf. — some that can see and interact with the world, some that are more specialized parts of existing software — will  %% proliferate %% be present %%and revolutionize%% across every sector of society. These AIs will 
 
 As they automate a higher and higher percentage of work, they will unlock exponential growth and progress in every industry — from manufacturing, transportation, mining, and R&D to healthcare, finance, entertainment, and even education. As a result, prices for goods and services will be next to nothing. On the way, scientific and technological advancements will accelerate at an increasingly exponential rate. It is very likely, for instance, that the kinds of discoveries and inventions that took place over the last 100 years will happen in a mere 10 years. [^hyperexponential] As a result, people will live twice as long, be freer to pursue their passions, 
@@ -218,6 +221,8 @@ At the same time, when a technology gets replaced,
 
 [^3]: See Musk 1 and Andreesen 1.
 
+According to this worldview, humanity is on the cusp of a "new era" (Altman 2025a, )
+
 [^new-age]: Quotes:
 	- "\[The] most transformative technology since the Internet is here." (Jassy 2025)
 	- "DEMIS HASSABIS: \[W]hen we look back at this time … I think we will realize that we were standing in the foothills of the singularity now … I think that \[AI] will be such an enormous transformative technology, it’s going to effectively be a new human era." (Levin 2026)
@@ -226,10 +231,12 @@ At the same time, when a technology gets replaced,
 	- "LLMs aren’t the end game, but rather just the beginning of the greatest technological revolution of our time." (Newman 2025)
 
 [^hyperexponential]: Quotes:
-	- "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence." (Altman 2026a)
 	- "PETER DIAMANDIS: There’s no on-off switch. It is coming and accelerating. ELON MUSK: I call AI and robotics the supersonic tsunami. … AIs will come up with discoveries that are far greater rate than humans. … It's called \[the] singularity for a reason." (Diamantis 2026)
 	- "The rate of technological progress will keep accelerating … The rate of new wonders being achieved will be immense. It’s hard to even imagine today what we will have discovered by 2035; maybe we will go from solving high-energy physics one year to beginning space colonization the next year; or from a major materials science breakthrough one year to true high-bandwidth brain-computer interfaces the next year." (Altman 2025)
 	- DEMIS HASSABIS: \[This technology] is something \[so] profound, I sometimes … quantify it as 10 times the impact the Industrial Revolution was, 10 times faster. And so it’s taking place over a decade instead of a century." (Levin 2025)
+
+[^inevitability]: Quotes:
+	- "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence." (Altman 2026a)
 
 [^time-100-ai]: https://time.com/collections/time100-ai-2025/
 [^openai-empowerment]: https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/
