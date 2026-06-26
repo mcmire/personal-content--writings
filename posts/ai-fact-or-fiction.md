@@ -71,7 +71,7 @@ Although there are some differing specifics, all of these people are generally s
 
 Considering the influence these AI players wield, I think it's worth it to understand the vision of the future these players and their investors are selling — the narrative that they are presenting — to the public as well as the philosophy about the role of technology and AI held by people in the space which is driving decisions that companies are making. I call this vision the "glorious future".
 
-According to this worldview, humanity is on the cusp of a new 
+According to this worldview, humanity is on the cusp of a new age that promises to give people access to 
 
 
 According to this worldview, %%a better world for all is on the horizon. Hu%% humanity is %%about to%% %%leap into%% %%enter into%% on the cusp of a new technological age [^new-age] that %%will be so monumental, it%% will eclipse the Industrial Revolution [^impact]. Within half a generation [^timeline], superintelligent AI will arrive. This AI will be more  s will be omnipresent and manage major parts of society on our behalf. — some that can see and interact with the world, some that are more specialized parts of existing software — will  %% proliferate %% be present %%and revolutionize%% across every sector of society. These AIs will 
