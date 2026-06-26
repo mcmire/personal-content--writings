@@ -13,6 +13,7 @@
     "editor:unindent-list",
     "editor:indent-list",
     "editor:toggle-blockquote",
+    "editor:toggle-comments",
     "editor:set-heading-1",
     "editor:set-heading-2",
     "editor:set-heading-3",
