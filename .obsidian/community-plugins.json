@@ -10,5 +10,6 @@
   "cmdr",
   "obsidian-custom-file-extensions-plugin",
   "show-whitespace-cm6",
-  "expandomatic"
+  "expandomatic",
+  "fix-require-modules"
 ]

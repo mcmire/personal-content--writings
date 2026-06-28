@@ -20,6 +20,15 @@
 - Zhipu
 - Baichuan
 - Beijing Academy of AI (BAAI)
+- Maybe
+	- Mistral (Arthur Mensch)
+	- Cohere (Aidan Gomez)
+	- Domyn (Uljan Sharka)
+	- Synesthesia (Victor Repabelli)
+	- Black Forest Labs (Robin Rombach)
+	- Sarvam
+	- Sakana
+- Prometheus (Jeff Bezos)
 
 ### Shakers 
 
@@ -65,6 +74,7 @@
 - Futurum
 - Peter Thiel
 - David Sacks
+- Ben Goertzel
 
 ### Realists
 
@@ -75,8 +85,10 @@
 
 - Ed Zitron
 - Adam Conover 
+- Cory Doctorow 
+- Karen Hao
 
-### Concerned
+### Open, but concerned
 
 - Adam Neely 
 - Stuart Russell

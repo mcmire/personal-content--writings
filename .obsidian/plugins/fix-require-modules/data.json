@@ -1,0 +1,10 @@
+{
+  "defaultCodeButtonConfig": "",
+  "invocableScriptsFolder": "scripts",
+  "mobileChangesCheckingIntervalInSeconds": 30,
+  "modulesRoot": "",
+  "shouldHandleProtocolUrls": false,
+  "shouldShowTempPluginLoadUnloadNotices": true,
+  "shouldUseSyncFallback": false,
+  "startupScriptPath": ""
+}
