@@ -776,9 +776,77 @@
 
 ## Zitron, Ed
 
-On effective accelerationism ("growth at all costs")
+### On growth at all costs
 
-(From "the rot economy")
+> At the center of everything … sits a cancerous problem with the fabric of how capital is deployed in modern business. Public and private investors, along with the markets themselves, have become entirely decoupled from the concept of what “good” business truly is, focusing on one metric — one _truly noxious_ metric — over all else: growth.
+>
+> “Growth” in this case is not necessarily about being “bigger” or “better,” it is simply “more.” It means that the company is generating more revenue, higher valuations, gaining more market share, and then finding more ways to generate these things. Businesses are expected to be - and rewarded for being - eternal burning engines of capital that create more and more shareholder value while, hopefully, providing a service to a customer in the process. …
+> 
+> \[T]he markets do not prioritize innovation, or sustainable growth, or stable, profitable enterprises. As a result, companies regularly do not function with the intent of making “good” businesses - they want businesses that semiotically align with what investors - private and public - believe to be “good.” …
+> 
+> Before these companies reach the public markets, they are fueled by an even more violently reckless form of funding - venture capital. Venture capitalists are regularly incentivized to create businesses that _look_ valuable but aren’t necessarily of value. …
+> 
+> Venture pumps millions or billions of dollars into ideas that might sell a product or a service, but ultimately resemble things that can be sold to other companies or put on the public market for a profit higher than what was paid on a per-share basis. …
+>
+> \[G]rowth is a fire. If you build a nice, sustainable fire, it’ll keep you warm, cook food and sustain life. And if the only thing you care about is how big your fire is, then it’ll set fire to everything around it, and the more you throw into it, the more it’ll burn. Eventually, you’ll have nothing left, but if you desperately desire that fire, you will constantly have to find new things to burn at any cost. …
+> 
+> \[W]e, societally, have turned our markets and businesses - private and public - over to arsonists. …
+> 
+> Venture capital and the public markets don’t actually reward or respect “good” businesses or “good” CEOs - they reward people that can steer the kind of growth that raises the value of an asset. …
+>
+> And the net result of all of this is that it kills innovation. If capital is not invested in providing a good service via a profitable business, it will never sustain things that are societally useful. Companies are not incentivized to provide better services or improve lives outside of ways in which they can drain more blood from consumers. And the street doesn’t care either - just look at Facebook and Instagram, two products that have grown endlessly profitable and utterly useless in the process.
+> 
+> [^zitron-rot-economy]
+
+### On effective accelerationists
+
+> Andreessen Horowitz was the lead participant in arguably the biggest con in venture capital, pumping billions into Web3 companies that _didn’t have any real product_, but [stapled together enough buzzwords and websites to resemble actual entities](https://ez.substack.com/p/crypto-web3-and-the-big-nothing?ref=wheresyoured.at). A16Z found a way to vastly accelerate the idea-to-business-to-profit cycle of venture. [^zitron-sam-altman-freed]
+
+> Marc Andreessen — who has already invested billions in artificial intelligence companies — has complained that copyright payments for AI training data are “detrimental to \[Andreessen Horowitz’s] investments,” and that it would “significantly disrupt” the continued development of artificial intelligence. Brian Armstrong, CEO of Coinbase, is blaming Altman’s firing on [“decels” and “effective altruists”](https://x.com/brian_armstrong/status/1725924114190536825?s=20&ref=wheresyoured.at) that have “destroyed a shining star of American capitalism,” decrying forces like “woke non-profit boards” and “nonsensical regulations” while claiming that effective altruism (rather than a $10bn fraud) “destroyed lots of value in crypto.” …
+> 
+> There will be some that see … Altman’s firing as a gun to the head of their growth-at-all-costs money machine. They fear “deccelerationists” that will take a fire extinguisher to their perpetually-burning piles of money, because that fire is what keeps them warm and brings them attention, even if the human and capital costs are continually painful. …
+> 
+> Altman is the martyr of the “effective accelerationist” movement that has turned the growth-at-all-costs model into a religion, one led by Marc Andreessen, who notably believes that risk management is one of the tech industry’s enemies. This movement is spearheaded by extremely wealthy men who regard any force that stops any startup from growing its revenue as a prime evil … [^zitron-sam-altman-freed]
+
+> Shear has also expressed his support for a pause or slowdown on AI development, articulated his contempt for tech accelerationists who are willing to risk an AI-induced catastrophe in the name of growth, and described the the belief that AI shouldn’t be regulated for the purpose of safety as “total insanity and reckless disregard for humanity's future.” His views stand in stark contrast to those of Andreessen and Armstrong, and the countless other Rot Economists in the Valley. [^zitron-sam-altman-freed]
+
+### On the misleading claims of AI
+
+> This is the problem with powerful people in tech. If you allow them to speak and fill in the gaps for them, they will happily do so. Murati and Altman continuously obfuscate how ChatGPT works, what it can do, what it *could* do, and profit handsomely from a complete lack of pushback from a press that routinely accepts AI executives' vague explanations at face value. OpenAI's messaging and explanations of what its technology can (or will) do have barely changed in the last few years, returning repeatedly to "eventually" and "in the future" and speaking in the vaguest ways about how businesses make money off of — let alone *profit* from — integrating generative AI.
+> 
+> Sam Altman is repeatedly given the ability to wax lyrical about the futuristic capabilities of artificial intelligence in a way that lets him paint a picture of a technology he is not actually building. Altman's fanciful claims include his kids "[having more AI friends than human friends](https://www.youtube.com/watch?v=PWBzXe0KAGo&ref=wheresyoured.at)," [that human-level AI is "coming" without ever specifying when](https://www.cnbc.com/2024/01/16/openais-sam-altman-agi-coming-but-is-less-impactful-than-we-think.html?ref=wheresyoured.at), [that AI will replace 95% of tasks performed by marketing agencies](https://www.cmswire.com/digital-marketing/sam-altman-ai-will-replace-95-of-creative-marketing-work/?ref=wheresyoured.at), [that ChatGPT will evolve in "uncomfortable ways,"](https://www.axios.com/2024/01/17/sam-altman-davos-ai-future-interview?ref=wheresyoured.at) [that AI will kill us all](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html?ref=wheresyoured.at), and that human beings are only separated from artificial intelligence because they "[really care what others think](https://futurism.com/altman-stumped-humans-better-ai?ref=wheresyoured.at)."
+> 
+> Every time Sam Altman speaks he almost immediately veers into the world of fan fiction, talking about both the general things that "AI" could do and non-specifically where ChatGPT might or might not fit into that without ever describing a real-world use case. And he's done so in exactly the same way for years, failing to describe any industrial or societal *need* for artificial intelligence beyond a vague promise of automation and "models" that will be able to do stuff that humans can, even though OpenAI's models continually prove themselves unable to match even the dumbest human beings alive.
+> 
+> Sam Altman desperately needs you to believe that generative AI will be essential, inevitable and intractable, because if you don't, you'll suddenly realize that trillions of dollars of market capitalization and revenue are being blown on something remarkably mediocre. If you focus on the present — what OpenAI's technology can do today, and will likely do for some time — you see in terrifying clarity that generative AI isn't a society-altering technology, but another form of efficiency-driving cloud computing software that benefits a relatively small niche of people.
+> 
+> [^zitron-peak-ai]
+
+> I believe a large part of the artificial intelligence boom is hot air, pumped through a combination of executive bullshitting and a compliant media that will gladly write stories _imagining_ what AI can do rather than focus on what it's actually doing. …
+> 
+> The media has been fooled, in the same way they were fooled by the metaverse, by the specious promises of AI and the executives that champion it. The half-truths and magical thinking have spread far faster due to the fact that AI actually exists, and it's much easier to imagine how it might change our lives, even if the way it might do so is somewhere between improbable and impossible. …
+> 
+> I can find no companies that have integrated generative AI in a way that has truly improved their bottom line other than Klarna, which claims its AI-powered support bot is "[estimated to drive a $40 million US in profit improvement in 2024](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/?ref=wheresyoured.at)," which does not, as many have incorrectly stated, mean that it has "[made Klarna $40m in profit](https://www.inc.com/ben-sherry/klarna-says-its-new-ai-assistant-is-outperforming-customer-service-representatives.html?ref=wheresyoured.at)." Despite fears to the contrary, AI does not appear to be replacing a large number of workers, [and when it has](https://www.theverge.com/2020/5/30/21275524/microsoft-news-msn-layoffs-artificial-intelligence-ai-replacements?ref=wheresyoured.at), [the results have been pretty terrible](https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html?ref=wheresyoured.at). [A study from Boston Consulting Group](https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai?ref=wheresyoured.at) found that consultants that "solved business problems with OpenAI's GPT-4" performed _23% worse than those who didn't use it_, even when the consultant was warned about the limitations of generative AI and the risk of hallucinations. …
+> 
+> What if what we're seeing today isn't a glimpse of the future, but the new terms of the present? What if artificial intelligence isn't actually capable of doing much more than what we're seeing today, and what if there's no clear timeline when it'll be able to do more? What if this entire hype cycle has been built, goosed by a compliant media ready and willing to take career-embellishers at their word? …
+> 
+> Generative AI's core problems — its hallucinations, its [massive energy](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy?ref=wheresyoured.at) and [unprofitable compute demands](https://www.washingtonpost.com/technology/2023/06/05/chatgpt-hidden-cost-gpu-compute/?ref=wheresyoured.at) — are not close to being solved. Having now read and listened to a great deal of Murati and Altman's interviews, I can find few cases where they're even _asked_ about these problems, let alone ones where they provide a cogent answer.
+> 
+> And I believe it's because there isn't one. …
+> 
+> \[H]allucinations are a feature not a bug. These models do not "know" anything. They are mathematical behemoths generating a best guess based on training data and labeling, and thus do not "know" what you are asking it to do. You simply cannot fix them. Hallucinations are not going away. …
+> 
+> If you stop saying things like "AI could do" or "AI will do," you have to start asking what AI *can* do, and the answer is...not that much, and not much more in the future.
+> 
+> [^zitron-peak-ai]
+
+### On Sam Altman
+
+> Sam Altman needs you to believe that [AI will kill us all](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html?ref=wheresyoured.at) or [going to destroy all our jobs](https://futurism.com/the-byte/sam-altman-ai-destroying-jobs?ref=wheresyoured.at) and that [he's a little bit scared of AI](https://www.cnbc.com/2023/03/20/openai-ceo-sam-altman-says-hes-a-little-bit-scared-of-ai.html?ref=wheresyoured.at), because if you think for even a second about what this man is saying, you'll realize that [he's not an engineer, he's a lobbyist and a liar](https://www.wheresyoured.at/managing-up/#:~:text=it%E2%80%99s%20critical%20to%20note%20that%20Altman%20is%20not%20and%20was%20not%20ever%20an%20engineer%20or%20a%20technologist). He needs us to humor — even if he rejects the notion — [the idea that AI could be considered a "creature"](https://www.businessinsider.com/openai-sam-altman-ai-is-a-tool-not-a-creature-2024-3?ref=wheresyoured.at) because doing so allows him to add further mystique and hype to distract from the fact that he doesn't seem to know anything and OpenAI doesn't seem to be innovating. …
+> 
+> Sam Altman has repeatedly said things that, if any founder with less power, presence, access and funding had said, they'd be laughed at, ignored, and treated like fantasists. Altman is the P.T. Barnum of tech, with just enough knowledge to be dangerous but far too little to actually say anything of note. He is not the technical mind behind OpenAI, he did not write its models, and looking up to him as some sort of [technolojesus](https://youtu.be/rx1rpaQT_ac?si=UfCFFHEs3ErI8geH&t=197&ref=wheresyoured.at) is bad for the tech industry and worse for the world. This is not a person that should be making decisions about the future of the tech industry, nor should he be allowed to spout fan fiction and automatically have it covered as gospel.
+> 
+> [^zitron-altman-shit]
 
 ## Zuckerberg, Mark (CEO, Meta)
 
@@ -848,36 +916,40 @@ On effective accelerationism ("growth at all costs")
 
 ## References
 
-1. Altman, Sam (2025a, February 5). [Three observations](https://blog.samaltman.com/three-observations). _blog.samaltman.com_. Retrieved 2026-06-23.
-2. Altman, Sam (2025b, June 11). [The gentle singularity](https://blog.samaltman.com/the-gentle-singularity). _blog.samaltman.com_. Retrieved 2026-06-23.
-3. Altman, Sam (2026a, January 6). [Reflections](https://blog.samaltman.com/reflections). _blog.samaltman.com_. Retrieved 2026-06-23.
-4. Altman, Sam (2026b, April 15). [-](https://blog.samaltman.com/2279512) (dash). _blog.samaltman.com_. Retrieved 2026-06-23.
-5. Amodei, Dario (2024, October). [Machines of loving grace](https://darioamodei.com/essay/machines-of-loving-grace). _darioamodei.com_. Retrieved 2026-06-23.
-6. Amodei, Dario (2026, January). [The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology). _darioamodei.com_. Retrieved 2026-06-23.
-7. Andreessen, Marc (2023, October 16). [The techno-optimist manifesto](https://a16z.com/the-techno-optimist-manifesto/). _Andreessen Horowitz_. Retrieved 2026-06-23.
-8. Buterin, Vitalik (2023, November 27). [My techno-optimism](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc). _vitalik.eth.limo_. Retrieved 2026-06-23.
-9. Clifford, Matt (2025, January 13). [AI opportunities action plan](https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan). _GOV.UK_, Department for Science, Innovation and Technology. Retrieved 2026-06-23.
-10. Diamandis, Peter; Blundin, Dave (Hosts) (2026, January 6). [Episode 220: Elon Musk on AGI Timeline, US vs China, Job Markets, Clean Energy & Humanoid Robots](https://web.archive.org/web/20260202094515/https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/). Transcript of [podcast episode](https://www.diamandis.com/podcast/elon-musk-agi-timeline-copy-code). Archived from [original](https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/) 2026-06-23.
-11. Futurum Research (n.d.). [Maximizing ROI with agentic AI: Why Agentforce is the fast path to enterprise value](https://www.salesforce.com/content/dam/web/en_ca/www/documents/futurum-maximizing-roi-with-agentic-ai.pdf). _Salesforce_. Retrieved 2026-06-23.
-12. Hern, Alex (2026, January 6). [Leading AI expert delays timeline for its possible destruction of humanity](https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity). _The Guardian_. Retrieved 2026-06-23.
-13. Jassy, Andy (2025, June 17). [Message from CEO Andy Jassy: Some thoughts on generative AI](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai). _About Amazon_. Retrieved 2026-06-23.
-14. Lambert, Fred (2026, March 4). [Musk claims Tesla will 'make AGI' after years of wrong AI predictions](https://electrek.co/2026/03/04/elon-musk-tesla-agi-claims-desperate-attempt-ai-bubble/). _Electrek_. Retrieved 2026-06-23.
-15. Levin, Jonathan (Host) (2026, June 3). [A conversation with Demis Hassabis, co-founder and CEO of Google DeepMind](http://web.archive.org/web/20260603061056/https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/). _Stanford Graduate School of Business_. Transcript of [interview](https://youtube.com/watch?v=DsewHeVbL-0). Archived from the [original](https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/) 2026-06-23.
-16. Lighthill, James (1973). [Artificial intelligence: A general survey](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm). *Artificial Intelligence: A Paper Symposium*. UK: Science Research Council. Retrieved 2026-06-23.
-17. McClain, Colleen; Kennedy, Brian; Gottfried, Jeffrey; Anderson, Monica; Pasquini, Giancarlo (2025, April 3). [Public and expert predictions for AI's next 20 years](https://www.pewresearch.org/internet/2025/04/03/public-and-expert-predictions-for-ais-next-20-years/). _Pew Research Center_. Retrieved 2026-06-23.
-18. Metz, Cade (2026, January 26). [An AI pioneer warns the tech herd is marching into a dead end](https://www.nytimes.com/2026/01/26/technology/an-ai-pioneer-warns-the-tech-herd-is-marching-into-a-dead-end.html). _The New York Times_. Retrieved 2026-06-23.
-19. Narayanan, Arvind; Kapoor, Sayash (2025, April 15). [AI as normal technology](https://knightcolumbia.org/content/ai-as-normal-technology). _Knight First Amendment Institute at Columbia University_. Retrieved 2026-06-23.
-20. Newman, Daniel (2025, December 9). [Are we overhyping LLMs while underestimating AI?](https://archive.is/OV3l4) _Forbes._ Archived from the [original](https://www.forbes.com/sites/danielnewman/2025/12/09/are-we-overhyping-llms-while-underestimating-ai/) 2026-06-23.
-21. Pelley, Scott (2025, August 3). [Artificial intelligence could end disease, lead to "radical abundance," Google DeepMind CEO Demis Hassabis says](https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/). _CBS News / 60 Minutes_. Retrieved 2026-06-23.
-22. Perrigo, Billy (2025). [Demis Hassabis interview: TIME100 2025](https://time.com/7277608/demis-hassabis-interview-time100-2025/). _TIME_. Retrieved 2026-06-23.
-23. Roose, Kevin (2023, December 10). [This AI subculture's motto: Go, go, go](https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html). _The New York Times_. Retrieved 2026-06-23.
-24. Samuel, Arthur L. (1962). [Artificial intelligence: A frontier of automation](https://sci-hub.sidesgame.com/10.1177/000271626234000103). _The Annals of the American Academy of Political and Social Science_, 340(1), 10–20. Retrieved 2026-06-23.
-25. Simo, Fidji (2025, July 21). [AI as the greatest source of empowerment for all](https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/). _OpenAI_. Retrieved 2026-06-23.
-26. Son, Masayoshi (n.d.). [Message from Chairman & CEO: Realizing artificial super intelligence (ASI) for the evolution of humanity](https://group.softbank/en/philosophy/message). _SoftBank Group_. Retrieved 2026-06-23.
-27. *TIME* (2025). [The 100 most influential people in AI 2025](https://time.com/collections/time100-ai-2025/). _TIME_. Retrieved 2026-06-23.
-28. Todd, Benjamin (2025, March). [Will we have AGI by 2030?](https://80000hours.org/ai/guide/when-will-agi-arrive/) _80,000 Hours_. Retrieved 2026-06-23.
-29. VandeHei, Jim; Allen, Mike (2025, May 28). [AI's ability to displace jobs is advancing quickly, Anthropic CEO says](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic). _Axios_. Retrieved 2026-06-23.
-30. Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
+- Altman, Sam (2025a, February 5). [Three observations](https://blog.samaltman.com/three-observations). _blog.samaltman.com_. Retrieved 2026-06-23.
+- Altman, Sam (2025b, June 11). [The gentle singularity](https://blog.samaltman.com/the-gentle-singularity). _blog.samaltman.com_. Retrieved 2026-06-23.
+- Altman, Sam (2026a, January 6). [Reflections](https://blog.samaltman.com/reflections). _blog.samaltman.com_. Retrieved 2026-06-23.
+- Altman, Sam (2026b, April 15). [-](https://blog.samaltman.com/2279512) (dash). _blog.samaltman.com_. Retrieved 2026-06-23.
+- Amodei, Dario (2024, October). [Machines of loving grace](https://darioamodei.com/essay/machines-of-loving-grace). _darioamodei.com_. Retrieved 2026-06-23.
+- Amodei, Dario (2026, January). [The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology). _darioamodei.com_. Retrieved 2026-06-23.
+- Andreessen, Marc (2023, October 16). [The techno-optimist manifesto](https://a16z.com/the-techno-optimist-manifesto/). _Andreessen Horowitz_. Retrieved 2026-06-23.
+- Buterin, Vitalik (2023, November 27). [My techno-optimism](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc). _vitalik.eth.limo_. Retrieved 2026-06-23.
+- Clifford, Matt (2025, January 13). [AI opportunities action plan](https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan). _GOV.UK_, Department for Science, Innovation and Technology. Retrieved 2026-06-23.
+- Diamandis, Peter; Blundin, Dave (Hosts) (2026, January 6). [Episode 220: Elon Musk on AGI Timeline, US vs China, Job Markets, Clean Energy & Humanoid Robots](https://web.archive.org/web/20260202094515/https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/). Transcript of [podcast episode](https://www.diamandis.com/podcast/elon-musk-agi-timeline-copy-code). Archived from [original](https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/) 2026-06-23.
+- Futurum Research (n.d.). [Maximizing ROI with agentic AI: Why Agentforce is the fast path to enterprise value](https://www.salesforce.com/content/dam/web/en_ca/www/documents/futurum-maximizing-roi-with-agentic-ai.pdf). _Salesforce_. Retrieved 2026-06-23.
+- Hern, Alex (2026, January 6). [Leading AI expert delays timeline for its possible destruction of humanity](https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity). _The Guardian_. Retrieved 2026-06-23.
+- Jassy, Andy (2025, June 17). [Message from CEO Andy Jassy: Some thoughts on generative AI](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai). _About Amazon_. Retrieved 2026-06-23.
+- Lambert, Fred (2026, March 4). [Musk claims Tesla will 'make AGI' after years of wrong AI predictions](https://electrek.co/2026/03/04/elon-musk-tesla-agi-claims-desperate-attempt-ai-bubble/). _Electrek_. Retrieved 2026-06-23.
+- Levin, Jonathan (Host) (2026, June 3). [A conversation with Demis Hassabis, co-founder and CEO of Google DeepMind](http://web.archive.org/web/20260603061056/https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/). _Stanford Graduate School of Business_. Transcript of [interview](https://youtube.com/watch?v=DsewHeVbL-0). Archived from the [original](https://singjupost.com/gsb-a-conversation-with-demis-hassabis-ceo-of-google-deepmind-transcript/) 2026-06-23.
+- Lighthill, James (1973). [Artificial intelligence: A general survey](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm). *Artificial Intelligence: A Paper Symposium*. UK: Science Research Council. Retrieved 2026-06-23.
+- McClain, Colleen; Kennedy, Brian; Gottfried, Jeffrey; Anderson, Monica; Pasquini, Giancarlo (2025, April 3). [Public and expert predictions for AI's next 20 years](https://www.pewresearch.org/internet/2025/04/03/public-and-expert-predictions-for-ais-next-20-years/). _Pew Research Center_. Retrieved 2026-06-23.
+- Metz, Cade (2026, January 26). [An AI pioneer warns the tech herd is marching into a dead end](https://www.nytimes.com/2026/01/26/technology/an-ai-pioneer-warns-the-tech-herd-is-marching-into-a-dead-end.html). _The New York Times_. Retrieved 2026-06-23.
+- Narayanan, Arvind; Kapoor, Sayash (2025, April 15). [AI as normal technology](https://knightcolumbia.org/content/ai-as-normal-technology). _Knight First Amendment Institute at Columbia University_. Retrieved 2026-06-23.
+- Newman, Daniel (2025, December 9). [Are we overhyping LLMs while underestimating AI?](https://archive.is/OV3l4) _Forbes._ Archived from the [original](https://www.forbes.com/sites/danielnewman/2025/12/09/are-we-overhyping-llms-while-underestimating-ai/) 2026-06-23.
+- Pelley, Scott (2025, August 3). [Artificial intelligence could end disease, lead to "radical abundance," Google DeepMind CEO Demis Hassabis says](https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/). _CBS News / 60 Minutes_. Retrieved 2026-06-23.
+- Perrigo, Billy (2025). [Demis Hassabis interview: TIME100 2025](https://time.com/7277608/demis-hassabis-interview-time100-2025/). _TIME_. Retrieved 2026-06-23.
+- Roose, Kevin (2023, December 10). [This AI subculture's motto: Go, go, go](https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html). _The New York Times_. Retrieved 2026-06-23.
+- Samuel, Arthur L. (1962). [Artificial intelligence: A frontier of automation](https://sci-hub.sidesgame.com/10.1177/000271626234000103). _The Annals of the American Academy of Political and Social Science_, 340(1), 10–20. Retrieved 2026-06-23.
+- Simo, Fidji (2025, July 21). [AI as the greatest source of empowerment for all](https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all/). _OpenAI_. Retrieved 2026-06-23.
+- Son, Masayoshi (n.d.). [Message from Chairman & CEO: Realizing artificial super intelligence (ASI) for the evolution of humanity](https://group.softbank/en/philosophy/message). _SoftBank Group_. Retrieved 2026-06-23.
+- *TIME* (2025). [The 100 most influential people in AI 2025](https://time.com/collections/time100-ai-2025/). _TIME_. Retrieved 2026-06-23.
+- Todd, Benjamin (2025, March). [Will we have AGI by 2030?](https://80000hours.org/ai/guide/when-will-agi-arrive/) _80,000 Hours_. Retrieved 2026-06-23.
+- VandeHei, Jim; Allen, Mike (2025, May 28). [AI's ability to displace jobs is advancing quickly, Anthropic CEO says](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic). _Axios_. Retrieved 2026-06-23.
+- Zitron, Ed (2023, Feb 9). [The rot economy.](https://www.wheresyoured.at/the-rot-economy/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zitron, Ed (2023b, Nov 20). [Sam Altman, freed.](https://www.wheresyoured.at/sam-altman-freed/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zitron, Ed (2024a, Mar 18). [Have we reached peak AI?](https://www.wheresyoured.at/peakai/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zitron, Ed (2026, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
 
 ## Footnotes
 
@@ -911,3 +983,7 @@ On effective accelerationism ("growth at all costs")
 [^samuel-ai-frontier]: https://sci-hub.sidesgame.com/10.1177/000271626234000103
 [^guardian-ai-timeline-delays]: https://www.theguardian.com/technology/2026/jan/06/leading-ai-expert-delays-timeline-possible-destruction-humanity
 [^electrek-musk-bad-predictions]: https://electrek.co/2026/03/04/elon-musk-tesla-agi-claims-desperate-attempt-ai-bubble/
+[^zitron-rot-economy]: https://www.wheresyoured.at/the-rot-economy/
+[^zitron-sam-altman-freed]: https://www.wheresyoured.at/sam-altman-freed/
+[^zitron-peak-ai]: https://www.wheresyoured.at/peakai/
+[^zitron-altman-shit]: https://www.wheresyoured.at/sam-altman-is-full-of-shit/
