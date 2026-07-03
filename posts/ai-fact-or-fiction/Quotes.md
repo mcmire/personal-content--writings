@@ -115,6 +115,8 @@
 
 ## Altman, Sam (CEO, OpenAI)
 
+TODO: Read https://moores.samaltman.com/ 
+
 ### On the imminence of building powerful AI
 
 > We are now confident we know how to build AGI as we have traditionally understood it. [^altman-reflections]
@@ -798,7 +800,7 @@
 > 
 > [^zitron-rot-economy]
 
-### On effective accelerationists
+### On effective accelerationism
 
 > Andreessen Horowitz was the lead participant in arguably the biggest con in venture capital, pumping billions into Web3 companies that _didn’t have any real product_, but [stapled together enough buzzwords and websites to resemble actual entities](https://ez.substack.com/p/crypto-web3-and-the-big-nothing?ref=wheresyoured.at). A16Z found a way to vastly accelerate the idea-to-business-to-profit cycle of venture. [^zitron-sam-altman-freed]
 
@@ -809,6 +811,18 @@
 > Altman is the martyr of the “effective accelerationist” movement that has turned the growth-at-all-costs model into a religion, one led by Marc Andreessen, who notably believes that risk management is one of the tech industry’s enemies. This movement is spearheaded by extremely wealthy men who regard any force that stops any startup from growing its revenue as a prime evil … [^zitron-sam-altman-freed]
 
 > Shear has also expressed his support for a pause or slowdown on AI development, articulated his contempt for tech accelerationists who are willing to risk an AI-induced catastrophe in the name of growth, and described the the belief that AI shouldn’t be regulated for the purpose of safety as “total insanity and reckless disregard for humanity's future.” His views stand in stark contrast to those of Andreessen and Armstrong, and the countless other Rot Economists in the Valley. [^zitron-sam-altman-freed]
+
+### On the "glorious future"
+
+> In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
+> 
+> Moore’s Law for Everything is, in essence, a utopian take on the impact of AI, noting that as machines usurp the role of humans in the supply chain, the prices of goods and services (and thus, the cost of living) will go down exponentially.
+> 
+> The problem with this piece is it, like Altman, is a deeply complex bucket of nothing. …
+> 
+> “Moore’s Law For Everything” is a remarkably telling piece in that it frames Altman’s worldview as one where the only thing that can save mankind is making startups, and those startups should be funded in the way that Altman likes. And this piece feels a lot like everything in Altman’s universe — it never actually connects Moore’s Law to anything …
+> 
+> [^zitron-managing-up]
 
 ### On the misleading claims of AI
 
@@ -847,6 +861,22 @@
 > Sam Altman has repeatedly said things that, if any founder with less power, presence, access and funding had said, they'd be laughed at, ignored, and treated like fantasists. Altman is the P.T. Barnum of tech, with just enough knowledge to be dangerous but far too little to actually say anything of note. He is not the technical mind behind OpenAI, he did not write its models, and looking up to him as some sort of [technolojesus](https://youtu.be/rx1rpaQT_ac?si=UfCFFHEs3ErI8geH&t=197&ref=wheresyoured.at) is bad for the tech industry and worse for the world. This is not a person that should be making decisions about the future of the tech industry, nor should he be allowed to spout fan fiction and automatically have it covered as gospel.
 > 
 > [^zitron-altman-shit]
+
+> In 2015, \[Altman] founded OpenAI — at the time a non-profit organization dedicated to building responsible artificial intelligence applications. Yet it’s critical to note that Altman is not and was not ever an engineer or a technologist, he was a figurehead and a fundraiser that was able to convince actual academics and engineers like … Ilya Sutskever to do the actual work while he sent masturbatory emails to Elon Musk …
+> 
+> This is the story of the man who New York Magazine called “[The Oppenheimer of Our Age](https://nymag.com/intelligencer/article/sam-altman-artificial-intelligence-openai-profile.html?ref=wheresyoured.at)” in a meandering piece that frames Altman’s vagueness about artificial intelligence as some sort of big secret, when I think the truth is far simpler: Sam Altman is yet another fucking management consultant. …
+> 
+> In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
+> 
+> The problem with this piece is it, like Altman, is a deeply complex bucket of nothing. …
+> 
+> Much like ChatGPT, Altman is capable only of loosely approximating the output requested, because at his core he lacks any of the substance or technical history required to do so. Like ChatGPT, he’s a know-nothing that, through deterministic measures completely detached from the meaning of the underlying ideas, picks the right words to say at the right time. …
+> 
+> This is Silicon Valley’s king. A lobbyist roleplaying as a founder. A diplomat masquerading as a technologist.  A charming, capricious, abusive and untrustworthy man that has proven time and time again that his only reliable trait is that whatever happens must benefit Sam Altman. …
+> 
+> Altman has created nothing other than wealth for himself and his closest allies, helping elevate and protect existing power structures and the ideologies of men like Microsoft CEO Satya Nadella and LinkedIn founder and career manager Reid Hoffman.
+> 
+> [^zitron-managing-up]
 
 ## Zuckerberg, Mark (CEO, Meta)
 
@@ -948,7 +978,8 @@
 - Zitron, Ed (2023, Feb 9). [The rot economy.](https://www.wheresyoured.at/the-rot-economy/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2023b, Nov 20). [Sam Altman, freed.](https://www.wheresyoured.at/sam-altman-freed/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024a, Mar 18). [Have we reached peak AI?](https://www.wheresyoured.at/peakai/) _Where's Your Ed At._ Retrieved 2026-07-02.
-- Zitron, Ed (2026, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zitron, Ed (2024b, Apr 29). [Managing up.](https://www.wheresyoured.at/managing-up) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zitron, Ed (2024c, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
 
 ## Footnotes
@@ -987,3 +1018,4 @@
 [^zitron-sam-altman-freed]: https://www.wheresyoured.at/sam-altman-freed/
 [^zitron-peak-ai]: https://www.wheresyoured.at/peakai/
 [^zitron-altman-shit]: https://www.wheresyoured.at/sam-altman-is-full-of-shit/
+[^zitron-managing-up]: https://www.wheresyoured.at/managing-up
