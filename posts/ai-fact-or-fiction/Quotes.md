@@ -1,5 +1,3 @@
-
-
 ## Andreesen, Marc
 
 ### On the ultimate mission of tech
@@ -812,6 +810,30 @@ TODO: Read https://moores.samaltman.com/
 
 > Shear has also expressed his support for a pause or slowdown on AI development, articulated his contempt for tech accelerationists who are willing to risk an AI-induced catastrophe in the name of growth, and described the the belief that AI shouldn’t be regulated for the purpose of safety as “total insanity and reckless disregard for humanity's future.” His views stand in stark contrast to those of Andreessen and Armstrong, and the countless other Rot Economists in the Valley. [^zitron-sam-altman-freed]
 
+### On the incapabilities of Sam Altman
+
+> Sam Altman needs you to believe that [AI will kill us all](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html?ref=wheresyoured.at) or [going to destroy all our jobs](https://futurism.com/the-byte/sam-altman-ai-destroying-jobs?ref=wheresyoured.at) and that [he's a little bit scared of AI](https://www.cnbc.com/2023/03/20/openai-ceo-sam-altman-says-hes-a-little-bit-scared-of-ai.html?ref=wheresyoured.at), because if you think for even a second about what this man is saying, you'll realize that [he's not an engineer, he's a lobbyist and a liar](https://www.wheresyoured.at/managing-up/#:~:text=it%E2%80%99s%20critical%20to%20note%20that%20Altman%20is%20not%20and%20was%20not%20ever%20an%20engineer%20or%20a%20technologist). He needs us to humor — even if he rejects the notion — [the idea that AI could be considered a "creature"](https://www.businessinsider.com/openai-sam-altman-ai-is-a-tool-not-a-creature-2024-3?ref=wheresyoured.at) because doing so allows him to add further mystique and hype to distract from the fact that he doesn't seem to know anything and OpenAI doesn't seem to be innovating. …
+> 
+> Sam Altman has repeatedly said things that, if any founder with less power, presence, access and funding had said, they'd be laughed at, ignored, and treated like fantasists. Altman is the P.T. Barnum of tech, with just enough knowledge to be dangerous but far too little to actually say anything of note. He is not the technical mind behind OpenAI, he did not write its models, and looking up to him as some sort of [technolojesus](https://youtu.be/rx1rpaQT_ac?si=UfCFFHEs3ErI8geH&t=197&ref=wheresyoured.at) is bad for the tech industry and worse for the world. This is not a person that should be making decisions about the future of the tech industry, nor should he be allowed to spout fan fiction and automatically have it covered as gospel.
+> 
+> [^zitron-altman-shit]
+
+> In 2015, \[Altman] founded OpenAI — at the time a non-profit organization dedicated to building responsible artificial intelligence applications. Yet it’s critical to note that Altman is not and was not ever an engineer or a technologist, he was a figurehead and a fundraiser that was able to convince actual academics and engineers like … Ilya Sutskever to do the actual work while he sent masturbatory emails to Elon Musk …
+> 
+> This is the story of the man who New York Magazine called “[The Oppenheimer of Our Age](https://nymag.com/intelligencer/article/sam-altman-artificial-intelligence-openai-profile.html?ref=wheresyoured.at)” in a meandering piece that frames Altman’s vagueness about artificial intelligence as some sort of big secret, when I think the truth is far simpler: Sam Altman is yet another fucking management consultant. …
+> 
+> In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
+> 
+> The problem with this piece is it, like Altman, is a deeply complex bucket of nothing. …
+> 
+> Much like ChatGPT, Altman is capable only of loosely approximating the output requested, because at his core he lacks any of the substance or technical history required to do so. Like ChatGPT, he’s a know-nothing that, through deterministic measures completely detached from the meaning of the underlying ideas, picks the right words to say at the right time. …
+> 
+> This is Silicon Valley’s king. A lobbyist roleplaying as a founder. A diplomat masquerading as a technologist.  A charming, capricious, abusive and untrustworthy man that has proven time and time again that his only reliable trait is that whatever happens must benefit Sam Altman. …
+> 
+> Altman has created nothing other than wealth for himself and his closest allies, helping elevate and protect existing power structures and the ideologies of men like Microsoft CEO Satya Nadella and LinkedIn founder and career manager Reid Hoffman.
+> 
+> [^zitron-managing-up]
+
 ### On the "glorious future"
 
 > In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
@@ -824,7 +846,7 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-managing-up]
 
-### On the misleading claims of AI
+### On the specious claims of AI's capabilities
 
 > This is the problem with powerful people in tech. If you allow them to speak and fill in the gaps for them, they will happily do so. Murati and Altman continuously obfuscate how ChatGPT works, what it can do, what it *could* do, and profit handsomely from a complete lack of pushback from a press that routinely accepts AI executives' vague explanations at face value. OpenAI's messaging and explanations of what its technology can (or will) do have barely changed in the last few years, returning repeatedly to "eventually" and "in the future" and speaking in the vaguest ways about how businesses make money off of — let alone *profit* from — integrating generative AI.
 > 
@@ -854,34 +876,46 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-peak-ai]
 
-### On Sam Altman
+> Generative AI creates outputs, and by extension defines all labor as some kind of output created from a request. …
+> 
+> The problem is that most jobs are not output-driven at all, and what we’re buying from a human being is _a person’s ability to think._
+> 
+> Every CEO talking about AI replacing workers is an example of the real problem: that most companies are run by people who don’t understand or experience the problems they’re solving, don’t do any real work, don’t face any real problems, and thus can never be trusted to solve them. …
+> 
+> \[T]he true nature of labor that executives fail to comprehend at scale \[is] that the things we do are not units of work, but extrapolations of experience, emotion, and context that cannot be condensed in written meaning. Business Idiots see our labor as the result of a smart manager saying “do this,” rather than human ingenuity interpreting both a request _and_ the shit the manager didn’t say. …
+> 
+> When you see everything as an outcome — an outcome you may or may not understand, and definitely don’t understand the process behind, let alone care about — you _kind of already see your workers as LLMs._ …
+> 
+> AI is replacing workers! AI is writing entire computer programs! AI is getting exponentially more-powerful! What does “powerful” mean? [That the models are getting better on benchmarks that are rigged in their favor,](https://pivot-to-ai.com/2025/02/25/ai-benchmarks-are-self-promoting-trash-but-regulators-keep-using-them/?ref=wheresyoured.at) but because nobody _fucking explains it_, regular people are regularly told that AI is “powerful.” 
+> 
+> The only thing “powerful” about generative AI is its mythology. The world’s executives, entirely disconnected from labor and actual production, are doing the only thing they know how to — spend a bunch of money and say vague stuff about “AI being the future.” There are people — journalists, investors, and analysts — that have built entire careers on filling in the gaps for the powerful as they splurge billions of dollars and repeat with increasing desperation that “the future is here” as absolutely nothing happens. …
+> 
+> [^zitron-case-against-ai]
 
-> Sam Altman needs you to believe that [AI will kill us all](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html?ref=wheresyoured.at) or [going to destroy all our jobs](https://futurism.com/the-byte/sam-altman-ai-destroying-jobs?ref=wheresyoured.at) and that [he's a little bit scared of AI](https://www.cnbc.com/2023/03/20/openai-ceo-sam-altman-says-hes-a-little-bit-scared-of-ai.html?ref=wheresyoured.at), because if you think for even a second about what this man is saying, you'll realize that [he's not an engineer, he's a lobbyist and a liar](https://www.wheresyoured.at/managing-up/#:~:text=it%E2%80%99s%20critical%20to%20note%20that%20Altman%20is%20not%20and%20was%20not%20ever%20an%20engineer%20or%20a%20technologist). He needs us to humor — even if he rejects the notion — [the idea that AI could be considered a "creature"](https://www.businessinsider.com/openai-sam-altman-ai-is-a-tool-not-a-creature-2024-3?ref=wheresyoured.at) because doing so allows him to add further mystique and hype to distract from the fact that he doesn't seem to know anything and OpenAI doesn't seem to be innovating. …
+> NVIDIA needs this myth to continue, because in truth, all of these data centers are being built for demand that doesn’t exist, or that — if it exists — doesn’t necessarily translate into business customers paying huge amounts for access to OpenAI’s generative AI services. 
 > 
-> Sam Altman has repeatedly said things that, if any founder with less power, presence, access and funding had said, they'd be laughed at, ignored, and treated like fantasists. Altman is the P.T. Barnum of tech, with just enough knowledge to be dangerous but far too little to actually say anything of note. He is not the technical mind behind OpenAI, he did not write its models, and looking up to him as some sort of [technolojesus](https://youtu.be/rx1rpaQT_ac?si=UfCFFHEs3ErI8geH&t=197&ref=wheresyoured.at) is bad for the tech industry and worse for the world. This is not a person that should be making decisions about the future of the tech industry, nor should he be allowed to spout fan fiction and automatically have it covered as gospel.
+> NVIDIA, OpenAI, CoreWeave and other AI-related companies hope that by announcing theoretical billions of dollars (or _hundreds_ of billions of dollars) of these strange, vague and impossible-seeming deals, they can keep pretending that demand is there, because _why else would they build all of these data centers, right?_
 > 
-> [^zitron-altman-shit]
+> [^zitron-case-against-ai]
 
-> In 2015, \[Altman] founded OpenAI — at the time a non-profit organization dedicated to building responsible artificial intelligence applications. Yet it’s critical to note that Altman is not and was not ever an engineer or a technologist, he was a figurehead and a fundraiser that was able to convince actual academics and engineers like … Ilya Sutskever to do the actual work while he sent masturbatory emails to Elon Musk …
-> 
-> This is the story of the man who New York Magazine called “[The Oppenheimer of Our Age](https://nymag.com/intelligencer/article/sam-altman-artificial-intelligence-openai-profile.html?ref=wheresyoured.at)” in a meandering piece that frames Altman’s vagueness about artificial intelligence as some sort of big secret, when I think the truth is far simpler: Sam Altman is yet another fucking management consultant. …
-> 
-> In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
-> 
-> The problem with this piece is it, like Altman, is a deeply complex bucket of nothing. …
-> 
-> Much like ChatGPT, Altman is capable only of loosely approximating the output requested, because at his core he lacks any of the substance or technical history required to do so. Like ChatGPT, he’s a know-nothing that, through deterministic measures completely detached from the meaning of the underlying ideas, picks the right words to say at the right time. …
-> 
-> This is Silicon Valley’s king. A lobbyist roleplaying as a founder. A diplomat masquerading as a technologist.  A charming, capricious, abusive and untrustworthy man that has proven time and time again that his only reliable trait is that whatever happens must benefit Sam Altman. …
-> 
-> Altman has created nothing other than wealth for himself and his closest allies, helping elevate and protect existing power structures and the ideologies of men like Microsoft CEO Satya Nadella and LinkedIn founder and career manager Reid Hoffman.
-> 
-> [^zitron-managing-up]
+### On the financial unsoundness of the AI industry
 
-### On the mythos of AI
+> \[N]one of this is working, and all of this money has been invested in a technology that doesn’t make much revenue _and loves to burn millions or billions or hundreds of billions of dollars._
+> 
+> Over half a trillion dollars has gone into an entire industry without a single profitable company developing models or products built on top of models. [By my estimates, there is around $44 billion of revenue in generative AI this year](https://www.wheresyoured.at/the-haters-gui/#capital-expenditures-in-2025-11-billion) (when you add in Anthropic and OpenAI’s revenues to the pot, along with the other stragglers) and most of that number has been gathered through reporting from outlets like The Information, because _none of these companies share their revenues,_ all of them _lose shit tons of money_, and _their actual revenues are really, really small._
+> 
+> [^zitron-case-against-ai]
 
-> Generative AI creates outputs, and by extension defines all labor as some kind of output created from a request.
+### On the failure of the media to check AI companies
 
+> \[S]ome members of the business and tech media … have, for the most part, gotten by without having to think too hard about the actual things the companies are saying. 
+> 
+> I realize this sounds a little mean, and I must be clear it doesn’t mean _that these people know nothing_, just that it’s been possible to scoot through the world without thinking too hard about whether or not something is true. [When Salesforce said back in 2024](https://www.wheresyoured.at/peakai/#:~:text=its%20%22Einstein%20Trust%20Layer%22%20handles%20data,%20to%20which%20Shih%20added%20that%20AI%20would%20%22be%20transformational%20for%20jobs,%20the%20way%20the%20internet%20was.%22) that its “Einstein Trust Layer” and AI would be “transformational for jobs,” the media dutifully wrote it down and published it without a second thought. It [fully trusted Marc Benioff when he said that Agentforce agents would replace human workers](https://www.entrepreneur.com/business-news/salesforce-ceo-ai-agents-could-replace-hiring-gig-workers/480177?ref=wheresyoured.at), and then again when he said that AI agents are doing “[30% to 50% of all the work in Salesforce itself](https://fortune.com/2025/07/30/salesforce-marc-benioff-interview-ai-agents-productivity-unemployment-future-work/?ref=wheresyoured.at),” even though that’s an unproven and nakedly ridiculous statement. 
+> 
+> [Salesforce’s CFO said earlier this year that AI wouldn’t boost sales growth in 2025](https://www.theinformation.com/articles/ai-giving-salesforce-boost?ref=wheresyoured.at). One would think this would change how they’re covered, or how seriously one takes Marc Benioff. 
+> 
+> It hasn’t, because nobody is paying attention. In fact, nobody seems to be doing their job.
+> 
 > [^zitron-case-against-ai]
 
 ## Zuckerberg, Mark (CEO, Meta)
