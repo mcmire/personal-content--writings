@@ -4,7 +4,7 @@
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
-  "working_directory": "",
+  "working_directory": "/Users/elliot/code/personal/personal-content--writings",
   "default_shells": {},
   "environment_variable_path_augmentations": {
     "darwin": "/opt/homebrew/bin:~/.bin:{{!environment:PATH}}"
@@ -28,7 +28,7 @@
     {
       "id": "642aal41ie",
       "platform_specific_commands": {
-        "default": "~/.bin/sync-obsidian-vault-with-logging"
+        "default": "~/.bin/sync-obsidian-vault-with-logging --vault-directory $HOME/personal-content--writings --commit-message {{_commit_message}}"
       },
       "shells": {},
       "alias": "Sync with Git (manually)",
@@ -40,7 +40,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "notification",
+          "handler": "ignore",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -64,7 +64,7 @@
     {
       "id": "6gelxt37up",
       "platform_specific_commands": {
-        "default": "~/.bin/sync-obsidian-vault-with-logging"
+        "default": "~/.bin/sync-obsidian-vault-with-logging --vault-directory $HOME/personal-content--writings --commit-message {{_commit_message}}"
       },
       "shells": {},
       "alias": "Sync with Git (automatically)",
@@ -124,16 +124,50 @@
         "executeEarly": false,
         "executeLate": true,
         "cooldownDuration": 120,
-        "prolongCooldown": false
+        "prolongCooldown": true
       },
       "command_palette_availability": "enabled",
-      "preactions": [],
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "8uxep17a17"
+        }
+      ],
       "variable_default_values": {}
     }
   ],
-  "prompts": [],
+  "prompts": [
+    {
+      "id": "8uxep17a17",
+      "title": "Save personal-content--writings?",
+      "description": "Enter a commit message, or cancel if you don't want to save anything yet.",
+      "preview_shell_command": true,
+      "fields": [
+        {
+          "type": "multi-line-text",
+          "label": "Commit message",
+          "description": "",
+          "default_value": "",
+          "target_variable_id": "swi0599hev",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Save"
+    }
+  ],
   "builtin_variables": {},
-  "custom_variables": [],
+  "custom_variables": [
+    {
+      "id": "swi0599hev",
+      "name": "commit_message",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Automatic sync"
+      }
+    }
+  ],
   "custom_variables_notify_changes_via": {
     "obsidian_uri": true,
     "output_assignment": true
