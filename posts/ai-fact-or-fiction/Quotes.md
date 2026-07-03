@@ -924,6 +924,38 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-case-against-ai]
 
+> \[E]verybody is losing money on generative AI, [in part because the cost of running AI models is increasing](https://www.wsj.com/tech/ai/ai-costs-expensive-startups-4c214f59?gaa_at=eafs&gaa_n=ASWzDAg6kU8VJOeFMm0T8muRJSY7J-QLNVxgRDlVZrK2yiLDRHfbsk4wdYKbJWKEMZ4%3D&gaa_ts=68d1c946&gaa_sig=M35w_IzrzGhOAJfPxlxX3KCm7CNIy3J-APIl8tW6zMeXd5Z4JHjKPs9OiGLgMQK2AwxY6lHG2QGdXFTGBRaJDg%3D%3D&ref=wheresyoured.at), and in part because the software itself doesn’t do enough to warrant the costs associated with running them, [which are already subsidized and unprofitable for the model providers](https://www.wheresyoured.at/subprimeai/). …
+> 
+> Outside of OpenAI (and to a lesser extent Anthropic), nobody seems to be making much revenue, with the most “successful” company being Anysphere, makers of AI coding tool Cursor, which hit $500 million ‘annualized” ([so $41.6 million in one month](https://www.theinformation.com/briefings/anysphere-startup-behind-cursor-hits-500-million-annualized-revenue?rc=kz8jh3&ref=wheresyoured.at)) a few months ago …
+> 
+> \[T]hat’s some piss-poor revenue for an industry that’s meant to be the future of software. [Smartwatches are projected to make $32 billion this year](https://www.statista.com/outlook/hmo/digital-health/digital-fitness-well-being/fitness-trackers/smartwatches/worldwide?srsltid=AfmBOorPtjyyQeu1FE7Rpu-ZThWWoIQ01Kg0XR_dbahRf5-TjP1w6iKX&ref=wheresyoured.at), and [as mentioned, the Magnificent Seven expects to make $35 billion or so in revenue from AI this year](https://www.wheresyoured.at/the-haters-gui/#the-magnificent-7s-ai-story-is-flawed-with-560-billion-of-capex-between-2024-and-2025-leading-to-35-billion-of-revenue-and-no-profit). …
+> 
+> [^zitron-case-against-ai]
+
+> _[E]very_ user loses you money in generative AI, because it’s impossible to do cost control in a consistent manner. …
+> 
+> Claude Code is a coding environment that people use to (or, should I say, try to) build software using generative AI. …
+> 
+> Using Anthropic’s gross profit margins — I chose 55%, which was pretty close to [the 60% that was leaked after my article](https://www.theinformation.com/articles/anthropic-revenue-pace-nears-5-billion-run-mega-round?rc=kz8jh3&ref=wheresyoured.at) — I found at least 20 different accounts of people costing Anthropic anywhere from 130% to 3,084% of their subscription. …
+> 
+> There is now a leaderboard called “[viberank](https://www.viberank.app/?ref=wheresyoured.at)” where people compete to see how much they burn, with the current leader burning $51,291 over the course of a month. … 
+> 
+> That’s not a real business! That’s a bad business with out-of-control costs, and it doesn’t appear _anybody_ has these costs under control. …
+>
+> A few weeks ago, Replit — an unprofitable AI coding company — released a product called “[Agent 3](https://replit.com/agent3?ref=wheresyoured.at).” which promised to be “10x more autonomous” and offer “infinitely more possibilities,” “\[testing] and \[fixing] its code, constantly improving your application behind the scenes in a reflection loop.” …
+> 
+> Agent 3 has been a disaster. Users found tasks that previously cost a few dollars were spiralling into the hundreds of dollars, with [The Register](http://theregister.com/2025/09/18/replit_agent3_pricing/?ref=wheresyoured.at) reporting one customer found themselves with a $1000 bill after a week … 
+> 
+> [^zitron-case-against-ai]
+
+> [According to The Information](https://www.theinformation.com/articles/anthropic-revenue-pace-nears-5-billion-run-mega-round?rc=kz8jh3&ref=wheresyoured.at), Claude Code was driving “nearly $400 million in annualized revenue, roughly doubling from a few weeks ago” on July 31 2025.
+> 
+> That annualized revenue works out to about $33 million a month in revenue for a company that predicts it will make at least $416 million a month by the end of the year, and for a product that has become the most-popular coding environment in the world, from the second-largest and best-funded AI company in the world.
+> 
+> …is that it? Is that all that’s happening here?
+> 
+> [^zitron-case-against-ai]
+
 ### On the failure of the media to check AI companies
 
 > \[S]ome members of the business and tech media … have, for the most part, gotten by without having to think too hard about the actual things the companies are saying. 
