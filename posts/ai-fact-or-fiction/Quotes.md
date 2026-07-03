@@ -878,6 +878,12 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-managing-up]
 
+### On the mythos of AI
+
+> Generative AI creates outputs, and by extension defines all labor as some kind of output created from a request.
+
+> [^zitron-case-against-ai]
+
 ## Zuckerberg, Mark (CEO, Meta)
 
 ### On the beginning of the "AI age" 
@@ -980,6 +986,7 @@ TODO: Read https://moores.samaltman.com/
 - Zitron, Ed (2024a, Mar 18). [Have we reached peak AI?](https://www.wheresyoured.at/peakai/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024b, Apr 29). [Managing up.](https://www.wheresyoured.at/managing-up) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024c, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Zitron, Ed  (2025, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
 - Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
 
 ## Footnotes
@@ -1019,3 +1026,4 @@ TODO: Read https://moores.samaltman.com/
 [^zitron-peak-ai]: https://www.wheresyoured.at/peakai/
 [^zitron-altman-shit]: https://www.wheresyoured.at/sam-altman-is-full-of-shit/
 [^zitron-managing-up]: https://www.wheresyoured.at/managing-up
+[^zitron-case-against-ai]: https://www.wheresyoured.at/the-case-against-generative-ai/
