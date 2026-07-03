@@ -846,7 +846,7 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-managing-up]
 
-### On the specious claims of AI's capabilities
+### On the myths of AI's future capabilities
 
 > This is the problem with powerful people in tech. If you allow them to speak and fill in the gaps for them, they will happily do so. Murati and Altman continuously obfuscate how ChatGPT works, what it can do, what it *could* do, and profit handsomely from a complete lack of pushback from a press that routinely accepts AI executives' vague explanations at face value. OpenAI's messaging and explanations of what its technology can (or will) do have barely changed in the last few years, returning repeatedly to "eventually" and "in the future" and speaking in the vaguest ways about how businesses make money off of — let alone *profit* from — integrating generative AI.
 > 
@@ -862,15 +862,11 @@ TODO: Read https://moores.samaltman.com/
 > 
 > The media has been fooled, in the same way they were fooled by the metaverse, by the specious promises of AI and the executives that champion it. The half-truths and magical thinking have spread far faster due to the fact that AI actually exists, and it's much easier to imagine how it might change our lives, even if the way it might do so is somewhere between improbable and impossible. …
 > 
-> I can find no companies that have integrated generative AI in a way that has truly improved their bottom line other than Klarna, which claims its AI-powered support bot is "[estimated to drive a $40 million US in profit improvement in 2024](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/?ref=wheresyoured.at)," which does not, as many have incorrectly stated, mean that it has "[made Klarna $40m in profit](https://www.inc.com/ben-sherry/klarna-says-its-new-ai-assistant-is-outperforming-customer-service-representatives.html?ref=wheresyoured.at)." Despite fears to the contrary, AI does not appear to be replacing a large number of workers, [and when it has](https://www.theverge.com/2020/5/30/21275524/microsoft-news-msn-layoffs-artificial-intelligence-ai-replacements?ref=wheresyoured.at), [the results have been pretty terrible](https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html?ref=wheresyoured.at). [A study from Boston Consulting Group](https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai?ref=wheresyoured.at) found that consultants that "solved business problems with OpenAI's GPT-4" performed _23% worse than those who didn't use it_, even when the consultant was warned about the limitations of generative AI and the risk of hallucinations. …
-> 
 > What if what we're seeing today isn't a glimpse of the future, but the new terms of the present? What if artificial intelligence isn't actually capable of doing much more than what we're seeing today, and what if there's no clear timeline when it'll be able to do more? What if this entire hype cycle has been built, goosed by a compliant media ready and willing to take career-embellishers at their word? …
 > 
 > Generative AI's core problems — its hallucinations, its [massive energy](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy?ref=wheresyoured.at) and [unprofitable compute demands](https://www.washingtonpost.com/technology/2023/06/05/chatgpt-hidden-cost-gpu-compute/?ref=wheresyoured.at) — are not close to being solved. Having now read and listened to a great deal of Murati and Altman's interviews, I can find few cases where they're even _asked_ about these problems, let alone ones where they provide a cogent answer.
 > 
 > And I believe it's because there isn't one. …
-> 
-> \[H]allucinations are a feature not a bug. These models do not "know" anything. They are mathematical behemoths generating a best guess based on training data and labeling, and thus do not "know" what you are asking it to do. You simply cannot fix them. Hallucinations are not going away. …
 > 
 > If you stop saying things like "AI could do" or "AI will do," you have to start asking what AI *can* do, and the answer is...not that much, and not much more in the future.
 > 
@@ -892,13 +888,37 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-case-against-ai]
 
+> Generative AI exists for two reasons: to cost money, and to make executives look busy. … [^zitron-case-against-ai]
+
+### On the myths of AI's present capabilities
+
+> I can find no companies that have integrated generative AI in a way that has truly improved their bottom line other than Klarna, which claims its AI-powered support bot is "[estimated to drive a $40 million US in profit improvement in 2024](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/?ref=wheresyoured.at)," which does not, as many have incorrectly stated, mean that it has "[made Klarna $40m in profit](https://www.inc.com/ben-sherry/klarna-says-its-new-ai-assistant-is-outperforming-customer-service-representatives.html?ref=wheresyoured.at)." Despite fears to the contrary, AI does not appear to be replacing a large number of workers, [and when it has](https://www.theverge.com/2020/5/30/21275524/microsoft-news-msn-layoffs-artificial-intelligence-ai-replacements?ref=wheresyoured.at), [the results have been pretty terrible](https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html?ref=wheresyoured.at). [A study from Boston Consulting Group](https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai?ref=wheresyoured.at) found that consultants that "solved business problems with OpenAI's GPT-4" performed _23% worse than those who didn't use it_, even when the consultant was warned about the limitations of generative AI and the risk of hallucinations. …
+> 
+> [^zitron-case-against-ai]
+
+> \[H]allucinations are a feature not a bug. These models do not "know" anything. They are mathematical behemoths generating a best guess based on training data and labeling, and thus do not "know" what you are asking it to do. You simply cannot fix them. Hallucinations are not going away. …
+> 
+> [^zitron-case-against-ai]
+
 > You cannot rely on a large language model to do what you want. Even the most highly-tuned models on the most expensive and intricate platform can’t actually be relied upon to do exactly what you want. …
 > 
 > However successful a model might be in generating something good *once*, it will also often generate something bad, or it’ll generate the right thing but in an inefficient and over-verbose fashion. You do not know what you’re going to get each time, and hallucinations multiply with the complexity of the thing you’re asking for, or whether a task contains multiple steps (which is a fatal blow to the idea of “agents”) _\[sic]_ …
 > 
 > [^zitron-case-against-ai]
 
-> Generative AI exists for two reasons: to cost money, and to make executives look busy. … [^zitron-case-against-ai]
+#### On AI writing code
+
+> In simple terms, LLMs are capable of writing _code_, but can’t do software engineering, because software engineering is the process of understanding, maintaining and executing code to produce functional software, and LLMs do not “learn,” cannot “adapt,” and … break down the more of your code and variables you ask them to look at at once.
+> 
+> It’s very easy to believe that software engineering is just writing code, but the reality is that software engineers _maintain software_, which includes _writing and analyzing code among a vast array of different personalities and programs and problems_. …
+> 
+> \[C]oding is not just “a series of text that programs a computer,” but a series of interconnected characters that refers to _other_ software in _other_ places that must also function _now_ and explain, on some level, to someone who has never, ever seen the code before, why it was done this way. 
+> 
+> This is, by the way, why we are still yet to get any tangible proof that AI is replacing software engineers…because it can’t. …
+> 
+> Coding LLMs _seem_ like magic at first, because they (to quote a conversation with Carl Brown) make the easy things easier, but they also make the harder things harder. They don’t even speed up engineers — [they actually make them slower](https://www.theregister.com/2025/07/11/ai_code_tools_slow_down/?ref=wheresyoured.at)!
+> 
+> [^zitron-case-against-ai]
 
 ### On the financial unsoundness of the AI industry
 
