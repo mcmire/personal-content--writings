@@ -892,17 +892,35 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-case-against-ai]
 
-> NVIDIA needs this myth to continue, because in truth, all of these data centers are being built for demand that doesn’t exist, or that — if it exists — doesn’t necessarily translate into business customers paying huge amounts for access to OpenAI’s generative AI services. 
+> You cannot rely on a large language model to do what you want. Even the most highly-tuned models on the most expensive and intricate platform can’t actually be relied upon to do exactly what you want. …
 > 
-> NVIDIA, OpenAI, CoreWeave and other AI-related companies hope that by announcing theoretical billions of dollars (or _hundreds_ of billions of dollars) of these strange, vague and impossible-seeming deals, they can keep pretending that demand is there, because _why else would they build all of these data centers, right?_
+> However successful a model might be in generating something good *once*, it will also often generate something bad, or it’ll generate the right thing but in an inefficient and over-verbose fashion. You do not know what you’re going to get each time, and hallucinations multiply with the complexity of the thing you’re asking for, or whether a task contains multiple steps (which is a fatal blow to the idea of “agents”) _\[sic]_ …
 > 
 > [^zitron-case-against-ai]
 
+> Generative AI exists for two reasons: to cost money, and to make executives look busy. … [^zitron-case-against-ai]
+
 ### On the financial unsoundness of the AI industry
 
-> \[N]one of this is working, and all of this money has been invested in a technology that doesn’t make much revenue _and loves to burn millions or billions or hundreds of billions of dollars._
+> NVIDIA needs this myth to continue, because in truth, all of these data centers are being built for demand that doesn’t exist, or that — if it exists — doesn’t necessarily translate into business customers paying huge amounts for access to OpenAI’s generative AI services. 
 > 
-> Over half a trillion dollars has gone into an entire industry without a single profitable company developing models or products built on top of models. [By my estimates, there is around $44 billion of revenue in generative AI this year](https://www.wheresyoured.at/the-haters-gui/#capital-expenditures-in-2025-11-billion) (when you add in Anthropic and OpenAI’s revenues to the pot, along with the other stragglers) and most of that number has been gathered through reporting from outlets like The Information, because _none of these companies share their revenues,_ all of them _lose shit tons of money_, and _their actual revenues are really, really small._
+> NVIDIA, OpenAI, CoreWeave and other AI-related companies hope that by announcing theoretical billions of dollars (or _hundreds_ of billions of dollars) of these strange, vague and impossible-seeming deals, they can keep pretending that demand is there, because _why else would they build all of these data centers, right?_ …
+> 
+> Underpinning these stories about huge amounts of money and endless opportunity lies a dark secret — that none of this is working, and all of this money has been invested in a technology that doesn’t make much revenue _and loves to burn millions or billions or hundreds of billions of dollars._
+> 
+> Over half a trillion dollars has gone into an entire industry without a single profitable company developing models or products built on top of models. [By my estimates, there is around $44 billion of revenue in generative AI this year](https://www.wheresyoured.at/the-haters-gui/#capital-expenditures-in-2025-11-billion) (when you add in Anthropic and OpenAI’s revenues to the pot, along with the other stragglers) and most of that number has been gathered through reporting from outlets like The Information, because _none of these companies share their revenues,_ all of them _lose shit tons of money_, and _their actual revenues are really, really small._ …
+> 
+> [OpenAI is now, at this point, on the hook for over a trillion dollars](https://www.wheresyoured.at/openai-onetrillion/), an egregious sum for a company that already forecast billions in losses, with no clear explanation as to how it’ll afford any of this beyond “we need more money” and the vague hope that there’s another Softbank or Microsoft waiting in the wings to swoop in and save the day. …
+> 
+> [^zitron-case-against-ai]
+
+> It isn’t so much that NVIDIA _isn’t growing_, but that to _grow year-over-year at the rates that people expect is insane._ Life was a lot easier when NVIDIA went from [$6.05 billion in revenue in Q4 FY2023](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023?ref=wheresyoured.at) [to $22 billion in revenue in Q4 FY2024](https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/?ref=wheresyoured.at), but for it to grow even 55% year-over-year from Q2 FY2026 ([$46.7 billion](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2026?ref=wheresyoured.at)) to Q2 2027 would require it to make **_$72.385 billion in revenue in the space of three months, mostly from selling GPUs (which make up around 88% of its revenue)._** …
+> 
+> And the market _needs_ NVIDIA to perform, [as the company makes up 8% of the value of the S&P 500](https://www.reuters.com/business/sp-500-notches-record-close-traders-turn-nvidia-results-2025-08-27/?ref=wheresyoured.at). It’s not enough for it to be wildly profitable, or have a monopsony on selling GPUs, or for it to have effectively 10x’d their stock in a few years. It must _continue_ to grow at the fastest rate of anything ever, making more and more money selling these GPUs to a small group of companies that immediately start losing money once they plug them in. …
+> 
+> [^zitron-case-against-ai]
+
+> \[I]f AI was truly the next big growth vehicle, neoclouds would be swimming in diverse global revenue streams. Instead, they’re heavily-centralized around the same few names, one of which (NVIDIA) directly benefits from their existence not as a company doing business, but as an entity that can accrue debt and spend money on GPUs. These Neoclouds are entirely dependent on a continual flow of private credit from firms like Goldman Sachs ([Nebius](https://nebius.com/newsroom/nebius-group-announces-private-placement-of-1-billion-in-aggregate-principal-amount-of-convertible-notes?ref=wheresyoured.at), [CoreWeave](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Closes-2-6-Billion-Secured-Debt-Financing-Facility-Strengthening-Market-Position-as-AI-Cloud-Leader/default.aspx?ref=wheresyoured.at), [Lambda for its IPO](https://www.webpronews.com/lambda-eyes-2025-ipo-amid-ai-boom-hires-morgan-stanley-and-banks/?ref=wheresyoured.at)), JPMorgan ([Lambda](https://www.businesswire.com/news/home/20250819061353/en/Lambda-Closes-%24275M-Senior-Secured-Credit-Facility-Led-by-J.P.Morgan-to-Expand-Superintelligence-Infrastructure?ref=wheresyoured.at), [Crusoe](https://www.bloomberg.com/news/articles/2025-05-22/jpmorgan-leads-7-1-billion-loan-for-blue-owl-tied-data-center?ref=wheresyoured.at), [CoreWeave](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Expands-Credit-Facility-to-1-5-Billion-to-Support-Continued-Growth/default.aspx?ref=wheresyoured.at)), and Blackstone ([Lambda](https://www.capacitymedia.com/article-blackstone-aligned-1bn?ref=wheresyoured.at), [CoreWeave](https://www.blackstone.com/news/press/coreweave-secures-7-5-billion-debt-financing-facility-led-by-blackstone-and-magnetar/?ref=wheresyoured.at)), who have in a very real sense created an entire debt-based infrastructure to feed billions of dollars directly to NVIDIA, all in the name of an AI revolution that's yet to arrive.
 > 
 > [^zitron-case-against-ai]
 
