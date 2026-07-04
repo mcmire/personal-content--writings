@@ -984,7 +984,25 @@
 > 
 > [^zitron-case-against-ai]
 
->  **OpenAI has signed multiple different deals and contracts for amounts it cannot afford to pay, that it cannot hope to raise the money to pay for, that defy the amounts of venture capital and private credit available, all to sustain a company that will burn $300 billion and has no path to profitability of any kind.**
+> One of the comfortable lies that people tell themselves is that the AI bubble is similar to the fiber boom, or the dot com bubble, or Uber, or that we’re in the “growth stage,” or that “this is what software companies do, they spend a bunch of money then “[pull the profit lever](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/#booster-quip-ai-company-is-in-%E2%80%9Cgrowth-mode%E2%80%9D-and-will-%E2%80%9Cpull-the-profit-lever-when-it%E2%80%99s-time%E2%80%9D).” 
+> 
+> This is nothing like anything you’ve seen before, because this is the dumbest shit that the tech industry has ever done. …
+> 
+> … **[OpenAI’s compute costs and promised data center expansion amount to more than a trillion dollars](https://www.wheresyoured.at/openai-onetrillion/#:~:text=targets%20it%27s%20set!-,OpenAI%20Has%20Committed%20To%20Over%20%24750%20Billion%20In%20Chips%2C%20Data%20Centers%20and%20Compute%20Over%20The%20Next%20Five%20Years,-As%20A%20Note),** with $750 billion of that mostly the cost of compute, meaning OpenAI will need _actual real money_ to pay for it. …
+> 
+> [The Information](https://www.theinformation.com/articles/dry-powder-running-spvs-may-lifeline?rc=kz8jh3&ref=wheresyoured.at) recently published some worrying data from venture capitalist Jon Sakoda — that “at today’s clip, the industry would run out of money in six quarters,” adding that the money wouldn’t run out until the end of 2028 if it wasn’t for Anthropic and OpenAI. **In a very real sense, OpenAI threatens the future of available capital for the tech industry.** …
+> 
+> Just so we are clear, OpenAI intends to 10x its revenue in the space of four years, selling software and access to models in an industry with about $60 billion of revenue in 2025. How will it do this? It doesn’t say. …
+>
+> OpenAI’s projections see it reduce its negative cash flow by $39bn — or one-and-a-half times 3M’s revenue from the last financial year — in a single year, while also increasing its revenue by a similar amount (give or take a few billion. Who’s counting? Certainly not OpenAI’s CFO). …
+> 
+> OpenAI's current reported burn is $116 billion through 2030, which means there is no way that these projections include $300 billion in compute costs, even when you factor in revenue. There is simply no space in these projections to absorb that $300 billion, and from what I can tell, by 2029, OpenAI will have actually burned more than $290 billion, assuming that it survives that long, which I do not believe it will. …
+> 
+> [OpenAI has promised about a trillion dollars](https://www.wheresyoured.at/openai-onetrillion/) between compute contracts across Oracle, Microsoft, Google and CoreWeave, 17 Gigawatts of promised data centers in America between NVIDIA and “Stargate,” several more gigawatts of international data centers, custom chips from Broadcom, and their own company operations.
+> 
+> How exactly does this get paid for?
+> 
+> [^zitron-case-against-ai]
 
 ### On the failure of the media to check AI companies
 
