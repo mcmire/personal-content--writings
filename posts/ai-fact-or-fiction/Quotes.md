@@ -113,8 +113,6 @@
 
 ## Altman, Sam (CEO, OpenAI)
 
-TODO: Read https://moores.samaltman.com/ 
-
 ### On the imminence of building powerful AI
 
 > We are now confident we know how to build AGI as we have traditionally understood it. [^altman-reflections]
@@ -334,6 +332,16 @@ TODO: Read https://moores.samaltman.com/
 ### On whether education is still important 
 
 > DEMIS HASSABIS: I would be really excited if I was back at college now. My recommendation would be those of you doing science and STEM subjects and mathematics and computer science, still do those things. I think you’ll be able to take better advantage of these tools if you understand how they are put together and what they’re capable of. I think that’s going to be true for the next period, the next 10 years at least. [^hassabis-stanford]
+
+## Jensen, Huang (CEO, Nvidia)
+
+### On the future of coding
+
+> Huang even countered advice offered by many visionaries over the years who urged young people to study computer science in order to compete in the information age. No longer.
+> 
+> “In fact, it’s almost exactly the opposite,” Huang said. “It is our job to create computing technologies that nobody has to program and that the programming language is human: everybody in the world is now a programmer — that is the miracle.”
+> 
+> [^nvidia-blog-world-gov-summit]
 
 ## Jassy, Andy (CEO, Amazon)
 
@@ -976,6 +984,8 @@ TODO: Read https://moores.samaltman.com/
 > 
 > [^zitron-case-against-ai]
 
+>  **OpenAI has signed multiple different deals and contracts for amounts it cannot afford to pay, that it cannot hope to raise the money to pay for, that defy the amounts of venture capital and private credit available, all to sustain a company that will burn $300 billion and has no path to profitability of any kind.**
+
 ### On the failure of the media to check AI companies
 
 > \[S]ome members of the business and tech media … have, for the most part, gotten by without having to think too hard about the actual things the companies are saying. 
@@ -985,6 +995,20 @@ TODO: Read https://moores.samaltman.com/
 > [Salesforce’s CFO said earlier this year that AI wouldn’t boost sales growth in 2025](https://www.theinformation.com/articles/ai-giving-salesforce-boost?ref=wheresyoured.at). One would think this would change how they’re covered, or how seriously one takes Marc Benioff. 
 > 
 > It hasn’t, because nobody is paying attention. In fact, nobody seems to be doing their job.
+> 
+> [^zitron-case-against-ai]
+
+### On the failure of AI to be adopted
+
+> Microsoft has one of the largest commercial software empires in history, thousands (if not tens of thousands) of salespeople, and [thousands of companies that literally sell Microsoft services for a living](https://partner.microsoft.com/en-us/solutions/authorized-device-reseller-?ref=wheresyoured.at#:~:text=The%20Microsoft%20Authorized%20Device%20Reseller,commercial%20customers%20of%20all%20sizes.).
+> 
+> And it can’t sell AI.
+> 
+> A source that has seen materials related to sales has confirmed that, as of August 2025, Microsoft has around eight million active licensed users of Microsoft 365 Copilot, amounting to a 1.81% conversion rate across the 440 million Microsoft 365 subscribers.
+> 
+> This would amount to, if each of these users paid annually at the full rate of $30-a-month, to about $2.88 billion in annual revenue for a product category that makes $33 billion _a fucking quarter._
+> 
+> And I must be clear, _I am 100% sure these users aren’t all paying $30 a month._
 > 
 > [^zitron-case-against-ai]
 
@@ -1054,6 +1078,17 @@ TODO: Read https://moores.samaltman.com/
 > 
 > This is the same playbook Musk has used with Tesla’s self-driving promises. …  [^electrek-musk-bad-predictions]
 
+## Status
+
+### Reading
+
+- https://www.wheresyoured.at/the-case-against-generative-ai/
+
+### To read
+
+- https://moores.samaltman.com/ (or other articles on this site)
+- https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
+
 ## References
 
 - Altman, Sam (2025a, February 5). [Three observations](https://blog.samaltman.com/three-observations). _blog.samaltman.com_. Retrieved 2026-06-23.
@@ -1076,6 +1111,7 @@ TODO: Read https://moores.samaltman.com/
 - Metz, Cade (2026, January 26). [An AI pioneer warns the tech herd is marching into a dead end](https://www.nytimes.com/2026/01/26/technology/an-ai-pioneer-warns-the-tech-herd-is-marching-into-a-dead-end.html). _The New York Times_. Retrieved 2026-06-23.
 - Narayanan, Arvind; Kapoor, Sayash (2025, April 15). [AI as normal technology](https://knightcolumbia.org/content/ai-as-normal-technology). _Knight First Amendment Institute at Columbia University_. Retrieved 2026-06-23.
 - Newman, Daniel (2025, December 9). [Are we overhyping LLMs while underestimating AI?](https://archive.is/OV3l4) _Forbes._ Archived from the [original](https://www.forbes.com/sites/danielnewman/2025/12/09/are-we-overhyping-llms-while-underestimating-ai/) 2026-06-23.
+- Caulfield, Brian (2024, February 12). [Nvidia CEO: Every county needs AI](https://blogs.nvidia.com/blog/world-governments-summit/). _NVIDIA Company Blog._ Retrieved 2026-07-03.
 - Pelley, Scott (2025, August 3). [Artificial intelligence could end disease, lead to "radical abundance," Google DeepMind CEO Demis Hassabis says](https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/). _CBS News / 60 Minutes_. Retrieved 2026-06-23.
 - Perrigo, Billy (2025). [Demis Hassabis interview: TIME100 2025](https://time.com/7277608/demis-hassabis-interview-time100-2025/). _TIME_. Retrieved 2026-06-23.
 - Roose, Kevin (2023, December 10). [This AI subculture's motto: Go, go, go](https://removepaywalls.com/https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html). _The New York Times_. Retrieved 2026-06-23.
@@ -1131,3 +1167,4 @@ TODO: Read https://moores.samaltman.com/
 [^zitron-altman-shit]: https://www.wheresyoured.at/sam-altman-is-full-of-shit/
 [^zitron-managing-up]: https://www.wheresyoured.at/managing-up
 [^zitron-case-against-ai]: https://www.wheresyoured.at/the-case-against-generative-ai/
+[^nvidia-blog-world-gov-summit]: https://blogs.nvidia.com/blog/world-governments-summit/
