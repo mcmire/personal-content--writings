@@ -782,6 +782,38 @@
 
 > My view is that ASI will be … realized in about ten years. … [^softbank-asi]
 
+## Voege, Colton
+
+### On AI 10x'ing productivity
+
+> Let's start by looking at the simple math of 10-100x productivity. 10x productivity means ten times the outcomes, not ten times the lines of code. This means what you used to ship in a quarter you now ship in a week and a half. These numbers should make even the truest AI believer pause. The amount of product ideation, story point negotiation, bugfixing, code review, waiting for deployments, testing, and QA in that go into what was traditionally 3 months of work is now getting done in 7 work days? For that to happen each and every one of these bottlenecks has to also seen have 10x productivity gains.
+> 
+> Any software engineer who has worked on actual code in an actual company knows this isn't possible. …
+> 
+> What LLMs produce is often broken, hallucinated, or below codebase standards. The frequency of these errors go up with the size of the codebase. When that happens you have to re-prompt, which could instantly fix the problem or could be a huge waste of time. Or you can go in and fix the code yourself. But then you're back to measly 1x engineer status, perhaps worse if you've gotten so used to vibe coding you [forgot how to code](https://nmn.gl/blog/ai-and-learning). If you're "embracing the vibes" and not even looking at the code produced, you're simply going to hit a productivity wall once the codebase gets large enough. And once you do you'll have to reckon with the complete lack of standards and proper abstractions. ...
+> 
+> When I have had engineers who were 10x as valuable as others it was primarily due to their ability to *prevent unnecessary work*. Talking a PM down from a task that was never feasible. Getting another engineer to not build that unnecessary microservice. Making developer experience investments that save everyone just a bit of time on every task. ...
+> 
+> Notably, AI coding assistants do very little to prevent unnecessary work. On the contrary, AI often seems to encourage hastiness and over-building. When I ask architectural questions, it often recommends something that I realize is not necessary after a good night's sleep or a talk with a great engineer. ...
+> 
+> In my experience, AI delivers rare, short bursts of 10-100x productivity. When I have AI write me a custom ESLint rule in a few minutes, which would have taken hours of documentation surfing and tutorials otherwise, that's a genuine order of magnitude time and effort improvement. Moments like this do happen with AI.  ...
+> 
+> The problem is that productivity does not scale. ...
+> 
+> Eventually every vibe coder reaches the point where the returns start heavily diminishing. Their [site gets hacked](https://pivot-to-ai.com/2025/03/18/guys-im-under-attack-ai-vibe-coding-in-the-wild/) and they need to actually sink the time to learn how security works. The app gets too big for context windows and things start looking and functioning inconsistently. Real frontend engineers who know what they are doing are hired to implement a consistent design system and UX. ...
+> 
+> I think a lot of the more genuine 10x AI hype is coming from people who are simply in the honeymoon phase or haven't sat down to actually consider what 10x improvement means mathematically. I wouldn't be surprised to learn AI helps many engineers do certain tasks 20-50% faster, but the nature of software bottlenecks mean this doesn't translate to a 20% productivity increase and certainly not a 10x increase.
+> 
+> [^voege-10x-engineer]
+
+### On chasing enjoyment over productivity
+
+> Even after I got over the idea that there was a secret clade of engineer who was now ten times as productive and strong and tall and sexy as I was, I still felt some anxiety over the fact that I still didn't enjoy using AI very much. Vibe coding is a complete bore once the magic wears off. Reading LLM generated code sucks. Asking it politely to use a not hallucinated library is painful. But what if I was, despite all that, 20% more productive vibe coding than regular coding? Would it be wrong for me to do "normal" coding if a higher output path is available?
+> 
+> No. It's okay to sacrifice some productivity to make work enjoyable. More than okay, it's essential in our field. If you force yourself to work in a way you hate, you're just going to burn out. Only so much of coding is writing code, the rest is solving problems, doing system design, reasoning about abstractions, and interfacing with other humans. You are better at all those things when you feel good. It's okay to feel pride in your work and appreciate the craft. Over the long term your codebase will benefit from it.
+> 
+> [^voege-10x-engineer]
+
 ## Zitron, Ed
 
 ### On growth at all costs
@@ -898,6 +930,20 @@
 
 > Generative AI exists for two reasons: to cost money, and to make executives look busy. … [^zitron-case-against-ai]
 
+> Every single “vibe coding is the future,” “the power of AI,” and “AI job loss” story written perpetuates a myth that will only lead to more regular people getting hurt when the bubble bursts. Every article written about OpenAI or NVIDIA or Oracle that doesn’t explicitly state that the money doesn’t exist, that the revenues are impossible, that one of the companies involved *burns billions of dollars and has no path to profitability,* is an act of irresponsible make believe and mythos.
+> 
+> [^zitron-case-against-ai]
+
+> We do not know how thinking works in humans and thus cannot extrapolate it to a machine, and at the very least human beings have the ability to re-evaluate things and learn, a thing that LLMs cannot do and will never do. 
+> 
+> We do not know how to get to AGI. Sam Altman [said in June](http://blog.samaltman.com/reflections?ref=wheresyoured.at) that OpenAI was “now confident \[they knew\] how to build AGI as we have traditionally understood it.” In August, [Altman said that](https://www.cnbc.com/2025/08/11/sam-altman-says-agi-is-a-pointless-term-experts-agree.html?ref=wheresyoured.at) AGI was “not a super useful term,” and that “the point of all this is it doesn’t really matter and it’s just this continuing exponential of model capability that we’ll rely on for more and more things.” …
+> 
+> [Even Meta’s Chief AI Scientist says it isn’t possible with transformer-based models](https://www.businessinsider.com/meta-yann-lecun-scaling-ai-wont-make-it-smarter-2025-4?ref=wheresyoured.at).
+> 
+> We don’t know if AGI is possible, anyone claiming they do is lying.
+> 
+> [^zitron-booster]
+
 ### On the myths of AI's present capabilities
 
 > I can find no companies that have integrated generative AI in a way that has truly improved their bottom line other than Klarna, which claims its AI-powered support bot is "[estimated to drive a $40 million US in profit improvement in 2024](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/?ref=wheresyoured.at)," which does not, as many have incorrectly stated, mean that it has "[made Klarna $40m in profit](https://www.inc.com/ben-sherry/klarna-says-its-new-ai-assistant-is-outperforming-customer-service-representatives.html?ref=wheresyoured.at)." Despite fears to the contrary, AI does not appear to be replacing a large number of workers, [and when it has](https://www.theverge.com/2020/5/30/21275524/microsoft-news-msn-layoffs-artificial-intelligence-ai-replacements?ref=wheresyoured.at), [the results have been pretty terrible](https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html?ref=wheresyoured.at). [A study from Boston Consulting Group](https://www.bcg.com/publications/2023/how-people-create-and-destroy-value-with-gen-ai?ref=wheresyoured.at) found that consultants that "solved business problems with OpenAI's GPT-4" performed _23% worse than those who didn't use it_, even when the consultant was warned about the limitations of generative AI and the risk of hallucinations. …
@@ -913,6 +959,38 @@
 > However successful a model might be in generating something good *once*, it will also often generate something bad, or it’ll generate the right thing but in an inefficient and over-verbose fashion. You do not know what you’re going to get each time, and hallucinations multiply with the complexity of the thing you’re asking for, or whether a task contains multiple steps (which is a fatal blow to the idea of “agents”) _\[sic]_ …
 > 
 > [^zitron-case-against-ai]
+
+> What, exactly, is the "essential" experience of generative AI? What *essential* experience are we going to miss if ChatGPT disappears tomorrow? …
+> 
+> Uber's "essential" nature is that millions of people use it in place of regular taxis, and it effectively replaced [decrepit, exploitative systems like the yellow cab medallions in New York](https://www.nytimes.com/2019/12/23/nyregion/nyc-taxi-suicides.html?ref=wheresyoured.at) with its own [tech-enabled exploitation system](https://www.hrw.org/report/2025/05/12/the-gig-trap/algorithmic-wage-and-labor-exploitation-in-platform-work-in-the-us?ref=wheresyoured.at) that, nevertheless, worked *far better for the user.* …
+> 
+> There is no such use case with ChatGPT, or any other generative AI system. You cannot point to one use case that is anywhere near as necessary as *cabs in cities,* and indeed the biggest use cases — things like brainstorming and search — are either easily replaced by any other commoditized LLM or *literally already exist with Google Search*.
+> 
+> [^zitron-booster]
+
+> One of the most braindead takes about AI and coding is that "vibe coding" is "allowing anyone to build software." While *technically* true, in that one can just type "build me a website" into one of many AI coding environments, this does not mean it is **functional or useful software.**
+> 
+> Let's make this **really clear: AI cannot "just handle coding**." [Read this excellent piece by Colton Voege](https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/?ref=wheresyoured.at), then [read this piece by Nik Suresh](https://ludic.mataroa.blog/blog/contra-ptaceks-terrible-article-on-ai/?ref=wheresyoured.at) ...
+> 
+> Also, *show me a vibe coded company.* Not a company where someone who can code has quickly spun up some features, ***a fully-functional, secure, and useful app made entirely by someone who cannot code.***
+> 
+> You won't be able to find this as it isn't possible. Vibe Coding is a marketing term based on lies, peddled by people who have either a lack of knowledge or morals. ...
+> 
+> The reason that nobody is vibe coding an entire company is because software development is not just "put a bunch of code in a pile and hit "go," and oftentimes when you *add something* it *breaks something else.* ...
+> 
+> Vibe coders are also **awful** for the already negative margins of most AI coding environments, as every single thing they ask the model to do is imprecise, burning tokens in pursuit of a goal they themselves don't understand. "Vibe coding" does not work, it will not work, and pretending otherwise is at best ignorance and at worst supporting a campaign built on *lies.*
+> 
+> [^zitron-booster]
+
+### On the myths of AI's present cost
+
+> You cannot, at this point, fairly evaluate whether a model is "cheaper" just based on its cost-per-tokens, because reasoning models are **inherently built to use more tokens to create an output.**
+> 
+> Reasoning models are also the only way that model developers have been able to improve the efficacy of new models, using something called "test-time compute" to burn extra tokens to complete a task.
+> 
+> And in basically anything you're using today, there's gonna be some sort of reasoning model, *especially* if you're coding.
+>
+> [^zitron-booster]
 
 #### On AI writing code
 
@@ -1004,6 +1082,40 @@
 > 
 > [^zitron-case-against-ai]
 
+> What we’re witnessing is one of the most egregious wastes of capital in history, sold by career charlatans with their reputations laundered by a tech and business media afraid to criticize the powerful and analysts that don’t seem to want to tell their investors the truth. There are no historic comparisons here — [even Britain’s abominable 1800s railway bubble, which absorbed half of the country’s national income](https://www.almosthistorypodcast.com/2843/?ref=wheresyoured.at), created valuable infrastructure for trains, a vehicle that can move people to and from places.
+> 
+> GPUs are not trains, nor are they cars, or even CPUs. They are not adaptable to many other kinds of work, nor are they “the infrastructure of the future of tech,” because they’re already *quite old* and *with everybody focused on buying them, you’d absolutely see one other use case by now that actually mattered.* …
+> 
+> And, whereas the Victorian train infrastructure still exists in the UK — though it has been upgraded over the years — a GPU has a limited useful lifespan. …
+> 
+> I am telling you, as I have been telling you for years, [again](https://www.wheresyoured.at/the-haters-gui/) and [again](https://www.wheresyoured.at/ai-is-a-money-trap/) and [again](https://www.wheresyoured.at/why-everybody-is-losing-money-on-ai/), that the demand is not there for generative AI, and the demand is *never, ever arriving.* The only reason anyone humours *any* of this crap is the endless hoarding of GPUs to build capacity for a revolution that will never arrive.
+> 
+> Well, that and OpenAI, [a company built and sold on lies about ChatGPT’s capabilities](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/#chatgpt-and-openai-was-marketed-based-on-lies). ChatGPT’s popularity — and OpenAI’s hunger for endless amounts of compute — have created the illusion of demand due to the sheer amount of capacity required to keep their services operational …
+> 
+> This NVIDIA deal is a farce — an obvious attempt by the largest company on the American stock market to prop up the *one* significant revenue-generator in the entire industry, knowing that time is running out for it to create new avenues for eternal growth. …
+> 
+> I realize how ridiculous all of this sounds. I get it. There’s so much money being promised to so many people, [market rallies built off the back of massive deals](https://www.bloomberg.com/news/articles/2025-09-22/oracle-moved-up-leadership-succession-plans-after-stock-rally?ref=wheresyoured.at), and I get that the assumption is that this much money can’t be wrong, that this many people wouldn’t just say stuff without intending to follow through, or without considering whether their company could afford it. 
+> 
+> I know it’s hard to conceive that hundreds of billions of dollars could be invested in something for no apparent reason, but it’s happening, right god damn now, in front of your eyes …
+> 
+> Generative AI has never been reliable, has always been unprofitable, and has always been unsustainable, and I’ve been saying so [since February 2024](https://www.wheresyoured.at/sam-altman-fried/#:~:text=This%20industry%20is%20money,good%20for%20the%20environment.). The economics have never made sense, something [I’ve said repeatedly since April 2024](https://www.wheresyoured.at/bubble-trouble/#:~:text=As%20Microsoft%20doesn%27t%20disclose%20Azure%27s%20actual%20revenue%2C%20it%27s%20unclear%20how%20much), and [when I wrote “How Does OpenAI Survive?” in July 2024](https://www.wheresyoured.at/to-serve-altman/) …
+>
+> [^zitron-case-against-ai]
+
+> \[T]he classic argument is that Uber "burned lots of money and worked out okay," when in fact **the combined capital expenditures from 2024 onwards that are necessary to make Anthropic and OpenAI work are each — on their own — four times the amount Uber burned in over a decade.**
+> 
+> [^zitron-booster]
+
+> Generative AI isn’t that useful. If Generative AI was genuinely this game-changing technology that makes it possible to simplify your life and your work, you’d surely fork over the $20 monthly fee for unlimited access to OpenAI’s more powerful models.
+> 
+> [^zitron-no-revolution]
+
+> Without ChatGPT, it appears that the entire generative AI app market is a little more than half the size of Pokémon Go at its peak, [when it had 147 million monthly active users](https://www.forbes.com/sites/insertcoin/2018/06/27/pokemon-go-is-more-popular-than-its-been-at-any-point-since-launch-in-2016/?ref=wheresyoured.at#7449e47dcfd2). …
+> 
+> I do not think this is a real industry, and I believe that if we pulled the plug on the venture capital aspect tomorrow it would evaporate.
+> 
+> [^zitron-no-revolution]
+
 ### On the failure of the media to check AI companies
 
 > \[S]ome members of the business and tech media … have, for the most part, gotten by without having to think too hard about the actual things the companies are saying. 
@@ -1015,6 +1127,24 @@
 > It hasn’t, because nobody is paying attention. In fact, nobody seems to be doing their job.
 > 
 > [^zitron-case-against-ai]
+
+> On March 15 2023, Kevin Roose of the New York Times would say that OpenAI's GPT-4 was " [exciting and scary](https://www.nytimes.com/2023/03/15/technology/gpt-4-artificial-intelligence-openai.html?ref=wheresyoured.at)," exacerbating (his words!) "...the dizzy and vertiginous feeling I’ve been getting whenever I think about A.I. lately," wondering if he was experiencing "future shock," then described how it was an indeterminate level of "better" and something that immediately sounded ridiculous:
+> 
+> In one test, conducted by an A.I. safety research group that hooked GPT-4 up to a number of other systems, GPT-4 was able to hire a human TaskRabbit worker to do a simple online task for it — solving a Captcha test — without alerting the person to the fact that it was a robot. The A.I. even lied to the worker about why it needed the Captcha done, concocting a story about a vision impairment.
+> 
+> That doesn't sound remotely real! [I went and looked up the paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf?ref=wheresyoured.at) …
+> 
+> This safety card led to the perpetration of one of the earliest falsehoods — and most eagerly-parotted lies — that ChatGPT and generative AI is capable of "agentic" actions. Outlet after outlet — led by Kevin Roose — eagerly interpreted an entire series of events that took place that doesn't remotely make sense …
+> 
+> I went further and [followed their citation to a link on METR's research page](https://metr.org/blog/2023-03-18-update-on-recent-evals/?ref=wheresyoured.at).
+> 
+> It turns out that what **actually** happened was METR had a researcher *copy paste the generated responses from the model and otherwise handle the entire interaction with Taskrabbit*, and based on the plurality of "Taskrabbit contractors," it appears to have taken multiple tries. On top of that, it appears that **OpenAI/METR were prompting the model on what to say**, which kind of defeats the point.
+> 
+> Roose, along with his co-host Casey Newton, would go on to describe this example at length [on a podcast that week](https://www.nytimes.com/2023/03/17/podcasts/hard-fork-gpt-4.html?ref=wheresyoured.at) … During this conversation, Newton gasps and says “oh my god” twice, and when he asks Roose “how does the model understand that in order to succeed at this task, it has to deceive the human?” Roose responds “we don’t know, that is the unsatisfying answer,” and Newton laughs and states “we need to pull the plug. I mean, again, what?”
+> 
+> Credulousness aside, the GPT-4 marketing campaign was incredibly effective, creating an aura that allowed OpenAI to take advantage of the vagueness of its offering as people — including members of the media — willfully filled in the blanks for them.
+> 
+> [^zitron-booster]
 
 ### On the failure of AI to be adopted
 
@@ -1029,6 +1159,15 @@
 > And I must be clear, _I am 100% sure these users aren’t all paying $30 a month._
 > 
 > [^zitron-case-against-ai]
+
+
+### On the lack of versatility of AI GPUs
+
+> **AI GPUs do not have a variety of use cases, and are limited by CUDA, NVIDIA's programming libraries and APIs.** AI GPUs are integrated into applications using CUDA, NVIDIA's programming language. While there *are* other use cases — scientific simulations, image and video processing, data science and analytics, medical imaging, and so on — CUDA is not a one-size-fits-all digital panacea. Where fiber optic cable is incredibly versatile, *GPUs are not*. *Also, these are different kinds of GPUs than those used for gaming.* …
+> 
+> GPUs are built to shove massive amounts of compute into one specific function again and again, like generating the output of a model (which, remember, mostly boils down to complex maths). Unlike CPUs, a GPU can't easily change tasks, or handle many little distinct operations, meaning that these things aren't going to be adopted for another mass-scale use case.
+> 
+> [^zitron-booster]
 
 ## Zuckerberg, Mark (CEO, Meta)
 
@@ -1100,12 +1239,15 @@
 
 ### Reading
 
-- https://www.wheresyoured.at/the-case-against-generative-ai/
+- https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/
 
 ### To read
 
 - https://moores.samaltman.com/ (or other articles on this site)
 - https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
+- https://www.wheresyoured.at/to-serve-altman/
+- https://www.wheresyoured.at/pop-culture/
+- https://slack.org/freedom-of-intelligence
 
 ## References
 
@@ -1139,12 +1281,15 @@
 - *TIME* (2025). [The 100 most influential people in AI 2025](https://time.com/collections/time100-ai-2025/). _TIME_. Retrieved 2026-06-23.
 - Todd, Benjamin (2025, March). [Will we have AGI by 2030?](https://80000hours.org/ai/guide/when-will-agi-arrive/) _80,000 Hours_. Retrieved 2026-06-23.
 - VandeHei, Jim; Allen, Mike (2025, May 28). [AI's ability to displace jobs is advancing quickly, Anthropic CEO says](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic). _Axios_. Retrieved 2026-06-23.
-- Zitron, Ed (2023, Feb 9). [The rot economy.](https://www.wheresyoured.at/the-rot-economy/) _Where's Your Ed At._ Retrieved 2026-07-02.
+- Voege, Colton (2025, Aug 5). [No, AI is not making engineers 10x as productive](https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/?ref=wheresyoured.at). _Colton Voege._ Retrieved 2026-07-05.
+- Zitron, Ed (2023a, Feb 9). [The rot economy.](https://www.wheresyoured.at/the-rot-economy/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2023b, Nov 20). [Sam Altman, freed.](https://www.wheresyoured.at/sam-altman-freed/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024a, Mar 18). [Have we reached peak AI?](https://www.wheresyoured.at/peakai/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024b, Apr 29). [Managing up.](https://www.wheresyoured.at/managing-up) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024c, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
-- Zitron, Ed  (2025, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
+- Zitron, Ed (2025a, Aug 25). [How to argue with an AI booster.](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/) _Where's Your Ed At._ Retrieved 2026-07-04.
+- Zitron, Ed  (2025b, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
+- Zitron, Ed (2025, Feb 24). [There is no AI revolution.](https://www.wheresyoured.at/wheres-the-money/) _Where's Your Ed At._ Retrieved 2026-07-05.
 - Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
 
 ## Footnotes
@@ -1186,3 +1331,6 @@
 [^zitron-managing-up]: https://www.wheresyoured.at/managing-up
 [^zitron-case-against-ai]: https://www.wheresyoured.at/the-case-against-generative-ai/
 [^nvidia-blog-world-gov-summit]: https://blogs.nvidia.com/blog/world-governments-summit/
+[^zitron-booster]: https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/
+[^voege-10x-engineer]: https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/
+[^zitron-no-revolution]: https://www.wheresyoured.at/wheres-the-money/
