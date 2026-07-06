@@ -55,7 +55,9 @@
 - Even if powerful AI will revolutionize the world, is the breakneck pace of AI likely to keep up or slow down?
 	- Not for a few more years: https://time.com/6300942/ai-progress-charts/ (2023)
 	- Theoretically the industry can produce a model that's the same difference between GPT-2 and GPT-4 in terms of energy and compute: https://epoch.ai/publications/can-ai-scaling-continue-through-2030
-- Say AI is useful in theory. How has it helped people so far? How do we know that it will be useful? Should it really be embedded in everything? And is a _general_ AI really what the world needs? 
+- How has AI helped people so far? How do we know that it is useful?
+- Should AI really be embedded in everything?
+- Is a _general_ AI really what the world needs? 
 - What are the leading AI labs in China? Are they good? How much are they used? What about other countries? 
 - Are LLMs really the endgame? Is scaling compute the right solution for achieving AGI?
 	- See here for an alternate opinion: https://www.theneuron.ai/explainer-articles/the-great-ai-debate-are-llms-a-brilliant-leap-or-a-sophisticated-dead-end/
