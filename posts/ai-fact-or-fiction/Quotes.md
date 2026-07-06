@@ -874,6 +874,70 @@
 > 
 > [^zitron-managing-up]
 
+> If we're honest, what really distances a man like Rabbit CEO Jesse Lyu and OpenAI CEO Sam Altman? They both went through yCombinator, and both of them have sold products that don't do what they said it would based on what it might do in the future. The sole difference, as far as I can see, is that Altman was just a little bit better at playing the game.
+> 
+> No, really. While Jesse Lyu absolutely misled customers about the capabilities of the Rabbit R1 (and the company’s previous operations), Sam Altman shamelessly overhypes what generative AI can do almost every day. Senior members of Altman’s first startup Loopt tried to get him fired _twice_ for “[what they described as deceptive and chaotic behavior](https://www.wheresyoured.at/sam-altman-freed/),” he was fired from Y Combinator for “[an absenteeism that rankled his peers and some of the startups he was supposed to nurture](https://www.washingtonpost.com/technology/2023/11/22/sam-altman-fired-y-combinator-paul-graham/?ref=wheresyoured.at),” and [former OpenAI board member Helen Toner told the TED AI show](https://www.theverge.com/2024/5/28/24166713/openai-helen-toner-explains-why-sam-altman-was-fired?ref=wheresyoured.at) that Altman was so deceitful that the board found out about ChatGPT’s launch…when they saw it posted on Twitter. Toner also added that Altman was caught “outright lying” on multiple occasions, and that two executives provided evidence of “psychological abuse” and lying and manipulative behavior on multiple occasions. 
+> 
+> If anything, Sam Altman is something much worse, all while lacking much of a technical background. He’s the archetypal Rot-Com CEO — an unqualified lobbyist pretending to be a technologist and abusing anyone he needs to in the pursuit of growth.
+> 
+> [^zitron-rot-com-bubble]
+
+### On Silicon Valley and chasing the "next big thing"
+
+> This is Silicon Valley — a monoculture that sells itself as outliers, putting everything it has into supporting a generative AI industry that sends the vast majority of its value directly to the largest tech companies in the world. The staunch rationalists of the Bay that have built brands convincing people they’re immune to the influence of groupthink need you to think exactly the same way that they were told to. 
+> 
+> Why would everybody agree to do something so stupid? Why would everybody act so crazily? 
+> 
+> It’s simple: the tech industry has completely run out of ideas, and all that’s left is a cargo cult that hasn’t had a human experience since 2015. …
+> 
+> Despite decades of progress in hardware making computers faster, cameras better, and storage larger, the actual experience of using the computer has gotten materially worse. We’ve hit a wall as far as where mobile and desktop user interfaces can take us, and every attempt at making voice-activated platforms like Alexa replace (or even compete with) them has proven fruitless, with [Amazon’s various Echo devices and services losing billions of dollars a year](https://www.wsj.com/tech/amazon-alexa-devices-echo-losses-strategy-25f2581a?ref=wheresyoured.at). 
+> 
+> This is what I call [the Rot-Com Bubble](https://www.wheresyoured.at/rotcombubble/). Big tech has hit the wall of what modern software can do, and in turn run out of hyper-growth ideas. Nobody has the next Google Search, iPhone, cloud computing, mobile app store ,or other idea that would allow Google, Microsoft, Apple, and Amazon to keep growing at a rate that justifies their valuations. While this is partly a natural process — there are only so many ways to do things! — it’s also a direct result of incentivizing and promoting products that create revenue growth or sustain monopolies, which in turn focuses your R&D and hiring efforts toward those who can come up with ways to make Numbers Go Up.
+> 
+> [^zitron-cargo-culture]
+
+> The noxious growth-at-all-costs mindset of [the Rot Economy](https://www.wheresyoured.at/the-rot-economy/) sits at the core of every issue that I've ever written about. It’s the force that drives businesses to grow bigger rather than better, making more products to conquer more markets rather than making products or services that people need or improving products they already like. …
+> 
+> \[I]f I had to choose, I'd say things really began to deteriorate sometime in 2019. Tech had lost something - while there were new gadgets, apps, and services, tech started to feel iterative rather than innovative, and by 2021, even the pretense of gradual improvement was dropped. It felt like they were trying to sell us things that didn't actually exist. 
+> 
+> We were told that NFTs would replace physical, tangible collectibles. That cryptocurrency would replace regular money, while also emancipating consumers from unstoppable market forces like inflation, as well as the rent-seeking middlemen that take a cut of every purchase made with a credit or debit card. And yet, the actual services championing these arguments didn't really seem to do anything or improve our lives in any meaningful way.  We were told that our futures were in the metaverse, and that we'd live in this interconnected "new internet," yet what we actually got was [an extremely wonky virtual reality space](https://nymag.com/intelligencer/article/mark-zuckerberg-metaverse-meta-horizon-worlds.html?ref=wheresyoured.at) that [Mark Zuckerberg somehow burned $36 billion to make](https://www.businessinsider.com/meta-lost-30-billion-on-metaverse-rivals-spent-far-less-2022-10?ref=wheresyoured.at).
+> 
+> Today, we're being told that our glorious AI-powered future is imminent, yet what we've actually got is [unprofitable, unsustainable generative AI](https://www.wheresyoured.at/peakai/) that has [an unassailable problem of spitting out incorrect information](https://www.theverge.com/2024/5/15/24154808/ai-chatgpt-google-gemini-microsoft-copilot-hallucination-wrong?ref=wheresyoured.at), which Google CEO Sundar Pichai says is "[an inherent feature](https://www.theverge.com/24158374/google-ceo-sundar-pichai-ai-search-gemini-future-of-the-internet-web-openai-decoder-interview?ref=wheresyoured.at#:~:text=You%E2%80%99re%20getting%20at%20a%20deeper%20point%20where%20hallucination%20is%20still%20an%20unsolved%20problem)" of a technology he's now plugged into Google Search, [generating hilariously incorrect "answers" to queries based on the links of a decaying search engine](https://www.theverge.com/2024/5/23/24162896/google-ai-overview-hallucinations-glue-in-pizza?ref=wheresyoured.at). And at the forefront of the AI boom is [Sam Altman's $80 billion juggernaut OpenAI](https://www.nytimes.com/2024/02/16/technology/openai-artificial-intelligence-deal-valuation.html?ref=wheresyoured.at), a company that allegedly will build "artificial general intelligence" that experiences human-like cognition, [an idea that is simply not possible based on how generative AI works](https://time.com/collection/time100-voices/6980134/ai-llm-not-sentient/?ref=wheresyoured.at). …
+> 
+> Every major tech company is "integrating AI" into their products and services, yet underneath the hood, the "AI" they're integrating doesn't actually seem to do anything new, or generate a profit, or solve any particular need. Even the companies themselves seem incapable of explaining _why_ it's such a big deal, to the point that Microsoft's Super Bowl commercial for its OpenAI-powered CoPilot assistant featured multiple things that it can't actually do, like [generate the code for a 3D open world game](https://youtu.be/SaCVSUbYpVc?si=L7NvYLViqnruLcX2&t=38&ref=wheresyoured.at).
+> 
+> [^zitron-rot-com-bubble]
+
+> For decades, the tech industry has been remarkably good at coming up with both innovative new products and ways to turn them into huge new markets for hyper-growth. Search engines, digital maps, smartphones and apps, social media, cloud computing, Software-as-a-Service, electric cars, streaming audio and video, and nearly tripling the amount of people that use the internet. There were obvious, meaningful markets to move into — ways to connect people, ways to get people content they wanted, ways to sell people things that solved problems they had either for the first time or faster, like the transition from physical to digital media — and problems that were both important to solve _and actually solvable._ …
+>
+> \[But] data I’ve received from Similarweb shows that the majority of the internet’s top 100 web properties have seen significant declines in traffic since 2021. In the years since the world slowly emerged from lockdown, Google.com has seen a decline of 5.3% in web visits, as has YouTube (-3.8%), Facebook (a remarkable -27.7%), Twitter (-3.5%), Amazon.com (-11.6%), Twitch.tv (-17.5%), Wikipedia (-24.8%)  and even porn sites like xVideos (-27.4%) and Pornhub (-17.1%). …
+> 
+> I believe we're at the end of the Rot-Com boom — the tech industry's hyper-growth cycle where there were so many lands to conquer, so many new ways to pile money into so many new, innovative ideas that it felt like every tech company could experience perpetual growth simply by throwing money at the problem.
+> 
+> It explains why so many tech products — YouTube, Google Search, Facebook, and so on — feel like they’ve got tangibly worse. There’s no incentive to improve the things you’ve already built when you’re perpetually working on the next big thing.
+> 
+> This belief — that exponential growth is not just a reasonable expectation, but a requirement — is central to the core rot in the tech industry, and as these rapacious demands run into reality, the Rot-Com bubble has begun to deflate. As we speak, the tech industry is grappling with a mid-life crisis where it desperately searches for the next hyper-growth market, eagerly pushing customers and businesses to adopt technology that nobody asked for in the hopes that they can keep the Rot Economy alive. …
+> 
+> The tech industry is getting withdrawal symptoms, realizing that there might not be any massive new markets to turn into further billion-dollar arms of their trillion-dollar enterprises, and on some level I believe that the industry-wide alignment around an unprofitable, unsustainable tool is proof that things are getting desperate.
+> 
+> Why else would Sam Altman spend most of the time [talking about what his stuff _might_ do](https://www.windowscentral.com/software-apps/openais-gpt-4-successor-might-not-be-gpt-5?ref=wheresyoured.at)? Why else would Sam Altman talk so often about [building artificial general intelligence](https://fortune.com/2024/05/03/openai-sam-altman-microsoft-agi-artificial-general-intelligence-costs/?ref=wheresyoured.at) — a thing that is totally and utterly impossible to build with any of the generative artificial intelligence his company makes, and likely requires number-crunching technology that doesn’t even exist yet?
+> 
+> Companies that build useful things that people need don't need to talk about what they'll build in the future — you can see it in the things they're selling you today. 
+> 
+> Using the first iPhone, one could theorize that you might make video calls with it, or use distinct third-party apps like you did on a computer — and while Steve Jobs ([he was an awful person](https://www.youtube.com/watch?v=aEv08Zzunfc&ref=wheresyoured.at), but stay with me) did talk about what was coming next, he did so by saying that it would add "[3G and amazing things in the future](https://singjupost.com/wp-content/uploads/2014/07/Steve-Jobs-iPhone-2007-Presentation-Full-Transcript.pdf?ref=wheresyoured.at)" just before showing the actual, real features of the first iPhone, things that people actually wanted. …
+> 
+> Conversely, Sam Altman, Sundar Pichai and Satya Nadella seem intent on discussing what AI _will_ do — it will have a "[monumental impact](https://www.extremetech.com/computing/google-ceo-sundar-pichai-says-to-brace-for-monumental-ai-impact?ref=wheresyoured.at)," [be a smart person that knows everything about your life](https://futurism.com/the-byte/sam-altman-future-ai-knows-everything?ref=wheresyoured.at) — and yet when actually asked what it does today, they are rendered stuttering and speechless, with [Satya Nadella underwhelmingly claiming that Microsoft copilot helps him compose emails better](https://www.npr.org/2023/12/22/1221128925/microsoft-ceo-satya-nadella-discusses-the-promise-and-potential-perils-of-ai?ref=wheresyoured.at#:~:text=You%20know%2C%20already%20the%20Microsoft%20copilot%20is%20helping%20me%20compose%20emails%20better%2C%20is%20able%20to%20help%20me%20take%20a%20meeting%2C%20remember%20things%20I%20said%20and%20others%20said%20better.%20I%20do%20think%20that%20it%20is%20helping%20me%20be%20a%20better%20person%20working%20at%20Microsoft.). …
+> 
+> What makes generative AI so special is that it has the _hint_ of utility, the _scent_ of a product, and as a result can be sold to the markets as the next big boom that justifies hundreds of billions of dollars of investment and increased market capitalization. Every single company chasing the generative AI dragon is hoping that it's the next Amazon Web Services — [the ubiquitous cloud product that went from a side project to a bigger revenue-driver than Amazon's store](https://fortune.com/longform/amazon-web-services-ceo-adam-selipsky-cloud-computing/?ref=wheresyoured.at), and today underpins much of the Internet — because it sort of, kind of seems like it's "the next big thing in cloud," even if it doesn't actually seem to do anything useful, let alone incredible.
+> 
+> On top of that, nobody really seems to be able to explain _why_ or _how_ generative AI is the next big thing. 
+> 
+> ChatGPT, Gemini, Claude and other Large Language Models can do some things that are superficially cool. They can generate images, quickly query datasets (albeit with no guarantees of accuracy), and craft poetry, but there is no endearing reason to pick up one of them every day and use them. The use cases they enable are neither exciting nor ubiquitous, nor are they, if we're honest, anything like what tech executives are trying to sell us, and the problem might not be that it's _useless_, but that as a piece of technology, it just isn't a hyper-growth market or industry-changer, no matter how many hundreds of billions we put into it.
+> 
+> [Sam Altman isn't asking Microsoft for a $100 billion supercomputer](https://www.wheresyoured.at/bubble-trouble/#:~:text=I%27ve%20been%20hesitant%20to%20outright%20say%20that%20we%27re%20in%20an%20artificial%20intelligence%20bubble%2C%20or%20at%20least%20I%20was%20until%20I%20read%20that%20Microsoft%20and%20OpenAI%20are%20currently%20planning%20to%20build%20a%20%24100%20billion%20supercomputer%20dubbed%20%22Stargate) because generative AI is going to get better — he's doing it because what we have today isn't the world-changing boondoggle that the tech industry needs it to be, and his only prospect of fulfilling the lofty promises he’s made is with a tech industry equivalent of the Marshall Plan.
+> 
+> [^zitron-rot-com-bubble]
+
 ### On the "glorious future"
 
 > In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
@@ -885,6 +949,14 @@
 > “Moore’s Law For Everything” is a remarkably telling piece in that it frames Altman’s worldview as one where the only thing that can save mankind is making startups, and those startups should be funded in the way that Altman likes. And this piece feels a lot like everything in Altman’s universe — it never actually connects Moore’s Law to anything …
 > 
 > [^zitron-managing-up]
+
+> I am sure there are some that will say I'm wrong, that tech's hyper-growth era isn't over, and that generative AI will usher in a glorious new future of powerful assistants. But seriously, what does that look like? What happens next? Where does generative AI go from here? Do they fix the problems? Have they made these things cheaper, or more efficient, or found a way to eliminate hallucinations? How will OpenAI train GPT-5? [Has it found five times the amount of training data that was used to train GPT-4 yet](https://www.wheresyoured.at/bubble-trouble/#:~:text=Yet%20AI%20researcher%20Pablo%20Villalobos%20told%20the%20Journal%20that%20he%20believes%20that%20GPT%2D5%20\(OpenAI%27s%20next%20model\)%20will%20require%20at%20least%20five%20times%20the%20training%20data%20of%20GPT%2D4.)? Has Google, or Meta, or Microsoft found a way to make generative AI _profitable_ yet, and if not, how will they do so?
+> 
+> And crucially, when does generative AI suddenly prove itself useful? Where is the big moment that changes everything?
+> 
+> The answer is simple: it isn't coming. Generative AI is not going to change the world, and while artificial intelligence itself might, it isn't going to do so in the hands of Sam Altman and OpenAI, or Anthropic. When the bubble bursts, I imagine these firms will be absorbed by the [massive tech](https://www.semafor.com/article/11/18/2023/openai-has-received-just-a-fraction-of-microsofts-10-billion-investment?ref=wheresyoured.at) companies that have [put billions of dollars into them](https://www.aboutamazon.com/news/company-news/amazon-anthropic-ai-investment?ref=wheresyoured.at) in exactly the same way that [Microsoft absorbed Inflection](https://fortune.com/2024/03/19/microsoft-surprise-deal-inflection-ai-mustafa-suleyman-reid-hoffman-questions/?ref=wheresyoured.at), quietly hiding their shameful failures and repurposing the massive compute investments to bolster the already-existent cloud infrastructure.
+> 
+> [^zitron-rot-com-bubble]
 
 ### On the myths of AI's future capabilities
 
@@ -943,6 +1015,10 @@
 > We don’t know if AGI is possible, anyone claiming they do is lying.
 > 
 > [^zitron-booster]
+
+> ChatGPT, Gemini, Claude and other Large Language Models can do some things that are superficially cool. They can generate images, quickly query datasets (albeit with no guarantees of accuracy), and craft poetry, but there is no endearing reason to pick up one of them every day and use them. The use cases they enable are neither exciting nor ubiquitous, nor are they, if we're honest, anything like what tech executives are trying to sell us, and the problem might not be that it's _useless_, but that as a piece of technology, it just isn't a hyper-growth market or industry-changer, no matter how many hundreds of billions we put into it.
+> 
+> [^zitron-rot-com-bubble]
 
 ### On the myths of AI's present capabilities
 
@@ -1239,7 +1315,8 @@
 
 ### Reading
 
-- https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/
+- https://www.wheresyoured.at/wheres-the-money/ (at "For Perplexity, Who Cares?")
+- https://www.wheresyoured.at/longcon/ (at "What These Oafs Are Actually Doing")
 
 ### To read
 
@@ -1247,6 +1324,7 @@
 - https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
 - https://www.wheresyoured.at/to-serve-altman/
 - https://www.wheresyoured.at/pop-culture/
+- https://www.wheresyoured.at/core-incompetency/
 - https://slack.org/freedom-of-intelligence
 
 ## References
@@ -1287,9 +1365,11 @@
 - Zitron, Ed (2024a, Mar 18). [Have we reached peak AI?](https://www.wheresyoured.at/peakai/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024b, Apr 29). [Managing up.](https://www.wheresyoured.at/managing-up) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024c, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
-- Zitron, Ed (2025a, Aug 25). [How to argue with an AI booster.](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/) _Where's Your Ed At._ Retrieved 2026-07-04.
-- Zitron, Ed  (2025b, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
-- Zitron, Ed (2025, Feb 24). [There is no AI revolution.](https://www.wheresyoured.at/wheres-the-money/) _Where's Your Ed At._ Retrieved 2026-07-05.
+- Zitron, Ed (2024d, June 3). [The Rot-Com Bubble.](https://www.wheresyoured.at/rotcombubble/) _Where's Your Ed At._ Retrieved 2026-07-05.
+- Zitron, Ed (2025a, Feb 24). [There is no AI revolution.](https://www.wheresyoured.at/wheres-the-money/) _Where's Your Ed At._ Retrieved 2026-07-05.
+- Zitron, Ed (2025b, Aug 25). [How to argue with an AI booster.](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/) _Where's Your Ed At._ Retrieved 2026-07-04.
+- Zitron, Ed (2025c, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
+- Zitron, Ed (2026, June 23). [Cargo culture.](https://www.wheresyoured.at/cargo-culture/) _Where's Your Ed At._ Retrieved 2026-07-05.
 - Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
 
 ## Footnotes
@@ -1334,3 +1414,5 @@
 [^zitron-booster]: https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/
 [^voege-10x-engineer]: https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/
 [^zitron-no-revolution]: https://www.wheresyoured.at/wheres-the-money/
+[^zitron-cargo-culture]: https://www.wheresyoured.at/cargo-culture/
+[^zitron-rot-com-bubble]: https://www.wheresyoured.at/rotcombubble/
