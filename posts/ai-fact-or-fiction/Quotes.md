@@ -942,6 +942,22 @@
 > 
 > [^zitron-rot-com-bubble]
 
+> \[T]he AI bubble has been part of the greater cargo cult of the Valley. … Why does anybody think LLMs are going to change anything? Because everybody vaguely came to the consensus that _ChatGPT was trending in the direction that something would change._
+> 
+> And so the greater tech industry moved into full cargo cult mode. … Everybody has acted based on _reading the signs_ — ChatGPT’s meteoric growth meant that _it could be the next Google,_ and _because the economics had worked out in the past, they would work out here_, which is why everybody tells you that it’s just like Uber ([it isn’t](https://www.wheresyoured.at/ais-economics-dont-make-sense/#generative-ai-subscriptions-are-nothing-like-uber)) or AWS ([which cost $52 billion between 2003 and 2017](https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/#:~:text=up%20the%20past.-,Billions,-of%20dollars%20of), or less than a quarter of What OpenAI and Anthropic raised in the last 6 months). …
+> 
+> Most people trying to make these comparisons … don’t want you to think about it either, because part of the greater cargo cult is _making sure you don’t believe your lying eyes_ and focus on the greater signs that The Great Prophecy might come true, even if it’s not obvious what that means other than “ChatGPT is the biggest most hugest and most profitable company ever and everybody makes money on their investments.”
+> 
+> [^zitron-cargo-culture]
+
+### On the devolution of venture capitalists
+
+> While the Valley’s legend has grown from risk-taking and fostering new ideas, venture capital works in reverse, overwhelmingly funding market consensus and piling into deals _after_ somebody else has risked their capital to keep it alive. Decades of encouraging people to fund startups with the express intention of hypergrowth — with Ben Horowitz [suggesting in 2010](https://a16z.com/the-case-for-the-fat-startup/?ref=wheresyoured.at) that having “zero chance of becoming a high-growth company” was tantamount to “being in purgatory” — has created a startup culture focused entirely on its Total Addressable Market and growth trajectory, which means that _companies are founded with that express intention._ 
+> 
+> Venture capital funds companies that appeal to venture capital, which means Silicon Valley innovation is centered around finding ways to convince venture capital to give it money. While this might have worked a decade ago when there were still hypergrowth companies to build, it intellectually stunted the Valley, promoting and celebrating companies not based on the things they’ve built but the _shareholder value they’ve created_. A startup is considered a “success” not based on its tangible contribution to the future, but its ability to tick boxes either through funding, revenue growth, acquisitions, or valuation. Everything is about creating the signs that your company is part of the big thing that will supposedly lift every Silicon Valley valuation — after all, [61% of venture capital funding went to AI in 2025](https://www.oecd.org/en/about/news/announcements/2026/02/ai-firms-capture-61-percent-of-global-venture-capital-in-2025.html?ref=wheresyoured.at) — to the point that it isn’t really clear what anything means or what anybody is doing.
+> 
+> [^zitron-cargo-culture]
+
 ### On the "glorious future"
 
 > In a piece published in early 2021, Altman proposed the concept of  “[Moore’s Law For Everything](https://moores.samaltman.com/?ref=wheresyoured.at)” …
@@ -1023,6 +1039,16 @@
 > ChatGPT, Gemini, Claude and other Large Language Models can do some things that are superficially cool. They can generate images, quickly query datasets (albeit with no guarantees of accuracy), and craft poetry, but there is no endearing reason to pick up one of them every day and use them. The use cases they enable are neither exciting nor ubiquitous, nor are they, if we're honest, anything like what tech executives are trying to sell us, and the problem might not be that it's _useless_, but that as a piece of technology, it just isn't a hyper-growth market or industry-changer, no matter how many hundreds of billions we put into it.
 > 
 > [^zitron-rot-com-bubble]
+
+> OpenAI and Anthropic are the height of the Valley’s mysticism. …
+> 
+> \[N]either company feels anything less than insane outside of outright ignorance or a cargo cult mindset. … \[T]he best that anybody has to defend their endless billions of burn is to refer to [the 184-year-old railway bubble](https://en.wikipedia.org/wiki/Railway_Mania?ref=wheresyoured.at) or [the Dot Com Bubble](https://www.wheresyoured.at/dot-com-bubble/), using them as symbolic proof that _everybody can lose a lot of money, and that somehow results in something good, I guess?_
+> 
+> The logic centers around the idea of “useful infrastructure,” as if railways or telecommunications equipment have any similarity other than that people spent way too much money on them in bygone eras. AI boosters (and the well-meaning and ignorant) return to these bedtime stories as a means of escaping reality and accepting that it’s very possible for everybody to be wrong in a completely new and innovative way.
+> 
+> This is the same mystical thinking that gets us to the idea of OpenAI or the greater AI industry being “Too Big To Fail,” an ahistorical trope that ignores [the Term Securities Lending and Primary Dealer Credit Facilities](https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/#don%E2%80%99t-forget-about-the-credit-facilities-that-kept-the-system-alive) that plugged trillions ([no, really!](https://www.motherjones.com/politics/2009/12/real-size-bailout-treasury-fed/?ref=wheresyoured.at)) of dollars into the side of the banking industry _because failing to do so would’ve left America’s financial system insolvent._ OpenAI, Anthropic and every AI startup could disappear tomorrow and the world’s financial systems would continue unabated, other than the brutal hit to the stock market and screeching of venture capitalists.
+> 
+> [^zitron-cargo-culture]
 
 ### On the myths of AI's present capabilities
 
@@ -1195,6 +1221,10 @@
 > I do not think this is a real industry, and I believe that if we pulled the plug on the venture capital aspect tomorrow it would evaporate.
 > 
 > [^zitron-no-revolution]
+
+> Neither Anthropic nor OpenAI are actually startups. …  Both companies have had _everything_ paid for them either by hyperscalers or venture capitalists, and are fundamentally incapable of operating without infinite resources, and the best that anybody has to defend their endless billions of burn is to refer to [the 184-year-old railway bubble](https://en.wikipedia.org/wiki/Railway_Mania?ref=wheresyoured.at) or [the Dot Com Bubble](https://www.wheresyoured.at/dot-com-bubble/), using them as symbolic proof that _everybody can lose a lot of money, and that somehow results in something good, I guess?_
+> 
+> [^zitron-cargo-culture]
 
 ### On the failure of the media to check AI companies
 
