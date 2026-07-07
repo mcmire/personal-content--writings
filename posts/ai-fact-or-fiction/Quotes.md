@@ -948,11 +948,33 @@
 > 
 > [^zitron-rot-com-bubble]
 
+### On Silicon Valley and the cult of AI
+
 > \[T]he AI bubble has been part of the greater cargo cult of the Valley. … Why does anybody think LLMs are going to change anything? Because everybody vaguely came to the consensus that _ChatGPT was trending in the direction that something would change._
 > 
 > And so the greater tech industry moved into full cargo cult mode. … Everybody has acted based on _reading the signs_ — ChatGPT’s meteoric growth meant that _it could be the next Google,_ and _because the economics had worked out in the past, they would work out here_, which is why everybody tells you that it’s just like Uber ([it isn’t](https://www.wheresyoured.at/ais-economics-dont-make-sense/#generative-ai-subscriptions-are-nothing-like-uber)) or AWS ([which cost $52 billion between 2003 and 2017](https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/#:~:text=up%20the%20past.-,Billions,-of%20dollars%20of), or less than a quarter of What OpenAI and Anthropic raised in the last 6 months). …
 > 
 > Most people trying to make these comparisons … don’t want you to think about it either, because part of the greater cargo cult is _making sure you don’t believe your lying eyes_ and focus on the greater signs that The Great Prophecy might come true, even if it’s not obvious what that means other than “ChatGPT is the biggest most hugest and most profitable company ever and everybody makes money on their investments.”
+> 
+> [^zitron-cargo-culture]
+
+> This is the hyperreality (and cargo cult mentality) of Silicon Valley. Apple, Google, Microsoft, and Meta were companies that grew out of relatively boring stories — kids getting internships working at tech companies, computer science graduates coming up with software-driven ideas, and so on … Romanticizing the legend of Steve Jobs or Mark Zuckerberg or Bill Gates, rather than their luck and potential ability to hire people who actually build things for them, allows you to pretend that there are _lessons_ to be learned, and that in turn you too could have these otherworldly riches if you _just try hard enough._
+> 
+> The success of these large companies has predominantly come from having a few good ideas, great timing, good execution, and building largely-immovable monopolies rather than any incredible acts of genius. Jobs, Zuckerberg, Bezos and Gates all succeeded by _finding people who actually did stuff_, such as [the Sanberg-led growth team that turned Facebook into a monster](https://www.wheresyoured.at/killingfacebook/#:~:text=According%20to%20an%20excerpt%20from%20Steven%20Levy%E2%80%99s%20%E2%80%9CFacebook%3A%20The%20Inside%20Story%2C%E2%80%9D%20sometime%20in%202008%2C%20Facebook%E2%80%99s%20growth%20had%20stalled%20somewhere%20around%2090%20million%20users%2C%20with%20Zuckerberg%20telling%20Levy%20in%20an%20interview%20that%20the%20company%20had%20%E2%80%9Chit%20a%20wall.%E2%80%9D%C2%A0), and Tony Fadell and Scott Forstall’s hardware and software teams pulling together the original iPhone. Their successes were not the result of some series of things you can mimic or the tone of their voice or a specific series of actions, but being in the right place at the right time with the right idea and the right people, at a point when the underlying hardware or semiconductor infrastructure had reached a point when the idea was possible.
+> 
+> Put another way, there was a shit ton of hard work, innovation, and talent that went into these things that you can’t copy, even by working really hard or yourself having a bunch of talent. The ideas must be possible, economically viable, and you must have the people and infrastructure to execute them. Amazon Web Services may have lost money, but lost significantly less than OpenAI or Anthropic, and was significantly more useful than anything the AI industry has ever produced. In 2013 — the year that Amazon Web Services went profitable — [Amazon’s total debt was $5.18 billion](https://companiesmarketcap.com/amazon/total-debt/?ref=wheresyoured.at).
+> 
+> And really, there’s nothing more cargo cultish than defending OpenAI burning $21 billion in a single year by saying “this other company burned money too.” Even if the losses were comparable, Amazon was building _two very different businesses_ — a digital store and a cloud compute platform — to OpenAI, [which is training and selling access to large language models at a massive loss](https://x.com/SemiAnalysis_/status/2064815045767213400?ref=wheresyoured.at), does not own its infrastructure, and has absolutely no path to profitability outside of “we keep spending other people’s money.”
+> 
+> But that’s all the AI industry is — people doing impressions of things that have worked before in the hopes that they’ll work again. …
+> 
+> The tech industry must always be framed as an impossible-to-decipher monolith full of troubled geniuses that have good intentions, because when you stop thinking that way, you start seeing it for what it really is — a vehicle for symbolic capital that stymies innovation and promotes growth over everything, funding things based on their similarities to the past and how warm and fuzzy doing so makes them feel. And in its incredible success as a vehicle for capital, tech has managed to beguile society and turn journalists, economists and regulators into cargo cultists that can be easily won over by a smart-sounding guy or an emphatic-enough press release. 
+> 
+> AI is the natural endpoint of the Valley’s cargo culture — money-hungry models that can _vaguely resemble_ something that might grow into the future, with _opportunities to deploy capital_ that resemble previous infrastructure movements, all with convenient ways to explain away dissent that mostly boil down to “bad thing happen before but then good thing happen after.” Everybody believes that because AI startups can grow their revenue they’ll grow that revenue forever, that because startups in the past lost money that AI startups will stop doing so, and that because something has a _lot of users_ it can _never disappear._
+> 
+> [^zitron-cargo-culture]
+
+> Our economy is dominated by people who have only a symbolic understanding of the world — [Business Idiots](https://www.wheresyoured.at/the-revenge-of-the-business-idiot/) with little interaction with productivity or production who do not know how value is created and thus can only create facsimiles of valuable companies.
 > 
 > [^zitron-cargo-culture]
 
@@ -1232,6 +1254,16 @@
 > 
 > [^zitron-cargo-culture]
 
+> Some have been mighty confident about inference being profitable (due to a $7.5 billion cost of revenue on $13.07 billion in revenue), but overlooked my reporting from last year [verified by the Financial Times](https://www.ft.com/content/fce77ba4-6231-4920-9e99-693a6c38e7d5?syn-25a6b1a6=1&ref=wheresyoured.at) showed OpenAI [spent $8.67 billion on inference](https://www.wheresyoured.at/oai_docs/#:~:text=I%20also%20cannot%20reconcile%20these%20numbers%20with%20the%20reporting%20that%20OpenAI%20will%20have%20a%20cash%20burn%20of%20%249%20billion%20in%20CY2025.%20On%20inference%20alone%2C%20OpenAI%20has%20already%20spent%20%248.67%20billion%20through%20Q3%20CY2025.%C2%A0) in the first nine months of 2025. It’s very clear OpenAI moved around numbers to make things look better than they are, and I believe that inference costs are being dumped in sales and marketing. …
+> 
+> If you disagree, please explain in any level of detail how OpenAI has spent $5.67 billion on sales and marketing. Its first major advertising campaign was in September 2025. If it’s spending $250,000 a year on its 500 sales staff, that’s still only $125 million. Unless OpenAI is one of the single largest accounts in digital advertising, I think it’s far more likely that there are actual costs being hidden. 
+> 
+> This is the kind of thing a company does when it has utter loathing for its investors and the general public — a brazen attempt to bury costs to make things feel better for an audience that’s directly incentivized to take any shred of proof that things are okay, even if said “thing” is the suggestion [that a company that lost $21 billion only actually lost $8 billion](https://www.ft.com/content/e15b0d7e-ff6b-4f16-ba7a-4068feddb828?syn-25a6b1a6=1&ref=wheresyoured.at). 
+> 
+> Alternatively, it’s what an industry does when it believes everybody is gullible enough to accept and promote any rationalization that confirms their beliefs.
+> 
+> [^zitron-cargo-culture]
+
 ### On the failure of the media to check AI companies
 
 > \[S]ome members of the business and tech media … have, for the most part, gotten by without having to think too hard about the actual things the companies are saying. 
@@ -1353,19 +1385,19 @@
 
 ## Status
 
-### Reading
+### Stopped
 
-- https://www.wheresyoured.at/wheres-the-money/ (at "For Perplexity, Who Cares?")
-- https://www.wheresyoured.at/longcon/ (at "What These Oafs Are Actually Doing")
+- https://www.wheresyoured.at/wheres-the-money/ (at "For Perplexity, Who Cares?") — maybe there's enough?
+- https://www.wheresyoured.at/longcon/ (at "What These Oafs Are Actually Doing") — maybe there's enough?
 
 ### To read
 
 - https://moores.samaltman.com/ (or other articles on this site)
 - https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
-- https://www.wheresyoured.at/to-serve-altman/
-- https://www.wheresyoured.at/pop-culture/
-- https://www.wheresyoured.at/core-incompetency/
 - https://slack.org/freedom-of-intelligence
+- https://www.wheresyoured.at/to-serve-altman/ — maybe there's enough?
+- https://www.wheresyoured.at/pop-culture/ — maybe there's enough?
+- https://www.wheresyoured.at/core-incompetency/ — maybe there's enough?
 
 ## References
 
