@@ -850,7 +850,7 @@
 
 > Shear has also expressed his support for a pause or slowdown on AI development, articulated his contempt for tech accelerationists who are willing to risk an AI-induced catastrophe in the name of growth, and described the the belief that AI shouldn’t be regulated for the purpose of safety as “total insanity and reckless disregard for humanity's future.” His views stand in stark contrast to those of Andreessen and Armstrong, and the countless other Rot Economists in the Valley. [^zitron-sam-altman-freed]
 
-### On the incapabilities of Sam Altman
+### On Sam Altman
 
 > Sam Altman needs you to believe that [AI will kill us all](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html?ref=wheresyoured.at) or [going to destroy all our jobs](https://futurism.com/the-byte/sam-altman-ai-destroying-jobs?ref=wheresyoured.at) and that [he's a little bit scared of AI](https://www.cnbc.com/2023/03/20/openai-ceo-sam-altman-says-hes-a-little-bit-scared-of-ai.html?ref=wheresyoured.at), because if you think for even a second about what this man is saying, you'll realize that [he's not an engineer, he's a lobbyist and a liar](https://www.wheresyoured.at/managing-up/#:~:text=it%E2%80%99s%20critical%20to%20note%20that%20Altman%20is%20not%20and%20was%20not%20ever%20an%20engineer%20or%20a%20technologist). He needs us to humor — even if he rejects the notion — [the idea that AI could be considered a "creature"](https://www.businessinsider.com/openai-sam-altman-ai-is-a-tool-not-a-creature-2024-3?ref=wheresyoured.at) because doing so allows him to add further mystique and hype to distract from the fact that he doesn't seem to know anything and OpenAI doesn't seem to be innovating. …
 > 
@@ -881,6 +881,12 @@
 > If anything, Sam Altman is something much worse, all while lacking much of a technical background. He’s the archetypal Rot-Com CEO — an unqualified lobbyist pretending to be a technologist and abusing anyone he needs to in the pursuit of growth.
 > 
 > [^zitron-rot-com-bubble]
+
+### On Dario Amodei
+
+> Dario Amodei — much like Sam Altman — is a liar, a crook, a carnival barker and a charlatan, and the things he promises are equal parts ridiculous and offensive. The Information (which needs to do better work actually critiquing these people) justified Amodei and Anthropic's obscene and fantastical revenue targets by [*citing Amodei's blog*](https://www.anthropic.com/news/paris-ai-summit?ref=wheresyoured.at)**,** which at no point explains what a "country of geniuses in a datacenter" actually means or what the product might be or what he's going to do to increase revenue by *more than thirty billion dollars a year* by 2027.
+> 
+> [^zitron-ai-con]
 
 ### On Silicon Valley and chasing the "next big thing"
 
@@ -1400,9 +1406,10 @@
 - Zitron, Ed (2024b, Apr 29). [Managing up.](https://www.wheresyoured.at/managing-up) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024c, May 21). [Sam Altman is full of shit.](https://www.wheresyoured.at/sam-altman-is-full-of-shit/) _Where's Your Ed At._ Retrieved 2026-07-02.
 - Zitron, Ed (2024d, June 3). [The Rot-Com Bubble.](https://www.wheresyoured.at/rotcombubble/) _Where's Your Ed At._ Retrieved 2026-07-05.
-- Zitron, Ed (2025a, Feb 24). [There is no AI revolution.](https://www.wheresyoured.at/wheres-the-money/) _Where's Your Ed At._ Retrieved 2026-07-05.
-- Zitron, Ed (2025b, Aug 25). [How to argue with an AI booster.](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/) _Where's Your Ed At._ Retrieved 2026-07-04.
-- Zitron, Ed (2025c, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
+- Zitron, Ed (2025a, Feb 17). [The generative AI con.](https://www.wheresyoured.at/longcon/) _Where's Your Ed At._ Retrieved 2026-07-06.
+- Zitron, Ed (2025alb, Feb 24). [There is no AI revolution.](https://www.wheresyoured.at/wheres-the-money/) _Where's Your Ed At._ Retrieved 2026-07-05.
+- Zitron, Ed (2025c, Aug 25). [How to argue with an AI booster.](https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/) _Where's Your Ed At._ Retrieved 2026-07-04.
+- Zitron, Ed (2025d, Sep 29). [The case against generative AI.](https://www.wheresyoured.at/the-case-against-generative-ai/) _Where's Your Ed At._ Retrieved 2026-07-03.
 - Zitron, Ed (2026, June 23). [Cargo culture.](https://www.wheresyoured.at/cargo-culture/) _Where's Your Ed At._ Retrieved 2026-07-05.
 - Zuckerberg, Mark (2025, July 30). [Personal superintelligence](https://www.meta.com/superintelligence/). _Meta_. Retrieved 2026-06-23.
 
@@ -1450,3 +1457,4 @@
 [^zitron-no-revolution]: https://www.wheresyoured.at/wheres-the-money/
 [^zitron-cargo-culture]: https://www.wheresyoured.at/cargo-culture/
 [^zitron-rot-com-bubble]: https://www.wheresyoured.at/rotcombubble/
+[^zitron-ai-con]: https://www.wheresyoured.at/longcon/
