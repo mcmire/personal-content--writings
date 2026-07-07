@@ -205,6 +205,104 @@
 
 > Chen is sanguine about his own company’s potential contribution to \[the] unintended consequences \[of AI]. “This is going to happen no matter what,” he says. “If it's not us, it's going to be somebody else. So we want to make sure we are the people best-positioned to ensure they are properly aligned.” [^time-100-ai]
 
+## Hao, Karen
+
+### On the lack of definition of "AI"
+
+> I think we should start with when AI started as a field. This was back in 1956, and there were a group of scientists that gathered at Dartmouth University to start a new discipline — a scientific discipline — to try and chase an ambition. Specifically, an assistant professor at Dartmouth University, John McCarthy, decided to name this discipline Artificial Intelligence. …
+> 
+> And back then, as is true today, we have no scientific consensus around what human intelligence is. There’s no definition from psychology, biology, or neurology. And in fact, every attempt in history to quantify and rank human intelligence has been driven by nefarious motives — driven by a desire to prove scientifically that certain groups of people are inferior to other groups of people.
+> 
+> There are no goalposts for this field, and there are no goalposts for the industry. When they say that they are ultimately trying to recreate AI systems that would be as smart as humans, how do we even define what that means? And when are we going to get there if we don’t know how to define the destination?
+> 
+> What that effectively means is that these companies can just use the term Artificial General Intelligence — which is now the term to refer to this ambitious goal to recreate human intelligence — however they want to, and they can define and redefine it based on what is convenient for them.
+> 
+> [^doac-karen-hao]
+
+### On Sam Altman
+
+> STEVEN BARTLETT: Speaking about different definitions through time — in 2015, in a blog post that Sam Altman wrote before OpenAI was officially announced, he explicitly outlined the existential risk by saying, _“Development of superhuman machine intelligence is probably the greatest threat to the continued existence of humanity. There are other threats that I think are more certain to happen — for example, an engineered virus. But AI is probably the most likely way to destroy everything.”_
+> 
+> KAREN HAO: In general, when Altman is writing for the public or speaking for the public, he does not just have the public as the audience in mind. There are other people that he is trying to motivate or mobilize when he says these things. And in that particular moment, Altman was trying to convince Elon Musk to join him in co-founding OpenAI.
+> 
+> Musk in particular was spending all of his time sounding the alarm on what he saw as a huge existential threat that AI could pose. And so in that blog post, if you look at the language that Altman uses side by side with the language that Musk was using at the time, it mirrors all the things that Musk—
+> 
+> STEVEN BARTLETT: —was saying 10 years ago. Musk was going on podcasts saying, tweeting, whatever, that the greatest existential risk to humanity was AI.
+> 
+> KAREN HAO: Yeah. …
+> 
+> STEVEN BARTLETT: And are you saying that Sam Altman manipulated Musk? Because Elon did end up donating a huge amount of money to OpenAI and co-founding it, I believe, with Sam Altman.
+> 
+> KAREN HAO: Elon Musk did end up co-founding it with Altman. And certainly from Musk’s perspective, he does feel manipulated, because he feels like Altman was engineering his language in a way that would make Musk trust him as a partner in this endeavor. …
+> 
+> \[W]e know from the lawsuit and the documents that have come out in the lawsuit that Ilya Sutskever — who was the Chief Scientist of OpenAI at the time — and Greg Brockman — Chief Technology Officer at the time — when they were deciding whether or not to maintain OpenAI as a nonprofit, because it was originally founded as a nonprofit, they decided they needed to create a for-profit entity.
+>
+> But the question was, who should be the CEO of this for-profit entity? Should it be Musk or should it be Altman? Because they were the two co-chairmen of the nonprofit. And in the emails, it became clear that Ilya and Greg first chose Musk to be the CEO.
+> 
+> But through my reporting, I discovered that Altman then appealed personally to Greg Brockman — who was a friend of his, someone he had known for many years through the Silicon Valley scene — and said, “Don’t you think that it would be a little bit dangerous to have Musk be the CEO of this company, this new for-profit entity? Because he’s a famous guy. He has a lot of pressures in the world. He could be threatened, he could act erratically, he could be unpredictable. And do we really want a technology that could be super powerful in the future to end up in the hands of this man?”
+> 
+> And that convinced Greg, and Greg then convinced Ilya. “I think there’s a point here. Do we really want to give this much power to Musk?” And that is why Musk then leaves — because the two switch their allegiances. They say, “Actually, we want Altman to be the CEO.” And then Musk is like, “If I’m not CEO, I’m out.”
+> 
+> STEVEN BARTLETT: So it sounds like Sam again managed to persuade someone to do something.
+> 
+> KAREN HAO: Mm.
+> 
+> [^doac-karen-hao]
+
+> STEVEN BARTLETT: I guess this begs the question — what do you think of Sam Altman?
+> 
+> KAREN HAO: I think he’s a very controversial figure.
+> 
+> STEVEN BARTLETT: You did an interesting pause. It’s a pause where someone tries to select their words.
+> 
+> KAREN HAO: Well, this is what’s so interesting … \[P]eople are extremely polarized on Altman. No one has in-between feelings about him. Either they think he’s the greatest tech leader of this generation, akin to the Steve Jobs of the modern era, or they think that he’s really manipulative, an abuser, and a liar. …
+> 
+> \[I]f you align with Altman’s vision of the future, you’re going to think he’s the greatest asset ever to have on your side. Because this man is really persuasive. He’s incredible at telling stories. He’s incredible at mobilizing capital, at recruiting talent, at getting all the inputs that you need to then make that future happen.
+> 
+> But if you don’t agree with his vision of the future, then you begin to feel like you’re being manipulated by him to support his vision, even if you fundamentally don’t agree with it. And this is the story especially of Dario Amodei …
+> 
+> At the time, when \[Dario] was an executive at OpenAI, he thought that Altman was on the same page with him. And then over time began to feel that Altman was actually on exactly the opposite page of him and felt that Altman had used Anthropic’s intelligence capabilities, skills to build things and bring about a vision of the future that he actually fundamentally didn’t agree with. …
+> 
+> STEVEN BARTLETT: … \[Y]ou mentioned Ilya, who was a co-founder of OpenAI and then left. I guess the first question I’d ask is, why did Ilya leave?
+> 
+> KAREN HAO: That’s a great question. So he was instrumental in trying to get Sam Altman fired. And he’s another one of the people who over time began to feel like he was being manipulated by Altman towards contributing something that he didn’t believe in.
+> 
+> STEVEN BARTLETT: How’d you know?
+> 
+> KAREN HAO: Because I interviewed a lot of people. Ilya in particular had two pillars that he cared about deeply. One is making sure we get to so-called AGI, and the other is making sure that we get to it safely. And he felt that Altman was actively undermining both things. He felt that Altman was creating a very chaotic environment within the company where he was pitting teams against each other, where he was telling different things to different people.
+> 
+> [^doac-karen-hao]
+
+### On the imperial pursuit of recreating human intelligence
+
+> KAREN HAO: … Here’s a question that I think is important to ask: why are we trying to build AI systems that are duplicative of humans? We’re kind of having this conversation right now where we’ve just taken the premise of this industry as a good thing. Like, they said that we should be building AGI, so we say that we should be building AGI. But I would like to ask, why are we doing that? Why is it that we are building a technology that is ultimately designed to replace and automate people away? That is not the enterprise of technology. We should be building technology, and the purpose of technology throughout history has been to improve human flourishing, not to replace people.
+> 
+> And so this is a critical part of my critique of these companies and these scientists that have just adopted this goal and have relentlessly pursued it and have had enormous capital and enormous resources to pursue it. Is this the right goal? Why are we doing this? Why can’t we just build AI systems that do things like accelerate drug discovery and improve people’s healthcare outcomes, which are systems that have nothing to do with the statistical engines that they’re trying to build to duplicate the human brain?
+> 
+> STEVEN BARTLETT: So why are they doing it? I mean, you’ve interviewed all these people. I think it’s what, 300 people in total, 80 or 90 of them from OpenAI, the maker of ChatGPT. Why do you think they’re doing it?
+> 
+> KAREN HAO: I think it’s because they’re driven by an imperial agenda. And that is why I call these companies empires of AI. …
+> 
+> \[T]here are many parallels that you see between what I call the empires of AI and the empires of old.
+> 
+> They lay claim to resources that are not their own in the pursuit of training these models — that’s the data of individuals, the intellectual property of artists, writers and creators. …
+> 
+> Second, they exploit an extraordinary amount of labor. They contract hundreds of thousands of workers all around the world, including in the US, to ultimately make these technologies. …
+> 
+> Third, they monopolize knowledge production. So they project this idea that they’re the only ones that really understand how the technology works. … And they’ve also captured the majority of the scientists that are working on understanding the limitations and capabilities of AI. …
+> 
+> \[T]he AI industry employs and bankrolls most of the AI researchers in the world. So they set the agenda on AI research in soft ways simply by funneling money to their priorities so that only certain types of AI research are produced. But they also will censor researchers when they do not like what the researcher has found.
+> 
+> [^doac-karen-hao]
+
+> KAREN HAO: \[O]ne of the other \[things] that’s really important to understand about the AI empires in particular is empires always have this narrative that they say to the public, like, “We’re the good empire, and we need to be an empire in the first place, because there are also bad empires in the world. And if you allow us to take all the resources and use all of the labor, then we promise we will bring you progress and modernity for everyone. We will bring you to this utopic state akin to an AI Heaven. But if the evil empire does it first, we will descend into a hell.” …
+> 
+> \[A] core part of the mythology that they create around the AI industry … includes the belief that it could go very badly. … Altman has said publicly, the worst case is lights out for everyone. But best case, we cure cancer, we solve climate change, and there’s abundance. And Dario Amodei — same kind of rhetoric — worst case, catastrophic or existential harm for humanity. Best case, mass human flourishing.
+> 
+> So this is like two sides of the same coin. They have to use both of these narratives in order to continue justifying an extremely anti-democratic approach to AI development, where there should not be broad participation in developing this technology. They must be the ones controlling it at every step of the way.
+> 
+> [^doac-karen-hao]
+
 ## Hassabis, Demis (CEO, DeepMind)
 
 ### On AI timelines 
@@ -1385,19 +1483,19 @@
 
 ## Status
 
-### Stopped
+### Reading
 
-- https://www.wheresyoured.at/wheres-the-money/ (at "For Perplexity, Who Cares?") — maybe there's enough?
-- https://www.wheresyoured.at/longcon/ (at "What These Oafs Are Actually Doing") — maybe there's enough?
+- https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
 
 ### To read
 
 - https://moores.samaltman.com/ (or other articles on this site)
-- https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
 - https://slack.org/freedom-of-intelligence
 - https://www.wheresyoured.at/to-serve-altman/ — maybe there's enough?
 - https://www.wheresyoured.at/pop-culture/ — maybe there's enough?
 - https://www.wheresyoured.at/core-incompetency/ — maybe there's enough?
+- https://www.wheresyoured.at/wheres-the-money/ — stopped at "For Perplexity, Who Cares?" — maybe there's enough?
+- https://www.wheresyoured.at/longcon/ — stopped at "What These Oafs Are Actually Doing" — maybe there's enough?
 
 ## References
 
@@ -1408,6 +1506,7 @@
 - Amodei, Dario (2024, October). [Machines of loving grace](https://darioamodei.com/essay/machines-of-loving-grace). _darioamodei.com_. Retrieved 2026-06-23.
 - Amodei, Dario (2026, January). [The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology). _darioamodei.com_. Retrieved 2026-06-23.
 - Andreessen, Marc (2023, October 16). [The techno-optimist manifesto](https://a16z.com/the-techno-optimist-manifesto/). _Andreessen Horowitz_. Retrieved 2026-06-23.
+- Bartlett, Stephen (Host) (2026, March 26). [AI whistleblower: We are being gaslit by AI companies, they’re hiding the truth! - Karen Hao.](https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/). Transcript of [podcast episode](https://www.youtube.com/watch?v=Cn8HBj8QAbk). Retrieved 2026-07-06.
 - Buterin, Vitalik (2023, November 27). [My techno-optimism](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html#dacc). _vitalik.eth.limo_. Retrieved 2026-06-23.
 - Clifford, Matt (2025, January 13). [AI opportunities action plan](https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan). _GOV.UK_, Department for Science, Innovation and Technology. Retrieved 2026-06-23.
 - Diamandis, Peter; Blundin, Dave (Hosts) (2026, January 6). [Episode 220: Elon Musk on AGI Timeline, US vs China, Job Markets, Clean Energy & Humanoid Robots](https://web.archive.org/web/20260202094515/https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/). Transcript of [podcast episode](https://www.diamandis.com/podcast/elon-musk-agi-timeline-copy-code). Archived from [original](https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/) 2026-06-23.
@@ -1490,3 +1589,4 @@
 [^zitron-cargo-culture]: https://www.wheresyoured.at/cargo-culture/
 [^zitron-rot-com-bubble]: https://www.wheresyoured.at/rotcombubble/
 [^zitron-ai-con]: https://www.wheresyoured.at/longcon/
+[^doac-karen-hao]: https://singjupost.com/diary-of-a-ceo-w-ai-critic-karen-hao-on-empires-of-ai-transcript/
