@@ -117,7 +117,7 @@
 
 > We are now confident we know how to build AGI as we have traditionally understood it. [^altman-reflections]
 
-> We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence … [^altman-untitled]
+> We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence … [^altman-gentle-singularity]
 
 > Intelligence too cheap to meter is well within grasp. … [^altman-gentle-singularity]
 
