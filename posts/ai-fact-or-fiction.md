@@ -114,6 +114,10 @@ At the same time, when a technology gets replaced,
 
 ## Outline
 
+- The people that are trying to sell you AI can't even agree what AGI is or even what the singularity is 
+
+
+
 - Introduction; questions we want to answer; challenges to assumptions
 - Various answers from various individuals 
 - My experiences within the coding industry and opinions about the future of AI
